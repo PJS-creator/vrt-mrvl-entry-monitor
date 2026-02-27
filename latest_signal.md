@@ -1,7 +1,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-02-26**
-- 실행시간(UTC): **2026-02-27 03:59:39**
+- 실행시간(UTC): **2026-02-27 04:27:05**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -30,10 +30,10 @@
 - **VRT_ENTRY**: **False**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.192548
-- MA60: 0.218499
-- gap: -11.88%
-- MA60_slope_proxy: -0.01875
+- ratio (MRVL/SMH): 0.192447
+- MA60: 0.218498
+- gap: -11.92%
+- MA60_slope_proxy: -0.018752
 - **MRVL_ENTRY**: **False**
 
 ## Verdict

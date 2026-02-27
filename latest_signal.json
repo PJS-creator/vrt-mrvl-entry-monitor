@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": null,
+  "as_of": {
+    "price_date": null,
+    "run_time_utc": null
+  },
+  "data_warning": true,
+  "warnings": [
+    "Initial placeholder. Run workflow to generate live data."
+  ],
+  "macro": {},
+  "checks": {},
+  "prices": {},
+  "signals": {},
+  "verdict": "⏸ No entry today"
+}

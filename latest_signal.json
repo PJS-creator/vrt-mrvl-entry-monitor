@@ -13,6 +13,24 @@
     "NVDA: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
     "AVGO: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback."
   ],
+  "macro": {},
+  "checks": {},
+  "prices": {},
+  "signals": {},
+  "generated_at_utc": "2026-02-27T04:27:05Z",
+  "as_of": {
+    "price_date": "2026-02-26",
+    "run_time_utc": "2026-02-27 04:27:05"
+  },
+  "data_warning": true,
+  "warnings": [
+    "VRT: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "MRVL: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "SRVR: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "SMH: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "NVDA: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "AVGO: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback."
+  ],
   "macro": {
     "BAMLH0A0HYM2": {
       "latest": 2.94,

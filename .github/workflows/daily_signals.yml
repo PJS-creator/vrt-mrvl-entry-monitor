@@ -8,12 +8,19 @@ on:
 permissions:
   contents: write
 
+# Prevent overlapping runs on the same branch (major cause of push races).
+concurrency:
+  group: daily-signals-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   run-signals:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,18 +32,68 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Validate monitor script
+        shell: bash
+        run: |
+          python -c "from pathlib import Path; import sys; t=Path('monitor_signals.py').read_text(encoding='utf-8'); needle=chr(96)*3; sys.exit('monitor_signals.py contains markdown code fences, which breaks Python execution.') if needle in t else None"
+          python -m py_compile monitor_signals.py
+          if rg -n "^```" monitor_signals.py; then
+            echo "monitor_signals.py contains markdown code fences, which breaks Python execution."
+            exit 1
+          fi
+          python -m py_compile monitor_signals.py
+
       - name: Generate signal files
         run: python monitor_signals.py
 
       - name: Commit and push if changed
+        shell: bash
         run: |
+          set -euo pipefail
+
           if git diff --quiet -- latest_signal.json latest_signal.md; then
             echo "No signal changes to commit"
             exit 0
           fi
+
           DATE=$(date -u +%F)
+          BRANCH="${GITHUB_REF_NAME}"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add latest_signal.json latest_signal.md
           git commit -m "Update signals: ${DATE}"
-          git push
+
+          # Robust retry loop for non-fast-forward races.
+          for i in 1 2 3 4 5; do
+            if git push origin "HEAD:${BRANCH}"; then
+              echo "Push succeeded"
+              exit 0
+            fi
+
+            echo "Push rejected (attempt ${i}/5). Fetch+rebase then retry..."
+            git fetch origin "${BRANCH}"
+
+            # If another run already pushed equivalent outputs, treat as success.
+            if git diff --quiet "origin/${BRANCH}" -- latest_signal.json latest_signal.md; then
+              echo "Remote branch already has latest signal outputs. Nothing left to push."
+              exit 0
+            fi
+
+            if ! git rebase "origin/${BRANCH}"; then
+              # For generated artifacts, keep our just-generated version and continue.
+              git checkout --ours latest_signal.json latest_signal.md || true
+              git add latest_signal.json latest_signal.md || true
+              git rebase --continue || {
+                git rebase --abort
+                echo "Rebase failed and was aborted"
+                exit 1
+              }
+            fi
+
+            sleep 2
+          done
+
+          echo "Push failed after 5 attempts"
+          exit 1

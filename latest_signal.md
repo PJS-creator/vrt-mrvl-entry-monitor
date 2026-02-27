@@ -4,6 +4,11 @@
 - 실행시간(UTC): **2026-02-27 06:12:36**
 
 ## ⚠️ DATA WARNING
+Initial placeholder. GitHub Actions will generate live values after first run.
+- 데이터 기준일(주가): **2026-02-26**
+- 실행시간(UTC): **2026-02-27 04:27:05**
+
+## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
 - VRT: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.

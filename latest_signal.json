@@ -1,16 +1,93 @@
 {
-  "generated_at_utc": "2026-02-27T03:37:28Z",
+  "generated_at_utc": "2026-02-27T06:03:01Z",
   "as_of": {
-    "price_date": null,
-    "run_time_utc": "2026-02-27 03:37:28"
+    "price_date": "2026-02-26",
+    "run_time_utc": "2026-02-27 06:03:01"
   },
   "data_warning": true,
   "warnings": [
-    "Initial placeholder. Run monitor_signals.py in GitHub Actions to populate live data."
+    "VRT: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "MRVL: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "SRVR: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "SMH: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "NVDA: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback.",
+    "AVGO: yfinance failed (arg must be a list, tuple, 1-d array, or Series); trying Stooq fallback."
   ],
-  "macro": {},
-  "checks": {},
-  "prices": {},
-  "signals": {},
+  "macro": {
+    "BAMLH0A0HYM2": {
+      "latest": 2.94,
+      "change_4w_bp": 22.0,
+      "latest_date": "2026-02-25"
+    },
+    "BAMLC0A0CM": {
+      "latest": 0.8,
+      "change_4w_bp": 7.0,
+      "latest_date": "2026-02-25"
+    },
+    "DFII10": {
+      "latest": 1.77,
+      "change_4w_bp": -13.0,
+      "latest_date": "2026-02-25"
+    },
+    "VIXCLS": {
+      "latest": 17.93,
+      "change_4w_bp": 158.0,
+      "latest_date": "2026-02-25"
+    },
+    "NFCI": {
+      "latest": -0.5629,
+      "change_4w_bp": 0.31,
+      "latest_date": "2026-02-20"
+    }
+  },
+  "checks": {
+    "HY_4w_change_bp_lt_100": true,
+    "IG_4w_change_bp_lt_50": true,
+    "DFII10_4w_change_bp_lt_50": true,
+    "VIX_lt_25": true,
+    "NFCI_lte_0": true,
+    "MacroGreen": true
+  },
+  "prices": {
+    "VRT": {
+      "close": 259.23,
+      "latest_date": "2026-02-26"
+    },
+    "MRVL": {
+      "close": 79.29,
+      "latest_date": "2026-02-26"
+    },
+    "SRVR": {
+      "close": 33.29,
+      "latest_date": "2026-02-26"
+    },
+    "SMH": {
+      "close": 412.01,
+      "latest_date": "2026-02-26"
+    },
+    "NVDA": {
+      "close": 184.89,
+      "latest_date": "2026-02-26"
+    },
+    "AVGO": {
+      "close": 321.7,
+      "latest_date": "2026-02-26"
+    }
+  },
+  "signals": {
+    "VRT": {
+      "ratio": 7.787023,
+      "ma60": 6.185873,
+      "gap": 0.25884,
+      "entry": false
+    },
+    "MRVL": {
+      "ratio": 0.192447,
+      "ma60": 0.218498,
+      "gap": -0.119227,
+      "ma60_slope_proxy": -0.018752,
+      "entry": false
+    }
+  },
   "verdict": "⏸ No entry today"
 }

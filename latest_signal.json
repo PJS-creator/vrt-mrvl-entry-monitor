@@ -1,4 +1,17 @@
 {
+  "generated_at_utc": "2026-02-27T03:37:28Z",
+  "as_of": {
+    "price_date": null,
+    "run_time_utc": "2026-02-27 03:37:28"
+  },
+  "data_warning": true,
+  "warnings": [
+    "Initial placeholder. Run monitor_signals.py in GitHub Actions to populate live data."
+  ],
+  "macro": {},
+  "checks": {},
+  "prices": {},
+  "signals": {},
   "generated_at_utc": "2026-02-27T04:27:05Z",
   "as_of": {
     "price_date": "2026-02-26",

@@ -1,5 +1,7 @@
 # Daily Signal Monitor
 
+## ⚠️ DATA WARNING
+Initial placeholder. GitHub Actions will generate live values after first run.
 - 데이터 기준일(주가): **2026-02-26**
 - 실행시간(UTC): **2026-02-27 04:27:05**
 

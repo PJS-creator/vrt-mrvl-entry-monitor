@@ -99,6 +99,13 @@ def fetch_yfinance_close(ticker: str) -> pd.Series:
 
     frame = data.copy()
 
+    # yfinance may return MultiIndex columns depending on version/options.
+    if isinstance(frame.columns, pd.MultiIndex):
+        if ticker in frame.columns.get_level_values(-1):
+            frame = frame.xs(ticker, axis=1, level=-1)
+        elif ticker in frame.columns.get_level_values(0):
+            frame = frame.xs(ticker, axis=1, level=0)
+
     # yfinance can return MultiIndex columns depending on version/options.
     # Normalize to a single-ticker 2D frame with OHLCV-like columns.
     if isinstance(frame.columns, pd.MultiIndex):

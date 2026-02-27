@@ -1,16 +1,86 @@
 {
-  "generated_at_utc": null,
+  "generated_at_utc": "2026-02-27T06:18:50Z",
   "as_of": {
-    "price_date": null,
-    "run_time_utc": null
+    "price_date": "2026-02-26",
+    "run_time_utc": "2026-02-27 06:18:50"
   },
-  "data_warning": true,
-  "warnings": [
-    "Initial placeholder. Run workflow to generate live data."
-  ],
-  "macro": {},
-  "checks": {},
-  "prices": {},
-  "signals": {},
+  "data_warning": false,
+  "warnings": [],
+  "macro": {
+    "BAMLH0A0HYM2": {
+      "latest": 2.94,
+      "change_4w_bp": 22.0,
+      "latest_date": "2026-02-25"
+    },
+    "BAMLC0A0CM": {
+      "latest": 0.8,
+      "change_4w_bp": 7.0,
+      "latest_date": "2026-02-25"
+    },
+    "DFII10": {
+      "latest": 1.77,
+      "change_4w_bp": -13.0,
+      "latest_date": "2026-02-25"
+    },
+    "VIXCLS": {
+      "latest": 17.93,
+      "change_4w_bp": 158.0,
+      "latest_date": "2026-02-25"
+    },
+    "NFCI": {
+      "latest": -0.5629,
+      "change_4w_bp": 0.31,
+      "latest_date": "2026-02-20"
+    }
+  },
+  "checks": {
+    "MacroGreen": true,
+    "HY_4w_change_bp_lt_100": true,
+    "IG_4w_change_bp_lt_50": true,
+    "DFII10_4w_change_bp_lt_50": true,
+    "VIX_lt_25": true,
+    "NFCI_lte_0": true
+  },
+  "prices": {
+    "VRT": {
+      "close": 259.23,
+      "latest_date": "2026-02-26"
+    },
+    "MRVL": {
+      "close": 79.29,
+      "latest_date": "2026-02-26"
+    },
+    "SRVR": {
+      "close": 33.29,
+      "latest_date": "2026-02-26"
+    },
+    "SMH": {
+      "close": 412.01,
+      "latest_date": "2026-02-26"
+    },
+    "NVDA": {
+      "close": 184.89,
+      "latest_date": "2026-02-26"
+    },
+    "AVGO": {
+      "close": 321.7,
+      "latest_date": "2026-02-26"
+    }
+  },
+  "signals": {
+    "VRT": {
+      "ratio": 7.787023,
+      "ma60": 6.215074,
+      "gap": 0.252925,
+      "entry": false
+    },
+    "MRVL": {
+      "ratio": 0.192447,
+      "ma60": 0.218614,
+      "gap": -0.119695,
+      "ma60_slope_proxy": -0.018951,
+      "entry": false
+    }
+  },
   "verdict": "⏸ No entry today"
 }

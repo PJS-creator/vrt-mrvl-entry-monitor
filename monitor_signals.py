@@ -84,6 +84,8 @@ def fred_latest_and_4w(series: pd.Series) -> Tuple[Optional[float], Optional[flo
 
 
 def fetch_yfinance_close(ticker: str) -> pd.Series:
+```python
+def fetch_yfinance_close(ticker: str) -> pd.Series:
     data = yf.download(
         ticker,
         period="2y",
@@ -95,10 +97,34 @@ def fetch_yfinance_close(ticker: str) -> pd.Series:
     if data.empty:
         return pd.Series(dtype=float)
 
-    col = "Adj Close" if "Adj Close" in data.columns else "Close"
-    series = pd.to_numeric(data[col], errors="coerce").dropna()
+    frame = data.copy()
+
+    # yfinance can return MultiIndex columns depending on version/options.
+    # Normalize to a single-ticker 2D frame with OHLCV-like columns.
+    if isinstance(frame.columns, pd.MultiIndex):
+        # Common shape: (field, ticker) e.g. ('Close', 'VRT')
+        if ticker in frame.columns.get_level_values(-1):
+            frame = frame.xs(ticker, axis=1, level=-1)
+        # Alternative shape: (ticker, field)
+        elif ticker in frame.columns.get_level_values(0):
+            frame = frame.xs(ticker, axis=1, level=0)
+
+    # After normalization, select Adj Close first, else Close.
+    if "Adj Close" in frame.columns:
+        close_like = frame["Adj Close"]
+    elif "Close" in frame.columns:
+        close_like = frame["Close"]
+    else:
+        return pd.Series(dtype=float)
+
+    if isinstance(close_like, pd.DataFrame):
+        # Defensive fallback in case duplicate columns remain.
+        close_like = close_like.iloc[:, 0]
+
+    series = pd.to_numeric(close_like, errors="coerce").dropna()
     series.index = pd.to_datetime(series.index)
     return series.sort_index()
+```
 
 
 def fetch_stooq_close(ticker: str) -> pd.Series:

@@ -35,6 +35,8 @@ jobs:
       - name: Validate monitor script
         shell: bash
         run: |
+          python -c "from pathlib import Path; import sys; t=Path('monitor_signals.py').read_text(encoding='utf-8'); needle=chr(96)*3; sys.exit('monitor_signals.py contains markdown code fences, which breaks Python execution.') if needle in t else None"
+          python -m py_compile monitor_signals.py
           if rg -n "^```" monitor_signals.py; then
             echo "monitor_signals.py contains markdown code fences, which breaks Python execution."
             exit 1

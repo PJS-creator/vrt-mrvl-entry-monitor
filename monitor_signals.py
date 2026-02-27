@@ -74,23 +74,46 @@ def fetch_yf_close(ticker: str) -> pd.Series:
     if df.empty:
         return pd.Series(dtype=float)
 
+    # Normalize multi-index columns from yfinance into a single-ticker frame.
     if isinstance(df.columns, pd.MultiIndex):
-        if ticker in df.columns.get_level_values(-1):
-            df = df.xs(ticker, axis=1, level=-1)
-        elif ticker in df.columns.get_level_values(0):
-            df = df.xs(ticker, axis=1, level=0)
+        levels0 = set(df.columns.get_level_values(0))
+        levels1 = set(df.columns.get_level_values(1))
 
-    if "Adj Close" in df.columns:
-        close = df["Adj Close"]
-    elif "Close" in df.columns:
-        close = df["Close"]
-    else:
+        if ticker in levels1:
+            df = df.xs(ticker, axis=1, level=1)
+        elif ticker in levels0:
+            df = df.xs(ticker, axis=1, level=0)
+        else:
+            # Fallback: flatten to first level if ticker not found.
+            df.columns = df.columns.get_level_values(0)
+
+    # Extract close-like column safely.
+    close_like = None
+    if isinstance(df, pd.DataFrame):
+        if "Adj Close" in df.columns:
+            close_like = df["Adj Close"]
+        elif "Close" in df.columns:
+            close_like = df["Close"]
+    if close_like is None:
         return pd.Series(dtype=float)
 
-    if isinstance(close, pd.DataFrame):
-        close = close.iloc[:, 0]
+    # Ensure 1D series for pd.to_numeric.
+    if isinstance(close_like, pd.DataFrame):
+        if close_like.shape[1] == 0:
+            return pd.Series(dtype=float)
+        close_like = close_like.iloc[:, 0]
 
-    s = pd.to_numeric(close, errors="coerce").dropna()
+    close_like = close_like.squeeze()
+    if isinstance(close_like, pd.DataFrame):
+        close_like = close_like.iloc[:, 0]
+
+    if not isinstance(close_like, pd.Series):
+        try:
+            close_like = pd.Series(close_like)
+        except Exception:
+            return pd.Series(dtype=float)
+
+    s = pd.to_numeric(close_like, errors="coerce").dropna()
     s.index = pd.to_datetime(s.index)
     return s.sort_index()
 
@@ -114,7 +137,7 @@ def fetch_price(ticker: str, warnings: List[str]) -> pd.Series:
             return s
         warnings.append(f"{ticker}: yfinance insufficient history ({len(s)} rows), fallback to Stooq.")
     except Exception as e:
-        warnings.append(f"{ticker}: yfinance failed ({e}), fallback to Stooq.")
+        warnings.append(f"{ticker}: yfinance failed in fetch_yf_close ({e}), fallback to Stooq.")
 
     try:
         s = fetch_stooq_close(ticker)

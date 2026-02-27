@@ -84,6 +84,8 @@ def fred_latest_and_4w(series: pd.Series) -> Tuple[Optional[float], Optional[flo
 
 
 def fetch_yfinance_close(ticker: str) -> pd.Series:
+```python
+def fetch_yfinance_close(ticker: str) -> pd.Series:
     data = yf.download(
         ticker,
         period="2y",
@@ -104,6 +106,17 @@ def fetch_yfinance_close(ticker: str) -> pd.Series:
         elif ticker in frame.columns.get_level_values(0):
             frame = frame.xs(ticker, axis=1, level=0)
 
+    # yfinance can return MultiIndex columns depending on version/options.
+    # Normalize to a single-ticker 2D frame with OHLCV-like columns.
+    if isinstance(frame.columns, pd.MultiIndex):
+        # Common shape: (field, ticker) e.g. ('Close', 'VRT')
+        if ticker in frame.columns.get_level_values(-1):
+            frame = frame.xs(ticker, axis=1, level=-1)
+        # Alternative shape: (ticker, field)
+        elif ticker in frame.columns.get_level_values(0):
+            frame = frame.xs(ticker, axis=1, level=0)
+
+    # After normalization, select Adj Close first, else Close.
     if "Adj Close" in frame.columns:
         close_like = frame["Adj Close"]
     elif "Close" in frame.columns:
@@ -112,11 +125,13 @@ def fetch_yfinance_close(ticker: str) -> pd.Series:
         return pd.Series(dtype=float)
 
     if isinstance(close_like, pd.DataFrame):
+        # Defensive fallback in case duplicate columns remain.
         close_like = close_like.iloc[:, 0]
 
     series = pd.to_numeric(close_like, errors="coerce").dropna()
     series.index = pd.to_datetime(series.index)
     return series.sort_index()
+```
 
 
 def fetch_stooq_close(ticker: str) -> pd.Series:
@@ -198,6 +213,7 @@ def main() -> None:
     warnings: List[str] = []
     prev = load_previous_output()
 
+    # Macro data
     macro: Dict[str, Dict[str, Optional[float]]] = {}
     for sid in FRED_SERIES:
         s = fetch_fred_series(sid, warnings)
@@ -214,6 +230,7 @@ def main() -> None:
             "latest_date": latest_date,
         }
 
+    # Price data
     prices: Dict[str, pd.Series] = {}
     price_meta: Dict[str, Dict[str, Optional[float]]] = {}
 
@@ -237,6 +254,7 @@ def main() -> None:
             "latest_date": series.index[-1].strftime("%Y-%m-%d") if not series.empty else None,
         }
 
+    # Signal metrics
     vrt = compute_ratio_metrics(prices.get("VRT", pd.Series(dtype=float)), prices.get("SRVR", pd.Series(dtype=float)))
     mrvl = compute_ratio_metrics(prices.get("MRVL", pd.Series(dtype=float)), prices.get("SMH", pd.Series(dtype=float)))
 
@@ -247,6 +265,7 @@ def main() -> None:
         warnings.append("MRVL/SMH metrics unavailable from live data; using cached metrics when available.")
         mrvl = cache_ratio_metrics(prev, "MRVL")
 
+    # Macro rule
     hy_ok = macro["BAMLH0A0HYM2"]["change_4w_bp"] is not None and macro["BAMLH0A0HYM2"]["change_4w_bp"] < 100
     ig_ok = macro["BAMLC0A0CM"]["change_4w_bp"] is not None and macro["BAMLC0A0CM"]["change_4w_bp"] < 50
     real_ok = macro["DFII10"]["change_4w_bp"] is not None and macro["DFII10"]["change_4w_bp"] < 50
@@ -272,6 +291,7 @@ def main() -> None:
     else:
         verdict = "⏸ No entry today"
 
+    # Prefer the ratio computation date as the price reference date
     price_ref_date = vrt.price_date or mrvl.price_date
     if price_ref_date is None:
         dates = [x["latest_date"] for x in price_meta.values() if x.get("latest_date")]

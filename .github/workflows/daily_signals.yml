@@ -54,7 +54,11 @@ jobs:
           NEW=$(python -c "import json;print(json.load(open('latest_signal.json',encoding='utf-8')).get('verdict',''))")
           echo "new_verdict=$NEW" >> "$GITHUB_OUTPUT"
 
-          echo "notify=true" >> "$GITHUB_OUTPUT"
+          if echo "$NEW" | grep -q "Entry condition met" && ! echo "$PREV_VERDICT" | grep -q "Entry condition met"; then
+            echo "notify=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "notify=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit and push if changed
         shell: bash

@@ -21,65 +21,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 1) 이전 실행(저장소에 있던 파일) 기준으로 "어제/직전 엔트리" 읽기
-      - name: Load previous entries (for new-entry alert)
-        id: prev
-        shell: bash
-        run: |
-          python - <<'PY' > /tmp/prev_entries.txt
-          import json, re
-          from pathlib import Path
-
-          def load_json(p):
-            p = Path(p)
-            if not p.exists():
-              return {}
-            try:
-              return json.loads(p.read_text(encoding="utf-8"))
-            except Exception:
-              return {}
-
-          def core_entries(d):
-            verdict = str(d.get("verdict",""))
-            if "Entry condition met" not in verdict:
-              return set()
-            tail = verdict.split(":",1)[1] if ":" in verdict else verdict
-            tokens = [t.strip().upper() for t in re.split(r"[,\s]+", tail) if t.strip()]
-            if "BOTH" in tokens:
-              return {"VRT","MRVL"}
-            return {t for t in tokens if t in {"VRT","MRVL"}}
-
-          def nwg_entries(d):
-            verdict = str(d.get("verdict",""))
-            if "ENTRY (STRICT)" in verdict:
-              return {"NWG_STRICT"}
-            if "ENTRY (LOOSE)" in verdict:
-              return {"NWG_LOOSE"}
-            return set()
-
-          def energy_entries(d):
-            sig = d.get("signals", {}) or {}
-            out = set()
-            for k, v in sig.items():
-              if isinstance(v, dict) and v.get("entry") is True:
-                out.add(str(k).upper())
-            if out:
-              return out
-            verdict = str(d.get("verdict",""))
-            if "Entry condition met" in verdict and ":" in verdict:
-              tail = verdict.split(":",1)[1]
-              return {t.strip().upper() for t in tail.split(",") if t.strip()}
-            return set()
-
-          prev = set()
-          prev |= core_entries(load_json("latest_signal.json"))
-          prev |= nwg_entries(load_json("nwg_latest_signal.json"))
-          prev |= energy_entries(load_json("latest_energy_signal.json"))
-
-          print(",".join(sorted(prev)))
-          PY
-          echo "prev_entries=$(cat /tmp/prev_entries.txt)" >> "$GITHUB_OUTPUT"
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -88,7 +29,6 @@ jobs:
       - name: Validate scripts
         run: python -m py_compile monitor_signals.py nwg_signal.py energy_signal_monitor.py build_latest_signal_all.py
 
-      # 2) 새 결과 생성
       - name: Generate all signal files
         run: |
           python monitor_signals.py
@@ -96,75 +36,6 @@ jobs:
           python energy_signal_monitor.py
           python build_latest_signal_all.py
 
-      # 3) "새 Entry가 생겼는지" 판정
-      - name: Decide whether to open an Issue (new entry only)
-        id: decide
-        env:
-          PREV_ENTRIES: ${{ steps.prev.outputs.prev_entries }}
-        shell: bash
-        run: |
-          python - <<'PY' > /tmp/decide_out.txt
-          import json, re, os
-          from pathlib import Path
-
-          def load_json(p):
-            p = Path(p)
-            if not p.exists():
-              return {}
-            try:
-              return json.loads(p.read_text(encoding="utf-8"))
-            except Exception:
-              return {}
-
-          def core_entries(d):
-            verdict = str(d.get("verdict",""))
-            if "Entry condition met" not in verdict:
-              return set()
-            tail = verdict.split(":",1)[1] if ":" in verdict else verdict
-            tokens = [t.strip().upper() for t in re.split(r"[,\s]+", tail) if t.strip()]
-            if "BOTH" in tokens:
-              return {"VRT","MRVL"}
-            return {t for t in tokens if t in {"VRT","MRVL"}}
-
-          def nwg_entries(d):
-            verdict = str(d.get("verdict",""))
-            if "ENTRY (STRICT)" in verdict:
-              return {"NWG_STRICT"}
-            if "ENTRY (LOOSE)" in verdict:
-              return {"NWG_LOOSE"}
-            return set()
-
-          def energy_entries(d):
-            sig = d.get("signals", {}) or {}
-            out = set()
-            for k, v in sig.items():
-              if isinstance(v, dict) and v.get("entry") is True:
-                out.add(str(k).upper())
-            if out:
-              return out
-            verdict = str(d.get("verdict",""))
-            if "Entry condition met" in verdict and ":" in verdict:
-              tail = verdict.split(":",1)[1]
-              return {t.strip().upper() for t in tail.split(",") if t.strip()}
-            return set()
-
-          prev_csv = os.environ.get("PREV_ENTRIES","").strip()
-          prev_set = set([x for x in prev_csv.split(",") if x]) if prev_csv else set()
-
-          new_set = set()
-          new_set |= core_entries(load_json("latest_signal.json"))
-          new_set |= nwg_entries(load_json("nwg_latest_signal.json"))
-          new_set |= energy_entries(load_json("latest_energy_signal.json"))
-
-          new_entries = sorted(list(new_set - prev_set))
-          notify = bool(new_entries)
-
-          print(f"notify={'true' if notify else 'false'}")
-          print("new_entries=" + ",".join(new_entries))
-          PY
-          cat /tmp/decide_out.txt >> "$GITHUB_OUTPUT"
-
-      # 4) 결과 파일 커밋/푸시
       - name: Commit and push if changed
         shell: bash
         run: |
@@ -182,35 +53,31 @@ jobs:
 
           if ! git status --porcelain -- "${FILES[@]}" | grep -q .; then
             echo "No signal changes to commit"
-            exit 0
+          else
+            DATE=$(date -u +%F)
+            BRANCH="${GITHUB_REF_NAME}"
+
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add "${FILES[@]}"
+            git commit -m "Update signals: ${DATE}"
+
+            for i in 1 2 3; do
+              git pull --rebase origin "${BRANCH}" || true
+              if git push origin "HEAD:${BRANCH}"; then
+                break
+              fi
+              sleep 2
+            done
           fi
 
-          DATE=$(date -u +%F)
-          BRANCH="${GITHUB_REF_NAME}"
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add "${FILES[@]}"
-          git commit -m "Update signals: ${DATE}"
-
-          for i in 1 2 3; do
-            git pull --rebase origin "${BRANCH}" || true
-            if git push origin "HEAD:${BRANCH}"; then
-              exit 0
-            fi
-            sleep 2
-          done
-
-          echo "Push failed after retries"
-          exit 1
-
-      # 5) 새 Entry가 생겼을 때만 Issue 생성 (GitHub 앱 알람용)
-      - name: Open an Issue for new entry
-        if: steps.decide.outputs.notify == 'true' && always()
+      # ✅ 매일 실행될 때마다 무조건 Issue 생성 (알람 목적)
+      - name: Create Issue for today's report (always)
+        if: always()
         uses: actions/github-script@v8
         env:
-          ASSIGNEE: ${{ github.repository_owner }}
+          JOB_STATUS: ${{ job.status }}
         with:
           script: |
             const fs = require('fs');
@@ -218,30 +85,58 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
-            const assignee = process.env.ASSIGNEE || owner;
-            const today = new Date().toISOString().slice(0, 10);
-            const newEntries = ("${{ steps.decide.outputs.new_entries }}")
-              .split(",").map(s => s.trim()).filter(Boolean);
+            // KST(한국시간) 날짜/시각 만들기 (UTC+9)
+            const now = new Date();
+            const kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+            const kstDate = kst.toISOString().slice(0, 10);
+            const kstTime = kst.toISOString().replace('T', ' ').slice(0, 19);
 
-            let report = "";
-            try { report = fs.readFileSync("latest_signal_all.md", "utf8"); }
-            catch (e) { report = "_(latest_signal_all.md not found)_"; }
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${owner}/${repo}/actions/runs/${context.runId}`;
 
-            const title = `📣 New Entry (${today}) - ${newEntries.join(", ")}`;
+            const readText = (p) => {
+              try { return fs.readFileSync(p, 'utf8'); }
+              catch (e) { return `_(missing: ${p})_`; }
+            };
+
+            const readVerdict = (p) => {
+              try {
+                const obj = JSON.parse(fs.readFileSync(p, 'utf8'));
+                return obj && obj.verdict ? String(obj.verdict) : 'N/A';
+              } catch (e) {
+                return 'N/A';
+              }
+            };
+
+            const coreVerdict = readVerdict('latest_signal.json');
+            const nwgVerdict = readVerdict('nwg_latest_signal.json');
+            const energyVerdict = readVerdict('latest_energy_signal.json');
+            const reportAll = readText('latest_signal_all.md');
+
+            // 알림을 확실히 받기 위해: 멘션 + (가능하면) assignee 지정
+            const actor = context.actor || "";
+            const assignee = (actor && !actor.includes("github-actions")) ? actor : owner;
+
+            const title = `📌 Daily Signals (${kstDate})`;
 
             const body = [
               `@${assignee}`,
-              "",
-              "## New entries since last run",
-              ...newEntries.map(x => `- **${x}**`),
-              "",
-              "<details><summary>Full report (latest_signal_all.md)</summary>",
-              "",
-              report,
-              "",
-              "</details>",
-              ""
-            ].join("\n");
+              ``,
+              `- KST 실행 시각: **${kstTime}**`,
+              `- Workflow status: **${process.env.JOB_STATUS}**`,
+              `- Run: ${runUrl}`,
+              ``,
+              `## Quick Summary`,
+              `- Core (VRT/MRVL): **${coreVerdict}**`,
+              `- NatWest (NWG): **${nwgVerdict}**`,
+              `- Energy (OXY/PBR/RIG/VG): **${energyVerdict}**`,
+              ``,
+              `<details><summary>Full report (latest_signal_all.md)</summary>`,
+              ``,
+              reportAll,
+              ``,
+              `</details>`,
+              ``
+            ].join('\n');
 
             try {
               await github.rest.issues.create({
@@ -252,5 +147,6 @@ jobs:
                 assignees: [assignee],
               });
             } catch (e) {
+              // assignee가 실패(예: 조직 owner)해도 이슈는 만들기
               await github.rest.issues.create({ owner, repo, title, body });
             }

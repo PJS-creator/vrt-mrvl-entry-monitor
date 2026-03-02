@@ -173,6 +173,10 @@ def fetch_boe_series(series_code: str, datefrom: str = "01/Jan/2015") -> pd.Seri
     """
     BoE Database CSV auto download format:
     _iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=...&Dateto=now&SeriesCodes=...&UsingCodes=Y&CSVF=TN
+
+    NOTE:
+    - Some environments get 403 unless we send a browser-like User-Agent.
+    - We also do a light "HTML detection" to avoid silently parsing a cookie/blocked page as CSV.
     """
     params = {
         "csv.x": "yes",
@@ -182,9 +186,29 @@ def fetch_boe_series(series_code: str, datefrom: str = "01/Jan/2015") -> pd.Seri
         "UsingCodes": "Y",
         "CSVF": "TN",   # tabular no titles
         "VPD": "Y",
+        "VFD": "N",     # optional, but harmless and sometimes helps consistency
     }
-    res = requests.get(BOE_CSV_BASE, params=params, timeout=20)
+
+    headers = {
+        # browser-like UA (BoE can block python-requests UA in some environments)
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/csv,text/plain;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.9",
+        "Referer": "https://www.bankofengland.co.uk/boeapps/database/",
+    }
+
+    res = requests.get(BOE_CSV_BASE, params=params, headers=headers, timeout=20)
     res.raise_for_status()
+
+    # If BoE serves an HTML block/cookie page, don't parse it as CSV
+    low = res.text[:300].lower()
+    if "<html" in low or "our use of cookies" in low:
+        raise ValueError("BoE returned HTML instead of CSV (likely blocked/cookie page).")
+
     df = pd.read_csv(io.StringIO(res.text))
     if df.shape[1] < 2:
         return pd.Series(dtype=float)
@@ -193,8 +217,7 @@ def fetch_boe_series(series_code: str, datefrom: str = "01/Jan/2015") -> pd.Seri
     df[date_col] = pd.to_datetime(df[date_col], errors="coerce", dayfirst=True)
     df[val_col] = pd.to_numeric(df[val_col], errors="coerce")
 
-    s = df.set_index(date_col)[val_col].dropna().sort_index()
-    return s
+    return df.set_index(date_col)[val_col].dropna().sort_index()
 
 def fetch_yf_close(ticker: str) -> pd.Series:
     df = yf.download(ticker, period="2y", interval="1d", progress=False, auto_adjust=False, threads=False)

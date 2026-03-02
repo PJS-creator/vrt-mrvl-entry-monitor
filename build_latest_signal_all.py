@@ -13,6 +13,9 @@ NWG_MD = Path("nwg_latest_signal.md")
 ENERGY_JSON = Path("latest_energy_signal.json")
 ENERGY_MD = Path("latest_energy_signal.md")
 
+SILVER_JSON = Path("latest_silver_signal.json")
+SILVER_MD = Path("latest_silver_signal.md")
+
 OUT_MD = Path("latest_signal_all.md")
 
 
@@ -40,10 +43,12 @@ def main() -> None:
     core_verdict = load_verdict(CORE_JSON)
     nwg_verdict = load_verdict(NWG_JSON)
     energy_verdict = load_verdict(ENERGY_JSON)
+    silver_verdict = load_verdict(SILVER_JSON)
 
     core_md = read_text(CORE_MD)
     nwg_md = read_text(NWG_MD)
     energy_md = read_text(ENERGY_MD)
+    silver_md = read_text(SILVER_MD)
 
     lines: list[str] = []
     lines += ["# Daily Signals (All-in-One)", ""]
@@ -51,11 +56,13 @@ def main() -> None:
     lines += [f"- Core (VRT/MRVL): **{core_verdict}**"]
     lines += [f"- NatWest (NWG): **{nwg_verdict}**"]
     lines += [f"- Energy (OXY/PBR/RIG/VG): **{energy_verdict}**"]
+    lines += [f"- Silver (VZLA/SCZM/HYMC): **{silver_verdict}**"]
     lines += ["", "---", ""]
 
     lines += ["## Core report", "", core_md, "", "---", ""]
     lines += ["## NatWest report", "", nwg_md, "", "---", ""]
     lines += ["## Energy report", "", energy_md, ""]
+    lines += ["", "---", "", "## Silver report", "", silver_md, ""]
 
     OUT_MD.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 

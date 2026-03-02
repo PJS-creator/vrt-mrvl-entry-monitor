@@ -13,7 +13,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-03-02**
-- 실행시간(UTC): **2026-03-02 17:30:56**
+- 실행시간(UTC): **2026-03-02 18:00:37**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -26,16 +26,16 @@
 - NFCI: -0.5629
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.65403
-- MA60: 6.256999
-- gap: 22.33%
+- ratio (VRT/SRVR): 7.645596
+- MA60: 6.256859
+- gap: 22.20%
 - **VRT_ENTRY**: **False**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.202767
-- MA60: 0.216714
-- gap: -6.44%
-- MA60_slope_proxy: -0.01892
+- ratio (MRVL/SMH): 0.203143
+- MA60: 0.21672
+- gap: -6.26%
+- MA60_slope_proxy: -0.018913
 - **MRVL_ENTRY**: **False**
 
 ## Verdict
@@ -48,7 +48,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-03-02**
-- 실행시간(UTC): **2026-03-02 17:31:03**
+- 실행시간(UTC): **2026-03-02 18:00:44**
 
 ## Verdict
 ⏸ No entry today
@@ -87,15 +87,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-02 17:31:11**
+- 실행시간(UTC): **2026-03-02 18:00:51**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 70.48 / 5D 6.29%
-- Brent ref (BZ=F): 77.02 / 5D 7.74%
+- WTI ref (CL=F): 70.55 / 5D 6.39%
+- Brent ref (BZ=F): 77.13 / 5D 7.89%
 - Brent Tier: **70-80**
-- Brent-WTI spread: 6.54
-- Gas ref (NG=F): 2.93 / 5D -1.98%
+- Brent-WTI spread: 6.58
+- Gas ref (NG=F): 2.94 / 5D -1.34%
 
 ## Gates
 
@@ -113,24 +113,24 @@
 
 ### Trend
 
-- close: 53.72
-- MA20 / MA60 / MA200: 48.44 / 44.17 / 43.57
-- gap20 / gap60: 10.89% / 21.62%
-- 5D return: 2.46%
-- 20D high/low: 53.72 / 43.80
+- close: 53.56
+- MA20 / MA60 / MA200: 48.43 / 44.17 / 43.57
+- gap20 / gap60: 10.59% / 21.28%
+- 5D return: 2.16%
+- 20D high/low: 53.56 / 43.80
 
 ### Relative Strength
 
-- ratio: 0.948698
-- ratio_MA60: 0.903193
-- ratio_gap: 5.04%
-- ratio_slope_proxy(20d): -0.010934
+- ratio: 0.945626
+- ratio_MA60: 0.903142
+- ratio_gap: 4.70%
+- ratio_slope_proxy(20d): -0.010986
 
 ### Volume (if available)
 
-- volume: 21085514.00
-- volume_MA20: 13141645.70
-- volume_ratio: 1.60
+- volume: 21979490.00
+- volume_MA20: 13186344.50
+- volume_ratio: 1.67
 
 ### Checks
 
@@ -146,24 +146,24 @@
 
 ### Trend
 
-- close: 17.11
-- MA20 / MA60 / MA200: 15.68 / 13.61 / 12.63
-- gap20 / gap60: 9.06% / 25.68%
-- 5D return: 5.98%
-- 20D high/low: 17.11 / 14.87
+- close: 17.14
+- MA20 / MA60 / MA200: 15.69 / 13.61 / 12.63
+- gap20 / gap60: 9.24% / 25.89%
+- 5D return: 6.16%
+- 20D high/low: 17.14 / 14.87
 
 ### Relative Strength
 
-- ratio: 0.444243
-- ratio_MA60: 0.388800
-- ratio_gap: 14.26%
-- ratio_slope_proxy(20d): 0.001678
+- ratio: 0.443912
+- ratio_MA60: 0.388794
+- ratio_gap: 14.18%
+- ratio_slope_proxy(20d): 0.001672
 
 ### Volume (if available)
 
-- volume: 25975836.00
-- volume_MA20: 22414446.80
-- volume_ratio: 1.16
+- volume: 27683606.00
+- volume_MA20: 22499835.30
+- volume_ratio: 1.23
 
 ### Checks
 
@@ -180,24 +180,24 @@
 
 ### Trend
 
-- close: 6.33
-- MA20 / MA60 / MA200: 5.95 / 4.87 / 3.69
-- gap20 / gap60: 6.45% / 29.99%
-- 5D return: -0.92%
+- close: 6.20
+- MA20 / MA60 / MA200: 5.94 / 4.87 / 3.69
+- gap20 / gap60: 4.27% / 27.24%
+- 5D return: -3.05%
 - 20D high/low: 6.54 / 4.82
 
 ### Relative Strength
 
-- ratio: 0.016020
-- ratio_MA60: 0.014576
-- ratio_gap: 9.90%
-- ratio_slope_proxy(20d): 0.000356
+- ratio: 0.015739
+- ratio_MA60: 0.014571
+- ratio_gap: 8.01%
+- ratio_slope_proxy(20d): 0.000351
 
 ### Volume (if available)
 
-- volume: 23971288.00
-- volume_MA20: 66541434.40
-- volume_ratio: 0.36
+- volume: 27749347.00
+- volume_MA20: 66730337.35
+- volume_ratio: 0.42
 
 ### Checks
 
@@ -214,24 +214,24 @@
 
 ### Trend
 
-- close: 11.23
+- close: 11.20
 - MA20 / MA60 / MA200: 9.62 / 8.17 / 11.26
-- gap20 / gap60: 16.71% / 37.47%
-- 5D return: 19.09%
-- 20D high/low: 11.23 / 8.77
+- gap20 / gap60: 16.37% / 37.05%
+- 5D return: 18.72%
+- 20D high/low: 11.20 / 8.77
 
 ### Relative Strength
 
-- ratio: 0.045635
-- ratio_MA60: 0.039534
-- ratio_gap: 15.43%
-- ratio_slope_proxy(20d): 0.002449
+- ratio: 0.045117
+- ratio_MA60: 0.039525
+- ratio_gap: 14.15%
+- ratio_slope_proxy(20d): 0.002441
 
 ### Volume (if available)
 
-- volume: 29857926.00
-- volume_MA20: 10317056.30
-- volume_ratio: 2.89
+- volume: 31281430.00
+- volume_MA20: 10388231.50
+- volume_ratio: 3.01
 
 ### Checks
 

@@ -570,7 +570,6 @@ def main() -> None:
     "ENTRY_STRICT": bool(entry_strict),
     "ENTRY_LOOSE": bool(entry_loose),
 },
-        },
         "fails": fails,
         "verdict": verdict,
     }

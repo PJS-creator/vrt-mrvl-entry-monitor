@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-03-02T09:56:08Z",
+  "generated_at_utc": "2026-03-02T17:31:03Z",
   "as_of": {
     "price_date": "2026-03-02",
-    "run_time_utc": "2026-03-02 09:56:08"
+    "run_time_utc": "2026-03-02 17:31:03"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.98,
-      "change_4w": 21.0,
-      "latest_date": "2026-02-26"
+      "latest": 3.12,
+      "change_4w": 24.0,
+      "latest_date": "2026-02-28"
     },
     "BAMLC0A0CM": {
-      "latest": 0.82,
-      "change_4w": 8.0,
-      "latest_date": "2026-02-26"
+      "latest": 0.86,
+      "change_4w": 11.0,
+      "latest_date": "2026-02-28"
     },
     "VIXCLS": {
-      "latest": 18.63,
-      "change_4w": 1.75,
-      "latest_date": "2026-02-26"
+      "latest": 19.86,
+      "change_4w": 2.42,
+      "latest_date": "2026-02-27"
     },
     "NFCI": {
       "latest": -0.56294,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 595.4,
+      "close": 601.0,
       "latest_date": "2026-03-02"
     },
     "^FTSE": {
-      "close": 10817.6104,
+      "close": 10780.1104,
       "latest_date": "2026-03-02"
     },
     "LLOY.L": {
-      "close": 98.98,
+      "close": 99.92,
       "latest_date": "2026-03-02"
     },
     "BARC.L": {
-      "close": 428.175,
+      "close": 437.35,
       "latest_date": "2026-03-02"
     },
     "HSBA.L": {
-      "close": 1335.8,
+      "close": 1332.0,
       "latest_date": "2026-03-02"
     }
   },
   "signals": {
     "NWG": {
-      "close": 595.4,
-      "ma50": 639.204,
-      "ma200": 567.4527,
-      "gap50": -0.068529,
-      "gap200": 0.049251
+      "close": 601.0,
+      "ma50": 639.316,
+      "ma200": 567.4807,
+      "gap50": -0.059933,
+      "gap200": 0.059067
     },
     "RS_FTSE": {
-      "ratio": 0.05504,
-      "ma60": 0.062656,
-      "gap": -0.121559,
-      "ma60_slope_proxy": -0.001247
+      "ratio": 0.055751,
+      "ma60": 0.062668,
+      "gap": -0.11038,
+      "ma60_slope_proxy": -0.001235
     },
     "RS_PEERS": {
-      "ratio": 0.958799,
-      "ma60": 1.065045,
-      "gap": -0.099757,
-      "ma60_slope_proxy": -0.052429
+      "ratio": 0.964548,
+      "ma60": 1.06514,
+      "gap": -0.094441,
+      "ma60_slope_proxy": -0.052333
     }
   },
   "checks": {
@@ -121,6 +121,7 @@
   "fails": [
     "CurveGreen=FALSE",
     "DemandGreen=FALSE (monthly)",
+    "PullbackZone=FALSE",
     "RelativeTurn=FALSE"
   ],
   "verdict": "⏸ No entry today"

@@ -14,7 +14,12 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 15:00:34**
+- 실행시간(UTC): **2026-03-04 23:00:38**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -27,16 +32,16 @@
 - NFCI: -0.5236
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.679644
-- MA60: 6.297862
-- gap: 21.94%
+- ratio (VRT/SRVR): 7.60763
+- MA60: 6.296661
+- gap: 20.82%
 - **VRT_ENTRY**: **False**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.196961
-- MA60: 0.214106
-- gap: -8.01%
-- MA60_slope_proxy: -0.019442
+- ratio (MRVL/SMH): 0.195665
+- MA60: 0.214084
+- gap: -8.60%
+- MA60_slope_proxy: -0.019463
 - **MRVL_ENTRY**: **False**
 
 ## Verdict
@@ -49,7 +54,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 15:00:38**
+- 실행시간(UTC): **2026-03-04 23:01:00**
 
 ## Verdict
 ⏸ No entry today
@@ -68,13 +73,13 @@
 - CURVE_10s5s: 60.04 bp / 4주 변화 4.49 bp
 
 ## NWG Price
-- close: 592.0
-- MA50: 637.168 / gap50: -7.09%
-- MA200: 568.1966 / gap200: 4.19%
+- close: 594.8
+- MA50: 637.224 / gap50: -6.66%
+- MA200: 568.2106 / gap200: 4.68%
 
 ## Relative Strength
-- RS vs FTSE gap: -10.06% / slope_proxy: -0.001677
-- RS vs Peers gap: -6.89% / slope_proxy: -0.056558
+- RS vs FTSE gap: -9.80% / slope_proxy: -0.001674
+- RS vs Peers gap: -7.44% / slope_proxy: -0.056656
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)
@@ -86,15 +91,20 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-04 15:00:44**
+- 실행시간(UTC): **2026-03-04 23:01:07**
+
+## ⚠️ DATA WARNING
+
+- FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 74.54 / 5D 13.94%
-- Brent ref (BZ=F): 81.64 / 5D 15.23%
+- WTI ref (CL=F): 76.11 / 5D 16.34%
+- Brent ref (BZ=F): 82.54 / 5D 16.50%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 7.10
-- Gas ref (NG=F): 2.95 / 5D -0.74%
+- Brent-WTI spread: 6.43
+- Gas ref (NG=F): 2.93 / 5D -1.21%
 
 ## Gates
 
@@ -112,24 +122,24 @@
 
 ### Trend
 
-- close: 52.57
-- MA20 / MA60 / MA200: 49.33 / 44.54 / 43.67
-- gap20 / gap60: 6.58% / 18.03%
-- 5D return: 3.20%
+- close: 53.61
+- MA20 / MA60 / MA200: 49.38 / 44.56 / 43.68
+- gap20 / gap60: 8.57% / 20.32%
+- 5D return: 5.24%
 - 20D high/low: 54.21 / 45.09
 
 ### Relative Strength
 
-- ratio: 0.948746
-- ratio_MA60: 0.903948
-- ratio_gap: 4.96%
-- ratio_slope_proxy(20d): -0.008803
+- ratio: 0.954084
+- ratio_MA60: 0.904037
+- ratio_gap: 5.54%
+- ratio_slope_proxy(20d): -0.008714
 
 ### Volume (if available)
 
-- volume: 3553925.00
-- volume_MA20: 13927031.25
-- volume_ratio: 0.26
+- volume: 14757937.00
+- volume_MA20: 14489941.85
+- volume_ratio: 1.02
 
 ### Checks
 
@@ -145,24 +155,24 @@
 
 ### Trend
 
-- close: 16.66
-- MA20 / MA60 / MA200: 15.86 / 13.75 / 12.68
-- gap20 / gap60: 5.04% / 21.20%
-- 5D return: -0.30%
+- close: 16.77
+- MA20 / MA60 / MA200: 15.87 / 13.75 / 12.68
+- gap20 / gap60: 5.70% / 21.98%
+- 5D return: 0.36%
 - 20D high/low: 17.32 / 14.87
 
 ### Relative Strength
 
-- ratio: 0.445812
-- ratio_MA60: 0.391118
-- ratio_gap: 13.98%
-- ratio_slope_proxy(20d): 0.003681
+- ratio: 0.447319
+- ratio_MA60: 0.391143
+- ratio_gap: 14.36%
+- ratio_slope_proxy(20d): 0.003706
 
 ### Volume (if available)
 
-- volume: 3627898.00
-- volume_MA20: 22262789.90
-- volume_ratio: 0.16
+- volume: 19676993.00
+- volume_MA20: 23065634.65
+- volume_ratio: 0.85
 
 ### Checks
 
@@ -179,30 +189,30 @@
 
 ### Trend
 
-- close: 6.20
-- MA20 / MA60 / MA200: 6.07 / 4.93 / 3.73
-- gap20 / gap60: 2.15% / 25.85%
-- 5D return: -3.28%
+- close: 6.37
+- MA20 / MA60 / MA200: 6.08 / 4.93 / 3.73
+- gap20 / gap60: 4.80% / 29.22%
+- 5D return: -0.62%
 - 20D high/low: 6.54 / 4.94
 
 ### Relative Strength
 
-- ratio: 0.016284
-- ratio_MA60: 0.014617
-- ratio_gap: 11.41%
-- ratio_slope_proxy(20d): 0.000402
+- ratio: 0.016622
+- ratio_MA60: 0.014622
+- ratio_gap: 13.67%
+- ratio_slope_proxy(20d): 0.000408
 
 ### Volume (if available)
 
-- volume: 4156146.00
-- volume_MA20: 66278127.30
-- volume_ratio: 0.06
+- volume: 33959341.00
+- volume_MA20: 67768852.05
+- volume_ratio: 0.50
 
 ### Checks
 
 - RISK_OK_STRICT: **False**
 - OIL_TREND_UP: **True**
-- OIH_TREND_UP: **False**
+- OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **True**
@@ -213,24 +223,24 @@
 
 ### Trend
 
-- close: 10.70
-- MA20 / MA60 / MA200: 9.81 / 8.31 / 11.27
-- gap20 / gap60: 9.04% / 28.77%
-- 5D return: 14.93%
+- close: 11.16
+- MA20 / MA60 / MA200: 9.84 / 8.32 / 11.28
+- gap20 / gap60: 13.47% / 34.18%
+- 5D return: 19.87%
 - 20D high/low: 11.46 / 8.77
 
 ### Relative Strength
 
-- ratio: 0.044303
-- ratio_MA60: 0.039937
-- ratio_gap: 10.93%
-- ratio_slope_proxy(20d): 0.002649
+- ratio: 0.044823
+- ratio_MA60: 0.039945
+- ratio_gap: 12.21%
+- ratio_slope_proxy(20d): 0.002658
 
 ### Volume (if available)
 
-- volume: 5526212.00
-- volume_MA20: 12825010.60
-- volume_ratio: 0.43
+- volume: 36778033.00
+- volume_MA20: 14393586.65
+- volume_ratio: 2.56
 
 ### Checks
 
@@ -252,7 +262,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 15:01:06**
+- 실행시간(UTC): **2026-03-04 23:01:54**
 
 ## Verdict
 ⏸ No entry today
@@ -267,21 +277,21 @@
 ### Macro (FRED)
 - HY OAS 4주 변화: 23.0 bp / latest 3.08
 - IG OAS 4주 변화: 10.0 bp / latest 0.84
-- 10Y Real Yield 4주 변화: -18.0 bp / latest 1.76
+- 10Y Real Yield 4주 변화: -15.0 bp / latest 1.77
 - VIX: 23.57
 - NFCI: -0.52365
 
 ### Leadership ratios
-- SILJ/SLV gap: 8.40% / slope_proxy: -0.003733
-- GDXJ/GLD gap: 2.56% / slope_proxy: 0.014111
+- SILJ/SLV gap: 9.35% / slope_proxy: -0.003661
+- GDXJ/GLD gap: 2.70% / slope_proxy: 0.014118
 
 ## VZLA (Vizsla Silver)
-- close: 4.085 | RSI14: 42.393225 | ATR14%: 8.46%
-- MA20 gap: 0.37% | MA50 gap: -20.62% | MA200 gap: -1.21%
-- vol_ratio(Volume/Vol20): 0.029928 | gap_open: 2.97%
-- RS vs SILJ gap: -31.11% / slope_proxy: -0.02686
+- close: 4.16 | RSI14: 44.006136 | ATR14%: 8.36%
+- MA20 gap: 2.12% | MA50 gap: -19.18% | MA200 gap: 0.60%
+- vol_ratio(Volume/Vol20): 0.225491 | gap_open: 2.97%
+- RS vs SILJ gap: -30.06% / slope_proxy: -0.026831
 - Checks:
-  - trend_ok: **False**
+  - trend_ok: **True**
   - rs_ok: **False**
   - risk_ok: **True**
   - triggers: pullback=True, breakout=False
@@ -290,15 +300,14 @@
 
 ### Why not today?
 - MinersLeadership(SILJ/SLV)=FALSE
-- Trend(MA200/MA50)=FALSE
 - RelativeStrength(vs SILJ)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 10.68 | RSI14: 45.216917 | ATR14%: 10.30%
-- MA20 gap: -4.66% | MA50 gap: -6.50% | MA200 gap: 59.95%
-- vol_ratio(Volume/Vol20): 0.194812 | gap_open: 0.18%
-- SilverMarginGate: SI=83.855003 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -14.17% / slope_proxy: 0.017604
+- close: 10.36 | RSI14: 43.647732 | ATR14%: 10.85%
+- MA20 gap: -7.38% | MA50 gap: -9.25% | MA200 gap: 55.20%
+- vol_ratio(Volume/Vol20): 0.872536 | gap_open: 0.18%
+- SilverMarginGate: SI=83.764999 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -16.94% / slope_proxy: 0.017444
 - Checks:
   - trend_ok: **True**
   - rs_ok: **False**
@@ -313,11 +322,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 47.869999 | RSI14: 57.290051 | ATR14%: 12.05%
-- MA20 gap: 14.65% | MA50 gap: 29.08% | MA200 gap: 247.05%
-- vol_ratio(Volume/Vol20): 0.159422 | gap_open: 3.71%
-- RS vs SILJ gap: 32.80% / slope_proxy: 0.248391
-- RS vs GDXJ gap: 33.91% / slope_proxy: 0.065453
+- close: 47.665001 | RSI14: 57.006966 | ATR14%: 12.41%
+- MA20 gap: 14.18% | MA50 gap: 28.54% | MA200 gap: 245.59%
+- vol_ratio(Volume/Vol20): 0.76693 | gap_open: 3.71%
+- RS vs SILJ gap: 31.87% / slope_proxy: 0.248235
+- RS vs GDXJ gap: 33.69% / slope_proxy: 0.065444
 - Checks:
   - trend_ok: **True**
   - rs_ok: **True**

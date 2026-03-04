@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-03-03T23:01:11Z",
+  "generated_at_utc": "2026-03-04T07:00:55Z",
   "as_of": {
-    "run_time_utc": "2026-03-03 23:01:11"
+    "run_time_utc": "2026-03-04 07:00:55"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 74.8,
-      "ret5d": 0.139723
+      "close": 76.67,
+      "ret5d": 0.171966
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 81.87,
-      "ret5d": 0.156846,
+      "close": 83.88,
+      "ret5d": 0.18391,
       "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.039,
-      "ret5d": 0.042539
+      "close": 3.054,
+      "ret5d": 0.028629
     },
-    "Brent_WTI_spread": 7.07
+    "Brent_WTI_spread": 7.21
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -99,67 +99,67 @@
     "PBR": {
       "close": 16.96,
       "latest_date": "2026-03-03",
-      "volume": 46516709.0
+      "volume": 48117700.0
     },
     "OXY": {
       "close": 53.68,
       "latest_date": "2026-03-03",
-      "volume": 22400288.0
+      "volume": 24140300.0
     },
     "VG": {
       "close": 11.46,
       "latest_date": "2026-03-03",
-      "volume": 50596067.0
+      "volume": 50673100.0
     },
     "RIG": {
       "close": 6.11,
       "latest_date": "2026-03-03",
-      "volume": 41390936.0
+      "volume": 43835700.0
     },
     "XLE": {
       "close": 56.52,
       "latest_date": "2026-03-03",
-      "volume": 154585472.0
+      "volume": 154712700.0
     },
     "OIH": {
       "close": 384.56,
       "latest_date": "2026-03-03",
-      "volume": 1325451.0
+      "volume": 1326400.0
     },
     "EWZ": {
       "close": 36.82,
       "latest_date": "2026-03-03",
-      "volume": 97516548.0
+      "volume": 98255400.0
     },
     "LNG": {
       "close": 246.07,
       "latest_date": "2026-03-03",
-      "volume": 5110218.0
+      "volume": 5111800.0
     },
     "SPY": {
       "close": 680.33,
       "latest_date": "2026-03-03",
-      "volume": 104078155.0
+      "volume": 104737700.0
     },
     "BRL=X": {
-      "close": 5.2611,
+      "close": 5.281,
       "latest_date": "2026-03-04",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 74.8,
-      "latest_date": "2026-03-03",
-      "volume": 981921.0
+      "close": 76.67,
+      "latest_date": "2026-03-04",
+      "volume": 70228.0
     },
     "BZ=F": {
-      "close": 81.87,
-      "latest_date": "2026-03-03",
-      "volume": 228051.0
+      "close": 83.88,
+      "latest_date": "2026-03-04",
+      "volume": 11397.0
     },
     "NG=F": {
-      "close": 3.039,
-      "latest_date": "2026-03-03",
-      "volume": 216473.0
+      "close": 3.054,
+      "latest_date": "2026-03-04",
+      "volume": 9908.0
     }
   },
   "signals": {
@@ -182,9 +182,9 @@
         "slope_proxy": -0.009749
       },
       "volume": {
-        "vol": 22400288.0,
-        "ma20": 14230404.4,
-        "ratio": 1.574115
+        "vol": 24140300.0,
+        "ma20": 14317405.0,
+        "ratio": 1.686081
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -214,9 +214,9 @@
         "slope_proxy": 0.002821
       },
       "volume": {
-        "vol": 46516709.0,
-        "ma20": 23694700.45,
-        "ratio": 1.963169
+        "vol": 48117700.0,
+        "ma20": 23774750.0,
+        "ratio": 2.023899
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -247,9 +247,9 @@
         "slope_proxy": 0.000374
       },
       "volume": {
-        "vol": 41390936.0,
-        "ma20": 67735936.8,
-        "ratio": 0.611063
+        "vol": 43835700.0,
+        "ma20": 67858175.0,
+        "ratio": 0.64599
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -280,9 +280,9 @@
         "slope_proxy": 0.002595
       },
       "volume": {
-        "vol": 50596067.0,
-        "ma20": 13137588.35,
-        "ratio": 3.851245
+        "vol": 50673100.0,
+        "ma20": 13141440.0,
+        "ratio": 3.855978
       },
       "checks": {
         "RISK_OK_STRICT": true,

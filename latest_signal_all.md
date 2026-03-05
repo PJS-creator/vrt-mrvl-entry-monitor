@@ -13,14 +13,14 @@
 
 # Daily Signal Monitor
 
-- 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-05 07:00:43**
+- 데이터 기준일(주가): **2026-03-05**
+- 실행시간(UTC): **2026-03-05 15:00:39**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
 - FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -28,21 +28,21 @@
 ### 핵심 수치
 - HY OAS (BAMLH0A0HYM2): 3.08 / 4주 변화 23.0 bp
 - IG OAS (BAMLC0A0CM): 0.84 / 4주 변화 10.0 bp
-- 10Y Real Yield (DFII10): 1.76 / 4주 변화 -18.0 bp
-- VIX (VIXCLS): 23.57
+- 10Y Real Yield (DFII10): 1.77 / 4주 변화 -15.0 bp
+- VIX (VIXCLS): 21.15
 - NFCI: -0.5236
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.60763
-- MA60: 6.296661
-- gap: 20.82%
+- ratio (VRT/SRVR): 7.946897
+- MA60: 6.320905
+- gap: 25.72%
 - **VRT_ENTRY**: **False**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.195665
-- MA60: 0.214084
-- gap: -8.60%
-- MA60_slope_proxy: -0.019463
+- ratio (MRVL/SMH): 0.197505
+- MA60: 0.212842
+- gap: -7.21%
+- MA60_slope_proxy: -0.019481
 - **MRVL_ENTRY**: **False**
 
 ## Verdict
@@ -54,13 +54,8 @@
 
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-05 07:01:26**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 데이터 기준일(주가): **2026-03-05**
+- 실행시간(UTC): **2026-03-05 15:01:22**
 
 ## Verdict
 ⏸ No entry today
@@ -75,17 +70,17 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 61.8 bp / 4주 변화 -13.74 bp
-- CURVE_10s5s: 60.04 bp / 4주 변화 4.49 bp
+- TERM_SPREAD_10Y_POLICY: 73.12 bp / 4주 변화 -2.92 bp
+- CURVE_10s5s: 56.65 bp / 4주 변화 1.42 bp
 
 ## NWG Price
-- close: 594.8
-- MA50: 637.224 / gap50: -6.66%
-- MA200: 568.2106 / gap200: 4.68%
+- close: 593.4
+- MA50: 636.172 / gap50: -6.72%
+- MA200: 568.5581 / gap200: 4.37%
 
 ## Relative Strength
-- RS vs FTSE gap: -9.80% / slope_proxy: -0.001674
-- RS vs Peers gap: -7.44% / slope_proxy: -0.056656
+- RS vs FTSE gap: -9.09% / slope_proxy: -0.001817
+- RS vs Peers gap: -6.85% / slope_proxy: -0.058223
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)
@@ -97,19 +92,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-05 07:01:53**
-
-## ⚠️ DATA WARNING
-
-- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-03-05 15:01:37**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 76.86 / 5D 17.87%
-- Brent ref (BZ=F): 83.33 / 5D 17.78%
+- WTI ref (CL=F): 78.00 / 5D 19.61%
+- Brent ref (BZ=F): 84.00 / 5D 18.73%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 6.47
-- Gas ref (NG=F): 2.97 / 5D 5.20%
+- Brent-WTI spread: 6.00
+- Gas ref (NG=F): 2.95 / 5D 4.21%
 
 ## Gates
 
@@ -127,24 +118,24 @@
 
 ### Trend
 
-- close: 53.61
-- MA20 / MA60 / MA200: 49.38 / 44.56 / 43.68
-- gap20 / gap60: 8.57% / 20.32%
-- 5D return: 5.24%
-- 20D high/low: 54.21 / 45.09
+- close: 54.26
+- MA20 / MA60 / MA200: 49.76 / 44.76 / 43.74
+- gap20 / gap60: 9.05% / 21.23%
+- 5D return: 5.50%
+- 20D high/low: 54.26 / 45.09
 
 ### Relative Strength
 
-- ratio: 0.954084
-- ratio_MA60: 0.904037
-- ratio_gap: 5.54%
-- ratio_slope_proxy(20d): -0.008714
+- ratio: 0.956292
+- ratio_MA60: 0.904533
+- ratio_gap: 5.72%
+- ratio_slope_proxy(20d): -0.007687
 
 ### Volume (if available)
 
-- volume: 15046200.00
-- volume_MA20: 14504355.00
-- volume_ratio: 1.04
+- volume: 2465912.00
+- volume_MA20: 13704060.60
+- volume_ratio: 0.18
 
 ### Checks
 
@@ -160,24 +151,24 @@
 
 ### Trend
 
-- close: 16.77
-- MA20 / MA60 / MA200: 15.87 / 13.75 / 12.68
-- gap20 / gap60: 5.70% / 21.98%
-- 5D return: 0.36%
+- close: 16.76
+- MA20 / MA60 / MA200: 15.95 / 13.83 / 12.71
+- gap20 / gap60: 5.10% / 21.23%
+- 5D return: 0.90%
 - 20D high/low: 17.32 / 14.87
 
 ### Relative Strength
 
-- ratio: 0.447319
-- ratio_MA60: 0.391143
-- ratio_gap: 14.36%
-- ratio_slope_proxy(20d): 0.003706
+- ratio: 0.452728
+- ratio_MA60: 0.392256
+- ratio_gap: 15.42%
+- ratio_slope_proxy(20d): 0.004532
 
 ### Volume (if available)
 
-- volume: 19683400.00
-- volume_MA20: 23065955.00
-- volume_ratio: 0.85
+- volume: 4510235.00
+- volume_MA20: 22055881.75
+- volume_ratio: 0.20
 
 ### Checks
 
@@ -194,30 +185,30 @@
 
 ### Trend
 
-- close: 6.37
-- MA20 / MA60 / MA200: 6.08 / 4.93 / 3.73
-- gap20 / gap60: 4.80% / 29.22%
-- 5D return: -0.62%
+- close: 6.38
+- MA20 / MA60 / MA200: 6.13 / 4.96 / 3.75
+- gap20 / gap60: 4.00% / 28.48%
+- 5D return: -0.08%
 - 20D high/low: 6.54 / 4.94
 
 ### Relative Strength
 
-- ratio: 0.016622
-- ratio_MA60: 0.014622
-- ratio_gap: 13.67%
-- ratio_slope_proxy(20d): 0.000408
+- ratio: 0.016806
+- ratio_MA60: 0.014657
+- ratio_gap: 14.67%
+- ratio_slope_proxy(20d): 0.000430
 
 ### Volume (if available)
 
-- volume: 34078100.00
-- volume_MA20: 67774790.00
-- volume_ratio: 0.50
+- volume: 2792480.00
+- volume_MA20: 65526494.00
+- volume_ratio: 0.04
 
 ### Checks
 
 - RISK_OK_STRICT: **False**
 - OIL_TREND_UP: **True**
-- OIH_TREND_UP: **True**
+- OIH_TREND_UP: **False**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **True**
@@ -228,24 +219,24 @@
 
 ### Trend
 
-- close: 11.16
-- MA20 / MA60 / MA200: 9.84 / 8.32 / 11.28
-- gap20 / gap60: 13.47% / 34.18%
-- 5D return: 19.87%
-- 20D high/low: 11.46 / 8.77
+- close: 12.18
+- MA20 / MA60 / MA200: 9.96 / 8.41 / 11.29
+- gap20 / gap60: 22.19% / 44.82%
+- 5D return: 28.56%
+- 20D high/low: 12.18 / 8.77
 
 ### Relative Strength
 
-- ratio: 0.044823
-- ratio_MA60: 0.039945
-- ratio_gap: 12.21%
-- ratio_slope_proxy(20d): 0.002658
+- ratio: 0.048483
+- ratio_MA60: 0.040201
+- ratio_gap: 20.60%
+- ratio_slope_proxy(20d): 0.002785
 
 ### Volume (if available)
 
-- volume: 38107900.00
-- volume_MA20: 14460080.00
-- volume_ratio: 2.64
+- volume: 7296065.00
+- volume_MA20: 14230033.25
+- volume_ratio: 0.51
 
 ### Checks
 
@@ -267,7 +258,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-03-05**
-- 실행시간(UTC): **2026-03-05 07:02:20**
+- 실행시간(UTC): **2026-03-05 15:01:46**
 
 ## Verdict
 ⏸ No entry today
@@ -283,20 +274,20 @@
 - HY OAS 4주 변화: 23.0 bp / latest 3.08
 - IG OAS 4주 변화: 10.0 bp / latest 0.84
 - 10Y Real Yield 4주 변화: -15.0 bp / latest 1.77
-- VIX: 23.57
+- VIX: 21.15
 - NFCI: -0.52365
 
 ### Leadership ratios
-- SILJ/SLV gap: 9.35% / slope_proxy: -0.003661
-- GDXJ/GLD gap: 2.70% / slope_proxy: 0.014118
+- SILJ/SLV gap: 5.94% / slope_proxy: -0.002848
+- GDXJ/GLD gap: 0.43% / slope_proxy: 0.013786
 
 ## VZLA (Vizsla Silver)
-- close: 4.16 | RSI14: 44.006136 | ATR14%: 8.36%
-- MA20 gap: 2.12% | MA50 gap: -19.18% | MA200 gap: 0.60%
-- vol_ratio(Volume/Vol20): 0.240817 | gap_open: 2.97%
-- RS vs SILJ gap: -30.06% / slope_proxy: -0.026831
+- close: 4.11 | RSI14: 43.138977 | ATR14%: 8.12%
+- MA20 gap: 1.93% | MA50 gap: -19.76% | MA200 gap: -0.81%
+- vol_ratio(Volume/Vol20): 0.044493 | gap_open: 2.40%
+- RS vs SILJ gap: -28.08% / slope_proxy: -0.027611
 - Checks:
-  - trend_ok: **True**
+  - trend_ok: **False**
   - rs_ok: **False**
   - risk_ok: **True**
   - triggers: pullback=True, breakout=False
@@ -305,14 +296,15 @@
 
 ### Why not today?
 - MinersLeadership(SILJ/SLV)=FALSE
+- Trend(MA200/MA50)=FALSE
 - RelativeStrength(vs SILJ)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 10.36 | RSI14: 43.647732 | ATR14%: 10.85%
-- MA20 gap: -7.38% | MA50 gap: -9.25% | MA200 gap: 55.20%
-- vol_ratio(Volume/Vol20): 0.875545 | gap_open: 0.18%
-- SilverMarginGate: SI=82.510002 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -16.94% / slope_proxy: 0.017444
+- close: 10.008 | RSI14: 41.924221 | ATR14%: 10.82%
+- MA20 gap: -9.54% | MA50 gap: -12.55% | MA200 gap: 48.97%
+- vol_ratio(Volume/Vol20): 0.184106 | gap_open: 2.12%
+- SilverMarginGate: SI=82.540001 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -17.00% / slope_proxy: 0.014401
 - Checks:
   - trend_ok: **True**
   - rs_ok: **False**
@@ -327,11 +319,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 47.665001 | RSI14: 57.006966 | ATR14%: 12.41%
-- MA20 gap: 14.18% | MA50 gap: 28.54% | MA200 gap: 245.59%
-- vol_ratio(Volume/Vol20): 0.767618 | gap_open: 3.71%
-- RS vs SILJ gap: 31.87% / slope_proxy: 0.248235
-- RS vs GDXJ gap: 33.69% / slope_proxy: 0.065444
+- close: 45.654999 | RSI14: 54.180073 | ATR14%: 12.54%
+- MA20 gap: 8.54% | MA50 gap: 21.21% | MA200 gap: 225.96%
+- vol_ratio(Volume/Vol20): 0.149284 | gap_open: 2.17%
+- RS vs SILJ gap: 28.54% / slope_proxy: 0.248389
+- RS vs GDXJ gap: 29.42% / slope_proxy: 0.06543
 - Checks:
   - trend_ok: **True**
   - rs_ok: **True**

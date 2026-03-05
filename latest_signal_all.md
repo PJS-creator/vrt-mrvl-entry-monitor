@@ -14,11 +14,12 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 23:00:38**
+- 실행시간(UTC): **2026-03-05 07:00:43**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
+- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
@@ -54,7 +55,12 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 23:01:00**
+- 실행시간(UTC): **2026-03-05 07:01:26**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -91,20 +97,19 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-04 23:01:07**
+- 실행시간(UTC): **2026-03-05 07:01:53**
 
 ## ⚠️ DATA WARNING
 
-- FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 76.11 / 5D 16.34%
-- Brent ref (BZ=F): 82.54 / 5D 16.50%
+- WTI ref (CL=F): 76.86 / 5D 17.87%
+- Brent ref (BZ=F): 83.33 / 5D 17.78%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 6.43
-- Gas ref (NG=F): 2.93 / 5D -1.21%
+- Brent-WTI spread: 6.47
+- Gas ref (NG=F): 2.97 / 5D 5.20%
 
 ## Gates
 
@@ -137,9 +142,9 @@
 
 ### Volume (if available)
 
-- volume: 14757937.00
-- volume_MA20: 14489941.85
-- volume_ratio: 1.02
+- volume: 15046200.00
+- volume_MA20: 14504355.00
+- volume_ratio: 1.04
 
 ### Checks
 
@@ -170,8 +175,8 @@
 
 ### Volume (if available)
 
-- volume: 19676993.00
-- volume_MA20: 23065634.65
+- volume: 19683400.00
+- volume_MA20: 23065955.00
 - volume_ratio: 0.85
 
 ### Checks
@@ -204,8 +209,8 @@
 
 ### Volume (if available)
 
-- volume: 33959341.00
-- volume_MA20: 67768852.05
+- volume: 34078100.00
+- volume_MA20: 67774790.00
 - volume_ratio: 0.50
 
 ### Checks
@@ -238,9 +243,9 @@
 
 ### Volume (if available)
 
-- volume: 36778033.00
-- volume_MA20: 14393586.65
-- volume_ratio: 2.56
+- volume: 38107900.00
+- volume_MA20: 14460080.00
+- volume_ratio: 2.64
 
 ### Checks
 
@@ -261,8 +266,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-03-04**
-- 실행시간(UTC): **2026-03-04 23:01:54**
+- 데이터 기준일(주가): **2026-03-05**
+- 실행시간(UTC): **2026-03-05 07:02:20**
 
 ## Verdict
 ⏸ No entry today
@@ -288,7 +293,7 @@
 ## VZLA (Vizsla Silver)
 - close: 4.16 | RSI14: 44.006136 | ATR14%: 8.36%
 - MA20 gap: 2.12% | MA50 gap: -19.18% | MA200 gap: 0.60%
-- vol_ratio(Volume/Vol20): 0.225491 | gap_open: 2.97%
+- vol_ratio(Volume/Vol20): 0.240817 | gap_open: 2.97%
 - RS vs SILJ gap: -30.06% / slope_proxy: -0.026831
 - Checks:
   - trend_ok: **True**
@@ -305,8 +310,8 @@
 ## SCZM (Santacruz Silver)
 - close: 10.36 | RSI14: 43.647732 | ATR14%: 10.85%
 - MA20 gap: -7.38% | MA50 gap: -9.25% | MA200 gap: 55.20%
-- vol_ratio(Volume/Vol20): 0.872536 | gap_open: 0.18%
-- SilverMarginGate: SI=83.764999 / watch>=32.0:True / entry>=35.0:True
+- vol_ratio(Volume/Vol20): 0.875545 | gap_open: 0.18%
+- SilverMarginGate: SI=82.510002 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -16.94% / slope_proxy: 0.017444
 - Checks:
   - trend_ok: **True**
@@ -324,7 +329,7 @@
 ## HYMC (Hycroft Mining)
 - close: 47.665001 | RSI14: 57.006966 | ATR14%: 12.41%
 - MA20 gap: 14.18% | MA50 gap: 28.54% | MA200 gap: 245.59%
-- vol_ratio(Volume/Vol20): 0.76693 | gap_open: 3.71%
+- vol_ratio(Volume/Vol20): 0.767618 | gap_open: 3.71%
 - RS vs SILJ gap: 31.87% / slope_proxy: 0.248235
 - RS vs GDXJ gap: 33.69% / slope_proxy: 0.065444
 - Checks:

@@ -1,11 +1,13 @@
 {
-  "generated_at_utc": "2026-03-04T23:01:00Z",
+  "generated_at_utc": "2026-03-05T07:01:26Z",
   "as_of": {
     "price_date": "2026-03-04",
-    "run_time_utc": "2026-03-04 23:01:00"
+    "run_time_utc": "2026-03-05 07:01:26"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 3.08,
@@ -72,7 +74,7 @@
       "latest_date": "2026-03-04"
     },
     "^FTSE": {
-      "close": 10567.6504,
+      "close": 10567.7002,
       "latest_date": "2026-03-04"
     },
     "LLOY.L": {
@@ -99,7 +101,7 @@
     "RS_FTSE": {
       "ratio": 0.056285,
       "ma60": 0.062399,
-      "gap": -0.097987,
+      "gap": -0.097991,
       "ma60_slope_proxy": -0.001674
     },
     "RS_PEERS": {

@@ -1,19 +1,18 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-04 23:01:07**
+- 실행시간(UTC): **2026-03-05 07:01:53**
 
 ## ⚠️ DATA WARNING
 
-- FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 76.11 / 5D 16.34%
-- Brent ref (BZ=F): 82.54 / 5D 16.50%
+- WTI ref (CL=F): 76.86 / 5D 17.87%
+- Brent ref (BZ=F): 83.33 / 5D 17.78%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 6.43
-- Gas ref (NG=F): 2.93 / 5D -1.21%
+- Brent-WTI spread: 6.47
+- Gas ref (NG=F): 2.97 / 5D 5.20%
 
 ## Gates
 
@@ -46,9 +45,9 @@
 
 ### Volume (if available)
 
-- volume: 14757937.00
-- volume_MA20: 14489941.85
-- volume_ratio: 1.02
+- volume: 15046200.00
+- volume_MA20: 14504355.00
+- volume_ratio: 1.04
 
 ### Checks
 
@@ -79,8 +78,8 @@
 
 ### Volume (if available)
 
-- volume: 19676993.00
-- volume_MA20: 23065634.65
+- volume: 19683400.00
+- volume_MA20: 23065955.00
 - volume_ratio: 0.85
 
 ### Checks
@@ -113,8 +112,8 @@
 
 ### Volume (if available)
 
-- volume: 33959341.00
-- volume_MA20: 67768852.05
+- volume: 34078100.00
+- volume_MA20: 67774790.00
 - volume_ratio: 0.50
 
 ### Checks
@@ -147,9 +146,9 @@
 
 ### Volume (if available)
 
-- volume: 36778033.00
-- volume_MA20: 14393586.65
-- volume_ratio: 2.56
+- volume: 38107900.00
+- volume_MA20: 14460080.00
+- volume_ratio: 2.64
 
 ### Checks
 

@@ -1,11 +1,17 @@
 {
-  "generated_at_utc": "2026-03-08T15:00:56Z",
+  "generated_at_utc": "2026-03-09T03:06:54Z",
   "as_of": {
-    "price_date": "2026-03-06",
-    "run_time_utc": "2026-03-08 15:00:56"
+    "price_date": "2026-03-08",
+    "run_time_utc": "2026-03-09 03:06:54"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "thresholds": {
     "RISK": {
       "VIX_MAX": 30.0,
@@ -125,12 +131,12 @@
       "latest_date": "2026-03-06"
     },
     "SI=F": {
-      "close": 84.310997,
-      "latest_date": "2026-03-06"
+      "close": 82.870003,
+      "latest_date": "2026-03-08"
     },
     "GC=F": {
-      "close": 5158.700195,
-      "latest_date": "2026-03-06"
+      "close": 5101.299805,
+      "latest_date": "2026-03-08"
     },
     "SILJ": {
       "close": 34.02,
@@ -169,40 +175,40 @@
     },
     "metals": {
       "SI": {
-        "close": 84.310997,
-        "ma20": 82.5705,
-        "ma50": 84.31912,
-        "ma120": 64.997192,
-        "ma200": 53.959795,
-        "gap20": 0.021079,
-        "gap50": -9.6e-05,
-        "gap200": 0.562478,
-        "ma50_slope20": 9.1278,
-        "ma200_slope20": 4.99065,
-        "rsi14": 50.234834,
-        "atr14": 6.334598,
-        "atr14_pct": 0.075134,
-        "vol_ratio": 8.990875,
-        "ret1d": 0.032123,
-        "gap_open": 0.010626
+        "close": 82.870003,
+        "ma20": 82.8525,
+        "ma50": 84.556921,
+        "ma120": 65.329342,
+        "ma200": 54.204355,
+        "gap20": 0.000211,
+        "gap50": -0.01995,
+        "gap200": 0.528844,
+        "ma50_slope20": 8.8368,
+        "ma200_slope20": 5.019125,
+        "rsi14": 48.847267,
+        "atr14": 6.237464,
+        "atr14_pct": 0.075268,
+        "vol_ratio": 4.329291,
+        "ret1d": -0.011287,
+        "gap_open": 0.009592
       },
       "GC": {
-        "close": 5158.700195,
-        "ma20": 5082.384985,
-        "ma50": 4841.723984,
-        "ma120": 4381.60332,
-        "ma200": 3980.985991,
-        "gap20": 0.015016,
-        "gap50": 0.065468,
-        "gap200": 0.295835,
-        "ma50_slope20": 334.061992,
-        "ma200_slope20": 180.3455,
-        "rsi14": 56.057756,
-        "atr14": 140.002153,
-        "atr14_pct": 0.027139,
-        "vol_ratio": 18.1397,
-        "ret1d": 0.018439,
-        "gap_open": 0.006791
+        "close": 5101.299805,
+        "ma20": 5089.259961,
+        "ma50": 4853.841982,
+        "ma120": 4393.324152,
+        "ma200": 3989.88299,
+        "gap20": 0.002366,
+        "gap50": 0.050982,
+        "gap200": 0.278559,
+        "ma50_slope20": 328.993984,
+        "ma200_slope20": 180.867998,
+        "rsi14": 53.366752,
+        "atr14": 140.936168,
+        "atr14_pct": 0.027628,
+        "vol_ratio": 14.814617,
+        "ret1d": -0.008706,
+        "gap_open": 0.007889
       }
     }
   },
@@ -273,7 +279,7 @@
       },
       "ma_long": 200,
       "silver_margin": {
-        "SI_close": 84.310997,
+        "SI_close": 82.870003,
         "watch_ge": 32.0,
         "entry_ge": 35.0,
         "watch": true,

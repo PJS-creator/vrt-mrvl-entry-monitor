@@ -1,10 +1,21 @@
 {
-  "generated_at_utc": "2026-03-08T15:00:51Z",
+  "generated_at_utc": "2026-03-09T03:03:29Z",
   "as_of": {
-    "run_time_utc": "2026-03-08 15:00:51"
+    "run_time_utc": "2026-03-09 03:03:29"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED DCOILBRENTEU failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED DHHNGSP failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "macro": {
     "DCOILWTICO": {
       "latest": 71.13,
@@ -70,21 +81,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 90.9,
-      "ret5d": 0.356312
+      "close": 112.91,
+      "ret5d": 0.585147
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 92.69,
-      "ret5d": 0.278836,
+      "close": 114.72,
+      "ret5d": 0.475688,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.186,
-      "ret5d": 0.114376
+      "close": 3.45,
+      "ret5d": 0.165541
     },
-    "Brent_WTI_spread": 1.79
+    "Brent_WTI_spread": 1.81
   },
   "gates": {
     "RISK_OK_STRICT": false,
@@ -143,23 +154,23 @@
     },
     "BRL=X": {
       "close": 5.244,
-      "latest_date": "2026-03-08",
+      "latest_date": "2026-03-09",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 90.9,
-      "latest_date": "2026-03-06",
-      "volume": 954254.0
+      "close": 112.91,
+      "latest_date": "2026-03-08",
+      "volume": 247747.0
     },
     "BZ=F": {
-      "close": 92.69,
-      "latest_date": "2026-03-06",
-      "volume": 195397.0
+      "close": 114.72,
+      "latest_date": "2026-03-08",
+      "volume": 40971.0
     },
     "NG=F": {
-      "close": 3.186,
-      "latest_date": "2026-03-06",
-      "volume": 186333.0
+      "close": 3.45,
+      "latest_date": "2026-03-08",
+      "volume": 30680.0
     }
   },
   "signals": {

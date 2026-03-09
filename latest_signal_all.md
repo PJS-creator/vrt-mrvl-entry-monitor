@@ -13,39 +13,30 @@
 
 # Daily Signal Monitor
 
-- 데이터 기준일(주가): **2026-03-06**
-- 실행시간(UTC): **2026-03-09 03:00:38**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 데이터 기준일(주가): **2026-03-09**
+- 실행시간(UTC): **2026-03-09 15:00:43**
 
 ## MacroGreen
-- **MacroGreen**: **True**
+- **MacroGreen**: **False**
 
 ### 핵심 수치
-- HY OAS (BAMLH0A0HYM2): 3.0 / 4주 변화 3.0 bp
-- IG OAS (BAMLC0A0CM): 0.82 / 4주 변화 6.0 bp
+- HY OAS (BAMLH0A0HYM2): 3.13 / 4주 변화 26.0 bp
+- IG OAS (BAMLC0A0CM): 0.84 / 4주 변화 8.0 bp
 - 10Y Real Yield (DFII10): 1.82 / 4주 변화 -7.0 bp
-- VIX (VIXCLS): 23.75
+- VIX (VIXCLS): 29.49
 - NFCI: -0.5236
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.550906
-- MA60: 6.381527
-- gap: 18.32%
+- ratio (VRT/SRVR): 8.190693
+- MA60: 6.415381
+- gap: 27.67%
 - **VRT_ENTRY**: **False**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.235364
-- MA60: 0.212493
-- gap: 10.76%
-- MA60_slope_proxy: -0.018713
+- ratio (MRVL/SMH): 0.228056
+- MA60: 0.212269
+- gap: 7.44%
+- MA60_slope_proxy: -0.017927
 - **MRVL_ENTRY**: **False**
 
 ## Verdict
@@ -57,22 +48,14 @@
 
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-03-06**
-- 실행시간(UTC): **2026-03-09 03:02:21**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED BAMLC0A0CM failed (502 Server Error: Bad Gateway for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 데이터 기준일(주가): **2026-03-09**
+- 실행시간(UTC): **2026-03-09 15:00:54**
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
-- RiskGreen: **True**
+- RiskGreen: **False**
 - CurveGreen: **True**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
@@ -81,19 +64,20 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 68.12 bp / 4주 변화 -10.24 bp
-- CURVE_10s5s: 58.29 bp / 4주 변화 2.0 bp
+- TERM_SPREAD_10Y_POLICY: 74.8 bp / 4주 변화 -4.43 bp
+- CURVE_10s5s: 55.53 bp / 4주 변화 -4.12 bp
 
 ## NWG Price
-- close: 575.6
-- MA50: 634.564 / gap50: -9.29%
-- MA200: 568.7835 / gap200: 1.20%
+- close: 571.4
+- MA50: 633.056 / gap50: -9.74%
+- MA200: 569.021 / gap200: 0.42%
 
 ## Relative Strength
-- RS vs FTSE gap: -9.92% / slope_proxy: -0.00198
-- RS vs Peers gap: -6.02% / slope_proxy: -0.059417
+- RS vs FTSE gap: -9.64% / slope_proxy: -0.00206
+- RS vs Peers gap: -5.92% / slope_proxy: -0.05904
 
 ## Why not today?
+- RiskGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - RelativeTurn=FALSE
 
@@ -103,28 +87,20 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-09 03:03:29**
+- 실행시간(UTC): **2026-03-09 15:01:00**
 
 ## ⚠️ DATA WARNING
 
-- FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DCOILBRENTEU failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DHHNGSP failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 112.91 / 5D 58.51%
-- Brent ref (BZ=F): 114.72 / 5D 47.57%
+- WTI ref (CL=F): 100.29 / 5D 40.80%
+- Brent ref (BZ=F): 102.46 / 5D 31.80%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 1.81
-- Gas ref (NG=F): 3.45 / 5D 16.55%
+- Brent-WTI spread: 2.17
+- Gas ref (NG=F): 3.24 / 5D 9.32%
 
 ## Gates
 
@@ -142,24 +118,24 @@
 
 ### Trend
 
-- close: 54.19
-- MA20 / MA60 / MA200: 50.16 / 44.96 / 43.79
-- gap20 / gap60: 8.03% / 20.54%
-- 5D return: 2.09%
-- 20D high/low: 54.21 / 45.49
+- close: 55.97
+- MA20 / MA60 / MA200: 50.64 / 45.20 / 43.87
+- gap20 / gap60: 10.53% / 23.83%
+- 5D return: 3.26%
+- 20D high/low: 55.97 / 45.49
 
 ### Relative Strength
 
-- ratio: 0.957928
-- ratio_MA60: 0.905053
-- ratio_gap: 5.84%
-- ratio_slope_proxy(20d): -0.006141
+- ratio: 0.982018
+- ratio_MA60: 0.906226
+- ratio_gap: 8.36%
+- ratio_slope_proxy(20d): -0.003999
 
 ### Volume (if available)
 
-- volume: 30396300.00
-- volume_MA20: 15388385.00
-- volume_ratio: 1.98
+- volume: 11230305.00
+- volume_MA20: 15512580.25
+- volume_ratio: 0.72
 
 ### Checks
 
@@ -175,24 +151,24 @@
 
 ### Trend
 
-- close: 17.60
-- MA20 / MA60 / MA200: 16.08 / 13.91 / 12.74
-- gap20 / gap60: 9.45% / 26.49%
-- 5D return: 5.83%
-- 20D high/low: 17.60 / 14.87
+- close: 18.42
+- MA20 / MA60 / MA200: 16.26 / 14.02 / 12.78
+- gap20 / gap60: 13.33% / 31.46%
+- 5D return: 6.38%
+- 20D high/low: 18.42 / 15.02
 
 ### Relative Strength
 
-- ratio: 0.485116
-- ratio_MA60: 0.394017
-- ratio_gap: 23.12%
-- ratio_slope_proxy(20d): 0.006433
+- ratio: 0.506599
+- ratio_MA60: 0.395969
+- ratio_gap: 27.94%
+- ratio_slope_proxy(20d): 0.008646
 
 ### Volume (if available)
 
-- volume: 42114200.00
-- volume_MA20: 24366325.00
-- volume_ratio: 1.73
+- volume: 22254433.00
+- volume_MA20: 24659711.65
+- volume_ratio: 0.90
 
 ### Checks
 
@@ -209,24 +185,24 @@
 
 ### Trend
 
-- close: 5.93
-- MA20 / MA60 / MA200: 6.17 / 4.98 / 3.76
-- gap20 / gap60: -3.84% / 19.02%
-- 5D return: -8.49%
-- 20D high/low: 6.54 / 5.39
+- close: 6.08
+- MA20 / MA60 / MA200: 6.20 / 5.01 / 3.78
+- gap20 / gap60: -1.96% / 21.37%
+- 5D return: -2.72%
+- 20D high/low: 6.54 / 5.44
 
 ### Relative Strength
 
-- ratio: 0.015884
-- ratio_MA60: 0.014662
-- ratio_gap: 8.34%
-- ratio_slope_proxy(20d): 0.000437
+- ratio: 0.016286
+- ratio_MA60: 0.014686
+- ratio_gap: 10.90%
+- ratio_slope_proxy(20d): 0.000462
 
 ### Volume (if available)
 
-- volume: 38494000.00
-- volume_MA20: 67251890.00
-- volume_ratio: 0.57
+- volume: 12425777.00
+- volume_MA20: 65875343.85
+- volume_ratio: 0.19
 
 ### Checks
 
@@ -243,24 +219,24 @@
 
 ### Trend
 
-- close: 12.48
-- MA20 / MA60 / MA200: 10.13 / 8.51 / 11.30
-- gap20 / gap60: 23.23% / 46.71%
-- 5D return: 28.79%
-- 20D high/low: 12.48 / 8.77
+- close: 12.73
+- MA20 / MA60 / MA200: 10.27 / 8.61 / 11.31
+- gap20 / gap60: 24.02% / 47.93%
+- 5D return: 11.91%
+- 20D high/low: 12.73 / 8.77
 
 ### Relative Strength
 
-- ratio: 0.048912
-- ratio_MA60: 0.040480
-- ratio_gap: 20.83%
-- ratio_slope_proxy(20d): 0.002965
+- ratio: 0.049476
+- ratio_MA60: 0.040682
+- ratio_gap: 21.61%
+- ratio_slope_proxy(20d): 0.003159
 
 ### Volume (if available)
 
-- volume: 28689000.00
-- volume_MA20: 16822240.00
-- volume_ratio: 1.71
+- volume: 8061464.00
+- volume_MA20: 16627918.20
+- volume_ratio: 0.48
 
 ### Checks
 
@@ -281,17 +257,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-03-08**
-- 실행시간(UTC): **2026-03-09 03:06:54**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 데이터 기준일(주가): **2026-03-09**
+- 실행시간(UTC): **2026-03-09 15:01:54**
 
 ## Verdict
 ⏸ No entry today
@@ -304,21 +271,21 @@
 - JuniorGoldLeadership(GDXJ/GLD): **False**
 
 ### Macro (FRED)
-- HY OAS 4주 변화: 3.0 bp / latest 3.0
-- IG OAS 4주 변화: 6.0 bp / latest 0.82
+- HY OAS 4주 변화: 26.0 bp / latest 3.13
+- IG OAS 4주 변화: 8.0 bp / latest 0.84
 - 10Y Real Yield 4주 변화: -7.0 bp / latest 1.82
-- VIX: 23.75
+- VIX: 29.49
 - NFCI: -0.52365
 
 ### Leadership ratios
-- SILJ/SLV gap: 1.20% / slope_proxy: -0.002788
-- GDXJ/GLD gap: -2.46% / slope_proxy: 0.013665
+- SILJ/SLV gap: -2.64% / slope_proxy: -0.002992
+- GDXJ/GLD gap: -4.70% / slope_proxy: 0.013271
 
 ## VZLA (Vizsla Silver)
-- close: 4.0 | RSI14: 41.262588 | ATR14%: 8.40%
-- MA20 gap: -0.39% | MA50 gap: -21.35% | MA200 gap: -3.64%
-- vol_ratio(Volume/Vol20): 0.831519 | gap_open: 3.69%
-- RS vs SILJ gap: -26.58% / slope_proxy: -0.02828
+- close: 3.825 | RSI14: 38.330001 | ATR14%: 8.72%
+- MA20 gap: -3.82% | MA50 gap: -24.21% | MA200 gap: -8.00%
+- vol_ratio(Volume/Vol20): 0.162263 | gap_open: 3.00%
+- RS vs SILJ gap: -26.69% / slope_proxy: -0.028911
 - Checks:
   - trend_ok: **False**
   - rs_ok: **False**
@@ -334,11 +301,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 10.03 | RSI14: 42.163706 | ATR14%: 10.72%
-- MA20 gap: -9.19% | MA50 gap: -12.50% | MA200 gap: 48.35%
-- vol_ratio(Volume/Vol20): 0.81074 | gap_open: 1.91%
-- SilverMarginGate: SI=82.870003 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -13.37% / slope_proxy: 0.012371
+- close: 9.72 | RSI14: 40.547008 | ATR14%: 10.76%
+- MA20 gap: -11.44% | MA50 gap: -15.24% | MA200 gap: 42.92%
+- vol_ratio(Volume/Vol20): 0.513277 | gap_open: 4.39%
+- SilverMarginGate: SI=84.754997 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -12.91% / slope_proxy: 0.009961
 - Checks:
   - trend_ok: **True**
   - rs_ok: **False**
@@ -353,11 +320,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 38.790001 | RSI14: 46.162813 | ATR14%: 15.44%
-- MA20 gap: -7.83% | MA50 gap: 2.46% | MA200 gap: 173.87%
-- vol_ratio(Volume/Vol20): 0.900302 | gap_open: 1.29%
-- RS vs SILJ gap: 12.49% / slope_proxy: 0.2457
-- RS vs GDXJ gap: 11.14% / slope_proxy: 0.064631
+- close: 37.560001 | RSI14: 44.818894 | ATR14%: 15.17%
+- MA20 gap: -11.07% | MA50 gap: -1.33% | MA200 gap: 161.97%
+- vol_ratio(Volume/Vol20): 0.26776 | gap_open: 2.69%
+- RS vs SILJ gap: 11.45% / slope_proxy: 0.245432
+- RS vs GDXJ gap: 10.17% / slope_proxy: 0.064453
 - Checks:
   - trend_ok: **True**
   - rs_ok: **True**

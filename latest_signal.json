@@ -1,27 +1,21 @@
 {
-  "generated_at_utc": "2026-03-09T03:00:38Z",
+  "generated_at_utc": "2026-03-09T15:00:43Z",
   "as_of": {
-    "price_date": "2026-03-06",
-    "run_time_utc": "2026-03-09 03:00:38"
+    "price_date": "2026-03-09",
+    "run_time_utc": "2026-03-09 15:00:43"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.0,
-      "change_4w_bp": 3.0,
-      "latest_date": "2026-03-05"
+      "latest": 3.13,
+      "change_4w_bp": 26.0,
+      "latest_date": "2026-03-06"
     },
     "BAMLC0A0CM": {
-      "latest": 0.82,
-      "change_4w_bp": 6.0,
-      "latest_date": "2026-03-05"
+      "latest": 0.84,
+      "change_4w_bp": 8.0,
+      "latest_date": "2026-03-06"
     },
     "DFII10": {
       "latest": 1.82,
@@ -29,9 +23,9 @@
       "latest_date": "2026-03-05"
     },
     "VIXCLS": {
-      "latest": 23.75,
-      "change_4w_bp": 198.0,
-      "latest_date": "2026-03-05"
+      "latest": 29.49,
+      "change_4w_bp": 1173.0,
+      "latest_date": "2026-03-06"
     },
     "NFCI": {
       "latest": -0.5236,
@@ -40,51 +34,51 @@
     }
   },
   "checks": {
-    "MacroGreen": true,
+    "MacroGreen": false,
     "HY_4w_change_bp_lt_100": true,
     "IG_4w_change_bp_lt_50": true,
     "DFII10_4w_change_bp_lt_50": true,
-    "VIX_lt_25": true,
+    "VIX_lt_25": false,
     "NFCI_lte_0": true
   },
   "prices": {
     "VRT": {
-      "close": 241.78,
-      "latest_date": "2026-03-06"
+      "close": 259.645,
+      "latest_date": "2026-03-09"
     },
     "MRVL": {
-      "close": 89.57,
-      "latest_date": "2026-03-06"
+      "close": 87.065,
+      "latest_date": "2026-03-09"
     },
     "SRVR": {
-      "close": 32.02,
-      "latest_date": "2026-03-06"
+      "close": 31.7,
+      "latest_date": "2026-03-09"
     },
     "SMH": {
-      "close": 380.56,
-      "latest_date": "2026-03-06"
+      "close": 381.77,
+      "latest_date": "2026-03-09"
     },
     "NVDA": {
-      "close": 177.82,
-      "latest_date": "2026-03-06"
+      "close": 178.9,
+      "latest_date": "2026-03-09"
     },
     "AVGO": {
-      "close": 330.48,
-      "latest_date": "2026-03-06"
+      "close": 338.96,
+      "latest_date": "2026-03-09"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.550906,
-      "ma60": 6.381527,
-      "gap": 0.183244,
+      "ratio": 8.190693,
+      "ma60": 6.415381,
+      "gap": 0.276727,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.235364,
-      "ma60": 0.212493,
-      "gap": 0.107632,
-      "ma60_slope_proxy": -0.018713,
+      "ratio": 0.228056,
+      "ma60": 0.212269,
+      "gap": 0.074375,
+      "ma60_slope_proxy": -0.017927,
       "entry": false
     }
   },

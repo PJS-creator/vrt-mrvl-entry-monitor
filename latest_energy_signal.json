@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-03-11T03:00:58Z",
+  "generated_at_utc": "2026-03-11T15:00:49Z",
   "as_of": {
-    "run_time_utc": "2026-03-11 03:00:58"
+    "run_time_utc": "2026-03-11 15:00:49"
   },
   "data_warning": false,
   "warnings": [],
@@ -25,28 +25,28 @@
       "latest_date": "2026-03-02"
     },
     "OVXCLS": {
-      "latest": 100.53,
-      "change_5d_pct": 0.459071,
+      "latest": 108.19,
+      "change_5d_pct": 0.462225,
       "change_4w_bp": null,
-      "latest_date": "2026-03-09"
+      "latest_date": "2026-03-10"
     },
     "VIXCLS": {
-      "latest": 25.5,
-      "change_5d_pct": 0.189366,
+      "latest": 24.93,
+      "change_5d_pct": 0.0577,
       "change_4w_bp": null,
-      "latest_date": "2026-03-09"
+      "latest_date": "2026-03-10"
     },
     "BAMLH0A0HYM2": {
-      "latest": 3.19,
-      "change_5d_pct": 0.052805,
-      "change_4w_bp": 35.0,
-      "latest_date": "2026-03-09"
+      "latest": 3.06,
+      "change_5d_pct": -0.006494,
+      "change_4w_bp": 20.0,
+      "latest_date": "2026-03-10"
     },
     "BAMLC0A0CM": {
-      "latest": 0.85,
+      "latest": 0.84,
       "change_5d_pct": 0.0,
-      "change_4w_bp": 9.0,
-      "latest_date": "2026-03-09"
+      "change_4w_bp": 7.0,
+      "latest_date": "2026-03-10"
     },
     "DTWEXBGS": {
       "latest": 119.491,
@@ -55,36 +55,36 @@
       "latest_date": "2026-03-06"
     },
     "NFCI": {
-      "latest": -0.5236,
-      "change_5d_pct": -0.06471,
+      "latest": -0.5137,
+      "change_5d_pct": -0.07671,
       "change_4w_bp": null,
-      "latest_date": "2026-02-27"
+      "latest_date": "2026-03-06"
     },
     "VXEWZCLS": {
-      "latest": 39.43,
-      "change_5d_pct": 0.17948,
+      "latest": 38.4,
+      "change_5d_pct": -0.087452,
       "change_4w_bp": null,
-      "latest_date": "2026-03-09"
+      "latest_date": "2026-03-10"
     }
   },
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 84.52,
-      "ret5d": 0.133584
+      "close": 86.44,
+      "ret5d": 0.157782
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 86.15,
-      "ret5d": 0.058354,
+      "close": 87.82,
+      "ret5d": 0.07887,
       "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.029,
-      "ret5d": -0.008186
+      "close": 3.115,
+      "ret5d": 0.067878
     },
-    "Brent_WTI_spread": 1.63
+    "Brent_WTI_spread": 1.38
   },
   "gates": {
     "RISK_OK_STRICT": false,
@@ -97,94 +97,94 @@
   },
   "prices": {
     "PBR": {
-      "close": 17.99,
-      "latest_date": "2026-03-10",
-      "volume": 32932818.0
+      "close": 18.905,
+      "latest_date": "2026-03-11",
+      "volume": 13501995.0
     },
     "OXY": {
-      "close": 53.12,
-      "latest_date": "2026-03-10",
-      "volume": 23022072.0
+      "close": 54.41,
+      "latest_date": "2026-03-11",
+      "volume": 6239685.0
     },
     "VG": {
-      "close": 11.4,
-      "latest_date": "2026-03-10",
-      "volume": 23902108.0
+      "close": 11.845,
+      "latest_date": "2026-03-11",
+      "volume": 6096836.0
     },
     "RIG": {
-      "close": 6.16,
-      "latest_date": "2026-03-10",
-      "volume": 36575263.0
+      "close": 6.3293,
+      "latest_date": "2026-03-11",
+      "volume": 8020273.0
     },
     "XLE": {
-      "close": 55.6,
-      "latest_date": "2026-03-10",
-      "volume": 88673516.0
+      "close": 56.67,
+      "latest_date": "2026-03-11",
+      "volume": 21100248.0
     },
     "OIH": {
-      "close": 382.26,
-      "latest_date": "2026-03-10",
-      "volume": 377192.0
+      "close": 386.95,
+      "latest_date": "2026-03-11",
+      "volume": 118546.0
     },
     "EWZ": {
-      "close": 37.53,
-      "latest_date": "2026-03-10",
-      "volume": 31993125.0
+      "close": 37.86,
+      "latest_date": "2026-03-11",
+      "volume": 7062004.0
     },
     "LNG": {
-      "close": 245.76,
-      "latest_date": "2026-03-10",
-      "volume": 2950391.0
+      "close": 250.36,
+      "latest_date": "2026-03-11",
+      "volume": 554175.0
     },
     "SPY": {
-      "close": 677.18,
-      "latest_date": "2026-03-10",
-      "volume": 80651435.0
+      "close": 678.54,
+      "latest_date": "2026-03-11",
+      "volume": 18261018.0
     },
     "BRL=X": {
-      "close": 5.1639,
+      "close": 5.1528,
       "latest_date": "2026-03-11",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 84.52,
-      "latest_date": "2026-03-10",
-      "volume": 65792.0
+      "close": 86.44,
+      "latest_date": "2026-03-11",
+      "volume": 339378.0
     },
     "BZ=F": {
-      "close": 86.15,
-      "latest_date": "2026-03-10",
-      "volume": 9835.0
+      "close": 87.82,
+      "latest_date": "2026-03-11",
+      "volume": 77441.0
     },
     "NG=F": {
-      "close": 3.029,
-      "latest_date": "2026-03-10",
-      "volume": 3637.0
+      "close": 3.115,
+      "latest_date": "2026-03-11",
+      "volume": 55342.0
     }
   },
   "signals": {
     "OXY": {
       "trend": {
-        "close": 53.119999,
-        "ma20": 50.9195,
-        "ma60": 45.3755,
-        "ma200": 43.926151,
-        "gap20": 0.043215,
-        "gap60": 0.170676,
-        "ret5d": -0.010432,
-        "high20": 55.02,
-        "low20": 45.490002
+        "close": 54.41,
+        "ma20": 51.10936,
+        "ma60": 45.38867,
+        "ma200": 43.790834,
+        "gap20": 0.06458,
+        "gap60": 0.198757,
+        "ret5d": 0.019741,
+        "high20": 54.759998,
+        "low20": 45.275036
       },
       "ratio": {
-        "ratio": 0.955396,
-        "ma60": 0.906868,
-        "gap": 0.053511,
-        "slope_proxy": -0.002573
+        "ratio": 0.96012,
+        "ma60": 0.903663,
+        "gap": 0.062475,
+        "slope_proxy": -0.00035
       },
       "volume": {
-        "vol": 23022072.0,
-        "ma20": 17420798.6,
-        "ratio": 1.321528
+        "vol": 6239685.0,
+        "ma20": 17384924.25,
+        "ratio": 0.358914
       },
       "checks": {
         "RISK_OK_STRICT": false,
@@ -197,26 +197,26 @@
     },
     "PBR": {
       "trend": {
-        "close": 17.99,
-        "ma20": 16.381,
-        "ma60": 14.1075,
-        "ma200": 12.8082,
-        "gap20": 0.098224,
-        "gap60": 0.275208,
-        "ret5d": 0.060731,
-        "high20": 18.16,
+        "close": 18.905001,
+        "ma20": 16.55975,
+        "ma60": 14.220083,
+        "ma200": 12.846456,
+        "gap20": 0.141624,
+        "gap60": 0.329458,
+        "ret5d": 0.127311,
+        "high20": 18.905001,
         "low20": 15.02
       },
       "ratio": {
-        "ratio": 0.47935,
-        "ma60": 0.397235,
-        "gap": 0.206717,
-        "slope_proxy": 0.010226
+        "ratio": 0.49934,
+        "ma60": 0.399236,
+        "gap": 0.250737,
+        "slope_proxy": 0.012301
       },
       "volume": {
-        "vol": 32932818.0,
-        "ma20": 28181390.9,
-        "ratio": 1.168602
+        "vol": 13501995.0,
+        "ma20": 28123739.75,
+        "ratio": 0.480092
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -230,31 +230,31 @@
     },
     "RIG": {
       "trend": {
-        "close": 6.16,
-        "ma20": 6.2285,
-        "ma60": 5.042167,
-        "ma200": 3.8005,
-        "gap20": -0.010998,
-        "gap60": 0.221697,
-        "ret5d": 0.008183,
+        "close": 6.3293,
+        "ma20": 6.272965,
+        "ma60": 5.076322,
+        "ma200": 3.820097,
+        "gap20": 0.008981,
+        "gap60": 0.246828,
+        "ret5d": -0.006389,
         "high20": 6.54,
-        "low20": 5.44
+        "low20": 5.93
       },
       "ratio": {
-        "ratio": 0.016115,
-        "ma60": 0.014717,
-        "gap": 0.094938,
-        "slope_proxy": 0.000483
+        "ratio": 0.016357,
+        "ma60": 0.014755,
+        "gap": 0.108571,
+        "slope_proxy": 0.000521
       },
       "volume": {
-        "vol": 36575263.0,
-        "ma20": 59975003.15,
-        "ratio": 0.609842
+        "vol": 8020273.0,
+        "ma20": 54409538.65,
+        "ratio": 0.147406
       },
       "checks": {
         "RISK_OK_STRICT": false,
         "OIL_TREND_UP": true,
-        "OIH_TREND_UP": false,
+        "OIH_TREND_UP": true,
         "RIG_BREAKOUT": false,
         "RIG_VOLUME_CONFIRM": false,
         "RIG_RELATIVE_OK": true
@@ -263,26 +263,26 @@
     },
     "VG": {
       "trend": {
-        "close": 11.4,
-        "ma20": 10.269,
-        "ma60": 8.677596,
-        "ma200": 11.31143,
-        "gap20": 0.110137,
-        "gap60": 0.313728,
-        "ret5d": -0.005236,
+        "close": 11.845,
+        "ma20": 10.35425,
+        "ma60": 8.7713,
+        "ma200": 11.316033,
+        "gap20": 0.143975,
+        "gap60": 0.350427,
+        "ret5d": 0.06138,
         "high20": 12.48,
         "low20": 8.77
       },
       "ratio": {
-        "ratio": 0.046387,
-        "ma60": 0.040873,
-        "gap": 0.134902,
-        "slope_proxy": 0.003154
+        "ratio": 0.047312,
+        "ma60": 0.04112,
+        "gap": 0.150577,
+        "slope_proxy": 0.00326
       },
       "volume": {
-        "vol": 23902108.0,
-        "ma20": 18511690.4,
-        "ratio": 1.29119
+        "vol": 6096836.0,
+        "ma20": 18463241.8,
+        "ratio": 0.330215
       },
       "checks": {
         "RISK_OK_STRICT": false,

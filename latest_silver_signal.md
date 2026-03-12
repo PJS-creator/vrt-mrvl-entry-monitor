@@ -1,7 +1,16 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-03-11**
-- 실행시간(UTC): **2026-03-11 15:01:12**
+- 실행시간(UTC): **2026-03-12 03:07:10**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -21,14 +30,14 @@
 - NFCI: -0.5137
 
 ### Leadership ratios
-- SILJ/SLV gap: 0.92% / slope_proxy: -0.003035
-- GDXJ/GLD gap: -3.46% / slope_proxy: 0.012308
+- SILJ/SLV gap: -0.07% / slope_proxy: -0.003108
+- GDXJ/GLD gap: -3.74% / slope_proxy: 0.012294
 
 ## VZLA (Vizsla Silver)
-- close: 4.0539 | RSI14: 43.199272 | ATR14%: 7.86%
-- MA20 gap: 1.71% | MA50 gap: -18.63% | MA200 gap: -2.84%
-- vol_ratio(Volume/Vol20): 0.120814 | gap_open: 2.17%
-- RS vs SILJ gap: -24.81% / slope_proxy: -0.029069
+- close: 4.09 | RSI14: 43.917896 | ATR14%: 7.79%
+- MA20 gap: 2.57% | MA50 gap: -17.92% | MA200 gap: -1.98%
+- vol_ratio(Volume/Vol20): 0.342698 | gap_open: 2.17%
+- RS vs SILJ gap: -23.69% / slope_proxy: -0.029039
 - Checks:
   - trend_ok: **False**
   - rs_ok: **False**
@@ -43,11 +52,11 @@
 - RelativeStrength(vs SILJ)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 10.09 | RSI14: 43.33006 | ATR14%: 10.32%
-- MA20 gap: -7.12% | MA50 gap: -12.04% | MA200 gap: 46.45%
-- vol_ratio(Volume/Vol20): 0.420448 | gap_open: 0.75%
-- SilverMarginGate: SI=86.029999 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -13.32% / slope_proxy: 0.004119
+- close: 10.17 | RSI14: 43.780416 | ATR14%: 10.24%
+- MA20 gap: -6.41% | MA50 gap: -11.36% | MA200 gap: 47.61%
+- vol_ratio(Volume/Vol20): 1.385753 | gap_open: 0.75%
+- SilverMarginGate: SI=84.900002 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -12.12% / slope_proxy: 0.004187
 - Checks:
   - trend_ok: **True**
   - rs_ok: **False**
@@ -62,11 +71,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 43.660099 | RSI14: 51.905141 | ATR14%: 13.13%
-- MA20 gap: 1.44% | MA50 gap: 12.24% | MA200 gap: 195.68%
-- vol_ratio(Volume/Vol20): 0.255455 | gap_open: 4.57%
-- RS vs SILJ gap: 19.97% / slope_proxy: 0.249362
-- RS vs GDXJ gap: 20.63% / slope_proxy: 0.065469
+- close: 42.57 | RSI14: 50.594047 | ATR14%: 13.47%
+- MA20 gap: -0.97% | MA50 gap: 9.50% | MA200 gap: 188.40%
+- vol_ratio(Volume/Vol20): 0.545868 | gap_open: 4.26%
+- RS vs SILJ gap: 17.74% / slope_proxy: 0.248962
+- RS vs GDXJ gap: 18.05% / slope_proxy: 0.065352
 - Checks:
   - trend_ok: **True**
   - rs_ok: **True**

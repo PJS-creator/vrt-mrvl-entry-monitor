@@ -1,11 +1,17 @@
 {
-  "generated_at_utc": "2026-03-11T15:00:38Z",
+  "generated_at_utc": "2026-03-12T03:00:35Z",
   "as_of": {
     "price_date": "2026-03-11",
-    "run_time_utc": "2026-03-11 15:00:38"
+    "run_time_utc": "2026-03-12 03:00:35"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "macro": {
     "BAMLH0A0HYM2": {
       "latest": 3.06,
@@ -43,42 +49,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 274.12,
+      "close": 268.26,
       "latest_date": "2026-03-11"
     },
     "MRVL": {
-      "close": 93.0095,
+      "close": 90.44,
       "latest_date": "2026-03-11"
     },
     "SRVR": {
-      "close": 32.67,
+      "close": 32.46,
       "latest_date": "2026-03-11"
     },
     "SMH": {
-      "close": 403.49,
+      "close": 401.03,
       "latest_date": "2026-03-11"
     },
     "NVDA": {
-      "close": 186.555,
+      "close": 186.03,
       "latest_date": "2026-03-11"
     },
     "AVGO": {
-      "close": 342.87,
+      "close": 341.57,
       "latest_date": "2026-03-11"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.390573,
-      "ma60": 6.486455,
-      "gap": 0.293553,
+      "ratio": 8.264326,
+      "ma60": 6.484351,
+      "gap": 0.274503,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.230513,
-      "ma60": 0.211981,
-      "gap": 0.087421,
-      "ma60_slope_proxy": -0.016518,
+      "ratio": 0.225519,
+      "ma60": 0.211898,
+      "gap": 0.064283,
+      "ma60_slope_proxy": -0.016601,
       "entry": false
     }
   },

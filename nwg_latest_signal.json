@@ -1,31 +1,26 @@
 {
-  "generated_at_utc": "2026-03-12T15:02:25Z",
+  "generated_at_utc": "2026-03-13T03:00:58Z",
   "as_of": {
     "price_date": "2026-03-12",
-    "run_time_utc": "2026-03-12 15:02:25"
+    "run_time_utc": "2026-03-13 03:00:58"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 3.06,
-      "change_4w": 20.0,
-      "latest_date": "2026-03-10"
+      "latest": 3.09,
+      "change_4w": 25.0,
+      "latest_date": "2026-03-11"
     },
     "BAMLC0A0CM": {
-      "latest": 0.84,
-      "change_4w": 7.0,
-      "latest_date": "2026-03-10"
+      "latest": 0.88,
+      "change_4w": 11.0,
+      "latest_date": "2026-03-11"
     },
     "VIXCLS": {
-      "latest": 24.93,
-      "change_4w": 7.14,
-      "latest_date": "2026-03-10"
+      "latest": 24.23,
+      "change_4w": 6.58,
+      "latest_date": "2026-03-11"
     },
     "NFCI": {
       "latest": -0.5137,
@@ -73,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 568.2,
+      "close": 573.0,
       "latest_date": "2026-03-12"
     },
     "^FTSE": {
-      "close": 10297.7998,
+      "close": 10305.1504,
       "latest_date": "2026-03-12"
     },
     "LLOY.L": {
-      "close": 95.24,
+      "close": 95.5,
       "latest_date": "2026-03-12"
     },
     "BARC.L": {
-      "close": 388.25,
+      "close": 389.35,
       "latest_date": "2026-03-12"
     },
     "HSBA.L": {
-      "close": 1188.6,
+      "close": 1195.8,
       "latest_date": "2026-03-12"
     }
   },
   "signals": {
     "NWG": {
-      "close": 568.2,
-      "ma50": 629.06,
-      "ma200": 569.9414,
-      "gap50": -0.096748,
-      "gap200": -0.003055
+      "close": 573.0,
+      "ma50": 629.156,
+      "ma200": 569.9654,
+      "gap50": -0.089256,
+      "gap200": 0.005324
     },
     "RS_FTSE": {
-      "ratio": 0.055177,
-      "ma60": 0.061606,
-      "gap": -0.104354,
-      "ma60_slope_proxy": -0.002223
+      "ratio": 0.055603,
+      "ma60": 0.061613,
+      "gap": -0.097536,
+      "ma60_slope_proxy": -0.002216
     },
     "RS_PEERS": {
-      "ratio": 1.019443,
-      "ma60": 1.044863,
-      "gap": -0.024329,
-      "ma60_slope_proxy": -0.057292
+      "ratio": 1.022819,
+      "ma60": 1.04492,
+      "gap": -0.021151,
+      "ma60_slope_proxy": -0.057236
     }
   },
   "checks": {

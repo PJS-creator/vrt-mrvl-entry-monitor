@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-03-13T15:00:40Z",
+  "generated_at_utc": "2026-03-14T03:00:34Z",
   "as_of": {
     "price_date": "2026-03-13",
-    "run_time_utc": "2026-03-13 15:00:40"
+    "run_time_utc": "2026-03-14 03:00:34"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.09,
+      "latest": 3.17,
       "change_4w_bp": 25.0,
-      "latest_date": "2026-03-11"
+      "latest_date": "2026-03-12"
     },
     "BAMLC0A0CM": {
-      "latest": 0.88,
-      "change_4w_bp": 11.0,
-      "latest_date": "2026-03-11"
+      "latest": 0.91,
+      "change_4w_bp": 13.0,
+      "latest_date": "2026-03-12"
     },
     "DFII10": {
-      "latest": 1.85,
-      "change_4w_bp": -1.0,
-      "latest_date": "2026-03-11"
+      "latest": 1.89,
+      "change_4w_bp": 9.0,
+      "latest_date": "2026-03-12"
     },
     "VIXCLS": {
       "latest": 27.29,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 258.99,
+      "close": 258.88,
       "latest_date": "2026-03-13"
     },
     "MRVL": {
-      "close": 87.82,
+      "close": 87.86,
       "latest_date": "2026-03-13"
     },
     "SRVR": {
-      "close": 32.3,
+      "close": 32.2387,
       "latest_date": "2026-03-13"
     },
     "SMH": {
-      "close": 388.565,
+      "close": 387.33,
       "latest_date": "2026-03-13"
     },
     "NVDA": {
-      "close": 182.02,
+      "close": 180.25,
       "latest_date": "2026-03-13"
     },
     "AVGO": {
-      "close": 327.095,
+      "close": 322.16,
       "latest_date": "2026-03-13"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.018266,
-      "ma60": 6.568113,
-      "gap": 0.220787,
+      "ratio": 8.0301,
+      "ma60": 6.56831,
+      "gap": 0.222552,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.226011,
-      "ma60": 0.211457,
-      "gap": 0.068827,
-      "ma60_slope_proxy": -0.015094,
+      "ratio": 0.226835,
+      "ma60": 0.211471,
+      "gap": 0.072654,
+      "ma60_slope_proxy": -0.01508,
       "entry": false
     }
   },

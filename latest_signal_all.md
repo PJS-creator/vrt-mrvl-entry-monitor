@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-03-13**
-- 실행시간(UTC): **2026-03-15 15:00:32**
+- 실행시간(UTC): **2026-03-16 03:00:34**
 
 ## MacroGreen
 - **MacroGreen**: **False**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-03-13**
-- 실행시간(UTC): **2026-03-15 15:00:38**
+- 실행시간(UTC): **2026-03-16 03:00:38**
 
 ## Verdict
 ⏸ No entry today
@@ -87,15 +87,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-15 15:00:46**
+- 실행시간(UTC): **2026-03-16 03:00:44**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 98.71 / 5D 8.59%
-- Brent ref (BZ=F): 98.91 / 5D 6.71%
+- WTI ref (CL=F): 98.96 / 5D 4.42%
+- Brent ref (BZ=F): 99.83 / 5D 0.88%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 0.20
-- Gas ref (NG=F): 3.13 / 5D -1.73%
+- Brent-WTI spread: 0.87
+- Gas ref (NG=F): 3.12 / 5D -0.10%
 
 ## Gates
 
@@ -252,8 +252,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-03-13**
-- 실행시간(UTC): **2026-03-15 15:00:55**
+- 데이터 기준일(주가): **2026-03-15**
+- 실행시간(UTC): **2026-03-16 03:00:53**
 
 ## Verdict
 ⏸ No entry today
@@ -298,8 +298,8 @@
 ## SCZM (Santacruz Silver)
 - close: 9.33 | RSI14: 38.977173 | ATR14%: 10.52%
 - MA20 gap: -13.21% | MA50 gap: -18.49% | MA200 gap: 33.91%
-- vol_ratio(Volume/Vol20): 2.618266 | gap_open: 1.62%
-- SilverMarginGate: SI=81.343002 / watch>=32.0:True / entry>=35.0:True
+- vol_ratio(Volume/Vol20): 2.776973 | gap_open: 1.62%
+- SilverMarginGate: SI=79.43 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -11.37% / slope_proxy: -0.000536
 - Checks:
   - trend_ok: **True**
@@ -317,7 +317,7 @@
 ## HYMC (Hycroft Mining)
 - close: 37.93 | RSI14: 45.173627 | ATR14%: 14.26%
 - MA20 gap: -12.68% | MA50 gap: -3.98% | MA200 gap: 150.85%
-- vol_ratio(Volume/Vol20): 0.72567 | gap_open: 0.09%
+- vol_ratio(Volume/Vol20): 0.733915 | gap_open: 0.09%
 - RS vs SILJ gap: 12.04% / slope_proxy: 0.251936
 - RS vs GDXJ gap: 12.27% / slope_proxy: 0.066199
 - Checks:

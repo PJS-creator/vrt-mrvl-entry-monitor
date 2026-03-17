@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-03-16**
-- 실행시간(UTC): **2026-03-16 15:01:06**
+- 실행시간(UTC): **2026-03-17 03:00:59**
 
 ## Verdict
 ⏸ No entry today
@@ -16,19 +16,19 @@
 ### Macro (FRED)
 - HY OAS 4주 변화: 33.0 bp / latest 3.28
 - IG OAS 4주 변화: 14.0 bp / latest 0.93
-- 10Y Real Yield 4주 변화: 9.0 bp / latest 1.89
+- 10Y Real Yield 4주 변화: 15.0 bp / latest 1.92
 - VIX: 27.19
 - NFCI: -0.5137
 
 ### Leadership ratios
-- SILJ/SLV gap: -1.34% / slope_proxy: -0.004424
-- GDXJ/GLD gap: -7.28% / slope_proxy: 0.009957
+- SILJ/SLV gap: -1.27% / slope_proxy: -0.004418
+- GDXJ/GLD gap: -7.36% / slope_proxy: 0.009953
 
 ## VZLA (Vizsla Silver)
-- close: 3.6679 | RSI14: 37.116755 | ATR14%: 8.21%
-- MA20 gap: -7.77% | MA50 gap: -24.74% | MA200 gap: -12.37%
-- vol_ratio(Volume/Vol20): 0.124845 | gap_open: 0.00%
-- RS vs SILJ gap: -23.95% / slope_proxy: -0.028159
+- close: 3.63 | RSI14: 36.047009 | ATR14%: 8.31%
+- MA20 gap: -8.68% | MA50 gap: -25.50% | MA200 gap: -13.27%
+- vol_ratio(Volume/Vol20): 0.670841 | gap_open: 0.00%
+- RS vs SILJ gap: -24.92% / slope_proxy: -0.028184
 - Checks:
   - trend_ok: **False**
   - rs_ok: **False**
@@ -44,11 +44,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 9.12 | RSI14: 37.829516 | ATR14%: 10.41%
-- MA20 gap: -14.84% | MA50 gap: -20.25% | MA200 gap: 30.23%
-- vol_ratio(Volume/Vol20): 1.074393 | gap_open: 3.54%
-- SilverMarginGate: SI=80.514999 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -13.82% / slope_proxy: -0.00201
+- close: 8.9 | RSI14: 36.697527 | ATR14%: 10.91%
+- MA20 gap: -16.81% | MA50 gap: -22.15% | MA200 gap: 27.11%
+- vol_ratio(Volume/Vol20): 2.909234 | gap_open: 3.54%
+- SilverMarginGate: SI=81.455002 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -16.10% / slope_proxy: -0.002139
 - Checks:
   - trend_ok: **True**
   - rs_ok: **False**
@@ -63,11 +63,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 39.952499 | RSI14: 47.896647 | ATR14%: 13.15%
-- MA20 gap: -8.49% | MA50 gap: 0.31% | MA200 gap: 161.04%
-- vol_ratio(Volume/Vol20): 0.288242 | gap_open: 2.87%
-- RS vs SILJ gap: 15.80% / slope_proxy: 0.255281
-- RS vs GDXJ gap: 15.35% / slope_proxy: 0.067035
+- close: 39.32 | RSI14: 47.074599 | ATR14%: 13.39%
+- MA20 gap: -9.87% | MA50 gap: -1.24% | MA200 gap: 156.96%
+- vol_ratio(Volume/Vol20): 0.781548 | gap_open: 2.87%
+- RS vs SILJ gap: 13.70% / slope_proxy: 0.254893
+- RS vs GDXJ gap: 13.28% / slope_proxy: 0.066938
 - Checks:
   - trend_ok: **True**
   - rs_ok: **True**

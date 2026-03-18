@@ -1,20 +1,20 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-03-18 03:00:53**
+- 실행시간(UTC): **2026-03-18 15:00:57**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 93.65 / 5D 12.22%
-- Brent ref (BZ=F): 102.08 / 5D 16.26%
+- WTI ref (CL=F): 98.48 / 5D 12.87%
+- Brent ref (BZ=F): 109.79 / 5D 19.36%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 8.43
-- Gas ref (NG=F): 2.98 / 5D -1.36%
+- Brent-WTI spread: 11.31
+- Gas ref (NG=F): 3.06 / 5D -4.49%
 
 ## Gates
 
-- **RISK_OK_STRICT**: **False**
+- **RISK_OK_STRICT**: **True**
 - **RISK_OK_SOFT**: **True**
-- **OVX_OK**: **False**
+- **OVX_OK**: **True**
 - **WTI_TREND_UP**: **True**
 - **BRENT_TREND_UP**: **True**
 - **OIL_TREND_UP**: **True**
@@ -26,28 +26,28 @@
 
 ### Trend
 
-- close: 57.73
-- MA20 / MA60 / MA200: 53.54 / 46.60 / 44.14
-- gap20 / gap60: 7.83% / 23.90%
-- 5D return: 8.68%
-- 20D high/low: 58.41 / 46.89
+- close: 58.24
+- MA20 / MA60 / MA200: 54.11 / 46.91 / 44.23
+- gap20 / gap60: 7.63% / 24.15%
+- 5D return: 4.78%
+- 20D high/low: 58.41 / 50.70
 
 ### Relative Strength
 
-- ratio: 0.986669
-- ratio_MA60: 0.910472
-- ratio_gap: 8.37%
-- ratio_slope_proxy(20d): 0.011780
+- ratio: 0.994026
+- ratio_MA60: 0.911978
+- ratio_gap: 9.00%
+- ratio_slope_proxy(20d): 0.014361
 
 ### Volume (if available)
 
-- volume: 12258511.00
-- volume_MA20: 20217540.55
-- volume_ratio: 0.61
+- volume: 5826845.00
+- volume_MA20: 19847157.25
+- volume_ratio: 0.29
 
 ### Checks
 
-- RISK_OK_STRICT: **False**
+- RISK_OK_STRICT: **True**
 - WTI_TREND_UP: **True**
 - OXY_TREND_UP: **True**
 - OXY_PULLBACK_OK: **False**
@@ -59,24 +59,24 @@
 
 ### Trend
 
-- close: 19.51
-- MA20 / MA60 / MA200: 17.31 / 14.69 / 13.00
-- gap20 / gap60: 12.71% / 32.78%
-- 5D return: 8.45%
-- 20D high/low: 19.51 / 15.29
+- close: 19.80
+- MA20 / MA60 / MA200: 17.54 / 14.83 / 13.05
+- gap20 / gap60: 12.92% / 33.54%
+- 5D return: 4.27%
+- 20D high/low: 19.80 / 15.76
 
 ### Relative Strength
 
-- ratio: 0.531463
-- ratio_MA60: 0.409256
-- ratio_gap: 29.86%
-- ratio_slope_proxy(20d): 0.023191
+- ratio: 0.539393
+- ratio_MA60: 0.411957
+- ratio_gap: 30.93%
+- ratio_slope_proxy(20d): 0.026105
 
 ### Volume (if available)
 
-- volume: 26309343.00
-- volume_MA20: 32221542.15
-- volume_ratio: 0.82
+- volume: 7415523.00
+- volume_MA20: 31720206.15
+- volume_ratio: 0.23
 
 ### Checks
 
@@ -93,32 +93,32 @@
 
 ### Trend
 
-- close: 6.58
-- MA20 / MA60 / MA200: 6.31 / 5.23 / 3.90
-- gap20 / gap60: 4.32% / 25.74%
-- 5D return: 6.82%
+- close: 6.42
+- MA20 / MA60 / MA200: 6.32 / 5.27 / 3.92
+- gap20 / gap60: 1.55% / 21.62%
+- 5D return: 1.66%
 - 20D high/low: 6.58 / 5.93
 
 ### Relative Strength
 
-- ratio: 0.017063
-- ratio_MA60: 0.014954
-- ratio_gap: 14.10%
-- ratio_slope_proxy(20d): 0.000601
+- ratio: 0.016714
+- ratio_MA60: 0.014997
+- ratio_gap: 11.45%
+- ratio_slope_proxy(20d): 0.000621
 
 ### Volume (if available)
 
-- volume: 50788661.00
-- volume_MA20: 42067068.05
-- volume_ratio: 1.21
+- volume: 8437878.00
+- volume_MA20: 38964573.90
+- volume_ratio: 0.22
 
 ### Checks
 
-- RISK_OK_STRICT: **False**
+- RISK_OK_STRICT: **True**
 - OIL_TREND_UP: **True**
 - OIH_TREND_UP: **False**
-- RIG_BREAKOUT: **True**
-- RIG_VOLUME_CONFIRM: **True**
+- RIG_BREAKOUT: **False**
+- RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **True**
 
 ## VG
@@ -127,28 +127,28 @@
 
 ### Trend
 
-- close: 12.97
-- MA20 / MA60 / MA200: 11.07 / 9.22 / 11.32
-- gap20 / gap60: 17.18% / 40.63%
-- 5D return: 13.93%
-- 20D high/low: 13.08 / 9.30
+- close: 13.43
+- MA20 / MA60 / MA200: 11.26 / 9.35 / 11.33
+- gap20 / gap60: 19.24% / 43.70%
+- 5D return: 7.93%
+- 20D high/low: 13.43 / 9.30
 
 ### Relative Strength
 
-- ratio: 0.051571
-- ratio_MA60: 0.042437
-- ratio_gap: 21.52%
-- ratio_slope_proxy(20d): 0.004187
+- ratio: 0.053290
+- ratio_MA60: 0.042792
+- ratio_gap: 24.53%
+- ratio_slope_proxy(20d): 0.004449
 
 ### Volume (if available)
 
-- volume: 13928283.00
-- volume_MA20: 21781179.15
-- volume_ratio: 0.64
+- volume: 5667499.00
+- volume_MA20: 21587044.95
+- volume_ratio: 0.26
 
 ### Checks
 
-- RISK_OK_STRICT: **False**
+- RISK_OK_STRICT: **True**
 - LNG_PEER_TREND_UP: **True**
 - VG_TREND_UP: **True**
 - VG_RELATIVE_TURN_UP: **False**

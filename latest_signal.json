@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-03-28T03:00:36Z",
+  "generated_at_utc": "2026-03-28T15:00:33Z",
   "as_of": {
     "price_date": "2026-03-27",
-    "run_time_utc": "2026-03-28 03:00:36"
+    "run_time_utc": "2026-03-28 15:00:33"
   },
   "data_warning": false,
   "warnings": [],
@@ -51,7 +51,7 @@
       "latest_date": "2026-03-27"
     },
     "SRVR": {
-      "close": 30.4984,
+      "close": 30.498,
       "latest_date": "2026-03-27"
     },
     "SMH": {
@@ -69,9 +69,9 @@
   },
   "signals": {
     "VRT": {
-      "ratio": 8.232235,
-      "ma60": 7.004317,
-      "gap": 0.175309,
+      "ratio": 8.232344,
+      "ma60": 7.004319,
+      "gap": 0.175324,
       "entry": false
     },
     "MRVL": {

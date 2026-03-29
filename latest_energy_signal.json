@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-03-28T15:00:45Z",
+  "generated_at_utc": "2026-03-29T03:00:43Z",
   "as_of": {
-    "run_time_utc": "2026-03-28 15:00:45"
+    "run_time_utc": "2026-03-29 03:00:43"
   },
   "data_warning": false,
   "warnings": [],
@@ -177,9 +177,9 @@
       },
       "ratio": {
         "ratio": 1.044118,
-        "ma60": 0.93153,
-        "gap": 0.120863,
-        "slope_proxy": 0.026978
+        "ma60": 0.926039,
+        "gap": 0.12751,
+        "slope_proxy": 0.027358
       },
       "volume": {
         "vol": 20133800.0,

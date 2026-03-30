@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-03-27**
-- 실행시간(UTC): **2026-03-29 15:00:47**
+- 데이터 기준일(주가): **2026-03-29**
+- 실행시간(UTC): **2026-03-30 03:00:49**
 
 ## Verdict
 ⏸ No entry today
@@ -47,7 +47,7 @@
 - close: 7.73 | RSI14: 37.701043 | ATR14%: 11.29%
 - MA20 gap: -15.21% | MA50 gap: -29.39% | MA200 gap: 6.88%
 - vol_ratio(Volume/Vol20): 0.60972 | gap_open: 0.14%
-- SilverMarginGate: SI=69.795998 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=69.290001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -14.56% / slope_proxy: -0.018248
 - Checks:
   - trend_ok: **False**

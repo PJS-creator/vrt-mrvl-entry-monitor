@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-04-02T03:00:41Z",
+  "generated_at_utc": "2026-04-02T15:00:41Z",
   "as_of": {
-    "price_date": "2026-04-01",
-    "run_time_utc": "2026-04-02 03:00:41"
+    "price_date": "2026-04-02",
+    "run_time_utc": "2026-04-02 15:00:41"
   },
   "data_warning": true,
   "warnings": [
     "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLC0A0CM failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM), using cached values if available.",
     "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
@@ -49,42 +49,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 259.37,
-      "latest_date": "2026-04-01"
+      "close": 262.35,
+      "latest_date": "2026-04-02"
     },
     "MRVL": {
-      "close": 106.71,
-      "latest_date": "2026-04-01"
+      "close": 105.99,
+      "latest_date": "2026-04-02"
     },
     "SRVR": {
-      "close": 31.48,
-      "latest_date": "2026-04-01"
+      "close": 31.68,
+      "latest_date": "2026-04-02"
     },
     "SMH": {
-      "close": 391.97,
-      "latest_date": "2026-04-01"
+      "close": 389.69,
+      "latest_date": "2026-04-02"
     },
     "NVDA": {
-      "close": 175.75,
-      "latest_date": "2026-04-01"
+      "close": 175.92,
+      "latest_date": "2026-04-02"
     },
     "AVGO": {
-      "close": 313.49,
-      "latest_date": "2026-04-01"
+      "close": 311.915,
+      "latest_date": "2026-04-02"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.239199,
-      "ma60": 7.108326,
-      "gap": 0.159091,
+      "ratio": 8.28125,
+      "ma60": 7.147084,
+      "gap": 0.158689,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.27224,
-      "ma60": 0.212035,
-      "gap": 0.283937,
-      "ma60_slope_proxy": -0.002049,
+      "ratio": 0.271985,
+      "ma60": 0.212778,
+      "gap": 0.278262,
+      "ma60_slope_proxy": 3.7e-05,
       "entry": false
     }
   },

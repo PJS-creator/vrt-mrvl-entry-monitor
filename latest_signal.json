@@ -1,37 +1,31 @@
 {
-  "generated_at_utc": "2026-04-02T15:00:41Z",
+  "generated_at_utc": "2026-04-03T03:00:33Z",
   "as_of": {
     "price_date": "2026-04-02",
-    "run_time_utc": "2026-04-02 15:00:41"
+    "run_time_utc": "2026-04-03 03:00:33"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED BAMLC0A0CM failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM), using cached values if available.",
-    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.28,
-      "change_4w_bp": 20.0,
-      "latest_date": "2026-03-31"
+      "latest": 3.16,
+      "change_4w_bp": 19.0,
+      "latest_date": "2026-04-01"
     },
     "BAMLC0A0CM": {
-      "latest": 0.9,
-      "change_4w_bp": 6.0,
-      "latest_date": "2026-03-31"
+      "latest": 0.87,
+      "change_4w_bp": 5.0,
+      "latest_date": "2026-04-01"
     },
     "DFII10": {
-      "latest": 2.04,
-      "change_4w_bp": 28.0,
-      "latest_date": "2026-03-30"
+      "latest": 2.02,
+      "change_4w_bp": 22.0,
+      "latest_date": "2026-04-01"
     },
     "VIXCLS": {
-      "latest": 25.25,
-      "change_4w_bp": 168.0,
-      "latest_date": "2026-03-31"
+      "latest": 24.54,
+      "change_4w_bp": 339.0,
+      "latest_date": "2026-04-01"
     },
     "NFCI": {
       "latest": -0.4337,
@@ -40,53 +34,53 @@
     }
   },
   "checks": {
-    "MacroGreen": false,
+    "MacroGreen": true,
     "HY_4w_change_bp_lt_100": true,
     "IG_4w_change_bp_lt_50": true,
     "DFII10_4w_change_bp_lt_50": true,
-    "VIX_lt_25": false,
+    "VIX_lt_25": true,
     "NFCI_lte_0": true
   },
   "prices": {
     "VRT": {
-      "close": 262.35,
+      "close": 261.29,
       "latest_date": "2026-04-02"
     },
     "MRVL": {
-      "close": 105.99,
+      "close": 107.11,
       "latest_date": "2026-04-02"
     },
     "SRVR": {
-      "close": 31.68,
+      "close": 31.95,
       "latest_date": "2026-04-02"
     },
     "SMH": {
-      "close": 389.69,
+      "close": 392.32,
       "latest_date": "2026-04-02"
     },
     "NVDA": {
-      "close": 175.92,
+      "close": 177.39,
       "latest_date": "2026-04-02"
     },
     "AVGO": {
-      "close": 311.915,
+      "close": 314.55,
       "latest_date": "2026-04-02"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.28125,
-      "ma60": 7.147084,
-      "gap": 0.158689,
+      "ratio": 8.178091,
+      "ma60": 7.145365,
+      "gap": 0.144531,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.271985,
-      "ma60": 0.212778,
-      "gap": 0.278262,
-      "ma60_slope_proxy": 3.7e-05,
-      "entry": false
+      "ratio": 0.273017,
+      "ma60": 0.212795,
+      "gap": 0.283006,
+      "ma60_slope_proxy": 5.4e-05,
+      "entry": true
     }
   },
-  "verdict": "⏸ No entry today"
+  "verdict": "✅ Entry condition met: MRVL"
 }

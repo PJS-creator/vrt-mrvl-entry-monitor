@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-04-03T15:00:48Z",
+  "generated_at_utc": "2026-04-04T03:00:58Z",
   "as_of": {
     "price_date": "2026-04-02",
-    "run_time_utc": "2026-04-03 15:00:48"
+    "run_time_utc": "2026-04-04 03:00:58"
   },
   "data_warning": false,
   "warnings": [],
@@ -79,19 +79,19 @@
   },
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.16,
-      "change_4w": 19.0,
-      "latest_date": "2026-04-01"
+      "latest": 3.17,
+      "change_4w": 17.0,
+      "latest_date": "2026-04-02"
     },
     "BAMLC0A0CM": {
-      "latest": 0.87,
-      "change_4w": 5.0,
-      "latest_date": "2026-04-01"
+      "latest": 0.86,
+      "change_4w": 4.0,
+      "latest_date": "2026-04-02"
     },
     "DFII10": {
-      "latest": 2.02,
-      "change_4w": 22.0,
-      "latest_date": "2026-04-01"
+      "latest": 1.97,
+      "change_4w": 15.0,
+      "latest_date": "2026-04-02"
     },
     "VIXCLS": {
       "latest": 24.54,
@@ -223,7 +223,7 @@
         "rsi14": 39.670747,
         "atr14": 0.246242,
         "atr14_pct": 0.075534,
-        "vol_ratio": 1.009385,
+        "vol_ratio": 1.009887,
         "ret1d": -0.021021,
         "gap_open": 0.06006
       },
@@ -320,7 +320,7 @@
         "rsi14": 48.900502,
         "atr14": 4.397691,
         "atr14_pct": 0.122124,
-        "vol_ratio": 0.676826,
+        "vol_ratio": 0.678884,
         "ret1d": 0.027389,
         "gap_open": 0.073609
       },

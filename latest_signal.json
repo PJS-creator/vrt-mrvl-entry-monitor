@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-04-03T15:00:35Z",
+  "generated_at_utc": "2026-04-04T03:00:32Z",
   "as_of": {
     "price_date": "2026-04-02",
-    "run_time_utc": "2026-04-03 15:00:35"
+    "run_time_utc": "2026-04-04 03:00:32"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.16,
-      "change_4w_bp": 19.0,
-      "latest_date": "2026-04-01"
+      "latest": 3.17,
+      "change_4w_bp": 17.0,
+      "latest_date": "2026-04-02"
     },
     "BAMLC0A0CM": {
-      "latest": 0.87,
-      "change_4w_bp": 5.0,
-      "latest_date": "2026-04-01"
+      "latest": 0.86,
+      "change_4w_bp": 4.0,
+      "latest_date": "2026-04-02"
     },
     "DFII10": {
-      "latest": 2.02,
-      "change_4w_bp": 22.0,
-      "latest_date": "2026-04-01"
+      "latest": 1.97,
+      "change_4w_bp": 15.0,
+      "latest_date": "2026-04-02"
     },
     "VIXCLS": {
       "latest": 24.54,

@@ -14,15 +14,15 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-04-02**
-- 실행시간(UTC): **2026-04-03 15:00:35**
+- 실행시간(UTC): **2026-04-04 03:00:32**
 
 ## MacroGreen
 - **MacroGreen**: **True**
 
 ### 핵심 수치
-- HY OAS (BAMLH0A0HYM2): 3.16 / 4주 변화 19.0 bp
-- IG OAS (BAMLC0A0CM): 0.87 / 4주 변화 5.0 bp
-- 10Y Real Yield (DFII10): 2.02 / 4주 변화 22.0 bp
+- HY OAS (BAMLH0A0HYM2): 3.17 / 4주 변화 17.0 bp
+- IG OAS (BAMLC0A0CM): 0.86 / 4주 변화 4.0 bp
+- 10Y Real Yield (DFII10): 1.97 / 4주 변화 15.0 bp
 - VIX (VIXCLS): 24.54
 - NFCI: -0.4337
 
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-04-02**
-- 실행시간(UTC): **2026-04-03 15:00:37**
+- 실행시간(UTC): **2026-04-04 03:00:37**
 
 ## Verdict
 ⏸ No entry today
@@ -87,7 +87,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-03 15:00:44**
+- 실행시간(UTC): **2026-04-04 03:00:43**
 
 ## Commodity Regime
 
@@ -128,8 +128,8 @@
 
 ### Volume (if available)
 
-- volume: 22284800.00
-- volume_MA20: 23081545.00
+- volume: 22356800.00
+- volume_MA20: 23085145.00
 - volume_ratio: 0.97
 
 ### Checks
@@ -161,8 +161,8 @@
 
 ### Volume (if available)
 
-- volume: 30486000.00
-- volume_MA20: 40611230.00
+- volume: 30490100.00
+- volume_MA20: 40611435.00
 - volume_ratio: 0.75
 
 ### Checks
@@ -195,8 +195,8 @@
 
 ### Volume (if available)
 
-- volume: 39471700.00
-- volume_MA20: 38109225.00
+- volume: 39485100.00
+- volume_MA20: 38109895.00
 - volume_ratio: 1.04
 
 ### Checks
@@ -229,9 +229,9 @@
 
 ### Volume (if available)
 
-- volume: 32235300.00
-- volume_MA20: 36922820.00
-- volume_ratio: 0.87
+- volume: 32333700.00
+- volume_MA20: 36927740.00
+- volume_ratio: 0.88
 
 ### Checks
 
@@ -253,7 +253,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-04-02**
-- 실행시간(UTC): **2026-04-03 15:00:48**
+- 실행시간(UTC): **2026-04-04 03:00:58**
 
 ## Verdict
 ⏸ No entry today
@@ -266,9 +266,9 @@
 - JuniorGoldLeadership(GDXJ/GLD): **False**
 
 ### Macro (FRED)
-- HY OAS 4주 변화: 19.0 bp / latest 3.16
-- IG OAS 4주 변화: 5.0 bp / latest 0.87
-- 10Y Real Yield 4주 변화: 22.0 bp / latest 2.02
+- HY OAS 4주 변화: 17.0 bp / latest 3.17
+- IG OAS 4주 변화: 4.0 bp / latest 0.86
+- 10Y Real Yield 4주 변화: 15.0 bp / latest 1.97
 - VIX: 24.54
 - NFCI: -0.43366
 
@@ -279,7 +279,7 @@
 ## VZLA (Vizsla Silver)
 - close: 3.26 | RSI14: 39.670747 | ATR14%: 7.55%
 - MA20 gap: -5.75% | MA50 gap: -22.01% | MA200 gap: -21.99%
-- vol_ratio(Volume/Vol20): 1.009385 | gap_open: 6.01%
+- vol_ratio(Volume/Vol20): 1.009887 | gap_open: 6.01%
 - RS vs SILJ gap: -20.58% / slope_proxy: -0.027472
 - Checks:
   - trend_ok: **False**
@@ -320,7 +320,7 @@
 ## HYMC (Hycroft Mining)
 - close: 36.009998 | RSI14: 48.900502 | ATR14%: 12.21%
 - MA20 gap: -0.43% | MA50 gap: -10.56% | MA200 gap: 108.66%
-- vol_ratio(Volume/Vol20): 0.676826 | gap_open: 7.36%
+- vol_ratio(Volume/Vol20): 0.678884 | gap_open: 7.36%
 - RS vs SILJ gap: 0.58% / slope_proxy: 0.167303
 - RS vs GDXJ gap: -0.87% / slope_proxy: 0.043897
 - Checks:

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-04-03T15:00:44Z",
+  "generated_at_utc": "2026-04-04T03:00:43Z",
   "as_of": {
-    "run_time_utc": "2026-04-03 15:00:44"
+    "run_time_utc": "2026-04-04 03:00:43"
   },
   "data_warning": false,
   "warnings": [],
@@ -37,16 +37,16 @@
       "latest_date": "2026-04-01"
     },
     "BAMLH0A0HYM2": {
-      "latest": 3.16,
-      "change_5d_pct": -0.003155,
-      "change_4w_bp": 19.0,
-      "latest_date": "2026-04-01"
+      "latest": 3.17,
+      "change_5d_pct": -0.012461,
+      "change_4w_bp": 17.0,
+      "latest_date": "2026-04-02"
     },
     "BAMLC0A0CM": {
-      "latest": 0.87,
-      "change_5d_pct": 0.0,
-      "change_4w_bp": 5.0,
-      "latest_date": "2026-04-01"
+      "latest": 0.86,
+      "change_5d_pct": -0.022727,
+      "change_4w_bp": 4.0,
+      "latest_date": "2026-04-02"
     },
     "DTWEXBGS": {
       "latest": 120.8851,
@@ -99,27 +99,27 @@
     "PBR": {
       "close": 20.56,
       "latest_date": "2026-04-02",
-      "volume": 30486000.0
+      "volume": 30490100.0
     },
     "OXY": {
       "close": 62.97,
       "latest_date": "2026-04-02",
-      "volume": 22284800.0
+      "volume": 22356800.0
     },
     "VG": {
       "close": 14.64,
       "latest_date": "2026-04-02",
-      "volume": 32235300.0
+      "volume": 32333700.0
     },
     "RIG": {
       "close": 6.59,
       "latest_date": "2026-04-02",
-      "volume": 39471700.0
+      "volume": 39485100.0
     },
     "XLE": {
       "close": 59.25,
       "latest_date": "2026-04-02",
-      "volume": 60368200.0
+      "volume": 60400500.0
     },
     "OIH": {
       "close": 399.05,
@@ -129,20 +129,20 @@
     "EWZ": {
       "close": 38.35,
       "latest_date": "2026-04-02",
-      "volume": 26074600.0
+      "volume": 26086500.0
     },
     "LNG": {
       "close": 281.16,
       "latest_date": "2026-04-02",
-      "volume": 3275700.0
+      "volume": 3280200.0
     },
     "SPY": {
       "close": 655.83,
       "latest_date": "2026-04-02",
-      "volume": 68254200.0
+      "volume": 68358700.0
     },
     "BRL=X": {
-      "close": 5.1568,
+      "close": 5.1581,
       "latest_date": "2026-04-03",
       "volume": 0.0
     },
@@ -182,9 +182,9 @@
         "slope_proxy": 0.035614
       },
       "volume": {
-        "vol": 22284800.0,
-        "ma20": 23081545.0,
-        "ratio": 0.965481
+        "vol": 22356800.0,
+        "ma20": 23085145.0,
+        "ratio": 0.96845
       },
       "checks": {
         "RISK_OK_STRICT": false,
@@ -214,9 +214,9 @@
         "slope_proxy": 0.051126
       },
       "volume": {
-        "vol": 30486000.0,
-        "ma20": 40611230.0,
-        "ratio": 0.750679
+        "vol": 30490100.0,
+        "ma20": 40611435.0,
+        "ratio": 0.750776
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -247,9 +247,9 @@
         "slope_proxy": 0.000752
       },
       "volume": {
-        "vol": 39471700.0,
-        "ma20": 38109225.0,
-        "ratio": 1.035752
+        "vol": 39485100.0,
+        "ma20": 38109895.0,
+        "ratio": 1.036085
       },
       "checks": {
         "RISK_OK_STRICT": false,
@@ -280,9 +280,9 @@
         "slope_proxy": 0.006317
       },
       "volume": {
-        "vol": 32235300.0,
-        "ma20": 36922820.0,
-        "ratio": 0.873045
+        "vol": 32333700.0,
+        "ma20": 36927740.0,
+        "ratio": 0.875594
       },
       "checks": {
         "RISK_OK_STRICT": false,

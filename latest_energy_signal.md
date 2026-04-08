@@ -1,23 +1,23 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-07 15:00:56**
+- 실행시간(UTC): **2026-04-08 03:00:52**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 115.99 / 5D 12.74%
-- Brent ref (BZ=F): 110.45 / 5D -2.07%
+- WTI ref (CL=F): 96.30 / 5D -6.40%
+- Brent ref (BZ=F): 95.25 / 5D -15.54%
 - Brent Tier: **>=90**
-- Brent-WTI spread: -5.54
-- Gas ref (NG=F): 2.85 / 5D -1.35%
+- Brent-WTI spread: -1.05
+- Gas ref (NG=F): 2.75 / 5D -4.78%
 
 ## Gates
 
 - **RISK_OK_STRICT**: **True**
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
-- **WTI_TREND_UP**: **True**
-- **BRENT_TREND_UP**: **True**
-- **OIL_TREND_UP**: **True**
+- **WTI_TREND_UP**: **False**
+- **BRENT_TREND_UP**: **False**
+- **OIL_TREND_UP**: **False**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -26,29 +26,29 @@
 
 ### Trend
 
-- close: 63.73
-- MA20 / MA60 / MA200: 60.74 / 51.69 / 45.52
-- gap20 / gap60: 4.92% / 23.30%
-- 5D return: -3.79%
+- close: 62.94
+- MA20 / MA60 / MA200: 60.70 / 51.67 / 45.51
+- gap20 / gap60: 3.68% / 21.80%
+- 5D return: -4.98%
 - 20D high/low: 66.24 / 53.12
 
 ### Relative Strength
 
-- ratio: 1.050350
-- ratio_MA60: 0.945946
-- ratio_gap: 11.04%
-- ratio_slope_proxy(20d): 0.038194
+- ratio: 1.046210
+- ratio_MA60: 0.945877
+- ratio_gap: 10.61%
+- ratio_slope_proxy(20d): 0.038125
 
 ### Volume (if available)
 
-- volume: 4130484.00
-- volume_MA20: 20694779.20
-- volume_ratio: 0.20
+- volume: 12416188.00
+- volume_MA20: 21109939.40
+- volume_ratio: 0.59
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- WTI_TREND_UP: **True**
+- WTI_TREND_UP: **False**
 - OXY_TREND_UP: **True**
 - OXY_PULLBACK_OK: **False**
 - OXY_RELATIVE_OK: **False**
@@ -59,29 +59,29 @@
 
 ### Trend
 
-- close: 21.00
-- MA20 / MA60 / MA200: 19.78 / 16.66 / 13.60
-- gap20 / gap60: 6.18% / 26.04%
-- 5D return: 0.91%
-- 20D high/low: 21.00 / 17.99
+- close: 20.71
+- MA20 / MA60 / MA200: 19.76 / 16.66 / 13.60
+- gap20 / gap60: 4.79% / 24.34%
+- 5D return: -0.48%
+- 20D high/low: 20.86 / 17.99
 
 ### Relative Strength
 
-- ratio: 0.551109
-- ratio_MA60: 0.449848
-- ratio_gap: 22.51%
-- ratio_slope_proxy(20d): 0.054164
+- ratio: 0.538482
+- ratio_MA60: 0.449637
+- ratio_gap: 19.76%
+- ratio_slope_proxy(20d): 0.053954
 
 ### Volume (if available)
 
-- volume: 5465798.00
-- volume_MA20: 35676814.90
-- volume_ratio: 0.15
+- volume: 13946872.00
+- volume_MA20: 36101608.60
+- volume_ratio: 0.39
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **True**
+- BRENT_TREND_UP: **False**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -93,29 +93,29 @@
 
 ### Trend
 
-- close: 6.62
-- MA20 / MA60 / MA200: 6.50 / 5.81 / 4.15
-- gap20 / gap60: 1.71% / 13.88%
-- 5D return: -0.53%
+- close: 6.68
+- MA20 / MA60 / MA200: 6.51 / 5.81 / 4.15
+- gap20 / gap60: 2.66% / 14.98%
+- 5D return: 0.45%
 - 20D high/low: 6.93 / 6.16
 
 ### Relative Strength
 
-- ratio: 0.016368
+- ratio: 0.016381
 - ratio_MA60: 0.015491
-- ratio_gap: 5.67%
+- ratio_gap: 5.75%
 - ratio_slope_proxy(20d): 0.000805
 
 ### Volume (if available)
 
-- volume: 5658782.00
-- volume_MA20: 35484959.10
-- volume_ratio: 0.16
+- volume: 24865047.00
+- volume_MA20: 36445562.35
+- volume_ratio: 0.68
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- OIL_TREND_UP: **True**
+- OIL_TREND_UP: **False**
 - OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
@@ -127,24 +127,24 @@
 
 ### Trend
 
-- close: 16.58
-- MA20 / MA60 / MA200: 14.89 / 11.34 / 11.35
-- gap20 / gap60: 11.35% / 46.26%
-- 5D return: -1.84%
+- close: 15.99
+- MA20 / MA60 / MA200: 14.86 / 11.33 / 11.34
+- gap20 / gap60: 7.60% / 41.18%
+- 5D return: -5.33%
 - 20D high/low: 17.53 / 11.38
 
 ### Relative Strength
 
-- ratio: 0.057327
-- ratio_MA60: 0.047147
-- ratio_gap: 21.59%
-- ratio_slope_proxy(20d): 0.006513
+- ratio: 0.056249
+- ratio_MA60: 0.047129
+- ratio_gap: 19.35%
+- ratio_slope_proxy(20d): 0.006495
 
 ### Volume (if available)
 
-- volume: 7992869.00
-- volume_MA20: 35581693.45
-- volume_ratio: 0.22
+- volume: 22285963.00
+- volume_MA20: 36299603.15
+- volume_ratio: 0.61
 
 ### Checks
 

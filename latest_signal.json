@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-04-11T03:00:46Z",
+  "generated_at_utc": "2026-04-11T15:00:41Z",
   "as_of": {
     "price_date": "2026-04-10",
-    "run_time_utc": "2026-04-11 03:00:46"
+    "run_time_utc": "2026-04-11 15:00:41"
   },
   "data_warning": false,
   "warnings": [],
@@ -76,9 +76,9 @@
     },
     "MRVL": {
       "ratio": 0.294108,
-      "ma60": 0.218056,
-      "gap": 0.348773,
-      "ma60_slope_proxy": 0.006377,
+      "ma60": 0.21795,
+      "gap": 0.349433,
+      "ma60_slope_proxy": 0.006376,
       "entry": true
     }
   },

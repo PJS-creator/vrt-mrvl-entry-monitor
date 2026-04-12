@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-04-10**
-- 실행시간(UTC): **2026-04-11 15:00:41**
+- 실행시간(UTC): **2026-04-12 03:00:39**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-04-10**
-- 실행시간(UTC): **2026-04-11 15:00:49**
+- 실행시간(UTC): **2026-04-12 03:00:41**
 
 ## Verdict
 ⏸ No entry today
@@ -87,7 +87,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-11 15:00:58**
+- 실행시간(UTC): **2026-04-12 03:00:48**
 
 ## Commodity Regime
 
@@ -253,7 +253,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-04-10**
-- 실행시간(UTC): **2026-04-11 15:01:08**
+- 실행시간(UTC): **2026-04-12 03:00:57**
 
 ## Verdict
 ⏸ No entry today

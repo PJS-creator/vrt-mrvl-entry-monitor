@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-04-12T03:00:48Z",
+  "generated_at_utc": "2026-04-12T15:00:55Z",
   "as_of": {
-    "run_time_utc": "2026-04-12 03:00:48"
+    "run_time_utc": "2026-04-12 15:00:55"
   },
   "data_warning": false,
   "warnings": [],
@@ -142,24 +142,24 @@
       "volume": 41916700.0
     },
     "BRL=X": {
-      "close": 5.0126,
-      "latest_date": "2026-04-10",
+      "close": 5.0061,
+      "latest_date": "2026-04-12",
       "volume": 0.0
     },
     "CL=F": {
       "close": 96.57,
       "latest_date": "2026-04-10",
-      "volume": 427201.0
+      "volume": 281940.0
     },
     "BZ=F": {
       "close": 95.2,
       "latest_date": "2026-04-10",
-      "volume": 54501.0
+      "volume": 30994.0
     },
     "NG=F": {
       "close": 2.648,
       "latest_date": "2026-04-10",
-      "volume": 170766.0
+      "volume": 117755.0
     }
   },
   "signals": {

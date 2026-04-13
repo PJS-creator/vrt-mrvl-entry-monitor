@@ -1,23 +1,23 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-12 15:00:55**
+- 실행시간(UTC): **2026-04-13 03:00:51**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 96.57 / 5D -13.42%
-- Brent ref (BZ=F): 95.20 / 5D -12.68%
+- WTI ref (CL=F): 105.07 / 5D -6.53%
+- Brent ref (BZ=F): 102.23 / 5D -6.87%
 - Brent Tier: **>=90**
-- Brent-WTI spread: -1.37
-- Gas ref (NG=F): 2.65 / 5D -5.43%
+- Brent-WTI spread: -2.84
+- Gas ref (NG=F): 2.68 / 5D -4.59%
 
 ## Gates
 
 - **RISK_OK_STRICT**: **True**
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
-- **WTI_TREND_UP**: **False**
+- **WTI_TREND_UP**: **True**
 - **BRENT_TREND_UP**: **False**
-- **OIL_TREND_UP**: **False**
+- **OIL_TREND_UP**: **True**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -48,7 +48,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- WTI_TREND_UP: **False**
+- WTI_TREND_UP: **True**
 - OXY_TREND_UP: **False**
 - OXY_PULLBACK_OK: **True**
 - OXY_RELATIVE_OK: **True**
@@ -115,7 +115,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- OIL_TREND_UP: **False**
+- OIL_TREND_UP: **True**
 - OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**

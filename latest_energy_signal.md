@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-18 03:01:02**
+- 실행시간(UTC): **2026-04-18 15:00:47**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 84.00 / 5D -13.02%
-- Brent ref (BZ=F): 91.87 / 5D -3.50%
+- WTI ref (CL=F): 83.85 / 5D -13.17%
+- Brent ref (BZ=F): 90.38 / 5D -5.06%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 7.87
-- Gas ref (NG=F): 2.67 / 5D 1.02%
+- Brent-WTI spread: 6.53
+- Gas ref (NG=F): 2.67 / 5D 0.98%
 
 ## Gates
 
@@ -18,7 +18,7 @@
 - **WTI_TREND_UP**: **False**
 - **BRENT_TREND_UP**: **False**
 - **OIL_TREND_UP**: **False**
-- **BRAZIL_RISK_OK**: **False**
+- **BRAZIL_RISK_OK**: **True**
 
 ## OXY
 
@@ -41,9 +41,9 @@
 
 ### Volume (if available)
 
-- volume: 21601179.00
-- volume_MA20: 18961938.95
-- volume_ratio: 1.14
+- volume: 24156200.00
+- volume_MA20: 19089690.00
+- volume_ratio: 1.27
 
 ### Checks
 
@@ -74,15 +74,15 @@
 
 ### Volume (if available)
 
-- volume: 39941139.00
-- volume_MA20: 34527166.95
-- volume_ratio: 1.16
+- volume: 42445000.00
+- volume_MA20: 34652360.00
+- volume_ratio: 1.22
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
 - BRENT_TREND_UP: **False**
-- BRAZIL_RISK_OK: **False**
+- BRAZIL_RISK_OK: **True**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **True**
@@ -108,9 +108,9 @@
 
 ### Volume (if available)
 
-- volume: 46015767.00
-- volume_MA20: 32464263.35
-- volume_ratio: 1.42
+- volume: 48130100.00
+- volume_MA20: 32569980.00
+- volume_ratio: 1.48
 
 ### Checks
 
@@ -142,8 +142,8 @@
 
 ### Volume (if available)
 
-- volume: 38965271.00
-- volume_MA20: 32920273.55
+- volume: 39010000.00
+- volume_MA20: 32922510.00
 - volume_ratio: 1.18
 
 ### Checks

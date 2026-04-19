@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-04-18T15:00:39Z",
+  "generated_at_utc": "2026-04-19T03:00:43Z",
   "as_of": {
     "price_date": "2026-04-17",
-    "run_time_utc": "2026-04-18 15:00:39"
+    "run_time_utc": "2026-04-19 03:00:43"
   },
   "data_warning": false,
   "warnings": [],
@@ -104,9 +104,9 @@
     },
     "RS_PEERS": {
       "ratio": 0.976513,
-      "ma60": 1.000094,
-      "gap": -0.023579,
-      "ma60_slope_proxy": -0.038983
+      "ma60": 0.998528,
+      "gap": -0.022048,
+      "ma60_slope_proxy": -0.038956
     }
   },
   "checks": {

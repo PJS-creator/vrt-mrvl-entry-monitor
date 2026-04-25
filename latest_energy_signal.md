@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-25 03:01:00**
+- 실행시간(UTC): **2026-04-25 15:00:52**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 94.88 / 5D 13.15%
-- Brent ref (BZ=F): 99.78 / 5D 10.40%
+- WTI ref (CL=F): 94.40 / 5D 12.58%
+- Brent ref (BZ=F): 105.33 / 5D 16.54%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 4.90
-- Gas ref (NG=F): 2.69 / 5D 0.56%
+- Brent-WTI spread: 10.93
+- Gas ref (NG=F): 2.52 / 5D -5.65%
 
 ## Gates
 
@@ -16,8 +16,8 @@
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **False**
 - **WTI_TREND_UP**: **False**
-- **BRENT_TREND_UP**: **False**
-- **OIL_TREND_UP**: **False**
+- **BRENT_TREND_UP**: **True**
+- **OIL_TREND_UP**: **True**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -41,9 +41,9 @@
 
 ### Volume (if available)
 
-- volume: 7420574.00
-- volume_MA20: 16833463.70
-- volume_ratio: 0.44
+- volume: 7835700.00
+- volume_MA20: 16854220.00
+- volume_ratio: 0.46
 
 ### Checks
 
@@ -60,28 +60,28 @@
 ### Trend
 
 - close: 20.87
-- MA20 / MA60 / MA200: 20.87 / 18.32 / 14.15
-- gap20 / gap60: -0.00% / 13.93%
-- 5D return: 2.05%
-- 20D high/low: 21.97 / 19.98
+- MA20 / MA60 / MA200: 20.76 / 18.21 / 14.07
+- gap20 / gap60: 0.55% / 14.58%
+- 5D return: 2.65%
+- 20D high/low: 21.84 / 19.86
 
 ### Relative Strength
 
 - ratio: 0.522534
-- ratio_MA60: 0.478072
-- ratio_gap: 9.30%
-- ratio_slope_proxy(20d): 0.049759
+- ratio_MA60: 0.475336
+- ratio_gap: 9.93%
+- ratio_slope_proxy(20d): 0.049520
 
 ### Volume (if available)
 
-- volume: 13806100.00
-- volume_MA20: 29355325.00
-- volume_ratio: 0.47
+- volume: 15320700.00
+- volume_MA20: 29431055.00
+- volume_ratio: 0.52
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **False**
+- BRENT_TREND_UP: **True**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -108,14 +108,14 @@
 
 ### Volume (if available)
 
-- volume: 30058273.00
-- volume_MA20: 29987148.65
-- volume_ratio: 1.00
+- volume: 32674500.00
+- volume_MA20: 30117960.00
+- volume_ratio: 1.08
 
 ### Checks
 
 - RISK_OK_STRICT: **False**
-- OIL_TREND_UP: **False**
+- OIL_TREND_UP: **True**
 - OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
@@ -142,8 +142,8 @@
 
 ### Volume (if available)
 
-- volume: 24167286.00
-- volume_MA20: 26950814.30
+- volume: 24200400.00
+- volume_MA20: 26952470.00
 - volume_ratio: 0.90
 
 ### Checks

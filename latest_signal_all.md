@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-04-24**
-- 실행시간(UTC): **2026-04-26 03:00:39**
+- 실행시간(UTC): **2026-04-26 15:00:42**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-04-24**
-- 실행시간(UTC): **2026-04-26 03:00:42**
+- 실행시간(UTC): **2026-04-26 15:00:44**
 
 ## Verdict
 ⏸ No entry today
@@ -86,15 +86,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-26 03:00:49**
+- 실행시간(UTC): **2026-04-26 15:00:51**
 
 ## Commodity Regime
 
 - WTI ref (CL=F): 94.40 / 5D 12.58%
-- Brent ref (BZ=F): 105.33 / 5D 16.54%
+- Brent ref (BZ=F): 99.13 / 5D 9.68%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 10.93
-- Gas ref (NG=F): 2.52 / 5D -5.65%
+- Brent-WTI spread: 4.73
+- Gas ref (NG=F): 2.68 / 5D 0.34%
 
 ## Gates
 
@@ -102,8 +102,8 @@
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **False**
 - **WTI_TREND_UP**: **False**
-- **BRENT_TREND_UP**: **True**
-- **OIL_TREND_UP**: **True**
+- **BRENT_TREND_UP**: **False**
+- **OIL_TREND_UP**: **False**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -167,7 +167,7 @@
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **True**
+- BRENT_TREND_UP: **False**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -201,7 +201,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **False**
-- OIL_TREND_UP: **True**
+- OIL_TREND_UP: **False**
 - OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
@@ -252,7 +252,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-04-24**
-- 실행시간(UTC): **2026-04-26 03:00:59**
+- 실행시간(UTC): **2026-04-26 15:00:56**
 
 ## Verdict
 ⏸ No entry today
@@ -298,7 +298,7 @@
 - close: 8.49 | RSI14: 47.309521 | ATR14%: 8.14%
 - MA20 gap: 0.88% | MA50 gap: -8.54% | MA200 gap: 9.51%
 - vol_ratio(Volume/Vol20): 0.63151 | gap_open: 1.63%
-- SilverMarginGate: SI=76.383003 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=76.414001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -7.42% / slope_proxy: -0.029529
 - Checks:
   - trend_ok: **False**

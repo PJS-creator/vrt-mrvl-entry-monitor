@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-04-26T03:00:49Z",
+  "generated_at_utc": "2026-04-26T15:00:51Z",
   "as_of": {
-    "run_time_utc": "2026-04-26 03:00:49"
+    "run_time_utc": "2026-04-26 15:00:51"
   },
   "data_warning": false,
   "warnings": [],
@@ -75,24 +75,24 @@
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 105.33,
-      "ret5d": 0.165413,
+      "close": 99.13,
+      "ret5d": 0.096813,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 2.523,
-      "ret5d": -0.05647
+      "close": 2.683,
+      "ret5d": 0.003366
     },
-    "Brent_WTI_spread": 10.93
+    "Brent_WTI_spread": 4.73
   },
   "gates": {
     "RISK_OK_STRICT": false,
     "RISK_OK_SOFT": true,
     "OVX_OK": false,
     "WTI_TREND_UP": false,
-    "BRENT_TREND_UP": true,
-    "OIL_TREND_UP": true,
+    "BRENT_TREND_UP": false,
+    "OIL_TREND_UP": false,
     "BRAZIL_RISK_OK": false
   },
   "prices": {
@@ -143,23 +143,23 @@
     },
     "BRL=X": {
       "close": 4.9793,
-      "latest_date": "2026-04-25",
+      "latest_date": "2026-04-26",
       "volume": 0.0
     },
     "CL=F": {
       "close": 94.4,
       "latest_date": "2026-04-24",
-      "volume": 365210.0
+      "volume": 307136.0
     },
     "BZ=F": {
-      "close": 105.33,
+      "close": 99.13,
       "latest_date": "2026-04-24",
-      "volume": 54489.0
+      "volume": 54534.0
     },
     "NG=F": {
-      "close": 2.523,
+      "close": 2.683,
       "latest_date": "2026-04-24",
-      "volume": 79279.0
+      "volume": 126442.0
     }
   },
   "signals": {
@@ -220,7 +220,7 @@
       },
       "checks": {
         "RISK_OK_SOFT": true,
-        "BRENT_TREND_UP": true,
+        "BRENT_TREND_UP": false,
         "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": true,
         "PBR_PULLBACK_OK": false,
@@ -253,7 +253,7 @@
       },
       "checks": {
         "RISK_OK_STRICT": false,
-        "OIL_TREND_UP": true,
+        "OIL_TREND_UP": false,
         "OIH_TREND_UP": true,
         "RIG_BREAKOUT": false,
         "RIG_VOLUME_CONFIRM": false,

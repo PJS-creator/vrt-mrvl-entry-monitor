@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-04-27T03:00:40Z",
+  "generated_at_utc": "2026-04-27T15:00:48Z",
   "as_of": {
-    "price_date": "2026-04-24",
-    "run_time_utc": "2026-04-27 03:00:40"
+    "price_date": "2026-04-27",
+    "run_time_utc": "2026-04-27 15:00:48"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
       "latest": 2.86,
-      "change_4w_bp": -35.0,
-      "latest_date": "2026-04-23"
+      "change_4w_bp": -56.0,
+      "latest_date": "2026-04-24"
     },
     "BAMLC0A0CM": {
       "latest": 0.8,
-      "change_4w_bp": -8.0,
-      "latest_date": "2026-04-23"
+      "change_4w_bp": -11.0,
+      "latest_date": "2026-04-24"
     },
     "DFII10": {
       "latest": 1.92,
@@ -23,9 +23,9 @@
       "latest_date": "2026-04-23"
     },
     "VIXCLS": {
-      "latest": 19.31,
-      "change_4w_bp": -813.0,
-      "latest_date": "2026-04-23"
+      "latest": 18.71,
+      "change_4w_bp": -1234.0,
+      "latest_date": "2026-04-24"
     },
     "NFCI": {
       "latest": -0.497,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 323.46,
-      "latest_date": "2026-04-24"
+      "close": 316.64,
+      "latest_date": "2026-04-27"
     },
     "MRVL": {
-      "close": 164.31,
-      "latest_date": "2026-04-24"
+      "close": 154.98,
+      "latest_date": "2026-04-27"
     },
     "SRVR": {
-      "close": 35.15,
-      "latest_date": "2026-04-24"
+      "close": 34.71,
+      "latest_date": "2026-04-27"
     },
     "SMH": {
-      "close": 506.44,
-      "latest_date": "2026-04-24"
+      "close": 500.385,
+      "latest_date": "2026-04-27"
     },
     "NVDA": {
-      "close": 208.27,
-      "latest_date": "2026-04-24"
+      "close": 209.4701,
+      "latest_date": "2026-04-27"
     },
     "AVGO": {
-      "close": 422.76,
-      "latest_date": "2026-04-24"
+      "close": 416.1,
+      "latest_date": "2026-04-27"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.202275,
-      "ma60": 7.868269,
-      "gap": 0.169543,
+      "ratio": 9.122444,
+      "ma60": 7.916195,
+      "gap": 0.152377,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.324441,
-      "ma60": 0.236083,
-      "gap": 0.374267,
-      "ma60_slope_proxy": 0.025383,
+      "ratio": 0.309721,
+      "ma60": 0.238,
+      "gap": 0.301352,
+      "ma60_slope_proxy": 0.027052,
       "entry": true
     }
   },

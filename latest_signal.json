@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-04-28T15:00:55Z",
+  "generated_at_utc": "2026-04-29T03:00:45Z",
   "as_of": {
     "price_date": "2026-04-28",
-    "run_time_utc": "2026-04-28 15:00:55"
+    "run_time_utc": "2026-04-29 03:00:45"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.86,
-      "change_4w_bp": -56.0,
-      "latest_date": "2026-04-24"
+      "latest": 2.84,
+      "change_4w_bp": -62.0,
+      "latest_date": "2026-04-27"
     },
     "BAMLC0A0CM": {
-      "latest": 0.8,
-      "change_4w_bp": -11.0,
-      "latest_date": "2026-04-24"
+      "latest": 0.81,
+      "change_4w_bp": -12.0,
+      "latest_date": "2026-04-27"
     },
     "DFII10": {
-      "latest": 1.89,
-      "change_4w_bp": -24.0,
-      "latest_date": "2026-04-24"
+      "latest": 1.91,
+      "change_4w_bp": -13.0,
+      "latest_date": "2026-04-27"
     },
     "VIXCLS": {
       "latest": 18.02,
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 298.51,
+      "close": 305.03,
       "latest_date": "2026-04-28"
     },
     "MRVL": {
-      "close": 152.27,
+      "close": 153.23,
       "latest_date": "2026-04-28"
     },
     "SRVR": {
-      "close": 34.4,
+      "close": 34.5,
       "latest_date": "2026-04-28"
     },
     "SMH": {
-      "close": 487.7525,
+      "close": 491.21,
       "latest_date": "2026-04-28"
     },
     "NVDA": {
-      "close": 210.029,
+      "close": 213.17,
       "latest_date": "2026-04-28"
     },
     "AVGO": {
-      "close": 400.14,
+      "close": 399.83,
       "latest_date": "2026-04-28"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.677616,
-      "ma60": 7.962178,
-      "gap": 0.089855,
-      "entry": true
+      "ratio": 8.841449,
+      "ma60": 7.964908,
+      "gap": 0.11005,
+      "entry": false
     },
     "MRVL": {
-      "ratio": 0.312187,
-      "ma60": 0.239991,
-      "gap": 0.300829,
-      "ma60_slope_proxy": 0.028936,
+      "ratio": 0.311944,
+      "ma60": 0.239987,
+      "gap": 0.299838,
+      "ma60_slope_proxy": 0.028932,
       "entry": true
     }
   },
-  "verdict": "✅ Entry condition met: BOTH"
+  "verdict": "✅ Entry condition met: MRVL"
 }

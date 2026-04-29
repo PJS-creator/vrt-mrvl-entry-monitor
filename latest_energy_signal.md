@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-04-29 03:00:54**
+- 실행시간(UTC): **2026-04-29 15:01:00**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 99.05 / 5D 7.51%
-- Brent ref (BZ=F): 103.87 / 5D 5.47%
+- WTI ref (CL=F): 105.24 / 5D 13.21%
+- Brent ref (BZ=F): 109.67 / 5D 7.61%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 4.82
-- Gas ref (NG=F): 2.67 / 5D -0.93%
+- Brent-WTI spread: 4.43
+- Gas ref (NG=F): 2.65 / 5D -2.50%
 
 ## Gates
 
@@ -18,7 +18,7 @@
 - **WTI_TREND_UP**: **True**
 - **BRENT_TREND_UP**: **True**
 - **OIL_TREND_UP**: **True**
-- **BRAZIL_RISK_OK**: **False**
+- **BRAZIL_RISK_OK**: **True**
 
 ## OXY
 
@@ -26,24 +26,24 @@
 
 ### Trend
 
-- close: 58.61
-- MA20 / MA60 / MA200: 58.55 / 55.04 / 46.54
-- gap20 / gap60: 0.10% / 6.49%
-- 5D return: 4.05%
-- 20D high/low: 65.00 / 53.79
+- close: 59.24
+- MA20 / MA60 / MA200: 58.26 / 55.30 / 46.62
+- gap20 / gap60: 1.68% / 7.13%
+- 5D return: 3.84%
+- 20D high/low: 62.97 / 53.79
 
 ### Relative Strength
 
-- ratio: 1.015595
-- ratio_MA60: 0.971999
-- ratio_gap: 4.49%
-- ratio_slope_proxy(20d): 0.038007
+- ratio: 1.014123
+- ratio_MA60: 0.974290
+- ratio_gap: 4.09%
+- ratio_slope_proxy(20d): 0.038113
 
 ### Volume (if available)
 
-- volume: 10417943.00
-- volume_MA20: 15593867.15
-- volume_ratio: 0.67
+- volume: 3118118.00
+- volume_MA20: 14117540.90
+- volume_ratio: 0.22
 
 ### Checks
 
@@ -59,58 +59,58 @@
 
 ### Trend
 
-- close: 21.23
-- MA20 / MA60 / MA200: 20.80 / 18.41 / 14.16
-- gap20 / gap60: 2.08% / 15.34%
-- 5D return: 0.97%
+- close: 21.59
+- MA20 / MA60 / MA200: 20.85 / 18.52 / 14.20
+- gap20 / gap60: 3.59% / 16.62%
+- 5D return: 2.56%
 - 20D high/low: 21.84 / 19.86
 
 ### Relative Strength
 
-- ratio: 0.534895
-- ratio_MA60: 0.479400
-- ratio_gap: 11.58%
-- ratio_slope_proxy(20d): 0.047134
+- ratio: 0.550893
+- ratio_MA60: 0.481931
+- ratio_gap: 14.31%
+- ratio_slope_proxy(20d): 0.046844
 
 ### Volume (if available)
 
-- volume: 13616232.00
-- volume_MA20: 27080661.60
-- volume_ratio: 0.50
+- volume: 3492495.00
+- volume_MA20: 24888359.75
+- volume_ratio: 0.14
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
 - BRENT_TREND_UP: **True**
-- BRAZIL_RISK_OK: **False**
+- BRAZIL_RISK_OK: **True**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **False**
 
 ## RIG
 
-- **ENTRY**: **True**
+- **ENTRY**: **False**
 
 ### Trend
 
-- close: 6.79
-- MA20 / MA60 / MA200: 6.38 / 6.24 / 4.42
-- gap20 / gap60: 6.51% / 8.86%
-- 5D return: 12.23%
-- 20D high/low: 6.79 / 5.89
+- close: 6.80
+- MA20 / MA60 / MA200: 6.38 / 6.27 / 4.44
+- gap20 / gap60: 6.60% / 8.53%
+- 5D return: 12.29%
+- 20D high/low: 6.80 / 5.89
 
 ### Relative Strength
 
-- ratio: 0.015376
-- ratio_MA60: 0.015857
-- ratio_gap: -3.04%
-- ratio_slope_proxy(20d): 0.000579
+- ratio: 0.015295
+- ratio_MA60: 0.015882
+- ratio_gap: -3.70%
+- ratio_slope_proxy(20d): 0.000570
 
 ### Volume (if available)
 
-- volume: 53641748.00
-- volume_MA20: 31903912.40
-- volume_ratio: 1.68
+- volume: 9682978.00
+- volume_MA20: 30746348.90
+- volume_ratio: 0.31
 
 ### Checks
 
@@ -118,7 +118,7 @@
 - OIL_TREND_UP: **True**
 - OIH_TREND_UP: **True**
 - RIG_BREAKOUT: **True**
-- RIG_VOLUME_CONFIRM: **True**
+- RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **True**
 
 ## VG
@@ -127,33 +127,33 @@
 
 ### Trend
 
-- close: 12.16
-- MA20 / MA60 / MA200: 13.20 / 12.26 / 11.06
-- gap20 / gap60: -7.90% / -0.79%
-- 5D return: 0.58%
+- close: 12.80
+- MA20 / MA60 / MA200: 13.06 / 12.32 / 11.04
+- gap20 / gap60: -1.92% / 3.93%
+- 5D return: 3.77%
 - 20D high/low: 15.99 / 11.45
 
 ### Relative Strength
 
-- ratio: 0.045890
-- ratio_MA60: 0.048370
-- ratio_gap: -5.13%
-- ratio_slope_proxy(20d): 0.002811
+- ratio: 0.047427
+- ratio_MA60: 0.048436
+- ratio_gap: -2.08%
+- ratio_slope_proxy(20d): 0.002545
 
 ### Volume (if available)
 
-- volume: 14238365.00
-- volume_MA20: 25761773.25
-- volume_ratio: 0.55
+- volume: 6129910.00
+- volume_MA20: 23837760.50
+- volume_ratio: 0.26
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- LNG_PEER_TREND_UP: **False**
+- LNG_PEER_TREND_UP: **True**
 - VG_TREND_UP: **False**
 - VG_RELATIVE_TURN_UP: **True**
 - VG_NOT_EXTENDED: **True**
 
 ## Verdict
 
-✅ Entry condition met: OXY, RIG
+✅ Entry condition met: OXY

@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-01**
-- 실행시간(UTC): **2026-05-03 15:00:43**
+- 실행시간(UTC): **2026-05-04 03:00:43**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-01**
-- 실행시간(UTC): **2026-05-03 15:00:45**
+- 실행시간(UTC): **2026-05-04 03:00:46**
 
 ## Verdict
 ⏸ No entry today
@@ -86,15 +86,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-03 15:00:53**
+- 실행시간(UTC): **2026-05-04 03:00:53**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 101.94 / 5D 7.99%
-- Brent ref (BZ=F): 108.17 / 5D 2.70%
+- WTI ref (CL=F): 101.87 / 5D 5.71%
+- Brent ref (BZ=F): 108.29 / 5D 0.06%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 6.23
-- Gas ref (NG=F): 2.78 / 5D 10.19%
+- Brent-WTI spread: 6.42
+- Gas ref (NG=F): 2.83 / 5D 11.02%
 
 ## Gates
 
@@ -251,8 +251,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-05-01**
-- 실행시간(UTC): **2026-05-03 15:00:57**
+- 데이터 기준일(주가): **2026-05-03**
+- 실행시간(UTC): **2026-05-04 03:00:59**
 
 ## Verdict
 ⏸ No entry today
@@ -298,7 +298,7 @@
 - close: 8.16 | RSI14: 45.794469 | ATR14%: 7.65%
 - MA20 gap: -3.15% | MA50 gap: -10.46% | MA200 gap: 3.85%
 - vol_ratio(Volume/Vol20): 1.030662 | gap_open: 0.64%
-- SilverMarginGate: SI=76.431 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=75.989998 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -3.90% / slope_proxy: -0.031519
 - Checks:
   - trend_ok: **False**

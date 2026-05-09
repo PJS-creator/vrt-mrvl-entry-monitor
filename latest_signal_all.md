@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-09 03:00:35**
+- 실행시간(UTC): **2026-05-09 15:00:46**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-09 03:00:38**
+- 실행시간(UTC): **2026-05-09 15:00:48**
 
 ## Verdict
 ⏸ No entry today
@@ -86,15 +86,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-09 03:00:45**
+- 실행시간(UTC): **2026-05-09 15:00:56**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 94.68 / 5D -7.12%
-- Brent ref (BZ=F): 100.49 / 5D -7.10%
+- WTI ref (CL=F): 95.42 / 5D -6.40%
+- Brent ref (BZ=F): 101.29 / 5D -6.36%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 5.81
-- Gas ref (NG=F): 2.75 / 5D -1.08%
+- Brent-WTI spread: 5.87
+- Gas ref (NG=F): 2.76 / 5D -0.83%
 
 ## Gates
 
@@ -127,9 +127,9 @@
 
 ### Volume (if available)
 
-- volume: 10914705.00
-- volume_MA20: 13095120.25
-- volume_ratio: 0.83
+- volume: 12938600.00
+- volume_MA20: 13196315.00
+- volume_ratio: 0.98
 
 ### Checks
 
@@ -160,9 +160,9 @@
 
 ### Volume (if available)
 
-- volume: 13257945.00
-- volume_MA20: 20312372.25
-- volume_ratio: 0.65
+- volume: 14619200.00
+- volume_MA20: 20380435.00
+- volume_ratio: 0.72
 
 ### Checks
 
@@ -194,8 +194,8 @@
 
 ### Volume (if available)
 
-- volume: 31205305.00
-- volume_MA20: 36008725.25
+- volume: 31206700.00
+- volume_MA20: 36008795.00
 - volume_ratio: 0.87
 
 ### Checks
@@ -228,8 +228,8 @@
 
 ### Volume (if available)
 
-- volume: 17426991.00
-- volume_MA20: 19995354.55
+- volume: 17438500.00
+- volume_MA20: 19995930.00
 - volume_ratio: 0.87
 
 ### Checks
@@ -252,7 +252,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-09 03:00:50**
+- 실행시간(UTC): **2026-05-09 15:01:00**
 
 ## Verdict
 ⏸ No entry today
@@ -278,7 +278,7 @@
 ## VZLA (Vizsla Silver)
 - close: 3.56 | RSI14: 54.830144 | ATR14%: 5.82%
 - MA20 gap: 4.23% | MA50 gap: 1.78% | MA200 gap: -15.46%
-- vol_ratio(Volume/Vol20): 0.735669 | gap_open: 1.75%
+- vol_ratio(Volume/Vol20): 0.749913 | gap_open: 1.75%
 - RS vs SILJ gap: 0.61% / slope_proxy: -0.015845
 - Checks:
   - trend_ok: **False**
@@ -297,8 +297,8 @@
 ## SCZM (Santacruz Silver)
 - close: 9.03 | RSI14: 56.209296 | ATR14%: 7.18%
 - MA20 gap: 5.80% | MA50 gap: 3.14% | MA200 gap: 13.35%
-- vol_ratio(Volume/Vol20): 0.82349 | gap_open: 1.93%
-- SilverMarginGate: SI=80.834999 / watch>=32.0:True / entry>=35.0:True
+- vol_ratio(Volume/Vol20): 0.84927 | gap_open: 1.93%
+- SilverMarginGate: SI=80.394997 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 0.26% / slope_proxy: -0.029057
 - Checks:
   - trend_ok: **False**
@@ -318,7 +318,7 @@
 ## HYMC (Hycroft Mining)
 - close: 38.439999 | RSI14: 50.892541 | ATR14%: 8.90%
 - MA20 gap: -1.19% | MA50 gap: -0.45% | MA200 gap: 77.59%
-- vol_ratio(Volume/Vol20): 0.796327 | gap_open: 1.93%
+- vol_ratio(Volume/Vol20): 0.812452 | gap_open: 1.93%
 - RS vs SILJ gap: -0.78% / slope_proxy: 0.031637
 - RS vs GDXJ gap: -0.31% / slope_proxy: 0.004714
 - Checks:

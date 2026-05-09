@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-09 03:00:45**
+- 실행시간(UTC): **2026-05-09 15:00:56**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 94.68 / 5D -7.12%
-- Brent ref (BZ=F): 100.49 / 5D -7.10%
+- WTI ref (CL=F): 95.42 / 5D -6.40%
+- Brent ref (BZ=F): 101.29 / 5D -6.36%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 5.81
-- Gas ref (NG=F): 2.75 / 5D -1.08%
+- Brent-WTI spread: 5.87
+- Gas ref (NG=F): 2.76 / 5D -0.83%
 
 ## Gates
 
@@ -41,9 +41,9 @@
 
 ### Volume (if available)
 
-- volume: 10914705.00
-- volume_MA20: 13095120.25
-- volume_ratio: 0.83
+- volume: 12938600.00
+- volume_MA20: 13196315.00
+- volume_ratio: 0.98
 
 ### Checks
 
@@ -74,9 +74,9 @@
 
 ### Volume (if available)
 
-- volume: 13257945.00
-- volume_MA20: 20312372.25
-- volume_ratio: 0.65
+- volume: 14619200.00
+- volume_MA20: 20380435.00
+- volume_ratio: 0.72
 
 ### Checks
 
@@ -108,8 +108,8 @@
 
 ### Volume (if available)
 
-- volume: 31205305.00
-- volume_MA20: 36008725.25
+- volume: 31206700.00
+- volume_MA20: 36008795.00
 - volume_ratio: 0.87
 
 ### Checks
@@ -142,8 +142,8 @@
 
 ### Volume (if available)
 
-- volume: 17426991.00
-- volume_MA20: 19995354.55
+- volume: 17438500.00
+- volume_MA20: 19995930.00
 - volume_ratio: 0.87
 
 ### Checks

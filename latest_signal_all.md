@@ -14,7 +14,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-10 15:00:38**
+- 실행시간(UTC): **2026-05-11 03:00:42**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -49,7 +49,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-10 15:00:44**
+- 실행시간(UTC): **2026-05-11 03:00:45**
 
 ## Verdict
 ⏸ No entry today
@@ -86,24 +86,24 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-10 15:00:52**
+- 실행시간(UTC): **2026-05-11 03:00:53**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 95.42 / 5D -6.40%
-- Brent ref (BZ=F): 101.29 / 5D -6.36%
+- WTI ref (CL=F): 99.69 / 5D -6.32%
+- Brent ref (BZ=F): 105.24 / 5D -8.04%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 5.87
-- Gas ref (NG=F): 2.76 / 5D -0.83%
+- Brent-WTI spread: 5.55
+- Gas ref (NG=F): 2.83 / 5D -1.26%
 
 ## Gates
 
 - **RISK_OK_STRICT**: **True**
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
-- **WTI_TREND_UP**: **False**
-- **BRENT_TREND_UP**: **False**
-- **OIL_TREND_UP**: **False**
+- **WTI_TREND_UP**: **True**
+- **BRENT_TREND_UP**: **True**
+- **OIL_TREND_UP**: **True**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -134,7 +134,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- WTI_TREND_UP: **False**
+- WTI_TREND_UP: **True**
 - OXY_TREND_UP: **False**
 - OXY_PULLBACK_OK: **True**
 - OXY_RELATIVE_OK: **True**
@@ -167,7 +167,7 @@
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **False**
+- BRENT_TREND_UP: **True**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -201,7 +201,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- OIL_TREND_UP: **False**
+- OIL_TREND_UP: **True**
 - OIH_TREND_UP: **False**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
@@ -251,8 +251,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-05-08**
-- 실행시간(UTC): **2026-05-10 15:01:09**
+- 데이터 기준일(주가): **2026-05-10**
+- 실행시간(UTC): **2026-05-11 03:01:05**
 
 ## Verdict
 ⏸ No entry today
@@ -298,7 +298,7 @@
 - close: 9.03 | RSI14: 56.209296 | ATR14%: 7.18%
 - MA20 gap: 5.80% | MA50 gap: 3.14% | MA200 gap: 13.35%
 - vol_ratio(Volume/Vol20): 0.84927 | gap_open: 1.93%
-- SilverMarginGate: SI=80.864998 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=81.625 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 0.26% / slope_proxy: -0.029057
 - Checks:
   - trend_ok: **False**

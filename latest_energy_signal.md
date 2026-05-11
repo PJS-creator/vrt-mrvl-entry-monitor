@@ -1,23 +1,23 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-10 15:00:52**
+- 실행시간(UTC): **2026-05-11 03:00:53**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 95.42 / 5D -6.40%
-- Brent ref (BZ=F): 101.29 / 5D -6.36%
+- WTI ref (CL=F): 99.69 / 5D -6.32%
+- Brent ref (BZ=F): 105.24 / 5D -8.04%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 5.87
-- Gas ref (NG=F): 2.76 / 5D -0.83%
+- Brent-WTI spread: 5.55
+- Gas ref (NG=F): 2.83 / 5D -1.26%
 
 ## Gates
 
 - **RISK_OK_STRICT**: **True**
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
-- **WTI_TREND_UP**: **False**
-- **BRENT_TREND_UP**: **False**
-- **OIL_TREND_UP**: **False**
+- **WTI_TREND_UP**: **True**
+- **BRENT_TREND_UP**: **True**
+- **OIL_TREND_UP**: **True**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -48,7 +48,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- WTI_TREND_UP: **False**
+- WTI_TREND_UP: **True**
 - OXY_TREND_UP: **False**
 - OXY_PULLBACK_OK: **True**
 - OXY_RELATIVE_OK: **True**
@@ -81,7 +81,7 @@
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **False**
+- BRENT_TREND_UP: **True**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -115,7 +115,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- OIL_TREND_UP: **False**
+- OIL_TREND_UP: **True**
 - OIH_TREND_UP: **False**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**

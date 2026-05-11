@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-10T15:00:52Z",
+  "generated_at_utc": "2026-05-11T03:00:53Z",
   "as_of": {
-    "run_time_utc": "2026-05-10 15:00:52"
+    "run_time_utc": "2026-05-11 03:00:53"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,29 +70,29 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 95.42,
-      "ret5d": -0.063959
+      "close": 99.69,
+      "ret5d": -0.06324
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 101.29,
-      "ret5d": -0.063604,
+      "close": 105.24,
+      "ret5d": -0.080392,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 2.757,
-      "ret5d": -0.008273
+      "close": 2.831,
+      "ret5d": -0.012557
     },
-    "Brent_WTI_spread": 5.87
+    "Brent_WTI_spread": 5.55
   },
   "gates": {
     "RISK_OK_STRICT": true,
     "RISK_OK_SOFT": true,
     "OVX_OK": true,
-    "WTI_TREND_UP": false,
-    "BRENT_TREND_UP": false,
-    "OIL_TREND_UP": false,
+    "WTI_TREND_UP": true,
+    "BRENT_TREND_UP": true,
+    "OIL_TREND_UP": true,
     "BRAZIL_RISK_OK": false
   },
   "prices": {
@@ -142,24 +142,24 @@
       "volume": 47172700.0
     },
     "BRL=X": {
-      "close": 4.8929,
-      "latest_date": "2026-05-10",
+      "close": 4.8941,
+      "latest_date": "2026-05-11",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 95.42,
-      "latest_date": "2026-05-08",
-      "volume": 211633.0
+      "close": 99.69,
+      "latest_date": "2026-05-10",
+      "volume": 27203.0
     },
     "BZ=F": {
-      "close": 101.29,
-      "latest_date": "2026-05-08",
-      "volume": 31766.0
+      "close": 105.24,
+      "latest_date": "2026-05-10",
+      "volume": 2455.0
     },
     "NG=F": {
-      "close": 2.757,
-      "latest_date": "2026-05-08",
-      "volume": 117782.0
+      "close": 2.831,
+      "latest_date": "2026-05-10",
+      "volume": 4883.0
     }
   },
   "signals": {
@@ -188,7 +188,7 @@
       },
       "checks": {
         "RISK_OK_STRICT": true,
-        "WTI_TREND_UP": false,
+        "WTI_TREND_UP": true,
         "OXY_TREND_UP": false,
         "OXY_PULLBACK_OK": true,
         "OXY_RELATIVE_OK": true
@@ -220,7 +220,7 @@
       },
       "checks": {
         "RISK_OK_SOFT": true,
-        "BRENT_TREND_UP": false,
+        "BRENT_TREND_UP": true,
         "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": true,
         "PBR_PULLBACK_OK": false,
@@ -253,7 +253,7 @@
       },
       "checks": {
         "RISK_OK_STRICT": true,
-        "OIL_TREND_UP": false,
+        "OIL_TREND_UP": true,
         "OIH_TREND_UP": false,
         "RIG_BREAKOUT": false,
         "RIG_VOLUME_CONFIRM": false,

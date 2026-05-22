@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-05-21T15:00:49Z",
+  "generated_at_utc": "2026-05-22T03:00:38Z",
   "as_of": {
     "price_date": "2026-05-21",
-    "run_time_utc": "2026-05-21 15:00:49"
+    "run_time_utc": "2026-05-22 03:00:38"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.86,
-      "change_4w_bp": 1.0,
-      "latest_date": "2026-05-19"
+      "latest": 2.8,
+      "change_4w_bp": -4.0,
+      "latest_date": "2026-05-20"
     },
     "BAMLC0A0CM": {
-      "latest": 0.76,
+      "latest": 0.75,
       "change_4w_bp": -4.0,
-      "latest_date": "2026-05-19"
+      "latest_date": "2026-05-20"
     },
     "DFII10": {
-      "latest": 2.18,
-      "change_4w_bp": 26.0,
-      "latest_date": "2026-05-19"
+      "latest": 2.13,
+      "change_4w_bp": 21.0,
+      "latest_date": "2026-05-20"
     },
     "VIXCLS": {
       "latest": 17.44,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 327.255,
+      "close": 323.4,
       "latest_date": "2026-05-21"
     },
     "MRVL": {
-      "close": 190.9575,
+      "close": 190.69,
       "latest_date": "2026-05-21"
     },
     "SRVR": {
-      "close": 34.19,
+      "close": 34.37,
       "latest_date": "2026-05-21"
     },
     "SMH": {
-      "close": 560.7045,
+      "close": 567.88,
       "latest_date": "2026-05-21"
     },
     "NVDA": {
-      "close": 219.315,
+      "close": 219.51,
       "latest_date": "2026-05-21"
     },
     "AVGO": {
-      "close": 414.38,
+      "close": 414.57,
       "latest_date": "2026-05-21"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.571659,
-      "ma60": 8.793368,
-      "gap": 0.088509,
+      "ratio": 9.409369,
+      "ma60": 8.790664,
+      "gap": 0.070382,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.340567,
-      "ma60": 0.274408,
-      "gap": 0.241099,
-      "ma60_slope_proxy": 0.040388,
+      "ratio": 0.335793,
+      "ma60": 0.274328,
+      "gap": 0.224056,
+      "ma60_slope_proxy": 0.040309,
       "entry": true
     }
   },

@@ -1,0 +1,65 @@
+{
+  "verdict": "⏸ QLD/TIGER 레버리지 대기",
+  "regime": "F: 과열권, QLD 대기",
+  "run_utc": "2026-05-24T16:28:44.953793+00:00",
+  "metrics": {
+    "data_date_daily": "2026-05-22",
+    "data_date_weekly": "2026-05-18",
+    "qqq_close_daily": 717.5399780273438,
+    "qqq_close_weekly": 717.5399780273438,
+    "daily_rsi14": 71.37820318348258,
+    "daily_ma20": 694.9119995117187,
+    "daily_ma50": 642.0147485351563,
+    "daily_ma200": 613.5970782470703,
+    "daily_gap20_pct": 3.256236549595437,
+    "daily_gap50_pct": 11.763784191018756,
+    "daily_gap200_pct": 16.939927432056635,
+    "daily_macd_hist": -1.357151226003026,
+    "daily_macd_hist_chg": -0.06579065445560417,
+    "daily_atr14_pct": 1.49073105809158,
+    "daily_drawdown20_pct": -0.31259118196760305,
+    "weekly_rsi14": 74.70253567697549,
+    "weekly_ma52": 599.3741901104266,
+    "weekly_ma104": 543.0520424476036,
+    "weekly_gap52_pct": 19.71486091103567,
+    "weekly_gap104_pct": 32.13097860626786,
+    "weekly_ma52_slope_13w_pct": 7.09655733996688,
+    "vxn": 22.81999969482422,
+    "vxn_date": "2026-05-22",
+    "vxn_change_5d": -2.510000228881836,
+    "vxn_source": "Yahoo Finance ^VXN fallback; FRED error='DATE'"
+  },
+  "checks": {
+    "weekly_good": false,
+    "weekly_small": false,
+    "weekly_overheated": true,
+    "weekly_panic": false,
+    "daily_a": false,
+    "daily_b": false,
+    "daily_overheated": true,
+    "rebound_after_panic": false
+  },
+  "reasons": [
+    "주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한",
+    "일봉도 단기 과열 또는 고점 근처라 QLD 추격매수 부적합"
+  ],
+  "allocation": {
+    "monthly_budget_krw": 2000000,
+    "qqq_pct": 0.5,
+    "qld_pct": 0.0,
+    "cash_pct": 0.5,
+    "qqq_amount_krw": 1000000,
+    "qld_amount_krw": 0,
+    "cash_amount_krw": 1000000,
+    "korea_qqq_etf": {
+      "name": "TIGER 미국나스닥100",
+      "code": "133690",
+      "amount_krw": 1000000
+    },
+    "korea_qld_etf": {
+      "name": "TIGER 미국나스닥100레버리지(합성)",
+      "code": "418660",
+      "amount_krw": 0
+    }
+  }
+}

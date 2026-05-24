@@ -16,6 +16,9 @@ ENERGY_MD = Path("latest_energy_signal.md")
 SILVER_JSON = Path("latest_silver_signal.json")
 SILVER_MD = Path("latest_silver_signal.md")
 
+QQQ_QLD_JSON = Path("qqq_qld_timing_signal.json")
+QQQ_QLD_MD = Path("qqq_qld_timing_signal.md")
+
 OUT_MD = Path("latest_signal_all.md")
 
 
@@ -44,21 +47,25 @@ def main() -> None:
     nwg_verdict = load_verdict(NWG_JSON)
     energy_verdict = load_verdict(ENERGY_JSON)
     silver_verdict = load_verdict(SILVER_JSON)
+    qqq_qld_verdict = load_verdict(QQQ_QLD_JSON)
 
     core_md = read_text(CORE_MD)
     nwg_md = read_text(NWG_MD)
     energy_md = read_text(ENERGY_MD)
     silver_md = read_text(SILVER_MD)
+    qqq_qld_md = read_text(QQQ_QLD_MD)
 
     lines: list[str] = []
     lines += ["# Daily Signals (All-in-One)", ""]
     lines += ["## Quick Summary", ""]
+    lines += [f"- QQQ/QLD Timing: **{qqq_qld_verdict}**"]
     lines += [f"- Core (VRT/MRVL): **{core_verdict}**"]
     lines += [f"- NatWest (NWG): **{nwg_verdict}**"]
     lines += [f"- Energy (OXY/PBR/RIG/VG): **{energy_verdict}**"]
     lines += [f"- Silver (VZLA/SCZM/HYMC): **{silver_verdict}**"]
     lines += ["", "---", ""]
 
+    lines += ["## QQQ/QLD timing report", "", qqq_qld_md, "", "---", ""]
     lines += ["## Core report", "", core_md, "", "---", ""]
     lines += ["## NatWest report", "", nwg_md, "", "---", ""]
     lines += ["## Energy report", "", energy_md, ""]

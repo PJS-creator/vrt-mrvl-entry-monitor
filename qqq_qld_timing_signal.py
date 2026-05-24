@@ -140,9 +140,44 @@ def fetch_vxn() -> dict[str, Any]:
         from io import StringIO
 
         df = pd.read_csv(StringIO(r.text))
-        df["DATE"] = pd.to_datetime(df["DATE"])
+
+        # FRED CSV는 환경에 따라 날짜 컬럼명이 DATE 또는 observation_date로 올 수 있습니다.
+        if "DATE" in df.columns:
+            date_col = "DATE"
+        elif "observation_date" in df.columns:
+            date_col = "observation_date"
+        else:
+            raise RuntimeError(f"FRED VXNCLS missing date column. columns={list(df.columns)}")
+
+        if "VXNCLS" not in df.columns:
+            raise RuntimeError(f"FRED VXNCLS missing value column. columns={list(df.columns)}")
+
+        df[date_col] = pd.to_datetime(df[date_col])
         df["VXNCLS"] = pd.to_numeric(df["VXNCLS"], errors="coerce")
-        df = df.dropna(subset=["VXNCLS"]).sort_values("DATE")
+        df = df.dropna(subset=["VXNCLS"]).sort_values(date_col)
+
+        if df.empty:
+            raise RuntimeError("FRED VXNCLS returned no numeric data")
+
+        last = df.iloc[-1]
+        prev5 = df.iloc[-6] if len(df) >= 6 else df.iloc[0]
+
+        return {
+            "value": float(last["VXNCLS"]),
+            "date": str(last[date_col].date()),
+            "change_5d": float(last["VXNCLS"] - prev5["VXNCLS"]),
+            "source": "FRED: VXNCLS",
+        }
+                if df.empty:
+                    raise RuntimeError("FRED VXNCLS returned no numeric data")
+                last = df.iloc[-1]
+                prev5 = df.iloc[-6] if len(df) >= 6 else df.iloc[0]
+                return {
+                    "value": float(last["VXNCLS"]),
+                    "date": str(last["DATE"].date()),
+                    "change_5d": float(last["VXNCLS"] - prev5["VXNCLS"]),
+                    "source": "FRED: VXNCLS",
+                }
         if df.empty:
             raise RuntimeError("FRED VXNCLS returned no numeric data")
         last = df.iloc[-1]

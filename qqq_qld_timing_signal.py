@@ -168,26 +168,6 @@ def fetch_vxn() -> dict[str, Any]:
             "change_5d": float(last["VXNCLS"] - prev5["VXNCLS"]),
             "source": "FRED: VXNCLS",
         }
-                if df.empty:
-                    raise RuntimeError("FRED VXNCLS returned no numeric data")
-                last = df.iloc[-1]
-                prev5 = df.iloc[-6] if len(df) >= 6 else df.iloc[0]
-                return {
-                    "value": float(last["VXNCLS"]),
-                    "date": str(last["DATE"].date()),
-                    "change_5d": float(last["VXNCLS"] - prev5["VXNCLS"]),
-                    "source": "FRED: VXNCLS",
-                }
-        if df.empty:
-            raise RuntimeError("FRED VXNCLS returned no numeric data")
-        last = df.iloc[-1]
-        prev5 = df.iloc[-6] if len(df) >= 6 else df.iloc[0]
-        return {
-            "value": float(last["VXNCLS"]),
-            "date": str(last["DATE"].date()),
-            "change_5d": float(last["VXNCLS"] - prev5["VXNCLS"]),
-            "source": "FRED: VXNCLS",
-        }
     except Exception as fred_error:
         try:
             vdf = download_ohlcv("^VXN", period="1y", interval="1d")

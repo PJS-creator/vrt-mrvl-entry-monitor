@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Validate scripts
-        run: python -m py_compile monitor_signals.py nwg_signal.py energy_signal_monitor.py silver_signal_monitor.py build_latest_signal_all.py
+        run: python -m py_compile monitor_signals.py nwg_signal.py energy_signal_monitor.py silver_signal_monitor.py qqq_qld_timing_signal.py build_latest_signal_all.py
 
       - name: Generate all signal files
         run: |
@@ -35,6 +35,7 @@ jobs:
           python nwg_signal.py
           python energy_signal_monitor.py
           python silver_signal_monitor.py
+          python qqq_qld_timing_signal.py
           python build_latest_signal_all.py
 
       - name: Commit and push if changed
@@ -51,6 +52,8 @@ jobs:
             latest_energy_signal.md
             latest_silver_signal.json
             latest_silver_signal.md
+            qqq_qld_timing_signal.json
+            qqq_qld_timing_signal.md
             latest_signal_all.md
           )
 
@@ -114,6 +117,7 @@ jobs:
             const nwgVerdict = readVerdict('nwg_latest_signal.json');
             const energyVerdict = readVerdict('latest_energy_signal.json');
             const silverVerdict = readVerdict('latest_silver_signal.json');
+            const qqqQldVerdict = readVerdict('qqq_qld_timing_signal.json');
             const reportAll = readText('latest_signal_all.md');
 
             // 알림을 확실히 받기 위해: 멘션 + (가능하면) assignee 지정
@@ -130,6 +134,7 @@ jobs:
               `- Run: ${runUrl}`,
               ``,
               `## Quick Summary`,
+              `- QQQ/QLD Timing: **${qqqQldVerdict}**`,
               `- Core (VRT/MRVL): **${coreVerdict}**`,
               `- NatWest (NWG): **${nwgVerdict}**`,
               `- Energy (OXY/PBR/RIG/VG): **${energyVerdict}**`,

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-25T03:00:53Z",
+  "generated_at_utc": "2026-05-25T15:00:51Z",
   "as_of": {
-    "run_time_utc": "2026-05-25 03:00:53"
+    "run_time_utc": "2026-05-25 15:00:51"
   },
   "data_warning": false,
   "warnings": [],
@@ -93,7 +93,7 @@
     "WTI_TREND_UP": false,
     "BRENT_TREND_UP": false,
     "OIL_TREND_UP": false,
-    "BRAZIL_RISK_OK": true
+    "BRAZIL_RISK_OK": false
   },
   "prices": {
     "PBR": {
@@ -142,24 +142,24 @@
       "volume": 41671800.0
     },
     "BRL=X": {
-      "close": 5.0398,
+      "close": 5.0095,
       "latest_date": "2026-05-25",
       "volume": 0.0
     },
     "CL=F": {
       "close": 96.6,
-      "latest_date": "2026-05-24",
-      "volume": 25812.0
+      "latest_date": "2026-05-25",
+      "volume": 85204.0
     },
     "BZ=F": {
       "close": 100.21,
-      "latest_date": "2026-05-24",
-      "volume": 3137.0
+      "latest_date": "2026-05-25",
+      "volume": 11804.0
     },
     "NG=F": {
       "close": 3.021,
-      "latest_date": "2026-05-24",
-      "volume": 1943.0
+      "latest_date": "2026-05-25",
+      "volume": 20402.0
     }
   },
   "signals": {
@@ -221,7 +221,7 @@
       "checks": {
         "RISK_OK_SOFT": true,
         "BRENT_TREND_UP": false,
-        "BRAZIL_RISK_OK": true,
+        "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": false,
         "PBR_PULLBACK_OK": true,
         "PBR_RELATIVE_OK": true

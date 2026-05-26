@@ -16,6 +16,9 @@ ENERGY_MD = Path("latest_energy_signal.md")
 SILVER_JSON = Path("latest_silver_signal.json")
 SILVER_MD = Path("latest_silver_signal.md")
 
+PRECIOUS_JSON = Path("latest_precious_miners_signal.json")
+PRECIOUS_MD = Path("latest_precious_miners_signal.md")
+
 QQQ_QLD_JSON = Path("qqq_qld_timing_signal.json")
 QQQ_QLD_MD = Path("qqq_qld_timing_signal.md")
 
@@ -47,12 +50,14 @@ def main() -> None:
     nwg_verdict = load_verdict(NWG_JSON)
     energy_verdict = load_verdict(ENERGY_JSON)
     silver_verdict = load_verdict(SILVER_JSON)
+    precious_verdict = load_verdict(PRECIOUS_JSON)
     qqq_qld_verdict = load_verdict(QQQ_QLD_JSON)
 
     core_md = read_text(CORE_MD)
     nwg_md = read_text(NWG_MD)
     energy_md = read_text(ENERGY_MD)
     silver_md = read_text(SILVER_MD)
+    precious_md = read_text(PRECIOUS_MD)
     qqq_qld_md = read_text(QQQ_QLD_MD)
 
     lines: list[str] = []
@@ -63,6 +68,7 @@ def main() -> None:
     lines += [f"- NatWest (NWG): **{nwg_verdict}**"]
     lines += [f"- Energy (OXY/PBR/RIG/VG): **{energy_verdict}**"]
     lines += [f"- Silver (VZLA/SCZM/HYMC): **{silver_verdict}**"]
+    lines += [f"- Precious Miners (Gold/Silver): **{precious_verdict}**"]
     lines += ["", "---", ""]
 
     lines += ["## QQQ/QLD timing report", "", qqq_qld_md, "", "---", ""]
@@ -70,6 +76,7 @@ def main() -> None:
     lines += ["## NatWest report", "", nwg_md, "", "---", ""]
     lines += ["## Energy report", "", energy_md, ""]
     lines += ["", "---", "", "## Silver report", "", silver_md, ""]
+    lines += ["", "---", "", "## Precious miners report", "", precious_md, ""]
 
     OUT_MD.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
 

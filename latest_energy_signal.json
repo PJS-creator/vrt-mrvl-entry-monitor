@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-05-25T15:00:51Z",
+  "generated_at_utc": "2026-05-26T03:00:56Z",
   "as_of": {
-    "run_time_utc": "2026-05-25 15:00:51"
+    "run_time_utc": "2026-05-26 03:00:56"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 96.6,
-      "ret5d": -0.110988
+      "close": 91.57,
+      "ret5d": -0.15728
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 100.21,
-      "ret5d": -0.106066,
+      "close": 94.98,
+      "ret5d": -0.152721,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.021,
-      "ret5d": -0.000992
+      "close": 3.06,
+      "ret5d": 0.011905
     },
-    "Brent_WTI_spread": 3.61
+    "Brent_WTI_spread": 3.41
   },
   "gates": {
     "RISK_OK_STRICT": false,
@@ -93,7 +93,7 @@
     "WTI_TREND_UP": false,
     "BRENT_TREND_UP": false,
     "OIL_TREND_UP": false,
-    "BRAZIL_RISK_OK": false
+    "BRAZIL_RISK_OK": true
   },
   "prices": {
     "PBR": {
@@ -142,24 +142,24 @@
       "volume": 41671800.0
     },
     "BRL=X": {
-      "close": 5.0095,
-      "latest_date": "2026-05-25",
+      "close": 5.0096,
+      "latest_date": "2026-05-26",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 96.6,
+      "close": 91.57,
       "latest_date": "2026-05-25",
-      "volume": 85204.0
+      "volume": 133170.0
     },
     "BZ=F": {
-      "close": 100.21,
+      "close": 94.98,
       "latest_date": "2026-05-25",
-      "volume": 11804.0
+      "volume": 17743.0
     },
     "NG=F": {
-      "close": 3.021,
+      "close": 3.06,
       "latest_date": "2026-05-25",
-      "volume": 20402.0
+      "volume": 29526.0
     }
   },
   "signals": {
@@ -221,7 +221,7 @@
       "checks": {
         "RISK_OK_SOFT": true,
         "BRENT_TREND_UP": false,
-        "BRAZIL_RISK_OK": false,
+        "BRAZIL_RISK_OK": true,
         "PBR_TREND_OK": false,
         "PBR_PULLBACK_OK": true,
         "PBR_RELATIVE_OK": true

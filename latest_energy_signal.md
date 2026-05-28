@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-27 16:42:06**
+- 실행시간(UTC): **2026-05-28 03:00:50**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 89.99 / 5D -16.50%
-- Brent ref (BZ=F): 93.40 / 5D -16.07%
+- WTI ref (CL=F): 90.73 / 5D -15.81%
+- Brent ref (BZ=F): 94.36 / 5D -15.20%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.41
-- Gas ref (NG=F): 3.13 / 5D 0.45%
+- Brent-WTI spread: 3.63
+- Gas ref (NG=F): 3.08 / 5D -1.12%
 
 ## Gates
 
@@ -26,24 +26,24 @@
 
 ### Trend
 
-- close: 57.30
-- MA20 / MA60 / MA200: 57.87 / 58.25 / 48.01
-- gap20 / gap60: -0.99% / -1.63%
-- 5D return: -5.60%
+- close: 56.89
+- MA20 / MA60 / MA200: 57.85 / 58.24 / 48.01
+- gap20 / gap60: -1.66% / -2.32%
+- 5D return: -6.28%
 - 20D high/low: 60.76 / 53.03
 
 ### Relative Strength
 
-- ratio: 1.003063
-- ratio_MA60: 1.002757
-- ratio_gap: 0.03%
-- ratio_slope_proxy(20d): 0.030758
+- ratio: 0.998245
+- ratio_MA60: 1.002677
+- ratio_gap: -0.44%
+- ratio_slope_proxy(20d): 0.030678
 
 ### Volume (if available)
 
-- volume: 5822416.00
-- volume_MA20: 12240780.80
-- volume_ratio: 0.48
+- volume: 11299561.00
+- volume_MA20: 12515578.05
+- volume_ratio: 0.90
 
 ### Checks
 
@@ -59,24 +59,24 @@
 
 ### Trend
 
-- close: 19.03
+- close: 18.96
 - MA20 / MA60 / MA200: 20.55 / 20.05 / 14.99
-- gap20 / gap60: -7.40% / -5.11%
-- 5D return: -6.76%
-- 20D high/low: 22.03 / 19.03
+- gap20 / gap60: -7.73% / -5.45%
+- 5D return: -7.10%
+- 20D high/low: 22.03 / 18.96
 
 ### Relative Strength
 
-- ratio: 0.524729
-- ratio_MA60: 0.524909
-- ratio_gap: -0.03%
-- ratio_slope_proxy(20d): 0.045509
+- ratio: 0.525062
+- ratio_MA60: 0.524915
+- ratio_gap: 0.03%
+- ratio_slope_proxy(20d): 0.045515
 
 ### Volume (if available)
 
-- volume: 9651952.00
-- volume_MA20: 17476797.60
-- volume_ratio: 0.55
+- volume: 16783100.00
+- volume_MA20: 17833355.00
+- volume_ratio: 0.94
 
 ### Checks
 
@@ -93,24 +93,24 @@
 
 ### Trend
 
-- close: 6.24
-- MA20 / MA60 / MA200: 6.75 / 6.50 / 4.81
-- gap20 / gap60: -7.51% / -4.07%
-- 5D return: -16.24%
+- close: 6.18
+- MA20 / MA60 / MA200: 6.74 / 6.50 / 4.80
+- gap20 / gap60: -8.36% / -4.98%
+- 5D return: -17.05%
 - 20D high/low: 7.58 / 6.17
 
 ### Relative Strength
 
-- ratio: 0.014621
-- ratio_MA60: 0.015756
-- ratio_gap: -7.20%
-- ratio_slope_proxy(20d): -0.000102
+- ratio: 0.014523
+- ratio_MA60: 0.015754
+- ratio_gap: -7.81%
+- ratio_slope_proxy(20d): -0.000103
 
 ### Volume (if available)
 
-- volume: 16100494.00
-- volume_MA20: 35278974.70
-- volume_ratio: 0.46
+- volume: 25752396.00
+- volume_MA20: 35761569.80
+- volume_ratio: 0.72
 
 ### Checks
 
@@ -127,24 +127,24 @@
 
 ### Trend
 
-- close: 12.51
-- MA20 / MA60 / MA200: 13.10 / 13.42 / 10.87
-- gap20 / gap60: -4.54% / -6.80%
-- 5D return: -15.39%
+- close: 12.37
+- MA20 / MA60 / MA200: 13.09 / 13.42 / 10.87
+- gap20 / gap60: -5.52% / -7.79%
+- 5D return: -16.31%
 - 20D high/low: 14.78 / 11.45
 
 ### Relative Strength
 
-- ratio: 0.053794
-- ratio_MA60: 0.051472
-- ratio_gap: 4.51%
-- ratio_slope_proxy(20d): 0.002990
+- ratio: 0.053557
+- ratio_MA60: 0.051468
+- ratio_gap: 4.06%
+- ratio_slope_proxy(20d): 0.002986
 
 ### Volume (if available)
 
-- volume: 6329076.00
-- volume_MA20: 20291708.80
-- volume_ratio: 0.31
+- volume: 13391665.00
+- volume_MA20: 20645548.25
+- volume_ratio: 0.65
 
 ### Checks
 

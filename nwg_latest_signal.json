@@ -1,11 +1,16 @@
 {
-  "generated_at_utc": "2026-05-28T15:00:48Z",
+  "generated_at_utc": "2026-05-29T03:01:53Z",
   "as_of": {
     "price_date": "2026-05-28",
-    "run_time_utc": "2026-05-28 15:00:48"
+    "run_time_utc": "2026-05-29 03:01:53"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 2.71,
@@ -72,19 +77,19 @@
       "latest_date": "2026-05-28"
     },
     "^FTSE": {
-      "close": 10426.9297,
+      "close": 10426.0,
       "latest_date": "2026-05-28"
     },
     "LLOY.L": {
-      "close": 101.1,
+      "close": 101.15,
       "latest_date": "2026-05-28"
     },
     "BARC.L": {
-      "close": 453.05,
+      "close": 452.45,
       "latest_date": "2026-05-28"
     },
     "HSBA.L": {
-      "close": 1377.8,
+      "close": 1381.0,
       "latest_date": "2026-05-28"
     }
   },
@@ -97,16 +102,16 @@
       "gap200": 0.005696
     },
     "RS_FTSE": {
-      "ratio": 0.056603,
+      "ratio": 0.056608,
       "ma60": 0.055792,
-      "gap": 0.014544,
+      "gap": 0.014633,
       "ma60_slope_proxy": -0.001335
     },
     "RS_PEERS": {
-      "ratio": 0.916483,
-      "ma60": 0.956727,
-      "gap": -0.042064,
-      "ma60_slope_proxy": -0.028866
+      "ratio": 0.915228,
+      "ma60": 0.956706,
+      "gap": -0.043355,
+      "ma60_slope_proxy": -0.028887
     }
   },
   "checks": {

@@ -1,7 +1,16 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-28**
-- 실행시간(UTC): **2026-05-28 15:00:46**
+- 실행시간(UTC): **2026-05-29 03:00:39**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED BAMLC0A0CM failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM), using cached values if available.
+- FRED DFII10 failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10), using cached values if available.
+- FRED VIXCLS failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -14,16 +23,16 @@
 - NFCI: -0.51
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 8.960276
-- MA60: 8.896488
-- gap: 0.72%
+- ratio (VRT/SRVR): 9.020384
+- MA60: 8.89749
+- gap: 1.38%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.329681
-- MA60: 0.283655
-- gap: 16.23%
-- MA60_slope_proxy: 0.041657
+- ratio (MRVL/SMH): 0.34148
+- MA60: 0.283852
+- gap: 20.30%
+- MA60_slope_proxy: 0.041853
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

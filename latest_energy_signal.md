@@ -1,14 +1,27 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-28 15:00:56**
+- 실행시간(UTC): **2026-05-29 03:03:17**
+
+## ⚠️ DATA WARNING
+
+- FRED DCOILWTICO failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED DCOILBRENTEU failed (404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU), using cached values if available.
+- FRED DHHNGSP failed (404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP), using cached values if available.
+- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED BAMLC0A0CM failed (502 Server Error: Bad Gateway for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM), using cached values if available.
+- FRED DTWEXBGS failed (404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 89.44 / 5D -8.98%
-- Brent ref (BZ=F): 93.18 / 5D -11.27%
+- WTI ref (CL=F): 87.87 / 5D -10.57%
+- Brent ref (BZ=F): 92.09 / 5D -12.31%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.74
-- Gas ref (NG=F): 3.21 / 5D 7.02%
+- Brent-WTI spread: 4.22
+- Gas ref (NG=F): 3.30 / 5D 9.92%
 
 ## Gates
 
@@ -26,24 +39,24 @@
 
 ### Trend
 
-- close: 57.38
+- close: 57.32
 - MA20 / MA60 / MA200: 57.68 / 58.31 / 48.08
-- gap20 / gap60: -0.53% / -1.59%
-- 5D return: -2.53%
+- gap20 / gap60: -0.63% / -1.69%
+- 5D return: -2.63%
 - 20D high/low: 60.70 / 53.03
 
 ### Relative Strength
 
-- ratio: 1.007412
-- ratio_MA60: 1.003610
-- ratio_gap: 0.38%
-- ratio_slope_proxy(20d): 0.029067
+- ratio: 1.006497
+- ratio_MA60: 1.003595
+- ratio_gap: 0.29%
+- ratio_slope_proxy(20d): 0.029052
 
 ### Volume (if available)
 
-- volume: 4984163.00
-- volume_MA20: 12078443.15
-- volume_ratio: 0.41
+- volume: 10865390.00
+- volume_MA20: 12373469.50
+- volume_ratio: 0.88
 
 ### Checks
 
@@ -59,24 +72,24 @@
 
 ### Trend
 
-- close: 18.90
+- close: 18.83
 - MA20 / MA60 / MA200: 20.40 / 20.09 / 15.02
-- gap20 / gap60: -7.35% / -5.91%
-- 5D return: -4.69%
-- 20D high/low: 22.03 / 18.90
+- gap20 / gap60: -7.68% / -6.26%
+- 5D return: -5.04%
+- 20D high/low: 22.03 / 18.83
 
 ### Relative Strength
 
-- ratio: 0.521374
-- ratio_MA60: 0.525972
-- ratio_gap: -0.87%
-- ratio_slope_proxy(20d): 0.043800
+- ratio: 0.521462
+- ratio_MA60: 0.525974
+- ratio_gap: -0.86%
+- ratio_slope_proxy(20d): 0.043802
 
 ### Volume (if available)
 
-- volume: 3107062.00
-- volume_MA20: 17015128.10
-- volume_ratio: 0.18
+- volume: 10526102.00
+- volume_MA20: 17386080.10
+- volume_ratio: 0.61
 
 ### Checks
 
@@ -93,24 +106,24 @@
 
 ### Trend
 
-- close: 6.19
+- close: 6.22
 - MA20 / MA60 / MA200: 6.71 / 6.51 / 4.82
-- gap20 / gap60: -7.68% / -4.84%
-- 5D return: -15.67%
+- gap20 / gap60: -7.25% / -4.39%
+- 5D return: -15.26%
 - 20D high/low: 7.58 / 6.17
 
 ### Relative Strength
 
-- ratio: 0.014691
-- ratio_MA60: 0.015734
-- ratio_gap: -6.63%
-- ratio_slope_proxy(20d): -0.000153
+- ratio: 0.014786
+- ratio_MA60: 0.015736
+- ratio_gap: -6.04%
+- ratio_slope_proxy(20d): -0.000152
 
 ### Volume (if available)
 
-- volume: 5486544.00
-- volume_MA20: 34586697.20
-- volume_ratio: 0.16
+- volume: 22449639.00
+- volume_MA20: 35436046.95
+- volume_ratio: 0.63
 
 ### Checks
 
@@ -129,22 +142,22 @@
 
 - close: 12.54
 - MA20 / MA60 / MA200: 13.06 / 13.43 / 10.87
-- gap20 / gap60: -4.03% / -6.69%
-- 5D return: -10.66%
+- gap20 / gap60: -3.99% / -6.65%
+- 5D return: -10.62%
 - 20D high/low: 14.78 / 11.45
 
 ### Relative Strength
 
-- ratio: 0.054519
-- ratio_MA60: 0.051600
-- ratio_gap: 5.66%
-- ratio_slope_proxy(20d): 0.003037
+- ratio: 0.054624
+- ratio_MA60: 0.051602
+- ratio_gap: 5.86%
+- ratio_slope_proxy(20d): 0.003038
 
 ### Volume (if available)
 
-- volume: 3675563.00
-- volume_MA20: 19607403.15
-- volume_ratio: 0.19
+- volume: 8156431.00
+- volume_MA20: 19833146.55
+- volume_ratio: 0.41
 
 ### Checks
 

@@ -1,14 +1,25 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-30 03:00:48**
+- 실행시간(UTC): **2026-05-30 15:02:24**
+
+## ⚠️ DATA WARNING
+
+- FRED DCOILWTICO failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO), using cached values if available.
+- FRED DCOILBRENTEU failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU), using cached values if available.
+- FRED DHHNGSP failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP), using cached values if available.
+- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED DTWEXBGS failed (502 Server Error: Bad Gateway for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 87.76 / 5D -8.92%
-- Brent ref (BZ=F): 91.70 / 5D -10.61%
+- WTI ref (CL=F): 87.36 / 5D -9.33%
+- Brent ref (BZ=F): 92.05 / 5D -10.27%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.94
-- Gas ref (NG=F): 3.27 / 5D 8.45%
+- Brent-WTI spread: 4.69
+- Gas ref (NG=F): 3.29 / 5D 9.01%
 
 ## Gates
 
@@ -41,9 +52,9 @@
 
 ### Volume (if available)
 
-- volume: 9023614.00
-- volume_MA20: 12177425.70
-- volume_ratio: 0.74
+- volume: 14395100.00
+- volume_MA20: 12446000.00
+- volume_ratio: 1.16
 
 ### Checks
 
@@ -74,9 +85,9 @@
 
 ### Volume (if available)
 
-- volume: 15014221.00
-- volume_MA20: 17445451.05
-- volume_ratio: 0.86
+- volume: 16604400.00
+- volume_MA20: 17524960.00
+- volume_ratio: 0.95
 
 ### Checks
 
@@ -108,9 +119,9 @@
 
 ### Volume (if available)
 
-- volume: 21626486.00
-- volume_MA20: 35181639.30
-- volume_ratio: 0.61
+- volume: 26937600.00
+- volume_MA20: 35447195.00
+- volume_ratio: 0.76
 
 ### Checks
 
@@ -142,8 +153,8 @@
 
 ### Volume (if available)
 
-- volume: 13888283.00
-- volume_MA20: 19672959.15
+- volume: 13923700.00
+- volume_MA20: 19674730.00
 - volume_ratio: 0.71
 
 ### Checks

@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-05-29T15:00:46Z",
+  "generated_at_utc": "2026-05-30T03:00:40Z",
   "as_of": {
     "price_date": "2026-05-29",
-    "run_time_utc": "2026-05-29 15:00:46"
+    "run_time_utc": "2026-05-30 03:00:40"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.71,
+      "latest": 2.72,
       "change_4w": -11.0,
-      "latest_date": "2026-05-27"
+      "latest_date": "2026-05-28"
     },
     "BAMLC0A0CM": {
-      "latest": 0.74,
-      "change_4w": -7.0,
-      "latest_date": "2026-05-27"
+      "latest": 0.73,
+      "change_4w": -8.0,
+      "latest_date": "2026-05-28"
     },
     "VIXCLS": {
-      "latest": 16.29,
-      "change_4w": -2.52,
-      "latest_date": "2026-05-27"
+      "latest": 15.74,
+      "change_4w": -1.15,
+      "latest_date": "2026-05-28"
     },
     "NFCI": {
       "latest": -0.51,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 596.2,
+      "close": 599.4,
       "latest_date": "2026-05-29"
     },
     "^FTSE": {
-      "close": 10443.3301,
+      "close": 10409.2998,
       "latest_date": "2026-05-29"
     },
     "LLOY.L": {
-      "close": 101.2,
+      "close": 101.9,
       "latest_date": "2026-05-29"
     },
     "BARC.L": {
-      "close": 457.7,
+      "close": 457.95,
       "latest_date": "2026-05-29"
     },
     "HSBA.L": {
-      "close": 1392.4,
+      "close": 1393.6,
       "latest_date": "2026-05-29"
     }
   },
   "signals": {
     "NWG": {
-      "close": 596.2,
-      "ma50": 577.3718,
-      "ma200": 587.1563,
-      "gap50": 0.03261,
-      "gap200": 0.015403
+      "close": 599.4,
+      "ma50": 577.4358,
+      "ma200": 587.1723,
+      "gap50": 0.038037,
+      "gap200": 0.020825
     },
     "RS_FTSE": {
-      "ratio": 0.057089,
-      "ma60": 0.055815,
-      "gap": 0.022832,
-      "ma60_slope_proxy": -0.001139
+      "ratio": 0.057583,
+      "ma60": 0.055823,
+      "gap": 0.031531,
+      "ma60_slope_proxy": -0.001131
     },
     "RS_PEERS": {
-      "ratio": 0.91662,
-      "ma60": 0.956105,
-      "gap": -0.041298,
-      "ma60_slope_proxy": -0.027108
+      "ratio": 0.920525,
+      "ma60": 0.95617,
+      "gap": -0.037278,
+      "ma60_slope_proxy": -0.027043
     }
   },
   "checks": {

@@ -1,19 +1,10 @@
 {
-  "generated_at_utc": "2026-05-30T15:02:24Z",
+  "generated_at_utc": "2026-05-31T03:00:58Z",
   "as_of": {
-    "run_time_utc": "2026-05-30 15:02:24"
+    "run_time_utc": "2026-05-31 03:00:58"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED DCOILWTICO failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO), using cached values if available.",
-    "FRED DCOILBRENTEU failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU), using cached values if available.",
-    "FRED DHHNGSP failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP), using cached values if available.",
-    "FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED DTWEXBGS failed (502 Server Error: Bad Gateway for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "macro": {
     "DCOILWTICO": {
       "latest": 97.63,

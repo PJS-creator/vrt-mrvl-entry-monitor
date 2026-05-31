@@ -15,10 +15,10 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-05-30 15:06:33**
+- 실행시간(UTC): **2026-05-31 03:01:26**
 - 데이터 기준일(일봉): **2026-05-29**
 - 데이터 기준일(주봉): **2026-05-25**
-- VXN 기준일: **2026-05-29** / source: `Yahoo Finance ^VXN fallback; FRED error=504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=VXNCLS`
+- VXN 기준일: **2026-05-28** / source: `FRED: VXNCLS`
 
 ## Verdict
 
@@ -39,7 +39,7 @@
 - 52W MA: 603.64 / gap: **22.31%**
 - 104W MA gap: **35.26%**
 - 52W MA 13W slope: **7.48%**
-- VXN: **22.58** / 5D change: -0.16
+- VXN: **22.92** / 5D change: -0.79
 
 ## Daily trigger: 실제 매수 타이밍
 
@@ -81,14 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-30 15:00:36**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-05-31 03:00:42**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -123,13 +116,17 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-30 15:01:38**
+- 실행시간(UTC): **2026-05-31 03:00:52**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- BoE IUDBEDR failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDSOIA failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDMNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDSNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE LPMVTVX failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE LPMVQJW failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -144,8 +141,8 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 107.59 bp / 4주 변화 -17.94 bp
-- CURVE_10s5s: 45.99 bp / 4주 변화 1.7 bp
+- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- CURVE_10s5s: None bp / 4주 변화 None bp
 
 ## NWG Price
 - close: 599.4
@@ -167,18 +164,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-30 15:02:24**
-
-## ⚠️ DATA WARNING
-
-- FRED DCOILWTICO failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO), using cached values if available.
-- FRED DCOILBRENTEU failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU), using cached values if available.
-- FRED DHHNGSP failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP), using cached values if available.
-- FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DTWEXBGS failed (502 Server Error: Bad Gateway for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-05-31 03:00:58**
 
 ## Commodity Regime
 
@@ -344,15 +330,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-30 15:04:30**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED DFII10 failed (504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10), using cached values if available.
-- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-05-31 03:01:07**
 
 ## Verdict
 ⏸ No entry today
@@ -442,7 +420,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-05-30 15:06:22**
+- 실행시간(UTC): **2026-05-31 03:01:22**
 - 데이터 기준일(주가): **2026-05-29**
 
 ## Verdict
@@ -463,9 +441,9 @@
 
 - HY OAS: 2.72 / 4주 변화 -0.11 bp-ish / 2026-05-28
 - IG OAS: 0.73 / 4주 변화 -0.08 bp-ish / 2026-05-28
-- 10Y Real Yield: N/A
-- VIX: N/A
-- NFCI: N/A
+- 10Y Real Yield: 2.06 / 4주 변화 0.10 bp-ish / 2026-05-28
+- VIX: 15.74 / 4주 변화 -1.15 / 2026-05-28
+- NFCI: -0.51 / 4주 변화 0.04 / 2026-05-22
 
 ### Leadership ratios
 

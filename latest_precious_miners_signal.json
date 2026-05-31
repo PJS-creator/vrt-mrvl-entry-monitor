@@ -1,6 +1,6 @@
 {
   "verdict": "✅ Precious miners entry confirmed: EXK",
-  "generated_utc": "2026-05-30 15:06:22",
+  "generated_utc": "2026-05-31 03:01:22",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": false,
@@ -59,16 +59,22 @@
         "change_approx_4w": -0.08000000000000007
       },
       "REAL10Y": {
-        "ok": false,
-        "error": "504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10"
+        "ok": true,
+        "date": "2026-05-28",
+        "latest": 2.06,
+        "change_approx_4w": 0.10000000000000009
       },
       "VIX": {
-        "ok": false,
-        "error": "504 Server Error: Gateway Time-out for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=VIXCLS"
+        "ok": true,
+        "date": "2026-05-28",
+        "latest": 15.74,
+        "change_approx_4w": -1.1500000000000004
       },
       "NFCI": {
-        "ok": false,
-        "error": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=15)"
+        "ok": true,
+        "date": "2026-05-22",
+        "latest": -0.51,
+        "change_approx_4w": 0.03700000000000003
       }
     }
   },

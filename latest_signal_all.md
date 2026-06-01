@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-05-31 15:01:07**
+- 실행시간(UTC): **2026-06-01 03:01:13**
 - 데이터 기준일(일봉): **2026-05-29**
 - 데이터 기준일(주봉): **2026-05-25**
 - VXN 기준일: **2026-05-28** / source: `FRED: VXNCLS`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-31 15:00:37**
+- 실행시간(UTC): **2026-06-01 03:00:37**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -116,17 +116,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-31 15:00:42**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE IUDBEDR failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDSOIA failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDMNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDSNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE LPMVTVX failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE LPMVQJW failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- 실행시간(UTC): **2026-06-01 03:00:39**
 
 ## Verdict
 ⏸ No entry today
@@ -141,8 +131,8 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
-- CURVE_10s5s: None bp / 4주 변화 None bp
+- TERM_SPREAD_10Y_POLICY: 107.59 bp / 4주 변화 -17.94 bp
+- CURVE_10s5s: 45.99 bp / 4주 변화 1.7 bp
 
 ## NWG Price
 - close: 599.4
@@ -164,15 +154,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-05-31 15:00:48**
+- 실행시간(UTC): **2026-06-01 03:00:46**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 87.36 / 5D -9.33%
-- Brent ref (BZ=F): 91.12 / 5D -11.17%
+- WTI ref (CL=F): 89.53 / 5D -7.32%
+- Brent ref (BZ=F): 93.04 / 5D -10.14%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.76
-- Gas ref (NG=F): 3.29 / 5D 9.01%
+- Brent-WTI spread: 3.51
+- Gas ref (NG=F): 3.36 / 5D 15.51%
 
 ## Gates
 
@@ -329,8 +319,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-31 15:00:55**
+- 데이터 기준일(주가): **2026-05-31**
+- 실행시간(UTC): **2026-06-01 03:01:04**
 
 ## Verdict
 ⏸ No entry today
@@ -376,7 +366,7 @@
 - close: 8.15 | RSI14: 45.274778 | ATR14%: 7.30%
 - MA20 gap: -5.18% | MA50 gap: -2.43% | MA200 gap: -1.87%
 - vol_ratio(Volume/Vol20): 0.940641 | gap_open: 0.00%
-- SilverMarginGate: SI=75.875 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=75.970001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -5.24% / slope_proxy: -0.011761
 - Checks:
   - trend_ok: **False**
@@ -420,7 +410,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-05-31 15:01:02**
+- 실행시간(UTC): **2026-06-01 03:01:12**
 - 데이터 기준일(주가): **2026-05-29**
 
 ## Verdict
@@ -430,7 +420,7 @@
 
 - RiskGreen: **True**
 - RealYieldHeadwind: **False**
-- GoldUptrend(GC=F/GLD): **False**
+- GoldUptrend(GC=F/GLD): **True**
 - SilverUptrend(SI=F/SLV): **True**
 - GoldMinerLeadership(GDX/GLD or GDXJ/GLD): **True**
 - SilverMinerLeadership(SILJ/SLV): **True**
@@ -463,9 +453,9 @@
 - MA20/50/200 gap: 5.43% / 1.96% / 2.06%
 - 5D return: 17.71% | 20D drawdown: -5.16% | vol_ratio: 1.23
 - RS vs GDXJ: gap 0.47% / slope_proxy 6.03%
-- FundamentalScore: 82 | TechnicalScore: 80 | RegimeScore: 55 | OverallScore: **75.9**
+- FundamentalScore: 82 | TechnicalScore: 80 | RegimeScore: 80 | OverallScore: **80.9**
 - Checks:
-  - sector_ok: **False**
+  - sector_ok: **True**
   - breadth_ok: **False**
   - strategic_ok: **True**
   - trend_ok: **True**
@@ -477,7 +467,7 @@
   - entry_confirmed: **False**
 - Thesis: Pilar 현금흐름 + MTL/Turmalina 재가동 + Santa Isabel 옵션.
 - Watch: Q2~Q3 생산량 13~15koz/분기 이상, Satinoco 비용 정상화.
-- Why not today: GoldUptrend=FALSE, SectorBreadthProxy=FALSE, Trigger(Pullback/Breakout)=FALSE
+- Why not today: SectorBreadthProxy=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
@@ -485,9 +475,9 @@
 - MA20/50/200 gap: 6.77% / 17.08% / 37.71%
 - 5D return: 0.58% | 20D drawdown: 0.00% | vol_ratio: 0.91
 - RS vs GDXJ: gap 19.71% / slope_proxy 12.35%
-- FundamentalScore: 88 | TechnicalScore: 65 | RegimeScore: 55 | OverallScore: **73.3**
+- FundamentalScore: 88 | TechnicalScore: 65 | RegimeScore: 80 | OverallScore: **78.3**
 - Checks:
-  - sector_ok: **False**
+  - sector_ok: **True**
   - breadth_ok: **False**
   - strategic_ok: **True**
   - trend_ok: **True**
@@ -499,7 +489,7 @@
   - entry_confirmed: **False**
 - Thesis: San Albino 현금흐름 + Moss 램프업 + Mt. Hamilton/Eagle Mountain 성장 옵션.
 - Watch: Moss AISC 하락, Mt. Hamilton 일정, 니카라과 리스크.
-- Why not today: GoldUptrend=FALSE, SectorBreadthProxy=FALSE, Trigger(Pullback/Breakout)=FALSE
+- Why not today: SectorBreadthProxy=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
@@ -507,9 +497,9 @@
 - MA20/50/200 gap: -3.45% / 5.30% / 22.77%
 - 5D return: -5.85% | 20D drawdown: -22.49% | vol_ratio: 0.77
 - RS vs GDXJ: gap 7.69% / slope_proxy 10.72%
-- FundamentalScore: 55 | TechnicalScore: 85 | RegimeScore: 55 | OverallScore: **65.5**
+- FundamentalScore: 55 | TechnicalScore: 85 | RegimeScore: 80 | OverallScore: **70.5**
 - Checks:
-  - sector_ok: **False**
+  - sector_ok: **True**
   - breadth_ok: **False**
   - strategic_ok: **False**
   - trend_ok: **True**
@@ -521,7 +511,7 @@
   - entry_confirmed: **False**
 - Thesis: 금/구리 고가격에서 FCF 가능. 하지만 고비용 + Bolivia 물류/정치 리스크.
 - Watch: Don Mario 물류 정상화, AISC 하향, Bolivia 리스크.
-- Why not today: GoldUptrend=FALSE, SectorBreadthProxy=FALSE, StaticRiskPolicy=WATCH_ONLY
+- Why not today: SectorBreadthProxy=FALSE, StaticRiskPolicy=WATCH_ONLY
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
@@ -529,9 +519,9 @@
 - MA20/50/200 gap: -0.57% / -0.84% / -4.05%
 - 5D return: 4.51% | 20D drawdown: -9.74% | vol_ratio: 0.77
 - RS vs GDXJ: gap -1.17% / slope_proxy 1.17%
-- FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **47.8**
+- FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 80 | OverallScore: **52.8**
 - Checks:
-  - sector_ok: **False**
+  - sector_ok: **True**
   - breadth_ok: **False**
   - strategic_ok: **True**
   - trend_ok: **False**
@@ -543,7 +533,7 @@
   - entry_confirmed: **False**
 - Thesis: Bralorne 고품위/캐나다 관할권. 다만 PEA, AISC, 반복 생산 미검증.
 - Watch: PEA economics, AISC 공개, inferred→indicated 전환.
-- Why not today: GoldUptrend=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
+- Why not today: SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
 
 ---
 

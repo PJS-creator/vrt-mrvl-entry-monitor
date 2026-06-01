@@ -1,17 +1,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-05-29**
-- 실행시간(UTC): **2026-05-31 15:00:42**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE IUDBEDR failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDSOIA failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDMNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE IUDSNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE LPMVTVX failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
-- BoE LPMVQJW failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- 실행시간(UTC): **2026-06-01 03:00:39**
 
 ## Verdict
 ⏸ No entry today
@@ -26,8 +16,8 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
-- CURVE_10s5s: None bp / 4주 변화 None bp
+- TERM_SPREAD_10Y_POLICY: 107.59 bp / 4주 변화 -17.94 bp
+- CURVE_10s5s: 45.99 bp / 4주 변화 1.7 bp
 
 ## NWG Price
 - close: 599.4

@@ -1,10 +1,10 @@
 {
   "verdict": "✅ Precious miners entry confirmed: EXK",
-  "generated_utc": "2026-05-31 15:01:02",
+  "generated_utc": "2026-06-01 03:01:12",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": false,
-    "gold_uptrend": false,
+    "gold_uptrend": true,
     "silver_uptrend": true,
     "gold_miners_leadership": true,
     "silver_miners_leadership": true,
@@ -87,8 +87,8 @@
       "static_rank": 1,
       "fundamental_score": 88,
       "technical_score": 65,
-      "regime_score": 55,
-      "overall_score": 73.3,
+      "regime_score": 80,
+      "overall_score": 78.3,
       "risk_tier": "Medium-High",
       "style": "생산+성장 핵심 알파",
       "why": "San Albino 현금흐름 + Moss 램프업 + Mt. Hamilton/Eagle Mountain 성장 옵션.",
@@ -125,7 +125,7 @@
         "slope_proxy": 0.12347631482305177
       },
       "checks": {
-        "sector_ok": false,
+        "sector_ok": true,
         "breadth_ok": false,
         "strategic_ok": true,
         "trend_ok": true,
@@ -137,7 +137,6 @@
         "entry_confirmed": false
       },
       "why_not": [
-        "GoldUptrend=FALSE",
         "SectorBreadthProxy=FALSE",
         "Trigger(Pullback/Breakout)=FALSE"
       ]
@@ -150,8 +149,8 @@
       "static_rank": 2,
       "fundamental_score": 82,
       "technical_score": 80,
-      "regime_score": 55,
-      "overall_score": 75.9,
+      "regime_score": 80,
+      "overall_score": 80.9,
       "risk_tier": "Medium",
       "style": "저평가 FCF/램프업 후보",
       "why": "Pilar 현금흐름 + MTL/Turmalina 재가동 + Santa Isabel 옵션.",
@@ -188,7 +187,7 @@
         "slope_proxy": 0.060340609215723484
       },
       "checks": {
-        "sector_ok": false,
+        "sector_ok": true,
         "breadth_ok": false,
         "strategic_ok": true,
         "trend_ok": true,
@@ -200,7 +199,6 @@
         "entry_confirmed": false
       },
       "why_not": [
-        "GoldUptrend=FALSE",
         "SectorBreadthProxy=FALSE",
         "Trigger(Pullback/Breakout)=FALSE"
       ]
@@ -213,8 +211,8 @@
       "static_rank": 3,
       "fundamental_score": 70,
       "technical_score": 15,
-      "regime_score": 55,
-      "overall_score": 47.8,
+      "regime_score": 80,
+      "overall_score": 52.8,
       "risk_tier": "Medium",
       "style": "BC 고품위 M&A 콜옵션",
       "why": "Bralorne 고품위/캐나다 관할권. 다만 PEA, AISC, 반복 생산 미검증.",
@@ -251,7 +249,7 @@
         "slope_proxy": 0.011660959033325424
       },
       "checks": {
-        "sector_ok": false,
+        "sector_ok": true,
         "breadth_ok": false,
         "strategic_ok": true,
         "trend_ok": false,
@@ -263,7 +261,6 @@
         "entry_confirmed": false
       },
       "why_not": [
-        "GoldUptrend=FALSE",
         "SectorBreadthProxy=FALSE",
         "PriceTrend=FALSE",
         "RelativeStrength(vs GDXJ)=FALSE",
@@ -279,8 +276,8 @@
       "static_rank": 4,
       "fundamental_score": 55,
       "technical_score": 85,
-      "regime_score": 55,
-      "overall_score": 65.5,
+      "regime_score": 80,
+      "overall_score": 70.5,
       "risk_tier": "High",
       "style": "고위험 턴어라운드",
       "why": "금/구리 고가격에서 FCF 가능. 하지만 고비용 + Bolivia 물류/정치 리스크.",
@@ -317,7 +314,7 @@
         "slope_proxy": 0.10721858648233362
       },
       "checks": {
-        "sector_ok": false,
+        "sector_ok": true,
         "breadth_ok": false,
         "strategic_ok": false,
         "trend_ok": true,
@@ -329,7 +326,6 @@
         "entry_confirmed": false
       },
       "why_not": [
-        "GoldUptrend=FALSE",
         "SectorBreadthProxy=FALSE",
         "StaticRiskPolicy=WATCH_ONLY"
       ]

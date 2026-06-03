@@ -1,11 +1,15 @@
 {
-  "generated_at_utc": "2026-06-02T15:00:55Z",
+  "generated_at_utc": "2026-06-03T03:00:37Z",
   "as_of": {
     "price_date": "2026-06-02",
-    "run_time_utc": "2026-06-02 15:00:55"
+    "run_time_utc": "2026-06-03 03:00:37"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "macro": {
     "BAMLH0A0HYM2": {
       "latest": 2.72,
@@ -43,42 +47,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 340.871,
+      "close": 334.49,
       "latest_date": "2026-06-02"
     },
     "MRVL": {
-      "close": 274.0201,
+      "close": 290.79,
       "latest_date": "2026-06-02"
     },
     "SRVR": {
-      "close": 34.715,
+      "close": 34.68,
       "latest_date": "2026-06-02"
     },
     "SMH": {
-      "close": 626.13,
+      "close": 632.21,
       "latest_date": "2026-06-02"
     },
     "NVDA": {
-      "close": 226.03,
+      "close": 222.82,
       "latest_date": "2026-06-02"
     },
     "AVGO": {
-      "close": 479.92,
+      "close": 481.57,
       "latest_date": "2026-06-02"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.819127,
-      "ma60": 8.987015,
-      "gap": 0.09259,
+      "ratio": 9.64504,
+      "ma60": 8.984114,
+      "gap": 0.073566,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.437641,
-      "ma60": 0.292498,
-      "gap": 0.496217,
-      "ma60_slope_proxy": 0.043917,
+      "ratio": 0.459958,
+      "ma60": 0.29287,
+      "gap": 0.570518,
+      "ma60_slope_proxy": 0.044289,
       "entry": true
     }
   },

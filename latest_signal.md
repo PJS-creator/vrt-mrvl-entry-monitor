@@ -1,7 +1,14 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-02**
-- 실행시간(UTC): **2026-06-02 15:00:55**
+- 실행시간(UTC): **2026-06-03 03:00:37**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -14,16 +21,16 @@
 - NFCI: -0.51
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 9.819127
-- MA60: 8.987015
-- gap: 9.26%
+- ratio (VRT/SRVR): 9.64504
+- MA60: 8.984114
+- gap: 7.36%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.437641
-- MA60: 0.292498
-- gap: 49.62%
-- MA60_slope_proxy: 0.043917
+- ratio (MRVL/SMH): 0.459958
+- MA60: 0.29287
+- gap: 57.05%
+- MA60_slope_proxy: 0.044289
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

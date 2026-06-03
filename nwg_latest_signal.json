@@ -1,11 +1,15 @@
 {
-  "generated_at_utc": "2026-06-02T15:00:57Z",
+  "generated_at_utc": "2026-06-03T03:01:39Z",
   "as_of": {
     "price_date": "2026-06-02",
-    "run_time_utc": "2026-06-02 15:00:57"
+    "run_time_utc": "2026-06-03 03:01:39"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 2.72,
@@ -68,45 +72,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 599.8,
+      "close": 598.2,
       "latest_date": "2026-06-02"
     },
     "^FTSE": {
-      "close": 10375.3799,
+      "close": 10373.5,
       "latest_date": "2026-06-02"
     },
     "LLOY.L": {
-      "close": 100.4425,
+      "close": 100.1,
       "latest_date": "2026-06-02"
     },
     "BARC.L": {
-      "close": 468.15,
+      "close": 470.2,
       "latest_date": "2026-06-02"
     },
     "HSBA.L": {
-      "close": 1408.0,
+      "close": 1409.8,
       "latest_date": "2026-06-02"
     }
   },
   "signals": {
     "NWG": {
-      "close": 599.8,
-      "ma50": 578.0251,
-      "ma200": 587.6505,
-      "gap50": 0.037671,
-      "gap200": 0.020675
+      "close": 598.2,
+      "ma50": 577.9931,
+      "ma200": 587.6425,
+      "gap50": 0.034961,
+      "gap200": 0.017966
     },
     "RS_FTSE": {
-      "ratio": 0.05781,
-      "ma60": 0.05587,
-      "gap": 0.034729,
-      "ma60_slope_proxy": -0.000705
+      "ratio": 0.057666,
+      "ma60": 0.055867,
+      "gap": 0.0322,
+      "ma60_slope_proxy": -0.000707
     },
     "RS_PEERS": {
-      "ratio": 0.910355,
-      "ma60": 0.954072,
-      "gap": -0.045822,
-      "ma60_slope_proxy": -0.023688
+      "ratio": 0.906318,
+      "ma60": 0.954005,
+      "gap": -0.049986,
+      "ma60_slope_proxy": -0.023755
     }
   },
   "checks": {

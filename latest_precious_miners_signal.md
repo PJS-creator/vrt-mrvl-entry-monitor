@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-06 03:06:36**
+- 실행시간(UTC): **2026-06-06 15:07:39**
 - 데이터 기준일(주가): **2026-06-05**
 
 ## Verdict
@@ -23,7 +23,7 @@
 - IG OAS: 0.74 / 4주 변화 -0.05 bp-ish / 2026-06-04
 - 10Y Real Yield: N/A
 - VIX: N/A
-- NFCI: N/A
+- NFCI: -0.49 / 4주 변화 0.06 / 2026-05-29
 
 ### Leadership ratios
 
@@ -177,7 +177,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 8.00 | RSI14: 31.49 | ATR14%: 7.42%
 - MA20/50/200 gap: -18.28% / -16.55% / -14.16%
-- 5D return: -19.76% | 20D drawdown: -30.19% | vol_ratio: 1.72
+- 5D return: -19.76% | 20D drawdown: -30.19% | vol_ratio: 1.74
 - RS vs SILJ: gap -3.90% / slope_proxy -3.93%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **53.4**
 - Checks:
@@ -263,7 +263,7 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 5.84 | RSI14: 34.45 | ATR14%: 7.98%
+- close: 5.84 | RSI14: 34.45 | ATR14%: 7.97%
 - MA20/50/200 gap: -16.95% / -14.82% / -8.78%
 - 5D return: -20.22% | 20D drawdown: -26.73% | vol_ratio: 1.33
 - RS vs SILJ: gap -0.81% / slope_proxy 1.94%
@@ -287,7 +287,7 @@
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
 - close: 26.43 | RSI14: 22.40 | ATR14%: 9.29%
 - MA20/50/200 gap: -24.61% / -27.70% / 7.35%
-- 5D return: -20.03% | 20D drawdown: -41.47% | vol_ratio: 1.53
+- 5D return: -20.03% | 20D drawdown: -41.47% | vol_ratio: 1.54
 - RS vs SILJ: gap -16.41% / slope_proxy -17.18%
 - FundamentalScore: 42 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **35.4**
 - Checks:

@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-06 03:06:57**
+- 실행시간(UTC): **2026-06-06 15:08:01**
 - 데이터 기준일(일봉): **2026-06-05**
 - 데이터 기준일(주봉): **2026-06-01**
 - VXN 기준일: **2026-06-05** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
@@ -82,13 +82,15 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 03:00:37**
+- 실행시간(UTC): **2026-06-06 15:00:37**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
+- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -123,12 +125,14 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 03:01:19**
+- 실행시간(UTC): **2026-06-06 15:02:01**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
+- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -164,7 +168,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-06 03:01:45**
+- 실행시간(UTC): **2026-06-06 15:03:08**
 
 ## ⚠️ DATA WARNING
 
@@ -179,11 +183,11 @@
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 90.25 / 5D 3.31%
-- Brent ref (BZ=F): 92.87 / 5D 0.89%
+- WTI ref (CL=F): 90.54 / 5D 3.64%
+- Brent ref (BZ=F): 93.09 / 5D 1.13%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 2.62
-- Gas ref (NG=F): 3.22 / 5D -2.13%
+- Brent-WTI spread: 2.55
+- Gas ref (NG=F): 3.23 / 5D -1.85%
 
 ## Gates
 
@@ -216,9 +220,9 @@
 
 ### Volume (if available)
 
-- volume: 7066612.00
-- volume_MA20: 11129375.60
-- volume_ratio: 0.63
+- volume: 8190800.00
+- volume_MA20: 11185585.00
+- volume_ratio: 0.73
 
 ### Checks
 
@@ -249,8 +253,8 @@
 
 ### Volume (if available)
 
-- volume: 13344633.00
-- volume_MA20: 16341981.65
+- volume: 13350300.00
+- volume_MA20: 16342265.00
 - volume_ratio: 0.82
 
 ### Checks
@@ -283,9 +287,9 @@
 
 ### Volume (if available)
 
-- volume: 22084207.00
-- volume_MA20: 32358465.35
-- volume_ratio: 0.68
+- volume: 24208100.00
+- volume_MA20: 32464660.00
+- volume_ratio: 0.75
 
 ### Checks
 
@@ -317,9 +321,9 @@
 
 ### Volume (if available)
 
-- volume: 10100935.00
-- volume_MA20: 17663666.75
-- volume_ratio: 0.57
+- volume: 10158500.00
+- volume_MA20: 17666545.00
+- volume_ratio: 0.58
 
 ### Checks
 
@@ -341,7 +345,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 03:04:45**
+- 실행시간(UTC): **2026-06-06 15:05:54**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -374,7 +378,7 @@
 ## VZLA (Vizsla Silver)
 - close: 3.36 | RSI14: 42.834143 | ATR14%: 7.38%
 - MA20 gap: -8.33% | MA50 gap: -3.25% | MA200 gap: -21.00%
-- vol_ratio(Volume/Vol20): 1.495125 | gap_open: 3.65%
+- vol_ratio(Volume/Vol20): 1.500239 | gap_open: 3.65%
 - RS vs SILJ gap: 11.52% / slope_proxy: 0.002883
 - Checks:
   - trend_ok: **False**
@@ -393,8 +397,8 @@
 ## SCZM (Santacruz Silver)
 - close: 6.4 | RSI14: 30.584585 | ATR14%: 9.86%
 - MA20 gap: -24.00% | MA50 gap: -23.32% | MA200 gap: -23.81%
-- vol_ratio(Volume/Vol20): 1.959519 | gap_open: 3.56%
-- SilverMarginGate: SI=67.995003 / watch>=32.0:True / entry>=35.0:True
+- vol_ratio(Volume/Vol20): 1.960346 | gap_open: 3.56%
+- SilverMarginGate: SI=68.943001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -11.75% / slope_proxy: -0.009318
 - Checks:
   - trend_ok: **False**
@@ -414,7 +418,7 @@
 ## HYMC (Hycroft Mining)
 - close: 26.43 | RSI14: 31.458615 | ATR14%: 11.38%
 - MA20 gap: -24.61% | MA50 gap: -27.70% | MA200 gap: 7.35%
-- vol_ratio(Volume/Vol20): 1.534465 | gap_open: 5.67%
+- vol_ratio(Volume/Vol20): 1.535144 | gap_open: 5.21%
 - RS vs SILJ gap: -16.41% / slope_proxy: -0.017645
 - RS vs GDXJ gap: -13.60% / slope_proxy: -0.001463
 - Checks:
@@ -438,7 +442,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-06 03:06:36**
+- 실행시간(UTC): **2026-06-06 15:07:39**
 - 데이터 기준일(주가): **2026-06-05**
 
 ## Verdict
@@ -461,7 +465,7 @@
 - IG OAS: 0.74 / 4주 변화 -0.05 bp-ish / 2026-06-04
 - 10Y Real Yield: N/A
 - VIX: N/A
-- NFCI: N/A
+- NFCI: -0.49 / 4주 변화 0.06 / 2026-05-29
 
 ### Leadership ratios
 
@@ -615,7 +619,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 8.00 | RSI14: 31.49 | ATR14%: 7.42%
 - MA20/50/200 gap: -18.28% / -16.55% / -14.16%
-- 5D return: -19.76% | 20D drawdown: -30.19% | vol_ratio: 1.72
+- 5D return: -19.76% | 20D drawdown: -30.19% | vol_ratio: 1.74
 - RS vs SILJ: gap -3.90% / slope_proxy -3.93%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **53.4**
 - Checks:
@@ -701,7 +705,7 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 5.84 | RSI14: 34.45 | ATR14%: 7.98%
+- close: 5.84 | RSI14: 34.45 | ATR14%: 7.97%
 - MA20/50/200 gap: -16.95% / -14.82% / -8.78%
 - 5D return: -20.22% | 20D drawdown: -26.73% | vol_ratio: 1.33
 - RS vs SILJ: gap -0.81% / slope_proxy 1.94%
@@ -725,7 +729,7 @@
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
 - close: 26.43 | RSI14: 22.40 | ATR14%: 9.29%
 - MA20/50/200 gap: -24.61% / -27.70% / 7.35%
-- 5D return: -20.03% | 20D drawdown: -41.47% | vol_ratio: 1.53
+- 5D return: -20.03% | 20D drawdown: -41.47% | vol_ratio: 1.54
 - RS vs SILJ: gap -16.41% / slope_proxy -17.18%
 - FundamentalScore: 42 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **35.4**
 - Checks:

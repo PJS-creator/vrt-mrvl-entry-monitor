@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-06 15:08:01**
+- 실행시간(UTC): **2026-06-07 03:06:27**
 - 데이터 기준일(일봉): **2026-06-05**
 - 데이터 기준일(주봉): **2026-06-01**
 - VXN 기준일: **2026-06-05** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
@@ -82,12 +82,11 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 15:00:37**
+- 실행시간(UTC): **2026-06-07 03:00:38**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
-- FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
@@ -125,12 +124,11 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 15:02:01**
+- 실행시간(UTC): **2026-06-07 03:01:40**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
-- FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
@@ -168,7 +166,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-06 15:03:08**
+- 실행시간(UTC): **2026-06-07 03:02:26**
 
 ## ⚠️ DATA WARNING
 
@@ -178,7 +176,6 @@
 - FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
@@ -345,14 +342,13 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-06 15:05:54**
+- 실행시간(UTC): **2026-06-07 03:04:50**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
 - FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -369,7 +365,7 @@
 - IG OAS 4주 변화: -5.0 bp / latest 0.74
 - 10Y Real Yield 4주 변화: 16.0 bp / latest 2.07
 - VIX: 16.05
-- NFCI: -0.51
+- NFCI: -0.494
 
 ### Leadership ratios
 - SILJ/SLV gap: -2.87% / slope_proxy: -0.011591
@@ -442,7 +438,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-06 15:07:39**
+- 실행시간(UTC): **2026-06-07 03:06:06**
 - 데이터 기준일(주가): **2026-06-05**
 
 ## Verdict

@@ -1,6 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-07 03:02:26**
+- 실행시간(UTC): **2026-06-07 15:02:46**
 
 ## ⚠️ DATA WARNING
 

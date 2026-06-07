@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-07 03:06:27**
+- 실행시간(UTC): **2026-06-07 15:07:08**
 - 데이터 기준일(일봉): **2026-06-05**
 - 데이터 기준일(주봉): **2026-06-01**
 - VXN 기준일: **2026-06-05** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
@@ -82,7 +82,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-07 03:00:38**
+- 실행시간(UTC): **2026-06-07 15:00:37**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -124,7 +124,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-07 03:01:40**
+- 실행시간(UTC): **2026-06-07 15:01:58**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -166,7 +166,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-07 03:02:26**
+- 실행시간(UTC): **2026-06-07 15:02:46**
 
 ## ⚠️ DATA WARNING
 
@@ -342,7 +342,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-05**
-- 실행시간(UTC): **2026-06-07 03:04:50**
+- 실행시간(UTC): **2026-06-07 15:05:10**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -394,7 +394,7 @@
 - close: 6.4 | RSI14: 30.584585 | ATR14%: 9.86%
 - MA20 gap: -24.00% | MA50 gap: -23.32% | MA200 gap: -23.81%
 - vol_ratio(Volume/Vol20): 1.960346 | gap_open: 3.56%
-- SilverMarginGate: SI=68.943001 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=69.102997 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -11.75% / slope_proxy: -0.009318
 - Checks:
   - trend_ok: **False**
@@ -438,7 +438,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-07 03:06:06**
+- 실행시간(UTC): **2026-06-07 15:06:47**
 - 데이터 기준일(주가): **2026-06-05**
 
 ## Verdict
@@ -458,7 +458,7 @@
 ### Macro (FRED, if available)
 
 - HY OAS: 2.74 / 4주 변화 -0.07 bp-ish / 2026-06-04
-- IG OAS: 0.74 / 4주 변화 -0.05 bp-ish / 2026-06-04
+- IG OAS: N/A
 - 10Y Real Yield: N/A
 - VIX: N/A
 - NFCI: -0.49 / 4주 변화 0.06 / 2026-05-29

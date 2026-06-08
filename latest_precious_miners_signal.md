@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-07 15:06:47**
+- 실행시간(UTC): **2026-06-08 03:06:47**
 - 데이터 기준일(주가): **2026-06-05**
 
 ## Verdict
@@ -20,10 +20,10 @@
 ### Macro (FRED, if available)
 
 - HY OAS: 2.74 / 4주 변화 -0.07 bp-ish / 2026-06-04
-- IG OAS: N/A
+- IG OAS: 0.74 / 4주 변화 -0.05 bp-ish / 2026-06-04
 - 10Y Real Yield: N/A
 - VIX: N/A
-- NFCI: -0.49 / 4주 변화 0.06 / 2026-05-29
+- NFCI: N/A
 
 ### Leadership ratios
 

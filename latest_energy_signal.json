@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-07T15:02:46Z",
+  "generated_at_utc": "2026-06-08T03:02:11Z",
   "as_of": {
-    "run_time_utc": "2026-06-07 15:02:46"
+    "run_time_utc": "2026-06-08 03:02:11"
   },
   "data_warning": true,
   "warnings": [
@@ -11,6 +11,7 @@
     "FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
   ],
   "macro": {
@@ -78,21 +79,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 90.54,
-      "ret5d": 0.036401
+      "close": 93.68,
+      "ret5d": 0.016493
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 93.09,
-      "ret5d": 0.011298,
+      "close": 96.42,
+      "ret5d": 0.015161,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.229,
-      "ret5d": -0.018541
+      "close": 3.174,
+      "ret5d": -0.001573
     },
-    "Brent_WTI_spread": 2.55
+    "Brent_WTI_spread": 2.74
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -151,23 +152,23 @@
     },
     "BRL=X": {
       "close": 5.1711,
-      "latest_date": "2026-06-07",
+      "latest_date": "2026-06-08",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 90.54,
-      "latest_date": "2026-06-05",
-      "volume": 215733.0
+      "close": 93.68,
+      "latest_date": "2026-06-07",
+      "volume": 34639.0
     },
     "BZ=F": {
-      "close": 93.09,
-      "latest_date": "2026-06-05",
-      "volume": 36405.0
+      "close": 96.42,
+      "latest_date": "2026-06-07",
+      "volume": 5236.0
     },
     "NG=F": {
-      "close": 3.229,
-      "latest_date": "2026-06-05",
-      "volume": 152937.0
+      "close": 3.174,
+      "latest_date": "2026-06-07",
+      "volume": 5242.0
     }
   },
   "signals": {

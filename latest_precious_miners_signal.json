@@ -1,6 +1,6 @@
 {
   "verdict": "🟡 Precious miners watch/add-on candidates: MAKO, AYA",
-  "generated_utc": "2026-06-07 15:06:47",
+  "generated_utc": "2026-06-08 03:06:47",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": false,
@@ -53,8 +53,10 @@
         "change_approx_4w": -0.06999999999999984
       },
       "IG_OAS": {
-        "ok": false,
-        "error": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=15)"
+        "ok": true,
+        "date": "2026-06-04",
+        "latest": 0.74,
+        "change_approx_4w": -0.050000000000000044
       },
       "REAL10Y": {
         "ok": false,
@@ -65,10 +67,8 @@
         "error": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=15)"
       },
       "NFCI": {
-        "ok": true,
-        "date": "2026-05-29",
-        "latest": -0.494,
-        "change_approx_4w": 0.06400000000000006
+        "ok": false,
+        "error": "HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=15)"
       }
     }
   },

@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2026-06-07T15:00:37Z",
+  "generated_at_utc": "2026-06-08T03:00:43Z",
   "as_of": {
     "price_date": "2026-06-05",
-    "run_time_utc": "2026-06-07 15:00:37"
+    "run_time_utc": "2026-06-08 03:00:43"
   },
   "data_warning": true,
   "warnings": [
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
+    "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
   ],
   "macro": {
     "BAMLH0A0HYM2": {

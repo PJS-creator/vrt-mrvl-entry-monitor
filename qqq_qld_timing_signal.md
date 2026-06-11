@@ -1,6 +1,6 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-10 15:08:15**
+- 실행시간(UTC): **2026-06-11 03:06:20**
 - 데이터 기준일(일봉): **2026-06-10**
 - 데이터 기준일(주봉): **2026-06-08**
 - VXN 기준일: **2026-06-10** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
@@ -19,23 +19,23 @@
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 701.74
-- Weekly RSI14: **64.47**
-- 52W MA: 610.46 / gap: **14.95%**
-- 104W MA gap: **27.49%**
-- 52W MA 13W slope: **7.86%**
-- VXN: **31.00** / 5D change: 7.16
+- QQQ close: 693.69
+- Weekly RSI14: **62.04**
+- 52W MA: 610.31 / gap: **13.66%**
+- 104W MA gap: **26.04%**
+- 52W MA 13W slope: **7.83%**
+- VXN: **32.68** / 5D change: 8.84
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 701.74
-- Daily RSI14: **46.70**
-- 20D gap: **-2.77%**
-- 50D gap: **3.74%**
-- 200D gap: **12.64%**
-- MACD hist: -6.4928 / change: -0.9881
-- ATR14%: **2.01%**
-- 20D high drawdown: **-5.95%**
+- QQQ close: 693.69
+- Daily RSI14: **43.42**
+- 20D gap: **-3.83%**
+- 50D gap: **2.58%**
+- 200D gap: **11.35%**
+- MACD hist: -7.0065 / change: -1.5019
+- ATR14%: **2.10%**
+- 20D high drawdown: **-7.03%**
 
 ## Checks
 

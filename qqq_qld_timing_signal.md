@@ -1,57 +1,56 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-12 03:08:10**
-- 데이터 기준일(일봉): **2026-06-11**
+- 실행시간(UTC): **2026-06-12 15:08:18**
+- 데이터 기준일(일봉): **2026-06-12**
 - 데이터 기준일(주봉): **2026-06-08**
-- VXN 기준일: **2026-06-11** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
+- VXN 기준일: **2026-06-12** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
 
 ## Verdict
 
 **⏸ QLD/TIGER 레버리지 대기**
-- Regime: **E: 급락 진행/공포, QLD 대기**
+- Regime: **F: 과열권, QLD 대기**
 
 ## Recommended monthly buy amount
 
 - 월 적립 예산: **2,000,000원**
-- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,000,000원** (50%)
+- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,500,000원** (75%)
 - TIGER 미국나스닥100레버리지(합성) (418660) / QLD 역할: **0원** (0%)
-- 대기자금: **1,000,000원** (50%)
+- 대기자금: **500,000원** (25%)
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 717.12
-- Weekly RSI14: **67.47**
-- 52W MA: 610.76 / gap: **17.41%**
-- 104W MA gap: **30.25%**
-- 52W MA 13W slope: **7.91%**
-- VXN: **30.44** / 5D change: 7.22
+- QQQ close: 721.24
+- Weekly RSI14: **68.09**
+- 52W MA: 610.84 / gap: **18.07%**
+- 104W MA gap: **30.99%**
+- 52W MA 13W slope: **7.93%**
+- VXN: **29.71** / 5D change: -0.76
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 717.12
-- Daily RSI14: **53.64**
-- 20D gap: **-0.60%**
-- 50D gap: **5.60%**
-- 200D gap: **14.98%**
-- MACD hist: -6.2358 / change: 0.7708
-- ATR14%: **2.13%**
-- 20D high drawdown: **-3.89%**
+- QQQ close: 721.21
+- Daily RSI14: **55.17**
+- 20D gap: **-0.04%**
+- 50D gap: **5.78%**
+- 200D gap: **15.49%**
+- MACD hist: -5.3010 / change: 0.9348
+- ATR14%: **2.07%**
+- 20D high drawdown: **-3.34%**
 
 ## Checks
 
 - weekly_good: **False**
 - weekly_small: **False**
 - weekly_overheated: **True**
-- weekly_panic: **True**
+- weekly_panic: **False**
 - daily_a: **False**
 - daily_b: **False**
 - daily_overheated: **False**
-- rebound_after_panic: **False**
+- rebound_after_panic: **True**
 
 ## Why
 
 - 주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한
-- 공포/급락 구간은 QLD 몰빵보다 반등 확인이 우선
 - VXN이 24 초과라 레버리지 비중 확대에는 불리
 
 ## Rule note

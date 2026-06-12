@@ -1,11 +1,12 @@
 {
-  "generated_at_utc": "2026-06-11T15:00:50Z",
+  "generated_at_utc": "2026-06-12T03:00:44Z",
   "as_of": {
     "price_date": "2026-06-11",
-    "run_time_utc": "2026-06-11 15:00:50"
+    "run_time_utc": "2026-06-12 03:00:44"
   },
   "data_warning": true,
   "warnings": [
+    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
@@ -47,42 +48,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 287.97,
+      "close": 297.88,
       "latest_date": "2026-06-11"
     },
     "MRVL": {
-      "close": 259.1402,
+      "close": 280.71,
       "latest_date": "2026-06-11"
     },
     "SRVR": {
-      "close": 32.985,
+      "close": 33.52,
       "latest_date": "2026-06-11"
     },
     "SMH": {
-      "close": 582.17,
+      "close": 609.45,
       "latest_date": "2026-06-11"
     },
     "NVDA": {
-      "close": 199.6992,
+      "close": 204.87,
       "latest_date": "2026-06-11"
     },
     "AVGO": {
-      "close": 372.7,
+      "close": 385.57,
       "latest_date": "2026-06-11"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.730332,
-      "ma60": 9.091479,
-      "gap": -0.039724,
+      "ratio": 8.886635,
+      "ma60": 9.094084,
+      "gap": -0.022811,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.445128,
-      "ma60": 0.320424,
-      "gap": 0.389185,
-      "ma60_slope_proxy": 0.059289,
+      "ratio": 0.460596,
+      "ma60": 0.320682,
+      "gap": 0.436302,
+      "ma60_slope_proxy": 0.059547,
       "entry": true
     }
   },

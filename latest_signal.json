@@ -1,31 +1,29 @@
 {
-  "generated_at_utc": "2026-06-12T15:00:46Z",
+  "generated_at_utc": "2026-06-13T03:00:44Z",
   "as_of": {
     "price_date": "2026-06-12",
-    "run_time_utc": "2026-06-12 15:00:46"
+    "run_time_utc": "2026-06-13 03:00:44"
   },
   "data_warning": true,
   "warnings": [
-    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
   ],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.8,
-      "change_4w_bp": -2.0,
-      "latest_date": "2026-06-10"
+      "latest": 2.78,
+      "change_4w_bp": 2.0,
+      "latest_date": "2026-06-11"
     },
     "BAMLC0A0CM": {
       "latest": 0.75,
       "change_4w_bp": -1.0,
-      "latest_date": "2026-06-10"
+      "latest_date": "2026-06-11"
     },
     "DFII10": {
-      "latest": 2.07,
+      "latest": 2.16,
       "change_4w_bp": 16.0,
-      "latest_date": "2026-05-29"
+      "latest_date": "2026-06-11"
     },
     "VIXCLS": {
       "latest": 16.05,
@@ -48,42 +46,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 299.02,
+      "close": 302.87,
       "latest_date": "2026-06-12"
     },
     "MRVL": {
-      "close": 284.99,
+      "close": 279.7,
       "latest_date": "2026-06-12"
     },
     "SRVR": {
-      "close": 33.65,
+      "close": 33.66,
       "latest_date": "2026-06-12"
     },
     "SMH": {
-      "close": 619.31,
+      "close": 619.96,
       "latest_date": "2026-06-12"
     },
     "NVDA": {
-      "close": 205.495,
+      "close": 205.19,
       "latest_date": "2026-06-12"
     },
     "AVGO": {
-      "close": 381.305,
+      "close": 382.07,
       "latest_date": "2026-06-12"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.886181,
-      "ma60": 9.104914,
-      "gap": -0.024024,
+      "ratio": 8.99792,
+      "ma60": 9.106776,
+      "gap": -0.011953,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.460173,
-      "ma60": 0.324643,
-      "gap": 0.417473,
-      "ma60_slope_proxy": 0.061441,
+      "ratio": 0.451158,
+      "ma60": 0.324493,
+      "gap": 0.390347,
+      "ma60_slope_proxy": 0.06129,
       "entry": true
     }
   },

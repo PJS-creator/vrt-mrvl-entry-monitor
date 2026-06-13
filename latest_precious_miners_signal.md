@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-13 03:05:14**
+- 실행시간(UTC): **2026-06-13 15:05:59**
 - 데이터 기준일(주가): **2026-06-12**
 
 ## Verdict
@@ -41,7 +41,7 @@
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
 - close: 7.59 | RSI14: 43.47 | ATR14%: 6.84%
 - MA20/50/200 gap: -5.74% / -2.18% / 17.00%
-- 5D return: 3.27% | 20D drawdown: -12.76% | vol_ratio: 0.87
+- 5D return: 3.27% | 20D drawdown: -12.76% | vol_ratio: 0.88
 - RS vs GDXJ: gap 13.78% / slope_proxy 3.19%
 - FundamentalScore: 88 | TechnicalScore: 40 | RegimeScore: 30 | OverallScore: **59.6**
 - Checks:
@@ -133,7 +133,7 @@
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
 - close: 18.71 | RSI14: 54.48 | ATR14%: 7.49%
 - MA20/50/200 gap: 1.52% / 3.42% / 25.20%
-- 5D return: 9.16% | 20D drawdown: -12.94% | vol_ratio: 0.83
+- 5D return: 9.16% | 20D drawdown: -12.94% | vol_ratio: 0.94
 - RS vs SILJ: gap 18.27% / slope_proxy 8.07%
 - FundamentalScore: 86 | TechnicalScore: 85 | RegimeScore: 55 | OverallScore: **79.5**
 - Checks:
@@ -155,7 +155,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 8.59 | RSI14: 44.12 | ATR14%: 6.95%
 - MA20/50/200 gap: -5.03% / -9.45% / -8.40%
-- 5D return: 7.38% | 20D drawdown: -13.84% | vol_ratio: 1.45
+- 5D return: 7.38% | 20D drawdown: -13.84% | vol_ratio: 1.54
 - RS vs SILJ: gap 0.47% / slope_proxy -2.74%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **58.4**
 - Checks:
@@ -177,7 +177,7 @@
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
 - close: 3.59 | RSI14: 54.51 | ATR14%: 7.30%
 - MA20/50/200 gap: 0.29% / 2.75% / -15.56%
-- 5D return: 6.85% | 20D drawdown: -13.08% | vol_ratio: 0.87
+- 5D return: 6.85% | 20D drawdown: -13.08% | vol_ratio: 0.89
 - RS vs SILJ: gap 14.20% / slope_proxy 13.93%
 - FundamentalScore: 72 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **57.4**
 - Checks:
@@ -199,7 +199,7 @@
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
 - close: 6.98 | RSI14: 37.99 | ATR14%: 8.18%
 - MA20/50/200 gap: -8.30% / -14.91% / -17.39%
-- 5D return: 9.06% | 20D drawdown: -19.77% | vol_ratio: 1.34
+- 5D return: 9.06% | 20D drawdown: -19.77% | vol_ratio: 1.38
 - RS vs SILJ: gap -5.63% / slope_proxy -10.89%
 - FundamentalScore: 74 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **54.8**
 - Checks:
@@ -219,9 +219,9 @@
 
 ### HL (Hecla Mining)
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
-- close: 15.29 | RSI14: 39.56 | ATR14%: 6.09%
+- close: 15.29 | RSI14: 39.56 | ATR14%: 6.10%
 - MA20/50/200 gap: -7.32% / -14.81% / -13.07%
-- 5D return: 3.45% | 20D drawdown: -14.10% | vol_ratio: 0.93
+- 5D return: 3.45% | 20D drawdown: -14.10% | vol_ratio: 0.99
 - RS vs SILJ: gap -6.50% / slope_proxy -3.72%
 - FundamentalScore: 78 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **51.4**
 - Checks:
@@ -241,9 +241,9 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 6.39 | RSI14: 48.45 | ATR14%: 7.56%
+- close: 6.39 | RSI14: 48.45 | ATR14%: 7.57%
 - MA20/50/200 gap: -3.44% / -6.59% / -0.91%
-- 5D return: 9.42% | 20D drawdown: -13.88% | vol_ratio: 1.53
+- 5D return: 9.42% | 20D drawdown: -13.88% | vol_ratio: 1.61
 - RS vs SILJ: gap 4.95% / slope_proxy -0.59%
 - FundamentalScore: 60 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **48.5**
 - Checks:
@@ -265,7 +265,7 @@
 - Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
 - close: 5.28 | RSI14: 42.07 | ATR14%: 7.98%
 - MA20/50/200 gap: -6.18% / -10.71% / -4.47%
-- 5D return: 7.32% | 20D drawdown: -17.88% | vol_ratio: 0.85
+- 5D return: 7.32% | 20D drawdown: -17.88% | vol_ratio: 0.87
 - RS vs SILJ: gap -0.85% / slope_proxy -6.16%
 - FundamentalScore: 68 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **46.9**
 - Checks:

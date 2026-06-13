@@ -1,6 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-13 03:01:53**
+- 실행시간(UTC): **2026-06-13 15:01:47**
 
 ## ⚠️ DATA WARNING
 
@@ -10,15 +10,16 @@
 - FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 84.29 / 5D -6.90%
-- Brent ref (BZ=F): 86.71 / 5D -6.85%
+- WTI ref (CL=F): 84.88 / 5D -6.25%
+- Brent ref (BZ=F): 87.33 / 5D -6.19%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 2.42
-- Gas ref (NG=F): 3.14 / 5D -2.73%
+- Brent-WTI spread: 2.45
+- Gas ref (NG=F): 3.12 / 5D -3.38%
 
 ## Gates
 
@@ -28,7 +29,7 @@
 - **WTI_TREND_UP**: **False**
 - **BRENT_TREND_UP**: **False**
 - **OIL_TREND_UP**: **False**
-- **BRAZIL_RISK_OK**: **True**
+- **BRAZIL_RISK_OK**: **False**
 
 ## OXY
 
@@ -51,9 +52,9 @@
 
 ### Volume (if available)
 
-- volume: 9449593.00
-- volume_MA20: 11055104.65
-- volume_ratio: 0.85
+- volume: 10442000.00
+- volume_MA20: 11104725.00
+- volume_ratio: 0.94
 
 ### Checks
 
@@ -84,15 +85,15 @@
 
 ### Volume (if available)
 
-- volume: 9726100.00
-- volume_MA20: 15298430.00
-- volume_ratio: 0.64
+- volume: 10526100.00
+- volume_MA20: 15338430.00
+- volume_ratio: 0.69
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
 - BRENT_TREND_UP: **False**
-- BRAZIL_RISK_OK: **True**
+- BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **False**
 - PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **True**
@@ -118,9 +119,9 @@
 
 ### Volume (if available)
 
-- volume: 16555507.00
-- volume_MA20: 30773905.35
-- volume_ratio: 0.54
+- volume: 17978800.00
+- volume_MA20: 30845070.00
+- volume_ratio: 0.58
 
 ### Checks
 
@@ -152,8 +153,8 @@
 
 ### Volume (if available)
 
-- volume: 10591655.00
-- volume_MA20: 14373607.75
+- volume: 10611100.00
+- volume_MA20: 14374580.00
 - volume_ratio: 0.74
 
 ### Checks

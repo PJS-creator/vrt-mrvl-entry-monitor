@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-14 03:05:52**
+- 실행시간(UTC): **2026-06-14 15:07:12**
 - 데이터 기준일(일봉): **2026-06-12**
 - 데이터 기준일(주봉): **2026-06-08**
 - VXN 기준일: **2026-06-12** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-12**
-- 실행시간(UTC): **2026-06-14 03:00:40**
+- 실행시간(UTC): **2026-06-14 15:00:43**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -123,12 +123,13 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-06-12**
-- 실행시간(UTC): **2026-06-14 03:01:42**
+- 실행시간(UTC): **2026-06-14 15:02:04**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
 
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -164,7 +165,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-14 03:02:11**
+- 실행시간(UTC): **2026-06-14 15:02:51**
 
 ## ⚠️ DATA WARNING
 
@@ -173,6 +174,7 @@
 - FRED DHHNGSP failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 - FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
@@ -339,7 +341,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-12**
-- 실행시간(UTC): **2026-06-14 03:04:14**
+- 실행시간(UTC): **2026-06-14 15:05:17**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -390,7 +392,7 @@
 - close: 6.98 | RSI14: 42.141527 | ATR14%: 8.64%
 - MA20 gap: -8.30% | MA50 gap: -14.91% | MA200 gap: -17.39%
 - vol_ratio(Volume/Vol20): 1.384702 | gap_open: 2.54%
-- SilverMarginGate: SI=67.859001 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=67.973999 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -5.63% / slope_proxy: -0.01148
 - Checks:
   - trend_ok: **False**
@@ -434,7 +436,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-14 03:05:30**
+- 실행시간(UTC): **2026-06-14 15:06:51**
 - 데이터 기준일(주가): **2026-06-12**
 
 ## Verdict

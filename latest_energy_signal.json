@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-13T15:01:47Z",
+  "generated_at_utc": "2026-06-14T03:02:11Z",
   "as_of": {
-    "run_time_utc": "2026-06-13 15:01:47"
+    "run_time_utc": "2026-06-14 03:02:11"
   },
   "data_warning": true,
   "warnings": [
@@ -10,8 +10,6 @@
     "FRED DHHNGSP failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED OVXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED DTWEXBGS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
-    "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
   ],
   "macro": {
@@ -58,10 +56,10 @@
       "latest_date": "2026-06-11"
     },
     "DTWEXBGS": {
-      "latest": 118.8783,
-      "change_5d_pct": -0.004111,
+      "latest": 120.0831,
+      "change_5d_pct": 0.010135,
       "change_4w_bp": null,
-      "latest_date": "2026-05-29"
+      "latest_date": "2026-06-05"
     },
     "NFCI": {
       "latest": -0.506,
@@ -177,7 +175,7 @@
         "close": 56.540001,
         "ma20": 57.832927,
         "ma60": 58.376878,
-        "ma200": 48.598649,
+        "ma200": 48.59865,
         "gap20": -0.022356,
         "gap60": -0.031466,
         "ret5d": -0.002263,

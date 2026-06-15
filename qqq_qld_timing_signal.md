@@ -1,6 +1,6 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-14 15:07:12**
+- 실행시간(UTC): **2026-06-15 03:06:42**
 - 데이터 기준일(일봉): **2026-06-12**
 - 데이터 기준일(주봉): **2026-06-08**
 - VXN 기준일: **2026-06-12** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`

@@ -1,9 +1,9 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-15 03:06:42**
-- 데이터 기준일(일봉): **2026-06-12**
-- 데이터 기준일(주봉): **2026-06-08**
-- VXN 기준일: **2026-06-12** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
+- 실행시간(UTC): **2026-06-15 15:08:11**
+- 데이터 기준일(일봉): **2026-06-15**
+- 데이터 기준일(주봉): **2026-06-15**
+- VXN 기준일: **2026-06-15** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
 
 ## Verdict
 
@@ -13,29 +13,29 @@
 ## Recommended monthly buy amount
 
 - 월 적립 예산: **2,000,000원**
-- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,500,000원** (75%)
+- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,000,000원** (50%)
 - TIGER 미국나스닥100레버리지(합성) (418660) / QLD 역할: **0원** (0%)
-- 대기자금: **500,000원** (25%)
+- 대기자금: **1,000,000원** (50%)
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 721.34
-- Weekly RSI14: **68.10**
-- 52W MA: 610.84 / gap: **18.09%**
-- 104W MA gap: **31.01%**
-- 52W MA 13W slope: **7.93%**
-- VXN: **27.27** / 5D change: -3.20
+- QQQ close: 742.51
+- Weekly RSI14: **71.12**
+- 52W MA: 615.04 / gap: **20.73%**
+- 104W MA gap: **34.22%**
+- 52W MA 13W slope: **8.29%**
+- VXN: **26.04** / 5D change: -1.08
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 721.34
-- Daily RSI14: **55.21**
-- 20D gap: **-0.02%**
-- 50D gap: **5.80%**
-- 200D gap: **15.51%**
-- MACD hist: -5.2927 / change: 0.9431
+- QQQ close: 742.51
+- Daily RSI14: **62.14**
+- 20D gap: **2.67%**
+- 50D gap: **8.40%**
+- 200D gap: **18.74%**
+- MACD hist: -3.1972 / change: 2.0954
 - ATR14%: **2.09%**
-- 20D high drawdown: **-3.33%**
+- 20D high drawdown: **-0.49%**
 
 ## Checks
 
@@ -45,12 +45,13 @@
 - weekly_panic: **False**
 - daily_a: **False**
 - daily_b: **False**
-- daily_overheated: **False**
+- daily_overheated: **True**
 - rebound_after_panic: **True**
 
 ## Why
 
 - 주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한
+- 일봉도 단기 과열 또는 고점 근처라 QLD 추격매수 부적합
 - VXN이 24 초과라 레버리지 비중 확대에는 불리
 
 ## Rule note

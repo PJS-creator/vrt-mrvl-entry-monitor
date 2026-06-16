@@ -1,9 +1,9 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-16 03:08:08**
-- 데이터 기준일(일봉): **2026-06-15**
+- 실행시간(UTC): **2026-06-16 15:08:40**
+- 데이터 기준일(일봉): **2026-06-16**
 - 데이터 기준일(주봉): **2026-06-15**
-- VXN 기준일: **2026-06-15** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
+- VXN 기준일: **2026-06-16** / source: `Yahoo Finance ^VXN fallback; FRED error=HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)`
 
 ## Verdict
 
@@ -13,29 +13,29 @@
 ## Recommended monthly buy amount
 
 - 월 적립 예산: **2,000,000원**
-- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,000,000원** (50%)
+- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,500,000원** (75%)
 - TIGER 미국나스닥100레버리지(합성) (418660) / QLD 역할: **0원** (0%)
-- 대기자금: **1,000,000원** (50%)
+- 대기자금: **500,000원** (25%)
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 744.00
-- Weekly RSI14: **71.31**
-- 52W MA: 615.07 / gap: **20.96%**
-- 104W MA gap: **34.49%**
-- 52W MA 13W slope: **8.29%**
-- VXN: **25.92** / 5D change: -1.20
+- QQQ close: 737.66
+- Weekly RSI14: **70.48**
+- 52W MA: 614.94 / gap: **19.96%**
+- 104W MA gap: **33.36%**
+- 52W MA 13W slope: **8.27%**
+- VXN: **25.69** / 5D change: -1.43
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 744.00
-- Daily RSI14: **62.55**
-- 20D gap: **2.87%**
-- 50D gap: **8.62%**
-- 200D gap: **18.98%**
-- MACD hist: -3.1021 / change: 2.1905
-- ATR14%: **2.11%**
-- 20D high drawdown: **-0.29%**
+- QQQ close: 737.66
+- Daily RSI14: **59.61**
+- 20D gap: **1.77%**
+- 50D gap: **7.22%**
+- 200D gap: **17.81%**
+- MACD hist: -2.0882 / change: 1.0139
+- ATR14%: **2.05%**
+- 20D high drawdown: **-1.14%**
 
 ## Checks
 
@@ -44,14 +44,13 @@
 - weekly_overheated: **True**
 - weekly_panic: **False**
 - daily_a: **False**
-- daily_b: **False**
-- daily_overheated: **True**
+- daily_b: **True**
+- daily_overheated: **False**
 - rebound_after_panic: **True**
 
 ## Why
 
 - 주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한
-- 일봉도 단기 과열 또는 고점 근처라 QLD 추격매수 부적합
 - VXN이 24 초과라 레버리지 비중 확대에는 불리
 
 ## Rule note

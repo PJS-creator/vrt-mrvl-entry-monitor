@@ -1,11 +1,12 @@
 {
-  "generated_at_utc": "2026-06-15T15:00:45Z",
+  "generated_at_utc": "2026-06-16T03:00:41Z",
   "as_of": {
     "price_date": "2026-06-15",
-    "run_time_utc": "2026-06-15 15:00:45"
+    "run_time_utc": "2026-06-16 03:00:41"
   },
   "data_warning": true,
   "warnings": [
+    "FRED BAMLH0A0HYM2 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED DFII10 failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
@@ -48,42 +49,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 312.43,
+      "close": 311.93,
       "latest_date": "2026-06-15"
     },
     "MRVL": {
-      "close": 294.16,
+      "close": 308.88,
       "latest_date": "2026-06-15"
     },
     "SRVR": {
-      "close": 33.75,
+      "close": 33.8,
       "latest_date": "2026-06-15"
     },
     "SMH": {
-      "close": 643.21,
+      "close": 647.1,
       "latest_date": "2026-06-15"
     },
     "NVDA": {
-      "close": 210.86,
+      "close": 212.45,
       "latest_date": "2026-06-15"
     },
     "AVGO": {
-      "close": 389.17,
+      "close": 393.94,
       "latest_date": "2026-06-15"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.257185,
-      "ma60": 9.120954,
-      "gap": 0.014936,
+      "ratio": 9.228698,
+      "ma60": 9.118614,
+      "gap": 0.012072,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.457331,
-      "ma60": 0.328339,
-      "gap": 0.392863,
-      "ma60_slope_proxy": 0.06307,
+      "ratio": 0.47733,
+      "ma60": 0.328672,
+      "gap": 0.452297,
+      "ma60_slope_proxy": 0.063403,
       "entry": true
     }
   },

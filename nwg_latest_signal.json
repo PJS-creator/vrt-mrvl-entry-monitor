@@ -1,12 +1,11 @@
 {
-  "generated_at_utc": "2026-06-15T15:02:07Z",
+  "generated_at_utc": "2026-06-16T03:02:25Z",
   "as_of": {
-    "price_date": "2026-06-15",
-    "run_time_utc": "2026-06-15 15:02:07"
+    "price_date": "2026-06-12",
+    "run_time_utc": "2026-06-16 03:02:25"
   },
   "data_warning": true,
   "warnings": [
-    "FRED BAMLC0A0CM failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED VIXCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.",
     "FRED NFCI failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
   ],
@@ -17,9 +16,9 @@
       "latest_date": "2026-06-12"
     },
     "BAMLC0A0CM": {
-      "latest": 0.75,
+      "latest": 0.74,
       "change_4w": -1.0,
-      "latest_date": "2026-06-11"
+      "latest_date": "2026-06-12"
     },
     "VIXCLS": {
       "latest": 16.05,
@@ -72,45 +71,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 614.0,
-      "latest_date": "2026-06-15"
+      "close": 614.2,
+      "latest_date": "2026-06-12"
     },
     "^FTSE": {
-      "close": 10436.8398,
-      "latest_date": "2026-06-15"
+      "close": 10471.7002,
+      "latest_date": "2026-06-12"
     },
     "LLOY.L": {
-      "close": 102.3,
-      "latest_date": "2026-06-15"
+      "close": 102.35,
+      "latest_date": "2026-06-12"
     },
     "BARC.L": {
-      "close": 477.3825,
-      "latest_date": "2026-06-15"
+      "close": 472.85,
+      "latest_date": "2026-06-12"
     },
     "HSBA.L": {
-      "close": 1379.1017,
-      "latest_date": "2026-06-15"
+      "close": 1372.8,
+      "latest_date": "2026-06-12"
     }
   },
   "signals": {
     "NWG": {
-      "close": 614.0,
-      "ma50": 588.9091,
-      "ma200": 589.7663,
-      "gap50": 0.042606,
-      "gap200": 0.04109
+      "close": 614.2,
+      "ma50": 587.6931,
+      "ma200": 589.3782,
+      "gap50": 0.045103,
+      "gap200": 0.042115
     },
     "RS_FTSE": {
-      "ratio": 0.05883,
-      "ma60": 0.056133,
-      "gap": 0.048046,
-      "ma60_slope_proxy": 0.00014
+      "ratio": 0.058653,
+      "ma60": 0.056084,
+      "gap": 0.045813,
+      "ma60_slope_proxy": 3.9e-05
     },
     "RS_PEERS": {
-      "ratio": 0.940379,
-      "ma60": 0.945069,
-      "gap": -0.004962,
-      "ma60_slope_proxy": -0.019963
+      "ratio": 0.945893,
+      "ma60": 0.946459,
+      "gap": -0.000598,
+      "ma60_slope_proxy": -0.020075
     }
   },
   "checks": {

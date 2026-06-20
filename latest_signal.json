@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-06-19T15:00:46Z",
+  "generated_at_utc": "2026-06-20T03:00:42Z",
   "as_of": {
     "price_date": "2026-06-18",
-    "run_time_utc": "2026-06-19 15:00:46"
+    "run_time_utc": "2026-06-20 03:00:42"
   },
   "data_warning": false,
   "warnings": [],
@@ -59,8 +59,8 @@
       "latest_date": "2026-06-18"
     },
     "NVDA": {
-      "close": 204.65,
-      "latest_date": "2026-06-17"
+      "close": 210.69,
+      "latest_date": "2026-06-18"
     },
     "AVGO": {
       "close": 411.35,

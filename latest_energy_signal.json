@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-06-19T15:01:00Z",
+  "generated_at_utc": "2026-06-20T03:00:49Z",
   "as_of": {
-    "run_time_utc": "2026-06-19 15:01:00"
+    "run_time_utc": "2026-06-20 03:00:49"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 76.09,
-      "ret5d": -0.103558
+      "close": 76.54,
+      "ret5d": -0.098256
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 79.99,
-      "ret5d": -0.084049,
-      "tier": "70-80"
+      "close": 80.59,
+      "ret5d": -0.077179,
+      "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.205,
-      "ret5d": 0.027244
+      "close": 3.198,
+      "ret5d": 0.025
     },
-    "Brent_WTI_spread": 3.9
+    "Brent_WTI_spread": 4.05
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -99,27 +99,27 @@
     "PBR": {
       "close": 16.75,
       "latest_date": "2026-06-18",
-      "volume": 21847200.0
+      "volume": 21855900.0
     },
     "OXY": {
       "close": 51.82,
       "latest_date": "2026-06-18",
-      "volume": 13856900.0
+      "volume": 13871800.0
     },
     "VG": {
       "close": 11.02,
       "latest_date": "2026-06-18",
-      "volume": 19823400.0
+      "volume": 19832500.0
     },
     "RIG": {
       "close": 5.31,
       "latest_date": "2026-06-18",
-      "volume": 67149700.0
+      "volume": 67158400.0
     },
     "XLE": {
       "close": 53.77,
       "latest_date": "2026-06-18",
-      "volume": 39600500.0
+      "volume": 39645700.0
     },
     "OIH": {
       "close": 385.49,
@@ -129,37 +129,37 @@
     "EWZ": {
       "close": 33.73,
       "latest_date": "2026-06-18",
-      "volume": 24544900.0
+      "volume": 24545700.0
     },
     "LNG": {
       "close": 227.03,
       "latest_date": "2026-06-18",
-      "volume": 2790300.0
+      "volume": 2791400.0
     },
     "SPY": {
       "close": 746.74,
       "latest_date": "2026-06-18",
-      "volume": 80761200.0
+      "volume": 80875700.0
     },
     "BRL=X": {
-      "close": 5.1342,
+      "close": 5.15,
       "latest_date": "2026-06-19",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 76.09,
+      "close": 76.54,
       "latest_date": "2026-06-19",
-      "volume": 74180.0
+      "volume": 86466.0
     },
     "BZ=F": {
-      "close": 79.99,
+      "close": 80.59,
       "latest_date": "2026-06-19",
-      "volume": 12179.0
+      "volume": 14021.0
     },
     "NG=F": {
-      "close": 3.205,
+      "close": 3.198,
       "latest_date": "2026-06-19",
-      "volume": 16627.0
+      "volume": 21800.0
     }
   },
   "signals": {
@@ -182,9 +182,9 @@
         "slope_proxy": 0.004479
       },
       "volume": {
-        "vol": 13856900.0,
-        "ma20": 10524305.0,
-        "ratio": 1.316657
+        "vol": 13871800.0,
+        "ma20": 10525050.0,
+        "ratio": 1.317979
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -214,9 +214,9 @@
         "slope_proxy": 0.011244
       },
       "volume": {
-        "vol": 21847200.0,
-        "ma20": 15512610.0,
-        "ratio": 1.408351
+        "vol": 21855900.0,
+        "ma20": 15513045.0,
+        "ratio": 1.408872
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -247,9 +247,9 @@
         "slope_proxy": -0.000644
       },
       "volume": {
-        "vol": 67149700.0,
-        "ma20": 30564750.0,
-        "ratio": 2.196965
+        "vol": 67158400.0,
+        "ma20": 30565185.0,
+        "ratio": 2.197219
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -280,9 +280,9 @@
         "slope_proxy": 0.001389
       },
       "volume": {
-        "vol": 19823400.0,
-        "ma20": 14318875.0,
-        "ratio": 1.384424
+        "vol": 19832500.0,
+        "ma20": 14319330.0,
+        "ratio": 1.385016
       },
       "checks": {
         "RISK_OK_STRICT": true,

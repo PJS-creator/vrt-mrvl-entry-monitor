@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-19**
-- 실행시간(UTC): **2026-06-19 15:01:12**
+- 실행시간(UTC): **2026-06-20 03:00:57**
 
 ## Verdict
 ⏸ No entry today
@@ -46,8 +46,8 @@
 ## SCZM (Santacruz Silver)
 - close: 7.15 | RSI14: 44.96193 | ATR14%: 8.89%
 - MA20 gap: -3.72% | MA50 gap: -12.49% | MA200 gap: -15.86%
-- vol_ratio(Volume/Vol20): 0.869558 | gap_open: 0.40%
-- SilverMarginGate: SI=64.489998 / watch>=32.0:True / entry>=35.0:True
+- vol_ratio(Volume/Vol20): 0.873313 | gap_open: 0.40%
+- SilverMarginGate: SI=64.910004 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -5.54% / slope_proxy: -0.010751
 - Checks:
   - trend_ok: **False**
@@ -67,7 +67,7 @@
 ## HYMC (Hycroft Mining)
 - close: 26.01 | RSI14: 38.711842 | ATR14%: 10.28%
 - MA20 gap: -10.88% | MA50 gap: -25.61% | MA200 gap: 1.67%
-- vol_ratio(Volume/Vol20): 1.5237 | gap_open: 0.00%
+- vol_ratio(Volume/Vol20): 1.525443 | gap_open: 0.00%
 - RS vs SILJ gap: -19.72% / slope_proxy: -0.071515
 - RS vs GDXJ gap: -17.87% / slope_proxy: -0.015592
 - Checks:

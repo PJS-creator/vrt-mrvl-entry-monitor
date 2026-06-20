@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-19 15:01:27**
+- 실행시간(UTC): **2026-06-20 03:01:05**
 - 데이터 기준일(주가): **2026-06-19**
 
 ## Verdict
@@ -61,9 +61,9 @@
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
-- close: 1.26 | RSI14: 43.21 | ATR14%: 7.48%
-- MA20/50/200 gap: -4.36% / -8.00% / -15.67%
-- 5D return: -3.08% | 20D drawdown: -14.29% | vol_ratio: 0.18
+- close: 1.28 | RSI14: 44.30 | ATR14%: 7.37%
+- MA20/50/200 gap: -2.92% / -6.57% / -14.34%
+- 5D return: -1.54% | 20D drawdown: -12.93% | vol_ratio: 0.35
 - RS vs GDXJ: gap 5.01% / slope_proxy 3.87%
 - FundamentalScore: 70 | TechnicalScore: 40 | RegimeScore: 30 | OverallScore: **51.5**
 - Checks:
@@ -83,9 +83,9 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 5.55 | RSI14: 30.96 | ATR14%: 7.34%
-- MA20/50/200 gap: -8.38% / -15.50% / -20.02%
-- 5D return: -1.77% | 20D drawdown: -21.28% | vol_ratio: 0.17
+- close: 5.60 | RSI14: 31.36 | ATR14%: 7.27%
+- MA20/50/200 gap: -7.59% / -14.75% / -19.30%
+- 5D return: -0.88% | 20D drawdown: -20.57% | vol_ratio: 0.40
 - RS vs GDXJ: gap -5.57% / slope_proxy 0.29%
 - FundamentalScore: 82 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **48.1**
 - Checks:
@@ -105,9 +105,9 @@
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
-- close: 1.61 | RSI14: 32.97 | ATR14%: 6.79%
-- MA20/50/200 gap: -9.30% / -13.90% / -2.97%
-- 5D return: -2.42% | 20D drawdown: -28.44% | vol_ratio: 0.00
+- close: 1.62 | RSI14: 33.33 | ATR14%: 6.77%
+- MA20/50/200 gap: -8.76% / -13.38% / -2.37%
+- 5D return: -1.82% | 20D drawdown: -28.00% | vol_ratio: 0.10
 - RS vs GDXJ: gap -1.42% / slope_proxy -18.66%
 - FundamentalScore: 55 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **36.0**
 - Checks:
@@ -155,7 +155,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 8.61 | RSI14: 37.73 | ATR14%: 7.57%
 - MA20/50/200 gap: -3.85% / -8.73% / -8.74%
-- 5D return: 6.30% | 20D drawdown: -13.64% | vol_ratio: 1.41
+- 5D return: 6.30% | 20D drawdown: -13.64% | vol_ratio: 1.42
 - RS vs SILJ: gap -1.84% / slope_proxy -3.49%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **58.4**
 - Checks:
@@ -287,7 +287,7 @@
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
 - close: 26.01 | RSI14: 32.04 | ATR14%: 9.88%
 - MA20/50/200 gap: -10.88% / -25.61% / 1.67%
-- 5D return: 3.26% | 20D drawdown: -23.09% | vol_ratio: 1.52
+- 5D return: 3.26% | 20D drawdown: -23.09% | vol_ratio: 1.53
 - RS vs SILJ: gap -19.72% / slope_proxy -18.29%
 - FundamentalScore: 42 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **40.4**
 - Checks:

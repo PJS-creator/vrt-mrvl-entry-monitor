@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-06-20T03:00:57Z",
+  "generated_at_utc": "2026-06-20T15:01:00Z",
   "as_of": {
     "price_date": "2026-06-19",
-    "run_time_utc": "2026-06-20 03:00:57"
+    "run_time_utc": "2026-06-20 15:01:00"
   },
   "data_warning": false,
   "warnings": [],
@@ -200,7 +200,7 @@
         "rsi14": 36.458913,
         "atr14": 97.562107,
         "atr14_pct": 0.02338,
-        "vol_ratio": 7.554481,
+        "vol_ratio": 7.602519,
         "ret1d": -0.012121,
         "gap_open": 0.001681
       }

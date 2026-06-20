@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-20 03:01:06**
+- 실행시간(UTC): **2026-06-20 15:01:12**
 - 데이터 기준일(일봉): **2026-06-18**
 - 데이터 기준일(주봉): **2026-06-15**
 - VXN 기준일: **2026-06-17** / source: `FRED: VXNCLS`
@@ -82,7 +82,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-06-18**
-- 실행시간(UTC): **2026-06-20 03:00:42**
+- 실행시간(UTC): **2026-06-20 15:00:39**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -117,7 +117,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-06-19**
-- 실행시간(UTC): **2026-06-20 03:00:44**
+- 실행시간(UTC): **2026-06-20 15:00:41**
 
 ## Verdict
 ⏸ No entry today
@@ -155,7 +155,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-06-20 03:00:49**
+- 실행시간(UTC): **2026-06-20 15:00:49**
 
 ## Commodity Regime
 
@@ -321,7 +321,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-06-19**
-- 실행시간(UTC): **2026-06-20 03:00:57**
+- 실행시간(UTC): **2026-06-20 15:01:00**
 
 ## Verdict
 ⏸ No entry today
@@ -411,7 +411,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-06-20 03:01:05**
+- 실행시간(UTC): **2026-06-20 15:01:09**
 - 데이터 기준일(주가): **2026-06-19**
 
 ## Verdict
@@ -516,7 +516,7 @@
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
-- close: 1.62 | RSI14: 33.33 | ATR14%: 6.77%
+- close: 1.62 | RSI14: 33.33 | ATR14%: 6.75%
 - MA20/50/200 gap: -8.76% / -13.38% / -2.37%
 - 5D return: -1.82% | 20D drawdown: -28.00% | vol_ratio: 0.10
 - RS vs GDXJ: gap -1.42% / slope_proxy -18.66%

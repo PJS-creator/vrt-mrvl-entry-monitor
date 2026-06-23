@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-06-22T15:00:53Z",
+  "generated_at_utc": "2026-06-23T03:00:40Z",
   "as_of": {
     "price_date": "2026-06-22",
-    "run_time_utc": "2026-06-22 15:00:53"
+    "run_time_utc": "2026-06-23 03:00:40"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.63,
-      "change_4w_bp": -17.0,
-      "latest_date": "2026-06-17"
+      "latest": 2.66,
+      "change_4w_bp": -8.0,
+      "latest_date": "2026-06-19"
     },
     "BAMLC0A0CM": {
       "latest": 0.74,
-      "change_4w_bp": -1.0,
-      "latest_date": "2026-06-17"
+      "change_4w_bp": 0.0,
+      "latest_date": "2026-06-19"
     },
     "DFII10": {
-      "latest": 2.23,
-      "change_4w_bp": 10.0,
-      "latest_date": "2026-06-17"
+      "latest": 2.21,
+      "change_4w_bp": 3.0,
+      "latest_date": "2026-06-18"
     },
     "VIXCLS": {
       "latest": 16.78,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 346.87,
+      "close": 357.96,
       "latest_date": "2026-06-22"
     },
     "MRVL": {
-      "close": 306.285,
+      "close": 307.86,
       "latest_date": "2026-06-22"
     },
     "SRVR": {
-      "close": 33.73,
+      "close": 33.81,
       "latest_date": "2026-06-22"
     },
     "SMH": {
-      "close": 664.87,
+      "close": 668.91,
       "latest_date": "2026-06-22"
     },
     "NVDA": {
-      "close": 209.305,
+      "close": 208.65,
       "latest_date": "2026-06-22"
     },
     "AVGO": {
-      "close": 395.2374,
+      "close": 392.13,
       "latest_date": "2026-06-22"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 10.283724,
-      "ma60": 9.192202,
-      "gap": 0.118744,
+      "ratio": 10.587399,
+      "ma60": 9.197263,
+      "gap": 0.151147,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.460669,
-      "ma60": 0.343815,
-      "gap": 0.339876,
-      "ma60_slope_proxy": 0.069487,
+      "ratio": 0.460241,
+      "ma60": 0.343808,
+      "gap": 0.338659,
+      "ma60_slope_proxy": 0.06948,
       "entry": true
     }
   },

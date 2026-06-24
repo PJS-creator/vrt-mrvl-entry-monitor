@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-06-23T15:00:51Z",
+  "generated_at_utc": "2026-06-24T03:00:42Z",
   "as_of": {
     "price_date": "2026-06-23",
-    "run_time_utc": "2026-06-23 15:00:51"
+    "run_time_utc": "2026-06-24 03:00:42"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.66,
-      "change_4w": -8.0,
-      "latest_date": "2026-06-19"
+      "latest": 2.65,
+      "change_4w": -9.0,
+      "latest_date": "2026-06-22"
     },
     "BAMLC0A0CM": {
       "latest": 0.74,
       "change_4w": 0.0,
-      "latest_date": "2026-06-19"
+      "latest_date": "2026-06-22"
     },
     "VIXCLS": {
       "latest": 17.28,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 657.0,
+      "close": 657.2,
       "latest_date": "2026-06-23"
     },
     "^FTSE": {
-      "close": 10451.8604,
+      "close": 10428.9004,
       "latest_date": "2026-06-23"
     },
     "LLOY.L": {
-      "close": 109.35,
+      "close": 109.05,
       "latest_date": "2026-06-23"
     },
     "BARC.L": {
-      "close": 514.0,
+      "close": 511.5,
       "latest_date": "2026-06-23"
     },
     "HSBA.L": {
-      "close": 1448.8,
+      "close": 1445.8,
       "latest_date": "2026-06-23"
     }
   },
   "signals": {
     "NWG": {
-      "close": 657.0,
-      "ma50": 595.1331,
-      "ma200": 593.7604,
-      "gap50": 0.103955,
-      "gap200": 0.106507
+      "close": 657.2,
+      "ma50": 595.1371,
+      "ma200": 593.7614,
+      "gap50": 0.104283,
+      "gap200": 0.106842
     },
     "RS_FTSE": {
-      "ratio": 0.06286,
-      "ma60": 0.056929,
-      "gap": 0.104177,
-      "ma60_slope_proxy": 0.001122
+      "ratio": 0.063017,
+      "ma60": 0.056932,
+      "gap": 0.106893,
+      "ma60_slope_proxy": 0.001125
     },
     "RS_PEERS": {
-      "ratio": 0.951186,
-      "ma60": 0.940886,
-      "gap": 0.010947,
-      "ma60_slope_proxy": -0.016789
+      "ratio": 0.954146,
+      "ma60": 0.940936,
+      "gap": 0.01404,
+      "ma60_slope_proxy": -0.01674
     }
   },
   "checks": {

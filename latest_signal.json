@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-06-23T15:00:49Z",
+  "generated_at_utc": "2026-06-24T03:00:40Z",
   "as_of": {
     "price_date": "2026-06-23",
-    "run_time_utc": "2026-06-23 15:00:49"
+    "run_time_utc": "2026-06-24 03:00:40"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.66,
-      "change_4w_bp": -8.0,
-      "latest_date": "2026-06-19"
+      "latest": 2.65,
+      "change_4w_bp": -9.0,
+      "latest_date": "2026-06-22"
     },
     "BAMLC0A0CM": {
       "latest": 0.74,
       "change_4w_bp": 0.0,
-      "latest_date": "2026-06-19"
+      "latest_date": "2026-06-22"
     },
     "DFII10": {
-      "latest": 2.21,
-      "change_4w_bp": 3.0,
-      "latest_date": "2026-06-18"
+      "latest": 2.28,
+      "change_4w_bp": 12.0,
+      "latest_date": "2026-06-22"
     },
     "VIXCLS": {
       "latest": 17.28,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 322.04,
+      "close": 318.32,
       "latest_date": "2026-06-23"
     },
     "MRVL": {
-      "close": 283.54,
+      "close": 279.04,
       "latest_date": "2026-06-23"
     },
     "SRVR": {
-      "close": 33.5482,
+      "close": 33.47,
       "latest_date": "2026-06-23"
     },
     "SMH": {
-      "close": 627.44,
+      "close": 622.05,
       "latest_date": "2026-06-23"
     },
     "NVDA": {
-      "close": 202.37,
+      "close": 200.04,
       "latest_date": "2026-06-23"
     },
     "AVGO": {
-      "close": 382.29,
+      "close": 380.15,
       "latest_date": "2026-06-23"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.599323,
-      "ma60": 9.219549,
-      "gap": 0.041192,
+      "ratio": 9.510606,
+      "ma60": 9.21807,
+      "gap": 0.031735,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.4519,
-      "ma60": 0.347067,
-      "gap": 0.302055,
-      "ma60_slope_proxy": 0.070267,
+      "ratio": 0.448581,
+      "ma60": 0.347011,
+      "gap": 0.292699,
+      "ma60_slope_proxy": 0.070211,
       "entry": true
     }
   },

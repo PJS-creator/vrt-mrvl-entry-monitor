@@ -1,6 +1,6 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-06-26 15:01:15**
+- 실행시간(UTC): **2026-06-27 03:01:28**
 - 데이터 기준일(일봉): **2026-06-26**
 - 데이터 기준일(주봉): **2026-06-22**
 - VXN 기준일: **2026-06-25** / source: `FRED: VXNCLS`
@@ -19,29 +19,29 @@
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 715.59
-- Weekly RSI14: **63.42**
-- 52W MA: 617.61 / gap: **15.86%**
-- 104W MA gap: **28.96%**
-- 52W MA 13W slope: **8.51%**
+- QQQ close: 706.52
+- Weekly RSI14: **61.01**
+- 52W MA: 617.44 / gap: **14.43%**
+- 104W MA gap: **27.34%**
+- 52W MA 13W slope: **8.48%**
 - VXN: **30.91** / 5D change: 2.35
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 711.06
-- Daily RSI14: **48.21**
-- 20D gap: **-1.84%**
-- 50D gap: **1.26%**
-- 200D gap: **12.74%**
-- MACD hist: -3.6931 / change: -0.3324
-- ATR14%: **2.30%**
-- 20D high drawdown: **-4.60%**
+- QQQ close: 706.52
+- Daily RSI14: **46.65**
+- 20D gap: **-2.44%**
+- 50D gap: **0.63%**
+- 200D gap: **12.03%**
+- MACD hist: -3.9828 / change: -0.6221
+- ATR14%: **2.31%**
+- 20D high drawdown: **-5.21%**
 
 ## Checks
 
 - weekly_good: **False**
 - weekly_small: **False**
-- weekly_overheated: **True**
+- weekly_overheated: **False**
 - weekly_panic: **True**
 - daily_a: **False**
 - daily_b: **False**
@@ -50,7 +50,6 @@
 
 ## Why
 
-- 주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한
 - 공포/급락 구간은 QLD 몰빵보다 반등 확인이 우선
 - VXN이 24 초과라 레버리지 비중 확대에는 불리
 

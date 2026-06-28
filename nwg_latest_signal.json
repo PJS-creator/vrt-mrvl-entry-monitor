@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-06-27T15:00:45Z",
+  "generated_at_utc": "2026-06-28T03:00:49Z",
   "as_of": {
     "price_date": "2026-06-26",
-    "run_time_utc": "2026-06-27 15:00:45"
+    "run_time_utc": "2026-06-28 03:00:49"
   },
   "data_warning": false,
   "warnings": [],
@@ -72,8 +72,8 @@
       "latest_date": "2026-06-26"
     },
     "^FTSE": {
-      "close": 10508.0,
-      "latest_date": "2026-06-26"
+      "close": 10529.9004,
+      "latest_date": "2026-06-25"
     },
     "LLOY.L": {
       "close": 109.2,
@@ -97,10 +97,10 @@
       "gap200": 0.101704
     },
     "RS_FTSE": {
-      "ratio": 0.062467,
-      "ma60": 0.057355,
-      "gap": 0.089116,
-      "ma60_slope_proxy": 0.001532
+      "ratio": 0.062774,
+      "ma60": 0.057212,
+      "gap": 0.097215,
+      "ma60_slope_proxy": 0.00142
     },
     "RS_PEERS": {
       "ratio": 0.964113,

@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-06-29T03:00:46Z",
+  "generated_at_utc": "2026-06-29T15:00:46Z",
   "as_of": {
-    "price_date": "2026-06-26",
-    "run_time_utc": "2026-06-29 03:00:46"
+    "price_date": "2026-06-29",
+    "run_time_utc": "2026-06-29 15:00:46"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.78,
-      "change_4w": 6.0,
-      "latest_date": "2026-06-25"
+      "latest": 2.83,
+      "change_4w": 11.0,
+      "latest_date": "2026-06-26"
     },
     "BAMLC0A0CM": {
-      "latest": 0.76,
-      "change_4w": 3.0,
-      "latest_date": "2026-06-25"
+      "latest": 0.77,
+      "change_4w": 4.0,
+      "latest_date": "2026-06-26"
     },
     "VIXCLS": {
-      "latest": 18.89,
-      "change_4w": 3.15,
-      "latest_date": "2026-06-25"
+      "latest": 18.41,
+      "change_4w": 3.09,
+      "latest_date": "2026-06-26"
     },
     "NFCI": {
       "latest": -0.516,
@@ -32,94 +32,94 @@
     "IUDBEDR": {
       "latest": 3.75,
       "change_4w": 0.0,
-      "latest_date": "2026-06-25"
+      "latest_date": "2026-06-26"
     },
     "IUDSOIA": {
-      "latest": 3.729,
-      "change_4w": 0.0,
-      "latest_date": "2026-06-24"
+      "latest": 3.7287,
+      "change_4w": -0.08,
+      "latest_date": "2026-06-25"
     },
     "IUDMNPY": {
-      "latest": 4.6683,
-      "change_4w": -15.76,
-      "latest_date": "2026-06-24"
+      "latest": 4.682,
+      "change_4w": -10.67,
+      "latest_date": "2026-06-25"
     },
     "IUDSNPY": {
-      "latest": 4.2278,
-      "change_4w": -13.82,
-      "latest_date": "2026-06-24"
+      "latest": 4.2275,
+      "change_4w": -10.42,
+      "latest_date": "2026-06-25"
     },
     "LPMVTVX": {
-      "latest": 65945.0,
-      "change_4w": 1966.0,
-      "latest_date": "2026-04-30"
+      "latest": 56205.0,
+      "change_4w": -9829.0,
+      "latest_date": "2026-05-31"
     },
     "LPMVQJW": {
-      "latest": 4.5,
-      "change_4w": 0.2,
-      "latest_date": "2026-04-30"
+      "latest": 4.3,
+      "change_4w": -0.2,
+      "latest_date": "2026-05-31"
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 91.83,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": -15.76,
-    "CURVE_10s5s_bp": 44.05,
-    "CURVE_10s5s_4w_change_bp": -1.94
+    "TERM_SPREAD_10Y_POLICY_bp": 93.2,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": -10.67,
+    "CURVE_10s5s_bp": 45.45,
+    "CURVE_10s5s_4w_change_bp": -0.25
   },
   "prices": {
     "NWG.L": {
-      "close": 656.4,
-      "latest_date": "2026-06-26"
+      "close": 656.3002,
+      "latest_date": "2026-06-29"
     },
     "^FTSE": {
-      "close": 10508.0,
-      "latest_date": "2026-06-26"
+      "close": 10494.4004,
+      "latest_date": "2026-06-29"
     },
     "LLOY.L": {
-      "close": 109.2,
-      "latest_date": "2026-06-26"
+      "close": 108.9,
+      "latest_date": "2026-06-29"
     },
     "BARC.L": {
-      "close": 510.7,
-      "latest_date": "2026-06-26"
+      "close": 507.1,
+      "latest_date": "2026-06-29"
     },
     "HSBA.L": {
-      "close": 1422.6,
-      "latest_date": "2026-06-26"
+      "close": 1424.0,
+      "latest_date": "2026-06-29"
     }
   },
   "signals": {
     "NWG": {
-      "close": 656.4,
-      "ma50": 597.1651,
-      "ma200": 595.8045,
-      "gap50": 0.099194,
-      "gap200": 0.101704
+      "close": 656.3002,
+      "ma50": 597.9671,
+      "ma200": 596.456,
+      "gap50": 0.097552,
+      "gap200": 0.100333
     },
     "RS_FTSE": {
-      "ratio": 0.062467,
-      "ma60": 0.057355,
-      "gap": 0.089116,
-      "ma60_slope_proxy": 0.001532
+      "ratio": 0.062538,
+      "ma60": 0.057492,
+      "gap": 0.087777,
+      "ma60_slope_proxy": 0.001648
     },
     "RS_PEERS": {
-      "ratio": 0.964113,
-      "ma60": 0.940624,
-      "gap": 0.024972,
-      "ma60_slope_proxy": -0.015535
+      "ratio": 0.965147,
+      "ma60": 0.940555,
+      "gap": 0.026146,
+      "ma60_slope_proxy": -0.014777
     }
   },
   "checks": {
     "RiskGreen": true,
-    "CurveGreen": false,
-    "DemandGreen": true,
+    "CurveGreen": true,
+    "DemandGreen": false,
     "MacroGreen": false,
     "PriceConfirm": false,
     "ENTRY_STRICT": false,
     "ENTRY_LOOSE": false
   },
   "fails": [
-    "CurveGreen=FALSE",
+    "DemandGreen=FALSE (monthly)",
     "PullbackZone=FALSE",
     "RelativeTurn=FALSE"
   ],

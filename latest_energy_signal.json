@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-04T03:00:54Z",
+  "generated_at_utc": "2026-07-04T15:00:59Z",
   "as_of": {
-    "run_time_utc": "2026-07-04 03:00:54"
+    "run_time_utc": "2026-07-04 15:00:59"
   },
   "data_warning": false,
   "warnings": [],
@@ -99,12 +99,12 @@
     "PBR": {
       "close": 16.11,
       "latest_date": "2026-07-02",
-      "volume": 12177200.0
+      "volume": 12175700.0
     },
     "OXY": {
       "close": 48.91,
       "latest_date": "2026-07-02",
-      "volume": 8553600.0
+      "volume": 8548700.0
     },
     "VG": {
       "close": 11.13,
@@ -114,12 +114,12 @@
     "RIG": {
       "close": 5.06,
       "latest_date": "2026-07-02",
-      "volume": 26532000.0
+      "volume": 26459300.0
     },
     "XLE": {
       "close": 53.22,
       "latest_date": "2026-07-02",
-      "volume": 28538200.0
+      "volume": 28525600.0
     },
     "OIH": {
       "close": 359.6,
@@ -129,7 +129,7 @@
     "EWZ": {
       "close": 34.43,
       "latest_date": "2026-07-02",
-      "volume": 19431100.0
+      "volume": 19430500.0
     },
     "LNG": {
       "close": 245.97,
@@ -139,11 +139,11 @@
     "SPY": {
       "close": 744.78,
       "latest_date": "2026-07-02",
-      "volume": 57506000.0
+      "volume": 57447800.0
     },
     "BRL=X": {
       "close": 5.1672,
-      "latest_date": "2026-07-03",
+      "latest_date": "2026-07-04",
       "volume": 0.0
     },
     "CL=F": {
@@ -182,9 +182,9 @@
         "slope_proxy": -0.02168
       },
       "volume": {
-        "vol": 8553600.0,
-        "ma20": 9736560.0,
-        "ratio": 0.878503
+        "vol": 8548700.0,
+        "ma20": 9736315.0,
+        "ratio": 0.878022
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -214,9 +214,9 @@
         "slope_proxy": -0.010289
       },
       "volume": {
-        "vol": 12177200.0,
-        "ma20": 14131715.0,
-        "ratio": 0.861693
+        "vol": 12175700.0,
+        "ma20": 14131640.0,
+        "ratio": 0.861591
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -247,9 +247,9 @@
         "slope_proxy": -0.000873
       },
       "volume": {
-        "vol": 26532000.0,
-        "ma20": 33755945.0,
-        "ratio": 0.785995
+        "vol": 26459300.0,
+        "ma20": 33752310.0,
+        "ratio": 0.783926
       },
       "checks": {
         "RISK_OK_STRICT": true,

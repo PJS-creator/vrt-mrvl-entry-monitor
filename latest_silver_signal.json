@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-07-04T03:01:03Z",
+  "generated_at_utc": "2026-07-04T15:01:07Z",
   "as_of": {
     "price_date": "2026-07-03",
-    "run_time_utc": "2026-07-04 03:01:03"
+    "run_time_utc": "2026-07-04 15:01:07"
   },
   "data_warning": false,
   "warnings": [],
@@ -182,7 +182,7 @@
         "rsi14": 42.753892,
         "atr14": 2.46345,
         "atr14_pct": 0.039218,
-        "vol_ratio": 6.000524,
+        "vol_ratio": 6.022862,
         "ret1d": 0.035816,
         "gap_open": 0.014132
       },
@@ -200,7 +200,7 @@
         "rsi14": 46.608737,
         "atr14": 93.361942,
         "atr14_pct": 0.022296,
-        "vol_ratio": 14.03185,
+        "vol_ratio": 14.130129,
         "ret1d": 0.018139,
         "gap_open": 0.006152
       }

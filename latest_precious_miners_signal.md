@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-07-03 15:01:07**
+- 실행시간(UTC): **2026-07-04 03:01:11**
 - 데이터 기준일(주가): **2026-07-03**
 
 ## Verdict
@@ -19,8 +19,8 @@
 
 ### Macro (FRED, if available)
 
-- HY OAS: 2.74 / 4주 변화 -0.01 bp-ish / 2026-07-01
-- IG OAS: 0.76 / 4주 변화 0.02 bp-ish / 2026-07-01
+- HY OAS: 2.75 / 4주 변화 0.01 bp-ish / 2026-07-02
+- IG OAS: 0.75 / 4주 변화 0.01 bp-ish / 2026-07-02
 - 10Y Real Yield: 2.25 / 4주 변화 0.18 bp-ish / 2026-07-01
 - VIX: 16.59 / 4주 변화 0.53 / 2026-07-01
 - NFCI: -0.50 / 4주 변화 0.05 / 2026-06-26
@@ -61,9 +61,9 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 5.64 | RSI14: 49.79 | ATR14%: 5.78%
-- MA20/50/200 gap: 2.80% / -8.70% / -18.63%
-- 5D return: 13.71% | 20D drawdown: -8.29% | vol_ratio: 0.08
+- close: 5.75 | RSI14: 51.97 | ATR14%: 5.75%
+- MA20/50/200 gap: 4.70% / -6.95% / -17.05%
+- 5D return: 15.93% | 20D drawdown: -6.50% | vol_ratio: 0.39
 - RS vs GDXJ: gap -4.79% / slope_proxy -5.44%
 - FundamentalScore: 82 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **48.1**
 - Checks:
@@ -81,33 +81,11 @@
 - Watch: Q2~Q3 생산량 13~15koz/분기 이상, Satinoco 비용 정상화.
 - Why not today: GoldUptrend=FALSE, GoldMinerLeadership(GDX/GLD or GDXJ/GLD)=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
 
-### ORV.TO (Orvana Minerals)
-- Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
-- close: 1.72 | RSI14: 54.93 | ATR14%: 5.52%
-- MA20/50/200 gap: 7.10% / -4.64% / 0.93%
-- 5D return: 19.44% | 20D drawdown: -1.71% | vol_ratio: 0.24
-- RS vs GDXJ: gap 1.22% / slope_proxy -6.51%
-- FundamentalScore: 55 | TechnicalScore: 40 | RegimeScore: 30 | OverallScore: **44.8**
-- Checks:
-  - sector_ok: **False**
-  - breadth_ok: **False**
-  - strategic_ok: **False**
-  - trend_ok: **True**
-  - rs_ok: **False**
-  - pullback: **False**
-  - breakout: **False**
-  - not_extended: **True**
-  - entry_candidate: **False**
-  - entry_confirmed: **False**
-- Thesis: 금/구리 고가격에서 FCF 가능. 하지만 고비용 + Bolivia 물류/정치 리스크.
-- Watch: Don Mario 물류 정상화, AISC 하향, Bolivia 리스크.
-- Why not today: GoldUptrend=FALSE, GoldMinerLeadership(GDX/GLD or GDXJ/GLD)=FALSE, SectorBreadthProxy=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
-
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
-- close: 1.27 | RSI14: 47.95 | ATR14%: 7.71%
-- MA20/50/200 gap: 1.97% / -4.31% / -15.77%
-- 5D return: 11.40% | 20D drawdown: -13.61% | vol_ratio: 0.18
+- close: 1.30 | RSI14: 50.00 | ATR14%: 7.69%
+- MA20/50/200 gap: 4.25% / -2.09% / -13.79%
+- 5D return: 14.04% | 20D drawdown: -11.56% | vol_ratio: 0.68
 - RS vs GDXJ: gap 1.58% / slope_proxy -1.10%
 - FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **42.8**
 - Checks:
@@ -123,6 +101,28 @@
   - entry_confirmed: **False**
 - Thesis: Bralorne 고품위/캐나다 관할권. 다만 PEA, AISC, 반복 생산 미검증.
 - Watch: PEA economics, AISC 공개, inferred→indicated 전환.
+- Why not today: GoldUptrend=FALSE, GoldMinerLeadership(GDX/GLD or GDXJ/GLD)=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
+
+### ORV.TO (Orvana Minerals)
+- Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
+- close: 1.71 | RSI14: 54.29 | ATR14%: 5.60%
+- MA20/50/200 gap: 6.51% / -5.18% / 0.35%
+- 5D return: 18.75% | 20D drawdown: -2.29% | vol_ratio: 0.90
+- RS vs GDXJ: gap 1.22% / slope_proxy -6.51%
+- FundamentalScore: 55 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **36.0**
+- Checks:
+  - sector_ok: **False**
+  - breadth_ok: **False**
+  - strategic_ok: **False**
+  - trend_ok: **False**
+  - rs_ok: **False**
+  - pullback: **False**
+  - breakout: **False**
+  - not_extended: **True**
+  - entry_candidate: **False**
+  - entry_confirmed: **False**
+- Thesis: 금/구리 고가격에서 FCF 가능. 하지만 고비용 + Bolivia 물류/정치 리스크.
+- Watch: Don Mario 물류 정상화, AISC 하향, Bolivia 리스크.
 - Why not today: GoldUptrend=FALSE, GoldMinerLeadership(GDX/GLD or GDXJ/GLD)=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
 
 ---

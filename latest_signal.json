@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-07-06T03:00:53Z",
+  "generated_at_utc": "2026-07-06T15:00:55Z",
   "as_of": {
-    "price_date": "2026-07-02",
-    "run_time_utc": "2026-07-06 03:00:53"
+    "price_date": "2026-07-06",
+    "run_time_utc": "2026-07-06 15:00:55"
   },
   "data_warning": false,
   "warnings": [],
@@ -23,9 +23,9 @@
       "latest_date": "2026-07-01"
     },
     "VIXCLS": {
-      "latest": 16.59,
-      "change_4w_bp": 53.0,
-      "latest_date": "2026-07-01"
+      "latest": 15.81,
+      "change_4w_bp": -570.0,
+      "latest_date": "2026-07-03"
     },
     "NFCI": {
       "latest": -0.504,
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 300.53,
-      "latest_date": "2026-07-02"
+      "close": 326.37,
+      "latest_date": "2026-07-06"
     },
     "MRVL": {
-      "close": 245.29,
-      "latest_date": "2026-07-02"
+      "close": 256.0195,
+      "latest_date": "2026-07-06"
     },
     "SRVR": {
-      "close": 31.13,
-      "latest_date": "2026-07-02"
+      "close": 31.0401,
+      "latest_date": "2026-07-06"
     },
     "SMH": {
-      "close": 592.29,
-      "latest_date": "2026-07-02"
+      "close": 612.83,
+      "latest_date": "2026-07-06"
     },
     "NVDA": {
-      "close": 194.83,
-      "latest_date": "2026-07-02"
+      "close": 195.82,
+      "latest_date": "2026-07-06"
     },
     "AVGO": {
-      "close": 360.45,
-      "latest_date": "2026-07-02"
+      "close": 375.03,
+      "latest_date": "2026-07-06"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.654032,
-      "ma60": 9.41465,
-      "gap": 0.025426,
-      "entry": true
+      "ratio": 10.514463,
+      "ma60": 9.44842,
+      "gap": 0.112828,
+      "entry": false
     },
     "MRVL": {
-      "ratio": 0.414138,
-      "ma60": 0.367389,
-      "gap": 0.127248,
-      "ma60_slope_proxy": 0.070551,
+      "ratio": 0.417766,
+      "ma60": 0.369844,
+      "gap": 0.129575,
+      "ma60_slope_proxy": 0.068513,
       "entry": true
     }
   },
-  "verdict": "✅ Entry condition met: BOTH"
+  "verdict": "✅ Entry condition met: MRVL"
 }

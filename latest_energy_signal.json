@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-07-05T15:01:04Z",
+  "generated_at_utc": "2026-07-06T03:01:03Z",
   "as_of": {
-    "run_time_utc": "2026-07-05 15:01:04"
+    "run_time_utc": "2026-07-06 03:01:03"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 68.78,
-      "ret5d": -0.0065
+      "close": 68.84,
+      "ret5d": -0.005633
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 72.13,
-      "ret5d": 0.001945,
+      "close": 72.12,
+      "ret5d": 0.001806,
       "tier": "70-80"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.245,
-      "ret5d": 0.004333
+      "close": 3.165,
+      "ret5d": -0.020427
     },
-    "Brent_WTI_spread": 3.35
+    "Brent_WTI_spread": 3.28
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -143,23 +143,23 @@
     },
     "BRL=X": {
       "close": 5.1679,
-      "latest_date": "2026-07-05",
+      "latest_date": "2026-07-06",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 68.78,
-      "latest_date": "2026-07-03",
-      "volume": 48758.0
+      "close": 68.84,
+      "latest_date": "2026-07-05",
+      "volume": 58472.0
     },
     "BZ=F": {
-      "close": 72.13,
-      "latest_date": "2026-07-03",
-      "volume": 15791.0
+      "close": 72.12,
+      "latest_date": "2026-07-05",
+      "volume": 17122.0
     },
     "NG=F": {
-      "close": 3.245,
-      "latest_date": "2026-07-03",
-      "volume": 29186.0
+      "close": 3.165,
+      "latest_date": "2026-07-05",
+      "volume": 34030.0
     }
   },
   "signals": {
@@ -199,19 +199,19 @@
       "trend": {
         "close": 16.110001,
         "ma20": 17.094,
-        "ma60": 19.228197,
-        "ma200": 15.542861,
+        "ma60": 19.330014,
+        "ma200": 15.648646,
         "gap20": -0.057564,
-        "gap60": -0.162168,
+        "gap60": -0.166581,
         "ret5d": -0.024818,
         "high20": 18.379999,
         "low20": 15.99
       },
       "ratio": {
         "ratio": 0.467906,
-        "ma60": 0.520521,
-        "gap": -0.101082,
-        "slope_proxy": -0.010289
+        "ma60": 0.523176,
+        "gap": -0.105644,
+        "slope_proxy": -0.011652
       },
       "volume": {
         "vol": 12175700.0,

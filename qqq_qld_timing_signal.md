@@ -1,14 +1,14 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-07-07 03:01:26**
-- 데이터 기준일(일봉): **2026-07-06**
+- 실행시간(UTC): **2026-07-07 15:01:27**
+- 데이터 기준일(일봉): **2026-07-07**
 - 데이터 기준일(주봉): **2026-07-06**
-- VXN 기준일: **2026-07-02** / source: `FRED: VXNCLS`
+- VXN 기준일: **2026-07-06** / source: `FRED: VXNCLS`
 
 ## Verdict
 
 **⏸ QLD/TIGER 레버리지 대기**
-- Regime: **F: 과열권, QLD 대기**
+- Regime: **G: 중립, QQQ 중심**
 
 ## Recommended monthly buy amount
 
@@ -19,38 +19,37 @@
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 722.82
-- Weekly RSI14: **63.81**
-- 52W MA: 623.83 / gap: **15.87%**
-- 104W MA gap: **29.25%**
-- 52W MA 13W slope: **8.41%**
-- VXN: **27.98** / 5D change: -2.93
+- QQQ close: 706.53
+- Weekly RSI14: **60.33**
+- 52W MA: 623.52 / gap: **13.31%**
+- 104W MA gap: **26.38%**
+- 52W MA 13W slope: **8.35%**
+- VXN: **26.81** / 5D change: -4.01
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 722.82
-- Daily RSI14: **51.74**
-- 20D gap: **0.42%**
-- 50D gap: **1.82%**
-- 200D gap: **13.98%**
-- MACD hist: -1.8134 / change: 0.3061
-- ATR14%: **2.26%**
-- 20D high drawdown: **-2.74%**
+- QQQ close: 706.53
+- Daily RSI14: **46.38**
+- 20D gap: **-1.86%**
+- 50D gap: **-0.63%**
+- 200D gap: **11.31%**
+- MACD hist: -2.6125 / change: -0.7991
+- ATR14%: **2.33%**
+- 20D high drawdown: **-4.93%**
 
 ## Checks
 
 - weekly_good: **False**
 - weekly_small: **False**
-- weekly_overheated: **True**
+- weekly_overheated: **False**
 - weekly_panic: **False**
 - daily_a: **False**
 - daily_b: **False**
 - daily_overheated: **False**
-- rebound_after_panic: **True**
+- rebound_after_panic: **False**
 
 ## Why
 
-- 주봉 RSI 또는 52주선 이격도가 과열권이라 QLD 신규 본격 매수는 제한
 - VXN이 24 초과라 레버리지 비중 확대에는 불리
 
 ## Rule note

@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-07-06**
-- 실행시간(UTC): **2026-07-06 15:01:09**
+- 실행시간(UTC): **2026-07-07 03:01:15**
 
 ## Verdict
 ⏸ No entry today
@@ -14,21 +14,21 @@
 - JuniorGoldLeadership(GDXJ/GLD): **False**
 
 ### Macro (FRED)
-- HY OAS 4주 변화: 1.0 bp / latest 2.75
+- HY OAS 4주 변화: -2.0 bp / latest 2.74
 - IG OAS 4주 변화: 1.0 bp / latest 0.75
-- 10Y Real Yield 4주 변화: 14.0 bp / latest 2.25
+- 10Y Real Yield 4주 변화: 15.0 bp / latest 2.26
 - VIX: 15.81
 - NFCI: -0.504
 
 ### Leadership ratios
-- SILJ/SLV gap: 6.30% / slope_proxy: 0.007482
-- GDXJ/GLD gap: -2.14% / slope_proxy: -0.00193
+- SILJ/SLV gap: 5.72% / slope_proxy: 0.007438
+- GDXJ/GLD gap: -2.30% / slope_proxy: -0.001937
 
 ## VZLA (Vizsla Silver)
-- close: 3.3201 | RSI14: 45.818139 | ATR14%: 6.24%
-- MA20 gap: -1.98% | MA50 gap: -5.14% | MA200 gap: -21.45%
-- vol_ratio(Volume/Vol20): 0.166953 | gap_open: 2.10%
-- RS vs SILJ gap: 4.80% / slope_proxy: 0.004895
+- close: 3.27 | RSI14: 44.185909 | ATR14%: 6.47%
+- MA20 gap: -3.38% | MA50 gap: -6.54% | MA200 gap: -22.63%
+- vol_ratio(Volume/Vol20): 0.773077 | gap_open: 2.10%
+- RS vs SILJ gap: 3.28% / slope_proxy: 0.004865
 - Checks:
   - trend_ok: **False**
   - rs_ok: **True**
@@ -43,11 +43,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## SCZM (Santacruz Silver)
-- close: 6.76 | RSI14: 44.730261 | ATR14%: 7.39%
-- MA20 gap: 0.30% | MA50 gap: -12.71% | MA200 gap: -20.61%
-- vol_ratio(Volume/Vol20): 0.229845 | gap_open: 3.74%
-- SilverMarginGate: SI=62.105 / watch>=32.0:True / entry>=35.0:True
-- RS vs SILJ gap: -5.33% / slope_proxy: -0.007656
+- close: 6.81 | RSI14: 45.532005 | ATR14%: 7.34%
+- MA20 gap: 1.00% | MA50 gap: -12.07% | MA200 gap: -20.02%
+- vol_ratio(Volume/Vol20): 0.849856 | gap_open: 3.74%
+- SilverMarginGate: SI=61.715 / watch>=32.0:True / entry>=35.0:True
+- RS vs SILJ gap: -4.61% / slope_proxy: -0.007623
 - Checks:
   - trend_ok: **False**
   - rs_ok: **False**
@@ -63,11 +63,11 @@
 - Trigger(Pullback/Breakout)=FALSE
 
 ## HYMC (Hycroft Mining)
-- close: 23.530001 | RSI14: 38.714247 | ATR14%: 9.28%
-- MA20 gap: -3.97% | MA50 gap: -25.25% | MA200 gap: -11.06%
-- vol_ratio(Volume/Vol20): 0.123579 | gap_open: 1.40%
-- RS vs SILJ gap: -20.57% / slope_proxy: -0.090082
-- RS vs GDXJ gap: -20.25% / slope_proxy: -0.019724
+- close: 23.49 | RSI14: 38.608751 | ATR14%: 9.30%
+- MA20 gap: -4.12% | MA50 gap: -25.38% | MA200 gap: -11.21%
+- vol_ratio(Volume/Vol20): 0.375178 | gap_open: 1.40%
+- RS vs SILJ gap: -20.68% / slope_proxy: -0.090102
+- RS vs GDXJ gap: -20.75% / slope_proxy: -0.019747
 - Checks:
   - trend_ok: **False**
   - rs_ok: **False**

@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-07-08 03:01:07**
+- 실행시간(UTC): **2026-07-08 15:01:18**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 72.29 / 5D 2.18%
-- Brent ref (BZ=F): 76.06 / 5D 3.98%
+- WTI ref (CL=F): 75.30 / 5D 8.35%
+- Brent ref (BZ=F): 79.50 / 5D 9.02%
 - Brent Tier: **70-80**
-- Brent-WTI spread: 3.77
-- Gas ref (NG=F): 3.28 / 5D 3.14%
+- Brent-WTI spread: 4.20
+- Gas ref (NG=F): 3.27 / 5D -0.03%
 
 ## Gates
 
@@ -18,7 +18,7 @@
 - **WTI_TREND_UP**: **False**
 - **BRENT_TREND_UP**: **False**
 - **OIL_TREND_UP**: **False**
-- **BRAZIL_RISK_OK**: **False**
+- **BRAZIL_RISK_OK**: **True**
 
 ## OXY
 
@@ -26,31 +26,31 @@
 
 ### Trend
 
-- close: 51.68
-- MA20 / MA60 / MA200: 52.36 / 55.62 / 49.00
-- gap20 / gap60: -1.29% / -7.09%
-- 5D return: 5.28%
-- 20D high/low: 57.22 / 47.94
+- close: 54.36
+- MA20 / MA60 / MA200: 52.21 / 55.57 / 49.03
+- gap20 / gap60: 4.11% / -2.17%
+- 5D return: 11.92%
+- 20D high/low: 57.10 / 47.94
 
 ### Relative Strength
 
-- ratio: 0.945827
-- ratio_MA60: 0.985181
-- ratio_gap: -3.99%
-- ratio_slope_proxy(20d): -0.025577
+- ratio: 0.975417
+- ratio_MA60: 0.984426
+- ratio_gap: -0.92%
+- ratio_slope_proxy(20d): -0.025716
 
 ### Volume (if available)
 
-- volume: 11594521.00
-- volume_MA20: 9812901.05
-- volume_ratio: 1.18
+- volume: 7047251.00
+- volume_MA20: 9732372.55
+- volume_ratio: 0.72
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
 - WTI_TREND_UP: **False**
 - OXY_TREND_UP: **False**
-- OXY_PULLBACK_OK: **True**
+- OXY_PULLBACK_OK: **False**
 - OXY_RELATIVE_OK: **False**
 
 ## PBR
@@ -59,30 +59,30 @@
 
 ### Trend
 
-- close: 16.66
-- MA20 / MA60 / MA200: 16.95 / 19.20 / 15.68
-- gap20 / gap60: -1.71% / -13.25%
-- 5D return: 2.33%
+- close: 17.11
+- MA20 / MA60 / MA200: 16.92 / 19.13 / 15.71
+- gap20 / gap60: 1.14% / -10.58%
+- 5D return: 5.88%
 - 20D high/low: 18.38 / 15.99
 
 ### Relative Strength
 
-- ratio: 0.480947
-- ratio_MA60: 0.521967
-- ratio_gap: -7.86%
-- ratio_slope_proxy(20d): -0.013915
+- ratio: 0.500146
+- ratio_MA60: 0.521598
+- ratio_gap: -4.11%
+- ratio_slope_proxy(20d): -0.014364
 
 ### Volume (if available)
 
-- volume: 20794827.00
-- volume_MA20: 14731491.35
-- volume_ratio: 1.41
+- volume: 5471657.00
+- volume_MA20: 14379487.85
+- volume_ratio: 0.38
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
 - BRENT_TREND_UP: **False**
-- BRAZIL_RISK_OK: **False**
+- BRAZIL_RISK_OK: **True**
 - PBR_TREND_OK: **False**
 - PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **False**
@@ -93,24 +93,24 @@
 
 ### Trend
 
-- close: 5.02
-- MA20 / MA60 / MA200: 5.42 / 6.13 / 5.15
-- gap20 / gap60: -7.29% / -18.09%
-- 5D return: -0.40%
-- 20D high/low: 6.17 / 4.87
+- close: 5.23
+- MA20 / MA60 / MA200: 5.37 / 6.11 / 5.16
+- gap20 / gap60: -2.57% / -14.36%
+- 5D return: 6.95%
+- 20D high/low: 6.04 / 4.87
 
 ### Relative Strength
 
-- ratio: 0.013705
-- ratio_MA60: 0.014674
-- ratio_gap: -6.61%
-- ratio_slope_proxy(20d): -0.000889
+- ratio: 0.013924
+- ratio_MA60: 0.014641
+- ratio_gap: -4.90%
+- ratio_slope_proxy(20d): -0.000880
 
 ### Volume (if available)
 
-- volume: 34088293.00
-- volume_MA20: 34231439.65
-- volume_ratio: 1.00
+- volume: 12109193.00
+- volume_MA20: 33868414.65
+- volume_ratio: 0.36
 
 ### Checks
 
@@ -127,24 +127,24 @@
 
 ### Trend
 
-- close: 11.59
-- MA20 / MA60 / MA200: 11.54 / 12.33 / 10.69
-- gap20 / gap60: 0.42% / -5.99%
-- 5D return: 3.95%
+- close: 12.56
+- MA20 / MA60 / MA200: 11.53 / 12.32 / 10.69
+- gap20 / gap60: 8.98% / 1.97%
+- 5D return: 12.89%
 - 20D high/low: 13.27 / 10.51
 
 ### Relative Strength
 
-- ratio: 0.045451
-- ratio_MA60: 0.050206
-- ratio_gap: -9.47%
-- ratio_slope_proxy(20d): -0.001952
+- ratio: 0.048850
+- ratio_MA60: 0.050205
+- ratio_gap: -2.70%
+- ratio_slope_proxy(20d): -0.002018
 
 ### Volume (if available)
 
-- volume: 11954448.00
-- volume_MA20: 13166272.40
-- volume_ratio: 0.91
+- volume: 7175545.00
+- volume_MA20: 13067927.25
+- volume_ratio: 0.55
 
 ### Checks
 
@@ -152,7 +152,7 @@
 - LNG_PEER_TREND_UP: **False**
 - VG_TREND_UP: **False**
 - VG_RELATIVE_TURN_UP: **False**
-- VG_NOT_EXTENDED: **True**
+- VG_NOT_EXTENDED: **False**
 
 ## Verdict
 

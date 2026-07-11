@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-07-11 03:01:13**
+- 실행시간(UTC): **2026-07-11 15:01:06**
 - 데이터 기준일(주가): **2026-07-10**
 
 ## Verdict
@@ -41,7 +41,7 @@
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
 - close: 7.71 | RSI14: 42.25 | ATR14%: 5.16%
 - MA20/50/200 gap: 0.27% / -2.08% / 14.18%
-- 5D return: 0.78% | 20D drawdown: -8.10% | vol_ratio: 0.35
+- 5D return: 0.78% | 20D drawdown: -8.10% | vol_ratio: 0.37
 - RS vs GDXJ: gap 10.70% / slope_proxy 7.38%
 - FundamentalScore: 88 | TechnicalScore: 85 | RegimeScore: 30 | OverallScore: **75.3**
 - Checks:
@@ -131,9 +131,9 @@
 
 ### AYA (Aya Gold & Silver)
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
-- close: 20.31 | RSI14: 52.07 | ATR14%: 6.55%
+- close: 20.31 | RSI14: 52.07 | ATR14%: 6.56%
 - MA20/50/200 gap: 5.35% / 7.40% / 29.32%
-- 5D return: 3.52% | 20D drawdown: -3.52% | vol_ratio: 0.45
+- 5D return: 3.52% | 20D drawdown: -3.52% | vol_ratio: 0.51
 - RS vs SILJ: gap 22.91% / slope_proxy 20.30%
 - FundamentalScore: 86 | TechnicalScore: 65 | RegimeScore: 55 | OverallScore: **72.5**
 - Checks:
@@ -153,9 +153,9 @@
 
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 8.08 | RSI14: 42.36 | ATR14%: 6.03%
+- close: 8.08 | RSI14: 42.36 | ATR14%: 6.04%
 - MA20/50/200 gap: -3.34% / -10.37% / -15.52%
-- 5D return: -5.61% | 20D drawdown: -13.12% | vol_ratio: 0.45
+- 5D return: -5.61% | 20D drawdown: -13.12% | vol_ratio: 0.48
 - RS vs SILJ: gap 0.79% / slope_proxy 3.28%
 - FundamentalScore: 82 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **61.9**
 - Checks:
@@ -177,7 +177,7 @@
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
 - close: 15.82 | RSI14: 48.79 | ATR14%: 5.26%
 - MA20/50/200 gap: 0.95% / -5.59% / -12.59%
-- 5D return: -3.12% | 20D drawdown: -5.38% | vol_ratio: 0.60
+- 5D return: -3.12% | 20D drawdown: -5.38% | vol_ratio: 0.62
 - RS vs SILJ: gap 5.33% / slope_proxy 9.27%
 - FundamentalScore: 78 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **60.1**
 - Checks:
@@ -197,9 +197,9 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 6.05 | RSI14: 42.37 | ATR14%: 6.56%
+- close: 6.05 | RSI14: 42.37 | ATR14%: 6.58%
 - MA20/50/200 gap: -3.65% / -8.04% / -8.58%
-- 5D return: -7.91% | 20D drawdown: -12.95% | vol_ratio: 0.40
+- 5D return: -7.91% | 20D drawdown: -12.95% | vol_ratio: 0.43
 - RS vs SILJ: gap 3.19% / slope_proxy 4.75%
 - FundamentalScore: 60 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **52.0**
 - Checks:
@@ -219,9 +219,9 @@
 
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 6.51 | RSI14: 38.15 | ATR14%: 6.05%
+- close: 6.51 | RSI14: 38.15 | ATR14%: 6.06%
 - MA20/50/200 gap: -4.10% / -14.26% / -23.50%
-- 5D return: -2.69% | 20D drawdown: -18.32% | vol_ratio: 0.50
+- 5D return: -2.69% | 20D drawdown: -18.32% | vol_ratio: 0.51
 - RS vs SILJ: gap -4.38% / slope_proxy 0.75%
 - FundamentalScore: 74 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **49.6**
 - Checks:
@@ -241,9 +241,9 @@
 
 ### VZLA (Vizsla Silver)
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
-- close: 3.13 | RSI14: 34.78 | ATR14%: 5.91%
+- close: 3.13 | RSI14: 34.78 | ATR14%: 5.92%
 - MA20/50/200 gap: -6.15% / -9.90% / -25.66%
-- 5D return: -6.29% | 20D drawdown: -15.18% | vol_ratio: 0.79
+- 5D return: -6.29% | 20D drawdown: -15.18% | vol_ratio: 0.81
 - RS vs SILJ: gap 2.38% / slope_proxy -6.61%
 - FundamentalScore: 72 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **48.6**
 - Checks:
@@ -265,7 +265,7 @@
 - Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
 - close: 4.30 | RSI14: 28.46 | ATR14%: 7.89%
 - MA20/50/200 gap: -12.86% / -22.63% / -24.80%
-- 5D return: -12.07% | 20D drawdown: -26.87% | vol_ratio: 0.91
+- 5D return: -12.07% | 20D drawdown: -26.87% | vol_ratio: 0.95
 - RS vs SILJ: gap -13.07% / slope_proxy -10.78%
 - FundamentalScore: 68 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **46.9**
 - Checks:

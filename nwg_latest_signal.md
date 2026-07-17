@@ -1,14 +1,24 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-07-16**
-- 실행시간(UTC): **2026-07-16 15:00:46**
+- 실행시간(UTC): **2026-07-17 03:00:48**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- BoE IUDBEDR failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDSOIA failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDMNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE IUDSNPY failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE LPMVTVX failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
+- BoE LPMVQJW failed (BoE returned HTML instead of CSV (likely blocked/cookie page).), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
 - RiskGreen: **True**
-- CurveGreen: **True**
+- CurveGreen: **False**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -16,19 +26,20 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 118.86 bp / 4주 변화 15.92 bp
-- CURVE_10s5s: 46.96 bp / 4주 변화 0.63 bp
+- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- CURVE_10s5s: None bp / 4주 변화 None bp
 
 ## NWG Price
-- close: 658.8
-- MA50: 619.8211 / gap50: 6.29%
-- MA200: 606.0259 / gap200: 8.71%
+- close: 663.4
+- MA50: 618.1651 / gap50: 7.32%
+- MA200: 605.3389 / gap200: 9.59%
 
 ## Relative Strength
-- RS vs FTSE gap: 6.58% / slope_proxy: 0.002284
-- RS vs Peers gap: -0.58% / slope_proxy: -0.004683
+- RS vs FTSE gap: 7.52% / slope_proxy: 0.00235
+- RS vs Peers gap: 0.31% / slope_proxy: -0.004882
 
 ## Why not today?
+- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - PullbackZone=FALSE
 - RelativeTurn=FALSE

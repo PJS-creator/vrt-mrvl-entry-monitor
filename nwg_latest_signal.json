@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-07-17T15:00:48Z",
+  "generated_at_utc": "2026-07-18T03:00:40Z",
   "as_of": {
     "price_date": "2026-07-17",
-    "run_time_utc": "2026-07-17 15:00:48"
+    "run_time_utc": "2026-07-18 03:00:40"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 2.71,
-      "change_4w": 8.0,
-      "latest_date": "2026-07-15"
+      "change_4w": 5.0,
+      "latest_date": "2026-07-16"
     },
     "BAMLC0A0CM": {
-      "latest": 0.79,
-      "change_4w": 5.0,
-      "latest_date": "2026-07-15"
+      "latest": 0.78,
+      "change_4w": 4.0,
+      "latest_date": "2026-07-16"
     },
     "VIXCLS": {
       "latest": 16.73,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 661.2,
-      "latest_date": "2026-07-17"
+      "close": 664.6,
+      "latest_date": "2026-07-16"
     },
     "^FTSE": {
-      "close": 10569.9297,
+      "close": 10600.4004,
       "latest_date": "2026-07-17"
     },
     "LLOY.L": {
-      "close": 110.55,
-      "latest_date": "2026-07-17"
+      "close": 112.65,
+      "latest_date": "2026-07-16"
     },
     "BARC.L": {
-      "close": 513.8,
-      "latest_date": "2026-07-17"
+      "close": 524.8,
+      "latest_date": "2026-07-16"
     },
     "HSBA.L": {
-      "close": 1484.4,
-      "latest_date": "2026-07-17"
+      "close": 1493.8,
+      "latest_date": "2026-07-16"
     }
   },
   "signals": {
     "NWG": {
-      "close": 661.2,
-      "ma50": 621.716,
-      "ma200": 606.728,
-      "gap50": 0.063508,
-      "gap200": 0.08978
+      "close": 664.6,
+      "ma50": 619.9371,
+      "ma200": 606.0549,
+      "gap50": 0.072044,
+      "gap200": 0.0966
     },
     "RS_FTSE": {
-      "ratio": 0.062555,
-      "ma60": 0.058867,
-      "gap": 0.062654,
-      "ma60_slope_proxy": 0.002256
+      "ratio": 0.062863,
+      "ma60": 0.058766,
+      "gap": 0.069709,
+      "ma60_slope_proxy": 0.002288
     },
     "RS_PEERS": {
-      "ratio": 0.940652,
-      "ma60": 0.936896,
-      "gap": 0.004009,
-      "ma60_slope_proxy": -0.004257
+      "ratio": 0.935507,
+      "ma60": 0.937,
+      "gap": -0.001593,
+      "ma60_slope_proxy": -0.004616
     }
   },
   "checks": {

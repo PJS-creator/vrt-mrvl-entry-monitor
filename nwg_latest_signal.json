@@ -1,26 +1,33 @@
 {
-  "generated_at_utc": "2026-07-21T03:00:48Z",
+  "generated_at_utc": "2026-07-21T15:00:46Z",
   "as_of": {
-    "price_date": "2026-07-20",
-    "run_time_utc": "2026-07-21 03:00:48"
+    "price_date": "2026-07-21",
+    "run_time_utc": "2026-07-21 15:00:46"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDSOIA failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE LPMVTVX failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE LPMVQJW failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.73,
-      "change_4w": 7.0,
-      "latest_date": "2026-07-17"
+      "latest": 2.69,
+      "change_4w": 4.0,
+      "latest_date": "2026-07-20"
     },
     "BAMLC0A0CM": {
-      "latest": 0.79,
-      "change_4w": 5.0,
-      "latest_date": "2026-07-17"
+      "latest": 0.78,
+      "change_4w": 4.0,
+      "latest_date": "2026-07-20"
     },
     "VIXCLS": {
-      "latest": 18.77,
-      "change_4w": 1.99,
-      "latest_date": "2026-07-17"
+      "latest": 18.65,
+      "change_4w": 1.37,
+      "latest_date": "2026-07-20"
     },
     "NFCI": {
       "latest": -0.538,
@@ -61,57 +68,57 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 121.48,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 24.35,
-    "CURVE_10s5s_bp": 46.81,
-    "CURVE_10s5s_4w_change_bp": 1.91
+    "TERM_SPREAD_10Y_POLICY_bp": null,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": null,
+    "CURVE_10s5s_bp": null,
+    "CURVE_10s5s_4w_change_bp": null
   },
   "prices": {
     "NWG.L": {
-      "close": 669.4,
-      "latest_date": "2026-07-17"
+      "close": 674.367,
+      "latest_date": "2026-07-21"
     },
     "^FTSE": {
-      "close": 10524.7998,
-      "latest_date": "2026-07-20"
+      "close": 10564.6699,
+      "latest_date": "2026-07-21"
     },
     "LLOY.L": {
-      "close": 111.5,
-      "latest_date": "2026-07-17"
+      "close": 112.75,
+      "latest_date": "2026-07-21"
     },
     "BARC.L": {
-      "close": 516.7,
-      "latest_date": "2026-07-17"
+      "close": 519.1,
+      "latest_date": "2026-07-21"
     },
     "HSBA.L": {
-      "close": 1492.2,
-      "latest_date": "2026-07-17"
+      "close": 1501.4,
+      "latest_date": "2026-07-21"
     }
   },
   "signals": {
     "NWG": {
-      "close": 669.4,
-      "ma50": 621.88,
-      "ma200": 606.769,
-      "gap50": 0.076413,
-      "gap200": 0.103221
+      "close": 674.367,
+      "ma50": 625.4513,
+      "ma200": 608.0909,
+      "gap50": 0.078209,
+      "gap200": 0.10899
     },
     "RS_FTSE": {
-      "ratio": 0.063149,
-      "ma60": 0.058876,
-      "gap": 0.07256,
-      "ma60_slope_proxy": 0.002266
+      "ratio": 0.063832,
+      "ma60": 0.059132,
+      "gap": 0.07949,
+      "ma60_slope_proxy": 0.0022
     },
     "RS_PEERS": {
-      "ratio": 0.947086,
-      "ma60": 0.937003,
-      "gap": 0.01076,
-      "ma60_slope_proxy": -0.00415
+      "ratio": 0.948366,
+      "ma60": 0.937224,
+      "gap": 0.011888,
+      "ma60_slope_proxy": -0.003712
     }
   },
   "checks": {
     "RiskGreen": true,
-    "CurveGreen": true,
+    "CurveGreen": false,
     "DemandGreen": false,
     "MacroGreen": false,
     "PriceConfirm": false,
@@ -119,6 +126,7 @@
     "ENTRY_LOOSE": false
   },
   "fails": [
+    "CurveGreen=FALSE",
     "DemandGreen=FALSE (monthly)",
     "PullbackZone=FALSE",
     "RelativeTurn=FALSE"

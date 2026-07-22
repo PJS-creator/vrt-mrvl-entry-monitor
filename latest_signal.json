@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-07-22T03:00:43Z",
+  "generated_at_utc": "2026-07-22T15:01:02Z",
   "as_of": {
-    "price_date": "2026-07-21",
-    "run_time_utc": "2026-07-22 03:00:43"
+    "price_date": "2026-07-22",
+    "run_time_utc": "2026-07-22 15:01:02"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
       "latest": 2.69,
-      "change_4w_bp": 4.0,
-      "latest_date": "2026-07-20"
+      "change_4w_bp": -2.0,
+      "latest_date": "2026-07-21"
     },
     "BAMLC0A0CM": {
       "latest": 0.78,
       "change_4w_bp": 4.0,
-      "latest_date": "2026-07-20"
+      "latest_date": "2026-07-21"
     },
     "DFII10": {
       "latest": 2.35,
@@ -23,14 +23,14 @@
       "latest_date": "2026-07-20"
     },
     "VIXCLS": {
-      "latest": 18.65,
-      "change_4w_bp": 137.0,
-      "latest_date": "2026-07-20"
+      "latest": 17.05,
+      "change_4w_bp": -244.0,
+      "latest_date": "2026-07-21"
     },
     "NFCI": {
-      "latest": -0.538,
-      "change_4w_bp": -4.3,
-      "latest_date": "2026-07-10"
+      "latest": -0.552,
+      "change_4w_bp": -5.0,
+      "latest_date": "2026-07-17"
     }
   },
   "checks": {
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 304.5,
-      "latest_date": "2026-07-21"
+      "close": 300.3,
+      "latest_date": "2026-07-22"
     },
     "MRVL": {
-      "close": 207.96,
-      "latest_date": "2026-07-21"
+      "close": 213.675,
+      "latest_date": "2026-07-22"
     },
     "SRVR": {
-      "close": 30.64,
-      "latest_date": "2026-07-21"
+      "close": 30.92,
+      "latest_date": "2026-07-22"
     },
     "SMH": {
-      "close": 584.08,
-      "latest_date": "2026-07-21"
+      "close": 586.79,
+      "latest_date": "2026-07-22"
     },
     "NVDA": {
-      "close": 207.29,
-      "latest_date": "2026-07-21"
+      "close": 209.35,
+      "latest_date": "2026-07-22"
     },
     "AVGO": {
-      "close": 386.5,
-      "latest_date": "2026-07-21"
+      "close": 389.31,
+      "latest_date": "2026-07-22"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 9.93799,
-      "ma60": 9.640524,
-      "gap": 0.030856,
+      "ratio": 9.71216,
+      "ma60": 9.648715,
+      "gap": 0.006575,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.356047,
-      "ma60": 0.380768,
-      "gap": -0.064925,
-      "ma60_slope_proxy": 0.037046,
-      "entry": false
+      "ratio": 0.364142,
+      "ma60": 0.381431,
+      "gap": -0.045327,
+      "ma60_slope_proxy": 0.034506,
+      "entry": true
     }
   },
-  "verdict": "✅ Entry condition met: VRT"
+  "verdict": "✅ Entry condition met: BOTH"
 }

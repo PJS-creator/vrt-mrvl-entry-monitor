@@ -1,24 +1,14 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-07-21**
-- 실행시간(UTC): **2026-07-21 15:00:46**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- BoE IUDSOIA failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- BoE LPMVTVX failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
-- BoE LPMVQJW failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-07-22 03:00:47**
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
 - RiskGreen: **True**
-- CurveGreen: **False**
+- CurveGreen: **True**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -26,20 +16,19 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
-- CURVE_10s5s: None bp / 4주 변화 None bp
+- TERM_SPREAD_10Y_POLICY: 119.36 bp / 4주 변화 22.23 bp
+- CURVE_10s5s: 46.49 bp / 4주 변화 1.59 bp
 
 ## NWG Price
-- close: 674.367
-- MA50: 625.4513 / gap50: 7.82%
-- MA200: 608.0909 / gap200: 10.90%
+- close: 665.4
+- MA50: 623.592 / gap50: 6.70%
+- MA200: 607.458 / gap200: 9.54%
 
 ## Relative Strength
-- RS vs FTSE gap: 7.95% / slope_proxy: 0.0022
-- RS vs Peers gap: 1.19% / slope_proxy: -0.003712
+- RS vs FTSE gap: 7.16% / slope_proxy: 0.002222
+- RS vs Peers gap: 1.23% / slope_proxy: -0.003987
 
 ## Why not today?
-- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - PullbackZone=FALSE
 - RelativeTurn=FALSE

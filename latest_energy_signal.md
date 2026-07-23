@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-07-23 03:00:56**
+- 실행시간(UTC): **2026-07-23 15:01:03**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 88.41 / 5D 11.07%
-- Brent ref (BZ=F): 96.21 / 5D 13.25%
-- Brent Tier: **>=90**
-- Brent-WTI spread: 7.80
-- Gas ref (NG=F): 2.96 / 5D 1.27%
+- WTI ref (CL=F): 92.01 / 5D 16.54%
+- Brent ref (BZ=F): 87.06 / 5D 3.36%
+- Brent Tier: **80-90**
+- Brent-WTI spread: -4.95
+- Gas ref (NG=F): 2.94 / 5D 3.01%
 
 ## Gates
 
@@ -18,7 +18,7 @@
 - **WTI_TREND_UP**: **False**
 - **BRENT_TREND_UP**: **False**
 - **OIL_TREND_UP**: **False**
-- **BRAZIL_RISK_OK**: **True**
+- **BRAZIL_RISK_OK**: **False**
 
 ## OXY
 
@@ -26,24 +26,24 @@
 
 ### Trend
 
-- close: 57.50
-- MA20 / MA60 / MA200: 52.35 / 55.32 / 49.46
-- gap20 / gap60: 9.85% / 3.94%
-- 5D return: 6.94%
-- 20D high/low: 57.50 / 47.94
+- close: 58.50
+- MA20 / MA60 / MA200: 52.72 / 55.34 / 49.53
+- gap20 / gap60: 10.97% / 5.70%
+- 5D return: 9.04%
+- 20D high/low: 58.50 / 47.94
 
 ### Relative Strength
 
-- ratio: 0.971284
-- ratio_MA60: 0.976393
-- ratio_gap: -0.52%
-- ratio_slope_proxy(20d): -0.027412
+- ratio: 0.972003
+- ratio_MA60: 0.975736
+- ratio_gap: -0.38%
+- ratio_slope_proxy(20d): -0.026517
 
 ### Volume (if available)
 
-- volume: 7511888.00
-- volume_MA20: 9458679.40
-- volume_ratio: 0.79
+- volume: 2332451.00
+- volume_MA20: 9184267.55
+- volume_ratio: 0.25
 
 ### Checks
 
@@ -59,32 +59,32 @@
 
 ### Trend
 
-- close: 18.89
-- MA20 / MA60 / MA200: 17.15 / 18.56 / 15.86
-- gap20 / gap60: 10.14% / 1.78%
-- 5D return: 5.77%
-- 20D high/low: 18.89 / 15.99
+- close: 19.25
+- MA20 / MA60 / MA200: 17.29 / 18.53 / 15.90
+- gap20 / gap60: 11.33% / 3.86%
+- 5D return: 10.19%
+- 20D high/low: 19.25 / 15.99
 
 ### Relative Strength
 
-- ratio: 0.515838
-- ratio_MA60: 0.517510
-- ratio_gap: -0.32%
-- ratio_slope_proxy(20d): -0.011058
+- ratio: 0.528991
+- ratio_MA60: 0.517553
+- ratio_gap: 2.21%
+- ratio_slope_proxy(20d): -0.009702
 
 ### Volume (if available)
 
-- volume: 12287237.00
-- volume_MA20: 14670111.85
-- volume_ratio: 0.84
+- volume: 2244405.00
+- volume_MA20: 14121970.25
+- volume_ratio: 0.16
 
 ### Checks
 
 - RISK_OK_SOFT: **True**
 - BRENT_TREND_UP: **False**
-- BRAZIL_RISK_OK: **True**
+- BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
-- PBR_PULLBACK_OK: **True**
+- PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **False**
 
 ## RIG
@@ -93,31 +93,31 @@
 
 ### Trend
 
-- close: 5.30
-- MA20 / MA60 / MA200: 5.12 / 5.95 / 5.25
-- gap20 / gap60: 3.48% / -10.93%
-- 5D return: 1.92%
-- 20D high/low: 5.37 / 4.87
+- close: 5.38
+- MA20 / MA60 / MA200: 5.14 / 5.93 / 5.26
+- gap20 / gap60: 4.60% / -9.38%
+- 5D return: 4.98%
+- 20D high/low: 5.38 / 4.87
 
 ### Relative Strength
 
-- ratio: 0.013643
-- ratio_MA60: 0.014428
-- ratio_gap: -5.44%
-- ratio_slope_proxy(20d): -0.000665
+- ratio: 0.013735
+- ratio_MA60: 0.014410
+- ratio_gap: -4.69%
+- ratio_slope_proxy(20d): -0.000632
 
 ### Volume (if available)
 
-- volume: 42522582.00
-- volume_MA20: 39200069.10
-- volume_ratio: 1.08
+- volume: 11005500.00
+- volume_MA20: 37634125.00
+- volume_ratio: 0.29
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
 - OIL_TREND_UP: **False**
 - OIH_TREND_UP: **False**
-- RIG_BREAKOUT: **False**
+- RIG_BREAKOUT: **True**
 - RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **False**
 
@@ -127,24 +127,24 @@
 
 ### Trend
 
-- close: 14.82
-- MA20 / MA60 / MA200: 12.27 / 12.52 / 10.65
-- gap20 / gap60: 20.75% / 18.41%
-- 5D return: 14.79%
-- 20D high/low: 14.82 / 10.51
+- close: 15.31
+- MA20 / MA60 / MA200: 12.51 / 12.57 / 10.65
+- gap20 / gap60: 22.35% / 21.82%
+- 5D return: 20.84%
+- 20D high/low: 15.31 / 10.83
 
 ### Relative Strength
 
-- ratio: 0.055423
-- ratio_MA60: 0.050769
-- ratio_gap: 9.17%
-- ratio_slope_proxy(20d): -0.000810
+- ratio: 0.056176
+- ratio_MA60: 0.050922
+- ratio_gap: 10.32%
+- ratio_slope_proxy(20d): -0.000431
 
 ### Volume (if available)
 
-- volume: 20851838.00
-- volume_MA20: 14173541.90
-- volume_ratio: 1.47
+- volume: 7789834.00
+- volume_MA20: 13908661.70
+- volume_ratio: 0.56
 
 ### Checks
 

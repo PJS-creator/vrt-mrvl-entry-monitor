@@ -1,112 +1,112 @@
 {
-  "generated_at_utc": "2026-07-29T03:00:44Z",
+  "generated_at_utc": "2026-07-29T15:01:06Z",
   "as_of": {
-    "price_date": "2026-07-28",
-    "run_time_utc": "2026-07-29 03:00:44"
+    "price_date": "2026-07-29",
+    "run_time_utc": "2026-07-29 15:01:06"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.81,
-      "change_4w": 1.0,
-      "latest_date": "2026-07-27"
+      "latest": 2.84,
+      "change_4w": 9.0,
+      "latest_date": "2026-07-28"
     },
     "BAMLC0A0CM": {
       "latest": 0.81,
       "change_4w": 5.0,
-      "latest_date": "2026-07-27"
+      "latest_date": "2026-07-28"
     },
     "VIXCLS": {
-      "latest": 18.67,
-      "change_4w": 1.02,
-      "latest_date": "2026-07-27"
+      "latest": 18.21,
+      "change_4w": 1.76,
+      "latest_date": "2026-07-28"
     },
     "NFCI": {
-      "latest": -0.552,
-      "change_4w": -0.05,
-      "latest_date": "2026-07-17"
+      "latest": -0.554,
+      "change_4w": -0.044,
+      "latest_date": "2026-07-24"
     }
   },
   "boe": {
     "IUDBEDR": {
       "latest": 3.75,
       "change_4w": 0.0,
-      "latest_date": "2026-07-27"
+      "latest_date": "2026-07-28"
     },
     "IUDSOIA": {
-      "latest": 3.7307,
-      "change_4w": 0.17,
-      "latest_date": "2026-07-24"
+      "latest": 3.7312,
+      "change_4w": 0.2,
+      "latest_date": "2026-07-27"
     },
     "IUDMNPY": {
-      "latest": 5.0253,
-      "change_4w": 31.36,
-      "latest_date": "2026-07-24"
+      "latest": 4.9715,
+      "change_4w": 27.18,
+      "latest_date": "2026-07-27"
     },
     "IUDSNPY": {
-      "latest": 4.5678,
-      "change_4w": 31.99,
-      "latest_date": "2026-07-24"
+      "latest": 4.5199,
+      "change_4w": 27.75,
+      "latest_date": "2026-07-27"
     },
     "LPMVTVX": {
-      "latest": 56205.0,
-      "change_4w": -9829.0,
-      "latest_date": "2026-05-31"
+      "latest": 58200.0,
+      "change_4w": 1635.0,
+      "latest_date": "2026-06-30"
     },
     "LPMVQJW": {
-      "latest": 4.3,
-      "change_4w": -0.2,
-      "latest_date": "2026-05-31"
+      "latest": 5.0,
+      "change_4w": 0.7,
+      "latest_date": "2026-06-30"
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 127.53,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 31.36,
-    "CURVE_10s5s_bp": 45.75,
-    "CURVE_10s5s_4w_change_bp": -0.63
+    "TERM_SPREAD_10Y_POLICY_bp": 122.15,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 27.18,
+    "CURVE_10s5s_bp": 45.16,
+    "CURVE_10s5s_4w_change_bp": -0.57
   },
   "prices": {
     "NWG.L": {
-      "close": 680.8,
-      "latest_date": "2026-07-27"
+      "close": 662.6,
+      "latest_date": "2026-07-29"
     },
     "^FTSE": {
-      "close": 10871.0,
-      "latest_date": "2026-07-28"
+      "close": 10878.4502,
+      "latest_date": "2026-07-29"
     },
     "LLOY.L": {
-      "close": 114.7,
-      "latest_date": "2026-07-27"
+      "close": 112.25,
+      "latest_date": "2026-07-29"
     },
     "BARC.L": {
-      "close": 530.4,
-      "latest_date": "2026-07-27"
+      "close": 492.15,
+      "latest_date": "2026-07-29"
     },
     "HSBA.L": {
-      "close": 1551.2,
-      "latest_date": "2026-07-27"
+      "close": 1543.6,
+      "latest_date": "2026-07-29"
     }
   },
   "signals": {
     "NWG": {
-      "close": 680.8,
-      "ma50": 634.616,
-      "ma200": 610.7894,
-      "gap50": 0.072775,
-      "gap200": 0.114623
+      "close": 662.6,
+      "ma50": 638.504,
+      "ma200": 612.0006,
+      "gap50": 0.037738,
+      "gap200": 0.082679
     },
     "RS_FTSE": {
-      "ratio": 0.063143,
-      "ma60": 0.059628,
-      "gap": 0.058959,
-      "ma60_slope_proxy": 0.002135
+      "ratio": 0.060909,
+      "ma60": 0.059594,
+      "gap": 0.02208,
+      "ma60_slope_proxy": 0.002101
     },
     "RS_PEERS": {
-      "ratio": 0.929928,
-      "ma60": 0.937416,
-      "gap": -0.007988,
-      "ma60_slope_proxy": -0.003154
+      "ratio": 0.925419,
+      "ma60": 0.938042,
+      "gap": -0.013456,
+      "ma60_slope_proxy": -0.002743
     }
   },
   "checks": {

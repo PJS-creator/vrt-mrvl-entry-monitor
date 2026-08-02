@@ -2,10 +2,17 @@ name: Daily Signals
 
 on:
   workflow_dispatch:
+  schedule:
+    # 07:37 Asia/Seoul every day (22:37 UTC previous day)
+    - cron: "37 22 * * *"
 
 permissions:
   contents: write
   issues: write
+
+concurrency:
+  group: daily-signals-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   run-signals:
@@ -15,6 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,17 +35,67 @@ jobs:
           pip install -r requirements.txt
 
       - name: Validate scripts
-        run: python -m py_compile monitor_signals.py nwg_signal.py energy_signal_monitor.py silver_signal_monitor.py precious_miners_signal_monitor.py qqq_qld_timing_signal.py build_latest_signal_all.py
+        run: |
+          python -m py_compile \
+            monitor_signals.py \
+            nwg_signal.py \
+            energy_signal_monitor.py \
+            silver_signal_monitor.py \
+            precious_miners_signal_monitor.py \
+            qqq_qld_timing_signal.py \
+            n1_meta_signal.py \
+            build_latest_signal_all.py
 
       - name: Generate all signal files
+        env:
+          TIINGO_API_TOKEN: ${{ secrets.TIINGO_API_TOKEN }}
         run: |
+          set -euo pipefail
           python monitor_signals.py
           python nwg_signal.py
           python energy_signal_monitor.py
           python silver_signal_monitor.py
           python precious_miners_signal_monitor.py
           python qqq_qld_timing_signal.py
+          python n1_meta_signal.py
           python build_latest_signal_all.py
+
+      - name: Validate N1 output contract
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib, sys
+
+          yaml_path = pathlib.Path('strategies/qqq_meta_v1_red_router_s1_n1_v4_shadow_v2_3.kis.yaml')
+          signal_path = pathlib.Path('n1_latest_signal.json')
+          state_path = pathlib.Path('n1_latest_state_snapshot.json')
+          lineage_path = pathlib.Path('n1_liquidity_p_lineage.csv')
+
+          required_files = [yaml_path, signal_path, state_path, lineage_path]
+          missing = [str(p) for p in required_files if not p.exists()]
+          if missing:
+              raise SystemExit(f'Missing N1 outputs: {missing}')
+
+          signal = json.loads(signal_path.read_text(encoding='utf-8'))
+          required = {
+              'validation_class', 'signal_date', 'execution_date',
+              'qqq_adjusted_close', 'sma20', 'sma50', 'sma200', 'wilder_rsi14',
+              'trend200_state', 'recovery_state', 'liquidity_p_applied',
+              'liquidity_state', 'comparison1_raw_state',
+              'comparison1_confirmed_target', 'comparison3_target',
+              'final_regime', 'active_engine', 'base_execution_target',
+              'n1_overlay_active', 'execution_target', 'rules_sha256'
+          }
+          absent = sorted(required - signal.keys())
+          if absent:
+              raise SystemExit(f'N1 output missing fields: {absent}')
+
+          actual_hash = hashlib.sha256(yaml_path.read_bytes()).hexdigest()
+          if signal['rules_sha256'] != actual_hash:
+              raise SystemExit(
+                  f"N1 rules hash mismatch: signal={signal['rules_sha256']} actual={actual_hash}"
+              )
+          print(f'N1 output contract PASS: {signal["signal_date"]} -> {signal["execution_target"]}')
+          PY
 
       - name: Commit and push if changed
         shell: bash
@@ -57,6 +115,10 @@ jobs:
             latest_precious_miners_signal.md
             qqq_qld_timing_signal.json
             qqq_qld_timing_signal.md
+            n1_latest_signal.json
+            n1_latest_signal.md
+            n1_latest_state_snapshot.json
+            n1_liquidity_p_lineage.csv
             latest_signal_all.md
           )
 
@@ -81,7 +143,6 @@ jobs:
             done
           fi
 
-      # ✅ 매일 실행될 때마다 무조건 Issue 생성 (알람 목적)
       - name: Create Issue for today's report (always)
         if: always()
         uses: actions/github-script@v8
@@ -90,30 +151,25 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-
-            // KST(한국시간) 날짜/시각 만들기 (UTC+9)
             const now = new Date();
             const kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
             const kstDate = kst.toISOString().slice(0, 10);
             const kstTime = kst.toISOString().replace('T', ' ').slice(0, 19);
-
             const runUrl = `${process.env.GITHUB_SERVER_URL}/${owner}/${repo}/actions/runs/${context.runId}`;
 
             const readText = (p) => {
               try { return fs.readFileSync(p, 'utf8'); }
               catch (e) { return `_(missing: ${p})_`; }
             };
-
             const readVerdict = (p) => {
               try {
                 const obj = JSON.parse(fs.readFileSync(p, 'utf8'));
-                return obj && obj.verdict ? String(obj.verdict) : 'N/A';
-              } catch (e) {
-                return 'N/A';
-              }
+                return obj && (obj.verdict || obj.execution_target || obj.validation_class)
+                  ? String(obj.verdict || obj.execution_target || obj.validation_class)
+                  : 'N/A';
+              } catch (e) { return 'N/A'; }
             };
 
             const coreVerdict = readVerdict('latest_signal.json');
@@ -122,14 +178,13 @@ jobs:
             const silverVerdict = readVerdict('latest_silver_signal.json');
             const preciousVerdict = readVerdict('latest_precious_miners_signal.json');
             const qqqQldVerdict = readVerdict('qqq_qld_timing_signal.json');
+            const n1Verdict = readVerdict('n1_latest_signal.json');
+            const n1Report = readText('n1_latest_signal.md');
             const reportAll = readText('latest_signal_all.md');
 
-            // 알림을 확실히 받기 위해: 멘션 + (가능하면) assignee 지정
-            const actor = context.actor || "";
-            const assignee = (actor && !actor.includes("github-actions")) ? actor : owner;
-
+            const actor = context.actor || '';
+            const assignee = (actor && !actor.includes('github-actions')) ? actor : owner;
             const title = `📌 Daily Signals (${kstDate})`;
-
             const body = [
               `@${assignee}`,
               ``,
@@ -138,30 +193,24 @@ jobs:
               `- Run: ${runUrl}`,
               ``,
               `## Quick Summary`,
+              `- N1 QQQ Meta shadow: **${n1Verdict}**`,
               `- QQQ/QLD Timing: **${qqqQldVerdict}**`,
               `- Core (VRT/MRVL): **${coreVerdict}**`,
               `- NatWest (NWG): **${nwgVerdict}**`,
-              `- Energy (OXY/PBR/RIG/VG): **${energyVerdict}**`,
-              `- Silver (VZLA/SCZM/HYMC): **${silverVerdict}**`,
-              `- Precious Miners (Gold/Silver): **${preciousVerdict}**`,
+              `- Energy: **${energyVerdict}**`,
+              `- Silver: **${silverVerdict}**`,
+              `- Precious Miners: **${preciousVerdict}**`,
               ``,
-              `<details><summary>Full report (latest_signal_all.md)</summary>`,
+              `<details><summary>N1 Meta report</summary>`,
+              ``, n1Report, ``, `</details>`,
               ``,
-              reportAll,
-              ``,
-              `</details>`,
+              `<details><summary>Full report</summary>`,
+              ``, reportAll, ``, `</details>`,
               ``
             ].join('\n');
 
             try {
-              await github.rest.issues.create({
-                owner,
-                repo,
-                title,
-                body,
-                assignees: [assignee],
-              });
+              await github.rest.issues.create({ owner, repo, title, body, assignees: [assignee] });
             } catch (e) {
-              // assignee가 실패(예: 조직 owner)해도 이슈는 만들기
               await github.rest.issues.create({ owner, repo, title, body });
             }

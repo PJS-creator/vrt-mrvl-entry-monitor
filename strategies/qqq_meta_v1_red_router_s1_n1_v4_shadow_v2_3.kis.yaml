@@ -1,0 +1,186 @@
+version: "2.3"
+metadata:
+  name: "Meta-v1.0 · RED Router-S1 · N1 · V4 · GitHub shadow"
+  mode: SHADOW_DRY_RUN_ONLY
+  live_order_permitted: false
+  source_of_truth: this_file
+
+strategy:
+  id: qqq_meta_v1_red_router_s1_n1_v4_shadow_v2_3
+  signal_symbol: QQQ
+  assets:
+    defensive: QQQ
+    moderate: QLD
+    aggressive: TQQQ
+    router: [QQQ, GLD, XLV]
+  target_weight: 1.0
+
+  data:
+    preferred_price_provider: tiingo
+    preferred_token_env: TIINGO_API_TOKEN
+    shadow_fallback_provider: yfinance
+    fallback_requires_warning: true
+    signal_price: adjusted_daily_close
+    precomputed_sma_rsi: forbidden
+    fred_series: [WALCL, WDTGAL, RRPONTSYD, VIXCLS, BAMLH0A0HYM2, DFII10, DTWEXBGS]
+
+  indicators:
+    sma20: {type: SMA, period: 20}
+    sma50: {type: SMA, period: 50}
+    sma200: {type: SMA, period: 200}
+    rsi14:
+      type: Wilder_RMA
+      period: 14
+      alpha: 0.07142857142857142
+      adjust: false
+      cross: {previous: lte, current: gt}
+
+  regime:
+    trend200:
+      weekly_sample: last_actual_us_session
+      confirmation_weeks: 2
+      up: close_gt_sma200
+      down: close_lt_sma200
+      equality: hold_previous
+    recovery:
+      enabled_when_trend200: DOWN
+      on: {last_5_closes_gt_sma20: true, sma20_gt_5_sessions_ago: true}
+      off: {two_consecutive_closes_lte_sma20: true}
+    liquidity:
+      formula: WALCL_div_1000_minus_WDTGAL_div_1000_minus_RRPONTSYD
+      growth_lookback_weeks: 26
+      smoothing_weeks: 13
+      percentile_prior_weeks: 260
+      p_applied: P_raw_shift_1_W_FRI_row
+      hysteresis:
+        bull_enter_gte: 75
+        bull_exit_below: 65
+        bear_enter_lte: 25
+        bear_exit_above: 35
+    final:
+      - {when: "trend200=DOWN and recovery=false", result: BEAR}
+      - {when: "trend200=UP and liquidity=BULL", result: BULL}
+      - {otherwise: true, result: MIXED}
+
+  comparison1:
+    update_every_session: true
+    raw:
+      GREEN: close_gt_sma50_and_sma200
+      RED: close_lt_sma50_and_sma200
+      YELLOW: otherwise
+    target: {GREEN: TQQQ, YELLOW: QLD, RED: QQQ}
+    confirmation_sessions: 2
+
+  comparison3:
+    update_every_session: true
+    initial_target: QLD
+    enter_tqqq: close_lt_sma200_and_rsi14_crosses_above_40
+    exit_to_qld: current_target_tqqq_and_rsi14_crosses_above_80
+    same_bar_priority: exit_to_qld
+
+  engine_mapping: {BULL: comparison3, MIXED: comparison3, BEAR: comparison1}
+
+  red_router_s1:
+    activation: final_regime_bear_and_confirmed_comparison1_red
+    additional_confirmation_sessions: 0
+    evaluation: entry_only
+    qqq_gate:
+      all: [VIX_lt_10_sessions_ago, HY_OAS_lte_20_sessions_ago, QQQ_close_gt_5_sessions_ago]
+    gld_gate:
+      all:
+        - GLD_close_gt_SMA20
+        - any: [DFII10_lt_20_sessions_ago, DTWEXBGS_lt_20_sessions_ago]
+    precedence: [QQQ, GLD, XLV]
+    fallback: XLV
+    latch_until: leave_confirmed_red_or_leave_final_bear
+
+  base_target_resolution:
+    - {when: router_latch_active, target: latched_router_asset}
+    - {otherwise: true, target: active_policy_confirmed_target}
+
+  n1_overlay:
+    enabled: true
+    order: after_base_target_before_v4
+    conditions:
+      final_regime: BULL
+      active_engine: COMPARISON3
+      comparison3_target: QLD
+      base_execution_target: QLD
+      router_latch_active: false
+    action: {replace: QLD, with: QQQ}
+    reason_code: N1_BULL_COMPARISON3_QLD_TO_QQQ
+    no_additional_confirmation: true
+
+  entry_filter_v4:
+    applies_to: new_lump_sum_cash_only
+    after_n1_overlay: true
+    trigger:
+      post_n1_execution_target: QLD
+      qqq_close_div_sma50_minus_1_gte: 0.05
+    allocation:
+      immediate: 0.50
+      deferred: 0.50
+      defer_trading_sessions: 60
+      early_release: false
+      deferred_asset: execution_target_on_release_session
+    otherwise_immediate: 1.0
+
+execution:
+  decision: completed_us_regular_session_close
+  intended_fill: next_common_us_regular_session_open
+  actual_order_submission: forbidden
+  commission_each_side: 0.0025
+  slippage_budget_each_side: 0.001
+  no_order_if_target_unchanged: true
+
+state:
+  snapshot_file: n1_latest_state_snapshot.json
+  preserve_all_shadow_states: true
+  preserve_router_latch: true
+  atomic_checkpoint: true
+  fail_closed_on_state_mismatch: true
+
+automation:
+  workflow: .github/workflows/daily_signals.yml
+  cron_utc: "37 22 * * *"
+  cron_kst: "07:37 daily"
+  runner: n1_meta_signal.py
+  outputs:
+    signal_json: n1_latest_signal.json
+    signal_markdown: n1_latest_signal.md
+    state_snapshot: n1_latest_state_snapshot.json
+    liquidity_lineage: n1_liquidity_p_lineage.csv
+
+output_required_fields:
+  - validation_class
+  - signal_date
+  - execution_date
+  - qqq_adjusted_close
+  - sma20
+  - sma50
+  - sma200
+  - wilder_rsi14
+  - trend200_state
+  - recovery_state
+  - liquidity_p_raw_source_week
+  - liquidity_p_applied_row_week
+  - liquidity_p_applied
+  - liquidity_state
+  - comparison1_raw_state
+  - comparison1_raw_streak
+  - comparison1_confirmed_target
+  - comparison3_target
+  - red_router_active
+  - router_asset
+  - final_regime
+  - active_engine
+  - base_execution_target
+  - n1_overlay_active
+  - n1_overlay_reason_code
+  - execution_target
+  - entry_filter
+  - reason_codes
+  - warnings
+  - rules_sha256
+  - input_sha256
+  - state_sha256

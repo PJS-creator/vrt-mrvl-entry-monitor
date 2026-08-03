@@ -1,13 +1,13 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-03 03:00:54**
+- 실행시간(UTC): **2026-08-03 15:01:00**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 80.15 / 5D -2.98%
-- Brent ref (BZ=F): 90.12 / 5D -6.88%
-- Brent Tier: **>=90**
-- Brent-WTI spread: 9.97
+- WTI ref (CL=F): 79.42 / 5D -3.86%
+- Brent ref (BZ=F): 83.55 / 5D -5.44%
+- Brent Tier: **80-90**
+- Brent-WTI spread: 4.13
 - Gas ref (NG=F): 2.77 / 5D 0.14%
 
 ## Gates
@@ -26,31 +26,31 @@
 
 ### Trend
 
-- close: 57.07
-- MA20 / MA60 / MA200: 54.65 / 54.97 / 49.90
-- gap20 / gap60: 4.43% / 3.82%
-- 5D return: -0.40%
-- 20D high/low: 57.60 / 48.81
+- close: 55.92
+- MA20 / MA60 / MA200: 55.00 / 54.99 / 49.97
+- gap20 / gap60: 1.67% / 1.69%
+- 5D return: 1.80%
+- 20D high/low: 57.60 / 51.68
 
 ### Relative Strength
 
-- ratio: 0.958354
-- ratio_MA60: 0.969286
-- ratio_gap: -1.13%
-- ratio_slope_proxy(20d): -0.019084
+- ratio: 0.947187
+- ratio_MA60: 0.968914
+- ratio_gap: -2.24%
+- ratio_slope_proxy(20d): -0.017562
 
 ### Volume (if available)
 
-- volume: 6810100.00
-- volume_MA20: 9024970.00
-- volume_ratio: 0.75
+- volume: 2245867.00
+- volume_MA20: 8803893.35
+- volume_ratio: 0.26
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
 - WTI_TREND_UP: **False**
-- OXY_TREND_UP: **False**
-- OXY_PULLBACK_OK: **False**
+- OXY_TREND_UP: **True**
+- OXY_PULLBACK_OK: **True**
 - OXY_RELATIVE_OK: **False**
 
 ## PBR
@@ -59,24 +59,24 @@
 
 ### Trend
 
-- close: 19.40
-- MA20 / MA60 / MA200: 18.01 / 18.23 / 16.10
-- gap20 / gap60: 7.72% / 6.40%
-- 5D return: 3.36%
-- 20D high/low: 19.40 / 16.26
+- close: 19.17
+- MA20 / MA60 / MA200: 18.15 / 18.21 / 16.14
+- gap20 / gap60: 5.57% / 5.27%
+- 5D return: 6.47%
+- 20D high/low: 19.40 / 16.66
 
 ### Relative Strength
 
-- ratio: 0.529331
-- ratio_MA60: 0.513769
-- ratio_gap: 3.03%
-- ratio_slope_proxy(20d): -0.006752
+- ratio: 0.527018
+- ratio_MA60: 0.513803
+- ratio_gap: 2.57%
+- ratio_slope_proxy(20d): -0.006095
 
 ### Volume (if available)
 
-- volume: 11607200.00
-- volume_MA20: 15541650.00
-- volume_ratio: 0.75
+- volume: 2663974.00
+- volume_MA20: 14993483.70
+- volume_ratio: 0.18
 
 ### Checks
 
@@ -93,24 +93,24 @@
 
 ### Trend
 
-- close: 5.32
-- MA20 / MA60 / MA200: 5.18 / 5.77 / 5.32
-- gap20 / gap60: 2.79% / -7.82%
-- 5D return: -0.56%
-- 20D high/low: 5.37 / 4.93
+- close: 5.23
+- MA20 / MA60 / MA200: 5.19 / 5.75 / 5.33
+- gap20 / gap60: 0.76% / -9.11%
+- 5D return: -0.95%
+- 20D high/low: 5.37 / 4.95
 
 ### Relative Strength
 
-- ratio: 0.013825
-- ratio_MA60: 0.014251
-- ratio_gap: -2.99%
-- ratio_slope_proxy(20d): -0.000505
+- ratio: 0.013671
+- ratio_MA60: 0.014238
+- ratio_gap: -3.98%
+- ratio_slope_proxy(20d): -0.000473
 
 ### Volume (if available)
 
-- volume: 62763100.00
-- volume_MA20: 42281260.00
-- volume_ratio: 1.48
+- volume: 7061746.00
+- volume_MA20: 41533567.30
+- volume_ratio: 0.17
 
 ### Checks
 
@@ -118,42 +118,42 @@
 - OIL_TREND_UP: **False**
 - OIH_TREND_UP: **False**
 - RIG_BREAKOUT: **False**
-- RIG_VOLUME_CONFIRM: **True**
+- RIG_VOLUME_CONFIRM: **False**
 - RIG_RELATIVE_OK: **False**
 
 ## VG
 
-- **ENTRY**: **True**
+- **ENTRY**: **False**
 
 ### Trend
 
-- close: 13.38
-- MA20 / MA60 / MA200: 13.14 / 12.58 / 10.69
-- gap20 / gap60: 1.80% / 6.35%
-- 5D return: -6.50%
-- 20D high/low: 15.16 / 10.85
+- close: 13.24
+- MA20 / MA60 / MA200: 13.26 / 12.60 / 10.72
+- gap20 / gap60: -0.13% / 5.10%
+- 5D return: 3.32%
+- 20D high/low: 15.16 / 11.59
 
 ### Relative Strength
 
-- ratio: 0.050765
-- ratio_MA60: 0.051169
-- ratio_gap: -0.79%
-- ratio_slope_proxy(20d): 0.000764
+- ratio: 0.051019
+- ratio_MA60: 0.051253
+- ratio_gap: -0.46%
+- ratio_slope_proxy(20d): 0.000989
 
 ### Volume (if available)
 
-- volume: 10402400.00
-- volume_MA20: 16325970.00
-- volume_ratio: 0.64
+- volume: 3836767.00
+- volume_MA20: 16185203.35
+- volume_ratio: 0.24
 
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- LNG_PEER_TREND_UP: **True**
-- VG_TREND_UP: **True**
+- LNG_PEER_TREND_UP: **False**
+- VG_TREND_UP: **False**
 - VG_RELATIVE_TURN_UP: **True**
 - VG_NOT_EXTENDED: **True**
 
 ## Verdict
 
-✅ Entry condition met: VG
+⏸ No entry today

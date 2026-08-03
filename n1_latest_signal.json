@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-03T15:01:17.817659+00:00",
-  "validation_class": "B_WARN",
+  "generated_at": "2026-08-03T23:43:49.731229+00:00",
+  "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-08-03",
   "execution_date": "2026-08-04",
-  "new_completed_us_session": true,
+  "new_completed_us_session": false,
   "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": 697.3900146484375,
-  "sma20": 699.7469970703125,
-  "sma50": 714.4536315917969,
-  "sma200": 644.3389645385743,
-  "wilder_rsi14": 49.03996825464747,
+  "qqq_adjusted_close": 700.0700073242188,
+  "sma20": 699.8809967041016,
+  "sma50": 714.5072314453125,
+  "sma200": 644.3523645019532,
+  "wilder_rsi14": 50.057369478139144,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-07-24",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 83.84615384615384,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "YELLOW",
-  "comparison1_raw_streak": 17,
+  "comparison1_raw_streak": 18,
   "comparison1_confirmed_state": "YELLOW",
   "comparison1_confirmed_target": "QLD",
   "comparison3_target": "QLD",
@@ -32,9 +32,9 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "SHADOW_TARGET_UPDATE",
+  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
   "reason_codes": [
-    "NEW_COMPLETED_US_SESSION",
+    "NO_NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
@@ -45,6 +45,6 @@
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "c6771879c30037750bb706829ce5c6999eeb2116bc40f0ce16000cc3fb09427b",
-  "state_sha256": "3917b6a767bf468a9d9e1ef32540e4417f1b90c247aecbf32f521a5fa26ac445"
+  "input_sha256": "80ebeaa41e57958154bc922b16441055a630839616df65f1953ccad57551c678",
+  "state_sha256": "a1316379cec4c225079bc25ef0fcf6ccb2dd0e6764d7e54ad1d3dda956ad13bd"
 }

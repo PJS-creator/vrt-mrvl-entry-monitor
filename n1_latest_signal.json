@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T15:01:21.400036+00:00",
-  "validation_class": "B_WARN",
+  "generated_at": "2026-08-04T23:40:08.296631+00:00",
+  "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-08-04",
   "execution_date": "2026-08-05",
-  "new_completed_us_session": true,
+  "new_completed_us_session": false,
   "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": 716.10498046875,
-  "sma20": 700.21474609375,
-  "sma50": 714.5548181152344,
-  "sma200": 644.932748413086,
-  "wilder_rsi14": 55.74979277847423,
+  "qqq_adjusted_close": 723.8499755859375,
+  "sma20": 700.6019958496094,
+  "sma50": 714.7097180175781,
+  "sma200": 644.9714749145508,
+  "wilder_rsi14": 58.05877100770255,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-07-24",
@@ -17,9 +17,9 @@
   "liquidity_p_applied": 83.84615384615384,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 1,
-  "comparison1_confirmed_state": "YELLOW",
-  "comparison1_confirmed_target": "QLD",
+  "comparison1_raw_streak": 2,
+  "comparison1_confirmed_state": "GREEN",
+  "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
   "red_router_active": false,
   "router_asset": null,
@@ -32,9 +32,9 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "SHADOW_TARGET_UPDATE",
+  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
   "reason_codes": [
-    "NEW_COMPLETED_US_SESSION",
+    "NO_NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
@@ -45,6 +45,6 @@
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "85b5bd123af49971998e3028a127d93f1f49a62a5d38af27264b830bee89d871",
-  "state_sha256": "ea0618854202f1c14aa7db0b2cd605483a596aeee002aff3b753d697554be12c"
+  "input_sha256": "df08e6bb4bb1bbd34ab65fca518c38409b0d2ae28f0d30425190736b0d0fdebb",
+  "state_sha256": "42647ce54b413538b78c5197c5a25b8ea6c987272dcbb0f2b1c60edd1f5ebe18"
 }

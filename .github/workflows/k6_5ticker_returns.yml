@@ -1,0 +1,121 @@
+name: K6 Five ETF Returns
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - tqg651
+    paths:
+      - '.github/workflows/k6_5ticker_returns.yml'
+      - 'scripts/run_k6_5ticker_returns.py'
+      - 'data/k6_phase_intervals_min.csv'
+      - 'requirements.txt'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: k6-five-etf-returns-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  calculate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate runner
+        run: python -m py_compile scripts/run_k6_5ticker_returns.py
+
+      - name: Calculate K6 phase returns
+        run: python scripts/run_k6_5ticker_returns.py
+
+      - name: Validate outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import pandas as pd
+
+          root = Path('reports/kostolany_k6_5ticker')
+          required = [
+              root / 'kostolany_k6_5ticker_phase_return_summary.csv',
+              root / 'kostolany_k6_5ticker_phase_episode_returns.csv',
+              root / 'kostolany_k6_5ticker_phase_return_summary.json',
+              root / 'KOSTOLANY_K6_5TICKER_RETURN_REPORT_KO.md',
+              root / 'KOSTOLANY_K6_5TICKER_RETURNS_BUNDLE.zip',
+          ]
+          missing = [str(p) for p in required if not p.exists()]
+          if missing:
+              raise SystemExit(f'Missing outputs: {missing}')
+          df = pd.read_csv(required[0])
+          if len(df) != 30:
+              raise SystemExit(f'Expected 30 summary rows, got {len(df)}')
+          if set(df['phase']) != {'A1','A2','A3','B1','B2','B3'}:
+              raise SystemExit('Phase set mismatch')
+          if set(df['ticker']) != {'QQQ','QLD','TQQQ','XLV','GLD'}:
+              raise SystemExit('Ticker set mismatch')
+          json.loads(required[2].read_text(encoding='utf-8'))
+          print('K6 five-ETF output validation PASS')
+          PY
+
+      - name: Upload result artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kostolany-k6-5ticker-returns
+          path: reports/kostolany_k6_5ticker/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit result files
+        shell: bash
+        run: |
+          set -euo pipefail
+          DIR='reports/kostolany_k6_5ticker'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$DIR"
+          if git diff --cached --quiet; then
+            echo 'No result changes to commit'
+          else
+            git commit -m 'Add K6 five-ETF phase return results'
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Create completion issue
+        if: always()
+        uses: actions/github-script@v8
+        env:
+          JOB_STATUS: ${{ job.status }}
+        with:
+          script: |
+            const title = `K6 five-ETF return calculation: ${process.env.JOB_STATUS}`;
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              `- Status: **${process.env.JOB_STATUS}**`,
+              `- Branch: **${context.ref.replace('refs/heads/', '')}**`,
+              `- Run: ${runUrl}`,
+              `- Output: reports/kostolany_k6_5ticker/`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+            });

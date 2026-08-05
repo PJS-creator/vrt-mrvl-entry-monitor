@@ -1,9 +1,9 @@
 # N1 QQQ Meta Daily Shadow Signal
 
-- Validation: **B_WARN**
+- Validation: **B_WARN_NO_NEW_SESSION**
 - Signal date: **2026-08-05**
 - Next execution session: **2026-08-06**
-- QQQ / SMA20 / SMA50 / SMA200 / RSI14: **722.9900 / 701.1795 / 714.8345 / 645.5974 / 57.6988**
+- QQQ / SMA20 / SMA50 / SMA200 / RSI14: **717.3000 / 700.8950 / 714.7207 / 645.5689 / 55.4248**
 - Trend200 / Recovery / Liquidity: **UP / OFF / BULL**
 - Comparison1 / Comparison3: **TQQQ / QLD**
 - Regime / engine: **BULL / COMPARISON3**

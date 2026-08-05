@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-08-04 23:40:05**
+- 실행시간(UTC): **2026-08-05 03:01:20**
 - 데이터 기준일(일봉): **2026-08-04**
 - 데이터 기준일(주봉): **2026-08-03**
 - VXN 기준일: **2026-08-03** / source: `FRED: VXNCLS`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-08-04**
-- 실행시간(UTC): **2026-08-04 23:38:57**
+- 실행시간(UTC): **2026-08-05 03:00:52**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -116,19 +116,14 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-08-03**
-- 실행시간(UTC): **2026-08-04 23:39:00**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-08-05 03:00:54**
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
 - RiskGreen: **True**
-- CurveGreen: **False**
+- CurveGreen: **True**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -136,7 +131,7 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- TERM_SPREAD_10Y_POLICY: 127.57 bp / 4주 변화 26.05 bp
 - CURVE_10s5s: 46.88 bp / 4주 변화 -1.83 bp
 
 ## NWG Price
@@ -149,7 +144,6 @@
 - RS vs Peers gap: 3.54% / slope_proxy: -0.001687
 
 ## Why not today?
-- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - PullbackZone=FALSE
 - RelativeTurn=FALSE
@@ -160,15 +154,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-04 23:39:44**
+- 실행시간(UTC): **2026-08-05 03:01:04**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 75.12 / 5D -5.22%
-- Brent ref (BZ=F): 78.92 / 5D -6.15%
+- WTI ref (CL=F): 74.51 / 5D -5.99%
+- Brent ref (BZ=F): 78.30 / 5D -6.89%
 - Brent Tier: **70-80**
-- Brent-WTI spread: 3.80
-- Gas ref (NG=F): 2.69 / 5D 0.90%
+- Brent-WTI spread: 3.79
+- Gas ref (NG=F): 2.69 / 5D 1.20%
 
 ## Gates
 
@@ -326,7 +320,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-08-04**
-- 실행시간(UTC): **2026-08-04 23:39:53**
+- 실행시간(UTC): **2026-08-05 03:01:10**
 
 ## Verdict
 ⏸ No entry today
@@ -371,7 +365,7 @@
 - close: 7.2 | RSI14: 58.684479 | ATR14%: 6.42%
 - MA20 gap: 11.88% | MA50 gap: 5.39% | MA200 gap: -14.59%
 - vol_ratio(Volume/Vol20): 1.200868 | gap_open: 2.97%
-- SilverMarginGate: SI=59.665001 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=61.005001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 4.88% / slope_proxy: -0.005324
 - Checks:
   - trend_ok: **False**
@@ -414,7 +408,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-04 23:40:01**
+- 실행시간(UTC): **2026-08-05 03:01:19**
 - 데이터 기준일(주가): **2026-08-04**
 
 ## Verdict

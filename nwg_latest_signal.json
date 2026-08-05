@@ -1,13 +1,11 @@
 {
-  "generated_at_utc": "2026-08-04T23:39:00Z",
+  "generated_at_utc": "2026-08-05T03:00:54Z",
   "as_of": {
     "price_date": "2026-08-03",
-    "run_time_utc": "2026-08-04 23:39:00"
+    "run_time_utc": "2026-08-05 03:00:54"
   },
-  "data_warning": true,
-  "warnings": [
-    "BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 2.78,
@@ -63,8 +61,8 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": null,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": null,
+    "TERM_SPREAD_10Y_POLICY_bp": 127.57,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 26.05,
     "CURVE_10s5s_bp": 46.88,
     "CURVE_10s5s_4w_change_bp": -1.83
   },
@@ -113,7 +111,7 @@
   },
   "checks": {
     "RiskGreen": true,
-    "CurveGreen": false,
+    "CurveGreen": true,
     "DemandGreen": false,
     "MacroGreen": false,
     "PriceConfirm": false,
@@ -121,7 +119,6 @@
     "ENTRY_LOOSE": false
   },
   "fails": [
-    "CurveGreen=FALSE",
     "DemandGreen=FALSE (monthly)",
     "PullbackZone=FALSE",
     "RelativeTurn=FALSE"

@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-08-06T03:00:47Z",
+  "generated_at_utc": "2026-08-06T15:00:57Z",
   "as_of": {
-    "price_date": "2026-08-05",
-    "run_time_utc": "2026-08-06 03:00:47"
+    "price_date": "2026-08-06",
+    "run_time_utc": "2026-08-06 15:00:57"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.73,
-      "change_4w": 6.0,
-      "latest_date": "2026-08-04"
+      "latest": 2.75,
+      "change_4w": 5.0,
+      "latest_date": "2026-08-05"
     },
     "BAMLC0A0CM": {
       "latest": 0.78,
       "change_4w": 2.0,
-      "latest_date": "2026-08-04"
+      "latest_date": "2026-08-05"
     },
     "VIXCLS": {
-      "latest": 16.5,
-      "change_4w": 0.37,
-      "latest_date": "2026-08-04"
+      "latest": 15.81,
+      "change_4w": -1.09,
+      "latest_date": "2026-08-05"
     },
     "NFCI": {
       "latest": -0.529,
@@ -32,22 +32,22 @@
     "IUDBEDR": {
       "latest": 3.75,
       "change_4w": 0.0,
-      "latest_date": "2026-08-04"
+      "latest_date": "2026-08-05"
     },
     "IUDSOIA": {
-      "latest": 3.7321,
-      "change_4w": 0.24,
-      "latest_date": "2026-08-03"
+      "latest": 3.7318,
+      "change_4w": 0.21,
+      "latest_date": "2026-08-04"
     },
     "IUDMNPY": {
-      "latest": 4.9382,
-      "change_4w": 16.88,
-      "latest_date": "2026-08-03"
+      "latest": 4.9031,
+      "change_4w": 9.39,
+      "latest_date": "2026-08-04"
     },
     "IUDSNPY": {
-      "latest": 4.4656,
-      "change_4w": 18.57,
-      "latest_date": "2026-08-03"
+      "latest": 4.4217,
+      "change_4w": 10.09,
+      "latest_date": "2026-08-04"
     },
     "LPMVTVX": {
       "latest": 58200.0,
@@ -61,52 +61,52 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 118.82,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 16.88,
-    "CURVE_10s5s_bp": 47.26,
-    "CURVE_10s5s_4w_change_bp": -1.69
+    "TERM_SPREAD_10Y_POLICY_bp": 115.31,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 9.39,
+    "CURVE_10s5s_bp": 48.14,
+    "CURVE_10s5s_4w_change_bp": -0.7
   },
   "prices": {
     "NWG.L": {
-      "close": 716.0,
-      "latest_date": "2026-08-04"
+      "close": 719.4,
+      "latest_date": "2026-08-06"
     },
     "^FTSE": {
-      "close": 10888.2998,
-      "latest_date": "2026-08-05"
+      "close": 10888.7002,
+      "latest_date": "2026-08-06"
     },
     "LLOY.L": {
-      "close": 117.05,
-      "latest_date": "2026-08-04"
+      "close": 115.8,
+      "latest_date": "2026-08-06"
     },
     "BARC.L": {
-      "close": 522.3,
-      "latest_date": "2026-08-04"
+      "close": 524.9,
+      "latest_date": "2026-08-06"
     },
     "HSBA.L": {
-      "close": 1584.6,
-      "latest_date": "2026-08-04"
+      "close": 1527.0,
+      "latest_date": "2026-08-06"
     }
   },
   "signals": {
     "NWG": {
-      "close": 716.0,
-      "ma50": 648.212,
-      "ma200": 615.2889,
-      "gap50": 0.104577,
-      "gap200": 0.163681
+      "close": 719.4,
+      "ma50": 653.08,
+      "ma200": 617.092,
+      "gap50": 0.10155,
+      "gap200": 0.165791
     },
     "RS_FTSE": {
-      "ratio": 0.065812,
-      "ma60": 0.060464,
-      "gap": 0.088463,
-      "ma60_slope_proxy": 0.002216
+      "ratio": 0.066068,
+      "ma60": 0.060833,
+      "gap": 0.086058,
+      "ma60_slope_proxy": 0.002447
     },
     "RS_PEERS": {
-      "ratio": 0.965849,
-      "ma60": 0.939981,
-      "gap": 0.027519,
-      "ma60_slope_proxy": -0.001301
+      "ratio": 0.995617,
+      "ma60": 0.942577,
+      "gap": 0.056272,
+      "ma60_slope_proxy": 0.002532
     }
   },
   "checks": {

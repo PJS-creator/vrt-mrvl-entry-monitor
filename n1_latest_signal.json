@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T23:35:02.482263+00:00",
+  "generated_at": "2026-08-06T03:01:21.156134+00:00",
   "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-08-05",
   "execution_date": "2026-08-06",
@@ -8,8 +8,8 @@
   "qqq_adjusted_close": 717.2999877929688,
   "sma20": 700.8949951171875,
   "sma50": 714.7206713867188,
-  "sma200": 645.5689428710938,
-  "wilder_rsi14": 55.42479016170191,
+  "sma200": 645.5689413452149,
+  "wilder_rsi14": 55.424790161689295,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-07-24",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 83.84615384615384,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 5,
+  "comparison1_raw_streak": 6,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -46,5 +46,5 @@
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
   "input_sha256": "e4fa241d1ab1ba26338fe13ce2cf673a3ee6160d0411145ddb9f149f39ddaf01",
-  "state_sha256": "de218e369f562d3ceb1682b5f76da012bd5010b8db0bedd758585ba44f165e93"
+  "state_sha256": "dd0b4c3b8fa41123a4b783c1d845a8f5885861a53d1210138d5330917850947c"
 }

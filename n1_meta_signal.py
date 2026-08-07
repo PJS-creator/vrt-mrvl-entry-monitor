@@ -1,24 +1,50 @@
 #!/usr/bin/env python3
-"""Idempotent entrypoint for the N1 QQQ Meta shadow runner.
+"""Idempotent completed-session entrypoint for the N1 QQQ Meta shadow runner.
 
-The state machine advances at most once for each newly completed US session.
-Repeated runs for the same signal date refresh the report only and never mutate
-persistent strategy state. If more than one session is missing, fail closed
-instead of skipping intermediate state transitions.
+Persistent strategy state advances at most once per completed US regular session.
+Intraday bars are never treated as completed sessions. Repeated runs for the same
+completed signal date refresh the report only and do not mutate persistent state.
+If more than one completed session is unprocessed, fail closed instead of skipping
+intermediate state transitions.
 """
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
-from typing import Any
+from datetime import datetime, time, timezone
+from typing import Any, Callable
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
 import n1_meta_signal_core as core
 
+NY = ZoneInfo("America/New_York")
+REGULAR_CLOSE_ET = time(16, 0)
+CLOSE_SETTLE_BUFFER_MINUTES = 15
+
 
 def _dedupe(items: list[str]) -> list[str]:
     return list(dict.fromkeys(items))
+
+
+def _latest_completed_session(index: pd.DatetimeIndex, now_utc: datetime | None = None) -> pd.Timestamp:
+    if len(index) == 0:
+        raise RuntimeError("EMPTY_QQQ_PRICE_INDEX")
+
+    now_utc = now_utc or datetime.now(timezone.utc)
+    now_et = now_utc.astimezone(NY)
+    latest = pd.Timestamp(index.max()).tz_localize(None).normalize()
+
+    if latest.date() == now_et.date():
+        close_minutes = REGULAR_CLOSE_ET.hour * 60 + REGULAR_CLOSE_ET.minute + CLOSE_SETTLE_BUFFER_MINUTES
+        now_minutes = now_et.hour * 60 + now_et.minute
+        if now_minutes < close_minutes:
+            prior = pd.DatetimeIndex(index)[pd.DatetimeIndex(index).normalize() < latest]
+            if len(prior) == 0:
+                raise RuntimeError("NO_PRIOR_COMPLETED_QQQ_SESSION")
+            latest = pd.Timestamp(prior.max()).tz_localize(None).normalize()
+
+    return latest
 
 
 def _write_no_new_session_report(
@@ -39,9 +65,7 @@ def _write_no_new_session_report(
     output["new_completed_us_session"] = False
     output["action"] = "HOLD_PREVIOUS_VALIDATED_TARGET"
     output["reason_codes"] = ["NO_NEW_COMPLETED_US_SESSION"] + (
-        ["N1_BULL_COMPARISON3_QLD_TO_QQQ"]
-        if output.get("n1_overlay_active")
-        else []
+        ["N1_BULL_COMPARISON3_QLD_TO_QQQ"] if output.get("n1_overlay_active") else []
     )
     output["warnings"] = warnings
     output["state_sha256"] = core.stable_hash(state)
@@ -52,29 +76,51 @@ def _write_no_new_session_report(
     print(json.dumps(output, ensure_ascii=False, indent=2))
 
 
+def _completed_only_fetch(
+    original_fetch: Callable[..., tuple[pd.DataFrame, str, list[str]]],
+    completed_signal_date: pd.Timestamp,
+) -> Callable[..., tuple[pd.DataFrame, str, list[str]]]:
+    def fetch(symbol: str, start: str = "2005-01-01") -> tuple[pd.DataFrame, str, list[str]]:
+        df, provider, warnings = original_fetch(symbol, start)
+        df = df.loc[df.index <= completed_signal_date].copy()
+        if df.empty:
+            raise RuntimeError(f"NO_COMPLETED_PRICE_ROWS:{symbol}:{completed_signal_date.date()}")
+        return df, provider, warnings
+
+    return fetch
+
+
 def main() -> None:
     state = core.read_state()
-    prior_signal_date = pd.Timestamp(state.get("signal_date", core.ANCHOR_DATE))
+    prior_signal_date = pd.Timestamp(state.get("signal_date", core.ANCHOR_DATE)).normalize()
 
     qqq, _, detection_warnings = core.fetch_prices("QQQ")
-    signal_date = qqq.index.max()
+    completed_signal_date = _latest_completed_session(qqq.index)
 
-    if signal_date < prior_signal_date:
+    if completed_signal_date < prior_signal_date:
         raise RuntimeError(
-            f"PRICE_HISTORY_BEHIND_STATE: price={signal_date.date()} state={prior_signal_date.date()}"
+            f"PRICE_HISTORY_BEHIND_STATE: price={completed_signal_date.date()} state={prior_signal_date.date()}"
         )
 
-    unseen_sessions = qqq.index[qqq.index > prior_signal_date]
+    completed_index = pd.DatetimeIndex(qqq.index).normalize()
+    unseen_sessions = completed_index[
+        (completed_index > prior_signal_date) & (completed_index <= completed_signal_date)
+    ].unique()
+
     if len(unseen_sessions) == 0:
-        _write_no_new_session_report(state, signal_date, detection_warnings)
+        _write_no_new_session_report(state, completed_signal_date, detection_warnings)
         return
 
     if len(unseen_sessions) > 1:
-        missing = ",".join(ts.strftime("%Y-%m-%d") for ts in unseen_sessions)
+        missing = ",".join(pd.Timestamp(ts).strftime("%Y-%m-%d") for ts in unseen_sessions)
         raise RuntimeError(f"MULTIPLE_UNPROCESSED_US_SESSIONS:{missing}")
 
-    # Exactly one new completed session: let the original state machine advance once.
-    core.main()
+    original_fetch = core.fetch_prices
+    core.fetch_prices = _completed_only_fetch(original_fetch, completed_signal_date)
+    try:
+        core.main()
+    finally:
+        core.fetch_prices = original_fetch
 
 
 if __name__ == "__main__":

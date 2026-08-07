@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-08-07T15:00:51Z",
+  "generated_at_utc": "2026-08-07T23:15:29Z",
   "as_of": {
     "price_date": "2026-08-07",
-    "run_time_utc": "2026-08-07 15:00:51"
+    "run_time_utc": "2026-08-07 23:15:29"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.75,
-      "change_4w_bp": 5.0,
-      "latest_date": "2026-08-05"
+      "latest": 2.71,
+      "change_4w_bp": 1.0,
+      "latest_date": "2026-08-06"
     },
     "BAMLC0A0CM": {
       "latest": 0.78,
       "change_4w_bp": 2.0,
-      "latest_date": "2026-08-05"
+      "latest_date": "2026-08-06"
     },
     "DFII10": {
-      "latest": 2.41,
-      "change_4w_bp": 10.0,
-      "latest_date": "2026-08-05"
+      "latest": 2.43,
+      "change_4w_bp": 12.0,
+      "latest_date": "2026-08-06"
     },
     "VIXCLS": {
       "latest": 15.15,
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 275.71,
+      "close": 272.4,
       "latest_date": "2026-08-07"
     },
     "MRVL": {
-      "close": 211.3624,
+      "close": 218.72,
       "latest_date": "2026-08-07"
     },
     "SRVR": {
-      "close": 31.84,
+      "close": 31.79,
       "latest_date": "2026-08-07"
     },
     "SMH": {
-      "close": 577.015,
+      "close": 582.7,
       "latest_date": "2026-08-07"
     },
     "NVDA": {
-      "close": 223.22,
+      "close": 223.96,
       "latest_date": "2026-08-07"
     },
     "AVGO": {
-      "close": 425.0539,
+      "close": 427.76,
       "latest_date": "2026-08-07"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.659233,
-      "ma60": 9.434013,
-      "gap": -0.082126,
+      "ratio": 8.568732,
+      "ma60": 9.432505,
+      "gap": -0.091574,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.366303,
-      "ma60": 0.389705,
-      "gap": -0.060049,
-      "ma60_slope_proxy": 0.013227,
-      "entry": false
+      "ratio": 0.375356,
+      "ma60": 0.389855,
+      "gap": -0.037192,
+      "ma60_slope_proxy": 0.013378,
+      "entry": true
     }
   },
-  "verdict": "✅ Entry condition met: VRT"
+  "verdict": "✅ Entry condition met: BOTH"
 }

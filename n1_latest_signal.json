@@ -17,7 +17,7 @@
   "liquidity_p_applied": 83.84615384615384,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 7,
+  "comparison1_raw_streak": 3,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -46,5 +46,5 @@
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
   "input_sha256": "eee37062203612e5d61c6954422d58bf594ef41f5413e7e5effaf5d6bc4ec479",
-  "state_sha256": "82ea28b768d6b0abf1609004fc36d5f6c5e7bc38fd7a9e891480b1f39717bf71"
+  "state_sha256": "72b7dd205542a4c101fc1f7af578d817c03332d1140a3b84606422297122afb5"
 }

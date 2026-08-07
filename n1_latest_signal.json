@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-06T15:01:42.551556+00:00",
+  "generated_at": "2026-08-05T23:35:02.482263+00:00",
   "validation_class": "B_WARN",
-  "signal_date": "2026-08-06",
-  "execution_date": "2026-08-07",
+  "signal_date": "2026-08-05",
+  "execution_date": "2026-08-06",
   "new_completed_us_session": true,
   "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": 718.4299926757812,
-  "sma20": 700.6524932861328,
-  "sma50": 714.4997033691407,
-  "sma200": 646.1524325561523,
-  "wilder_rsi14": 55.79736833865815,
+  "qqq_adjusted_close": 717.2999877929688,
+  "sma20": 700.8949951171875,
+  "sma50": 714.7206713867188,
+  "sma200": 645.5689428710938,
+  "wilder_rsi14": 55.42479016170191,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-07-24",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 83.84615384615384,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 3,
+  "comparison1_raw_streak": 2,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -45,6 +45,6 @@
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "eee37062203612e5d61c6954422d58bf594ef41f5413e7e5effaf5d6bc4ec479",
-  "state_sha256": "72b7dd205542a4c101fc1f7af578d817c03332d1140a3b84606422297122afb5"
+  "input_sha256": "e4fa241d1ab1ba26338fe13ce2cf673a3ee6160d0411145ddb9f149f39ddaf01",
+  "state_sha256": "39680fdd9e10d431681033635222f28f184aa9ae3247d0f5e06a2aba3674c97f"
 }

@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-08 03:01:33**
+- 실행시간(UTC): **2026-08-08 15:01:21**
 - 데이터 기준일(주가): **2026-08-07**
 
 ## Verdict
@@ -41,7 +41,7 @@
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
 - close: 9.54 | RSI14: 82.71 | ATR14%: 4.94%
 - MA20/50/200 gap: 28.58% / 24.96% / 37.84%
-- 5D return: 34.37% | 20D drawdown: 0.00% | vol_ratio: 3.08
+- 5D return: 34.37% | 20D drawdown: 0.00% | vol_ratio: 3.12
 - RS vs GDXJ: gap 9.40% / slope_proxy 6.88%
 - FundamentalScore: 88 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **77.3**
 - Checks:
@@ -133,7 +133,7 @@
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
 - close: 27.19 | RSI14: 78.10 | ATR14%: 5.70%
 - MA20/50/200 gap: 31.13% / 37.40% / 63.76%
-- 5D return: 38.37% | 20D drawdown: 0.00% | vol_ratio: 1.26
+- 5D return: 38.37% | 20D drawdown: 0.00% | vol_ratio: 1.30
 - RS vs SILJ: gap 27.99% / slope_proxy 20.49%
 - FundamentalScore: 86 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **76.5**
 - Checks:
@@ -155,7 +155,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 9.54 | RSI14: 72.17 | ATR14%: 5.65%
 - MA20/50/200 gap: 18.89% / 14.47% / -0.09%
-- 5D return: 26.86% | 20D drawdown: 0.00% | vol_ratio: 1.02
+- 5D return: 26.86% | 20D drawdown: 0.00% | vol_ratio: 1.10
 - RS vs SILJ: gap 3.36% / slope_proxy 3.10%
 - FundamentalScore: 82 | TechnicalScore: 40 | RegimeScore: 75 | OverallScore: **65.9**
 - Checks:
@@ -177,7 +177,7 @@
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
 - close: 6.88 | RSI14: 66.33 | ATR14%: 6.12%
 - MA20/50/200 gap: 18.25% / 11.75% / 3.30%
-- 5D return: 29.08% | 20D drawdown: 0.00% | vol_ratio: 1.61
+- 5D return: 29.08% | 20D drawdown: 0.00% | vol_ratio: 1.66
 - RS vs SILJ: gap 1.47% / slope_proxy 1.56%
 - FundamentalScore: 60 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **64.8**
 - Checks:
@@ -197,9 +197,9 @@
 
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 8.40 | RSI14: 77.99 | ATR14%: 6.06%
+- close: 8.40 | RSI14: 77.99 | ATR14%: 6.08%
 - MA20/50/200 gap: 25.73% / 22.79% / -0.61%
-- 5D return: 30.03% | 20D drawdown: 0.00% | vol_ratio: 1.20
+- 5D return: 30.03% | 20D drawdown: 0.00% | vol_ratio: 1.23
 - RS vs SILJ: gap 9.60% / slope_proxy 12.08%
 - FundamentalScore: 74 | TechnicalScore: 40 | RegimeScore: 75 | OverallScore: **62.3**
 - Checks:
@@ -221,7 +221,7 @@
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
 - close: 3.74 | RSI14: 67.66 | ATR14%: 5.19%
 - MA20/50/200 gap: 14.22% / 10.61% / -8.55%
-- 5D return: 19.11% | 20D drawdown: 0.00% | vol_ratio: 1.86
+- 5D return: 19.11% | 20D drawdown: 0.00% | vol_ratio: 1.90
 - RS vs SILJ: gap 1.65% / slope_proxy 4.93%
 - FundamentalScore: 72 | TechnicalScore: 40 | RegimeScore: 75 | OverallScore: **61.4**
 - Checks:
@@ -243,7 +243,7 @@
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
 - close: 16.85 | RSI14: 64.68 | ATR14%: 5.57%
 - MA20/50/200 gap: 11.29% / 8.20% / -8.16%
-- 5D return: 19.33% | 20D drawdown: 0.00% | vol_ratio: 0.87
+- 5D return: 19.33% | 20D drawdown: 0.00% | vol_ratio: 0.93
 - RS vs SILJ: gap -2.07% / slope_proxy -6.38%
 - FundamentalScore: 78 | TechnicalScore: 15 | RegimeScore: 75 | OverallScore: **55.4**
 - Checks:
@@ -265,7 +265,7 @@
 - Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
 - close: 5.01 | RSI14: 70.76 | ATR14%: 6.50%
 - MA20/50/200 gap: 21.85% / 5.83% / -12.50%
-- 5D return: 31.15% | 20D drawdown: 0.00% | vol_ratio: 1.24
+- 5D return: 31.15% | 20D drawdown: 0.00% | vol_ratio: 1.27
 - RS vs SILJ: gap -5.66% / slope_proxy 5.07%
 - FundamentalScore: 68 | TechnicalScore: 15 | RegimeScore: 75 | OverallScore: **50.9**
 - Checks:
@@ -287,7 +287,7 @@
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
 - close: 26.54 | RSI14: 74.75 | ATR14%: 6.68%
 - MA20/50/200 gap: 26.48% / 11.45% / -5.72%
-- 5D return: 35.89% | 20D drawdown: 0.00% | vol_ratio: 1.37
+- 5D return: 35.89% | 20D drawdown: 0.00% | vol_ratio: 1.39
 - RS vs SILJ: gap -3.26% / slope_proxy 10.07%
 - FundamentalScore: 42 | TechnicalScore: 15 | RegimeScore: 75 | OverallScore: **39.2**
 - Checks:

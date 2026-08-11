@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-08-10 23:16:28**
+- 실행시간(UTC): **2026-08-11 03:01:06**
 - 데이터 기준일(일봉): **2026-08-10**
 - 데이터 기준일(주봉): **2026-08-10**
 - VXN 기준일: **2026-08-07** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-08-10**
-- 실행시간(UTC): **2026-08-10 23:16:02**
+- 실행시간(UTC): **2026-08-11 03:00:42**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -114,8 +114,8 @@
 
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-08-07**
-- 실행시간(UTC): **2026-08-10 23:16:04**
+- 데이터 기준일(주가): **2026-08-10**
+- 실행시간(UTC): **2026-08-11 03:00:45**
 
 ## Verdict
 ⏸ No entry today
@@ -153,15 +153,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-10 23:16:11**
+- 실행시간(UTC): **2026-08-11 03:00:52**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 82.05 / 5D 2.13%
-- Brent ref (BZ=F): 87.58 / 5D 4.55%
+- WTI ref (CL=F): 82.40 / 5D 2.56%
+- Brent ref (BZ=F): 87.93 / 5D 4.97%
 - Brent Tier: **80-90**
 - Brent-WTI spread: 5.53
-- Gas ref (NG=F): 2.77 / 5D -0.29%
+- Gas ref (NG=F): 2.77 / 5D -0.32%
 
 ## Gates
 
@@ -195,7 +195,7 @@
 ### Volume (if available)
 
 - volume: 7425208.00
-- volume_MA20: 8563150.40
+- volume_MA20: 8563265.40
 - volume_ratio: 0.87
 
 ### Checks
@@ -228,7 +228,7 @@
 ### Volume (if available)
 
 - volume: 11013616.00
-- volume_MA20: 14467010.80
+- volume_MA20: 14467135.80
 - volume_ratio: 0.76
 
 ### Checks
@@ -262,7 +262,7 @@
 ### Volume (if available)
 
 - volume: 59339703.00
-- volume_MA20: 42324880.15
+- volume_MA20: 42325175.15
 - volume_ratio: 1.40
 
 ### Checks
@@ -289,14 +289,14 @@
 ### Relative Strength
 
 - ratio: 0.053674
-- ratio_MA60: 0.051304
-- ratio_gap: 4.62%
+- ratio_MA60: 0.051414
+- ratio_gap: 4.40%
 - ratio_slope_proxy(20d): 0.001097
 
 ### Volume (if available)
 
 - volume: 12519804.00
-- volume_MA20: 15022420.20
+- volume_MA20: 15023065.20
 - volume_ratio: 0.83
 
 ### Checks
@@ -319,7 +319,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-08-10**
-- 실행시간(UTC): **2026-08-10 23:16:19**
+- 실행시간(UTC): **2026-08-11 03:00:58**
 
 ## Verdict
 ⏸ No entry today
@@ -345,7 +345,7 @@
 ## VZLA (Vizsla Silver)
 - close: 3.88 | RSI14: 66.802868 | ATR14%: 5.08%
 - MA20 gap: 16.96% | MA50 gap: 14.68% | MA200 gap: -5.09%
-- vol_ratio(Volume/Vol20): 1.130671 | gap_open: 0.27%
+- vol_ratio(Volume/Vol20): 1.130663 | gap_open: 0.27%
 - RS vs SILJ gap: 2.64% / slope_proxy: 0.006083
 - Checks:
   - trend_ok: **False**
@@ -364,7 +364,7 @@
 - close: 8.98 | RSI14: 74.165618 | ATR14%: 5.74%
 - MA20 gap: 31.82% | MA50 gap: 30.94% | MA200 gap: 6.05%
 - vol_ratio(Volume/Vol20): 1.511159 | gap_open: 1.19%
-- SilverMarginGate: SI=65.964996 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=65.919998 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 14.25% / slope_proxy: -0.004267
 - Checks:
   - trend_ok: **False**
@@ -383,7 +383,7 @@
 ## HYMC (Hycroft Mining)
 - close: 27.290001 | RSI14: 65.465768 | ATR14%: 6.85%
 - MA20 gap: 27.97% | MA50 gap: 15.17% | MA200 gap: -3.40%
-- vol_ratio(Volume/Vol20): 1.130655 | gap_open: 0.94%
+- vol_ratio(Volume/Vol20): 1.130315 | gap_open: 0.94%
 - RS vs SILJ gap: -2.34% / slope_proxy: -0.144443
 - RS vs GDXJ gap: -4.94% / slope_proxy: -0.036195
 - Checks:
@@ -407,7 +407,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-10 23:16:27**
+- 실행시간(UTC): **2026-08-11 03:01:05**
 - 데이터 기준일(주가): **2026-08-10**
 
 ## Verdict

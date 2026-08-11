@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-11T15:01:13.774185+00:00",
-  "validation_class": "B_WARN_NO_NEW_SESSION",
-  "signal_date": "2026-08-10",
-  "execution_date": "2026-08-11",
-  "new_completed_us_session": false,
+  "generated_at": "2026-08-11T23:22:51.329416+00:00",
+  "validation_class": "B_WARN",
+  "signal_date": "2026-08-11",
+  "execution_date": "2026-08-12",
+  "new_completed_us_session": true,
   "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": 720.8699951171875,
-  "sma20": 700.79599609375,
-  "sma50": 714.0332690429688,
-  "sma200": 647.2606881713867,
-  "wilder_rsi14": 56.21102758814628,
+  "qqq_adjusted_close": 718.4500122070312,
+  "sma20": 700.7339965820313,
+  "sma50": 713.6522790527343,
+  "sma200": 647.8365063476563,
+  "wilder_rsi14": 55.087853823590244,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-07-31",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 84.23076923076923,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 5,
+  "comparison1_raw_streak": 6,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -32,16 +32,19 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION",
+    "NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
   "warnings": [
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "d8e4363e4adcbe76bbe5d4d7308412af2ea90fe4aefd3e257b15cf934c9420b3",
-  "state_sha256": "392a4e3613eb2061e7fb6ec8b0b2bfcf0a7396cc2d3c58d764276fc70eb0f8cb"
+  "input_sha256": "50ea3add15e5a83f7a4b54542bbe6677ad37563f4424c5caab1f58600e3dd2e2",
+  "state_sha256": "b53672ba6a8e9cf6500b5feae117707e303812bade12d52d93d0eb04b1bc20f3"
 }

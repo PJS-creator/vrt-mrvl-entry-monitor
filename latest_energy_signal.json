@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-12T23:20:51Z",
+  "generated_at_utc": "2026-08-13T03:00:52Z",
   "as_of": {
-    "run_time_utc": "2026-08-12 23:20:51"
+    "run_time_utc": "2026-08-13 03:00:52"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,29 +70,29 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 82.71,
-      "ret5d": 0.099575
+      "close": 82.18,
+      "ret5d": 0.092529
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 88.5,
-      "ret5d": 0.113908,
+      "close": 87.98,
+      "ret5d": 0.107363,
       "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 2.793,
-      "ret5d": 0.039063
+      "close": 2.791,
+      "ret5d": 0.038318
     },
-    "Brent_WTI_spread": 5.79
+    "Brent_WTI_spread": 5.8
   },
   "gates": {
     "RISK_OK_STRICT": true,
     "RISK_OK_SOFT": true,
     "OVX_OK": true,
     "WTI_TREND_UP": false,
-    "BRENT_TREND_UP": true,
-    "OIL_TREND_UP": true,
+    "BRENT_TREND_UP": false,
+    "OIL_TREND_UP": false,
     "BRAZIL_RISK_OK": false
   },
   "prices": {
@@ -142,24 +142,24 @@
       "volume": 32771433.0
     },
     "BRL=X": {
-      "close": 5.1735,
-      "latest_date": "2026-08-12",
+      "close": 5.1904,
+      "latest_date": "2026-08-13",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 82.71,
+      "close": 82.18,
       "latest_date": "2026-08-12",
-      "volume": 761.0
+      "volume": 7226.0
     },
     "BZ=F": {
-      "close": 88.5,
+      "close": 87.98,
       "latest_date": "2026-08-12",
-      "volume": 64.0
+      "volume": 1072.0
     },
     "NG=F": {
-      "close": 2.793,
+      "close": 2.791,
       "latest_date": "2026-08-12",
-      "volume": 305.0
+      "volume": 1396.0
     }
   },
   "signals": {
@@ -220,7 +220,7 @@
       },
       "checks": {
         "RISK_OK_SOFT": true,
-        "BRENT_TREND_UP": true,
+        "BRENT_TREND_UP": false,
         "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": false,
         "PBR_PULLBACK_OK": true,
@@ -253,7 +253,7 @@
       },
       "checks": {
         "RISK_OK_STRICT": true,
-        "OIL_TREND_UP": true,
+        "OIL_TREND_UP": false,
         "OIH_TREND_UP": false,
         "RIG_BREAKOUT": false,
         "RIG_VOLUME_CONFIRM": false,

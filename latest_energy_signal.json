@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-13T23:22:10Z",
+  "generated_at_utc": "2026-08-14T03:00:55Z",
   "as_of": {
-    "run_time_utc": "2026-08-13 23:22:10"
+    "run_time_utc": "2026-08-14 03:00:55"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 81.14,
-      "ret5d": 0.049812
+      "close": 81.28,
+      "ret5d": 0.051624
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 86.93,
-      "ret5d": 0.053825,
+      "close": 87.08,
+      "ret5d": 0.055643,
       "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 2.731,
-      "ret5d": 0.03447
+      "close": 2.743,
+      "ret5d": 0.039015
     },
-    "Brent_WTI_spread": 5.79
+    "Brent_WTI_spread": 5.8
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -142,24 +142,24 @@
       "volume": 30258928.0
     },
     "BRL=X": {
-      "close": 5.1954,
-      "latest_date": "2026-08-13",
+      "close": 5.1795,
+      "latest_date": "2026-08-14",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 81.14,
+      "close": 81.28,
       "latest_date": "2026-08-13",
-      "volume": 1097.0
+      "volume": 8189.0
     },
     "BZ=F": {
-      "close": 86.93,
+      "close": 87.08,
       "latest_date": "2026-08-13",
-      "volume": 49.0
+      "volume": 1763.0
     },
     "NG=F": {
-      "close": 2.731,
+      "close": 2.743,
       "latest_date": "2026-08-13",
-      "volume": 224.0
+      "volume": 1683.0
     }
   },
   "signals": {
@@ -209,9 +209,9 @@
       },
       "ratio": {
         "ratio": 0.52976,
-        "ma60": 0.511994,
-        "gap": 0.034699,
-        "slope_proxy": -0.0061
+        "ma60": 0.511262,
+        "gap": 0.036182,
+        "slope_proxy": -0.00673
       },
       "volume": {
         "vol": 13014718.0,
@@ -275,9 +275,9 @@
       },
       "ratio": {
         "ratio": 0.050811,
-        "ma60": 0.051168,
-        "gap": -0.006981,
-        "slope_proxy": 0.000744
+        "ma60": 0.051108,
+        "gap": -0.005821,
+        "slope_proxy": 0.000626
       },
       "volume": {
         "vol": 13833170.0,

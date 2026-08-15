@@ -1,11 +1,16 @@
 {
-  "generated_at_utc": "2026-08-14T22:56:13Z",
+  "generated_at_utc": "2026-08-15T03:00:48Z",
   "as_of": {
     "price_date": "2026-08-14",
-    "run_time_utc": "2026-08-14 22:56:13"
+    "run_time_utc": "2026-08-15 03:00:48"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDSOIA failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 2.71,
@@ -61,57 +66,57 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 120.93,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 1.94,
-    "CURVE_10s5s_bp": 47.78,
-    "CURVE_10s5s_4w_change_bp": 0.58
+    "TERM_SPREAD_10Y_POLICY_bp": null,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": null,
+    "CURVE_10s5s_bp": null,
+    "CURVE_10s5s_4w_change_bp": null
   },
   "prices": {
     "NWG.L": {
-      "close": 707.8,
-      "latest_date": "2026-08-14"
+      "close": 705.6,
+      "latest_date": "2026-08-13"
     },
     "^FTSE": {
-      "close": 10750.1104,
+      "close": 10750.0996,
       "latest_date": "2026-08-14"
     },
     "LLOY.L": {
-      "close": 115.2,
-      "latest_date": "2026-08-14"
+      "close": 115.3,
+      "latest_date": "2026-08-13"
     },
     "BARC.L": {
-      "close": 520.5,
-      "latest_date": "2026-08-14"
+      "close": 519.0,
+      "latest_date": "2026-08-13"
     },
     "HSBA.L": {
-      "close": 1527.8,
-      "latest_date": "2026-08-14"
+      "close": 1525.8,
+      "latest_date": "2026-08-13"
     }
   },
   "signals": {
     "NWG": {
-      "close": 707.8,
-      "ma50": 666.5408,
-      "ma200": 621.1876,
-      "gap50": 0.0619,
-      "gap200": 0.13943
+      "close": 705.6,
+      "ma50": 664.2588,
+      "ma200": 620.574,
+      "gap50": 0.062237,
+      "gap200": 0.137012
     },
     "RS_FTSE": {
-      "ratio": 0.065841,
-      "ma60": 0.061848,
-      "gap": 0.064558,
-      "ma60_slope_proxy": 0.002982
+      "ratio": 0.065499,
+      "ma60": 0.061679,
+      "gap": 0.061926,
+      "ma60_slope_proxy": 0.002923
     },
     "RS_PEERS": {
-      "ratio": 0.981465,
-      "ma60": 0.949281,
-      "gap": 0.033903,
-      "ma60_slope_proxy": 0.012361
+      "ratio": 0.979955,
+      "ma60": 0.948249,
+      "gap": 0.033436,
+      "ma60_slope_proxy": 0.011331
     }
   },
   "checks": {
     "RiskGreen": true,
-    "CurveGreen": true,
+    "CurveGreen": false,
     "DemandGreen": false,
     "MacroGreen": false,
     "PriceConfirm": false,
@@ -119,6 +124,7 @@
     "ENTRY_LOOSE": false
   },
   "fails": [
+    "CurveGreen=FALSE",
     "DemandGreen=FALSE (monthly)",
     "PullbackZone=FALSE",
     "RelativeTurn=FALSE"

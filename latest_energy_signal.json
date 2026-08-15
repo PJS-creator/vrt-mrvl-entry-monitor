@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-14T22:56:21Z",
+  "generated_at_utc": "2026-08-15T03:02:29Z",
   "as_of": {
-    "run_time_utc": "2026-08-14 22:56:21"
+    "run_time_utc": "2026-08-15 03:02:29"
   },
   "data_warning": false,
   "warnings": [],
@@ -142,8 +142,8 @@
       "volume": 29940248.0
     },
     "BRL=X": {
-      "close": 5.2265,
-      "latest_date": "2026-08-14",
+      "close": 5.2132,
+      "latest_date": "2026-08-15",
       "volume": 0.0
     },
     "CL=F": {

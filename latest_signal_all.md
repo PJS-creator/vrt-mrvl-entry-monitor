@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-08-14 22:56:46**
+- 실행시간(UTC): **2026-08-15 03:02:45**
 - 데이터 기준일(일봉): **2026-08-14**
 - 데이터 기준일(주봉): **2026-08-10**
 - VXN 기준일: **2026-08-13** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-08-14**
-- 실행시간(UTC): **2026-08-14 22:56:09**
+- 실행시간(UTC): **2026-08-15 03:00:45**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,14 +115,22 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-08-14**
-- 실행시간(UTC): **2026-08-14 22:56:13**
+- 실행시간(UTC): **2026-08-15 03:00:48**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- BoE IUDSOIA failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
 - RiskGreen: **True**
-- CurveGreen: **True**
+- CurveGreen: **False**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -130,19 +138,20 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 120.93 bp / 4주 변화 1.94 bp
-- CURVE_10s5s: 47.78 bp / 4주 변화 0.58 bp
+- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- CURVE_10s5s: None bp / 4주 변화 None bp
 
 ## NWG Price
-- close: 707.8
-- MA50: 666.5408 / gap50: 6.19%
-- MA200: 621.1876 / gap200: 13.94%
+- close: 705.6
+- MA50: 664.2588 / gap50: 6.22%
+- MA200: 620.574 / gap200: 13.70%
 
 ## Relative Strength
-- RS vs FTSE gap: 6.46% / slope_proxy: 0.002982
-- RS vs Peers gap: 3.39% / slope_proxy: 0.012361
+- RS vs FTSE gap: 6.19% / slope_proxy: 0.002923
+- RS vs Peers gap: 3.34% / slope_proxy: 0.011331
 
 ## Why not today?
+- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - PullbackZone=FALSE
 - RelativeTurn=FALSE
@@ -153,7 +162,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-14 22:56:21**
+- 실행시간(UTC): **2026-08-15 03:02:29**
 
 ## Commodity Regime
 
@@ -319,7 +328,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-08-14**
-- 실행시간(UTC): **2026-08-14 22:56:29**
+- 실행시간(UTC): **2026-08-15 03:02:37**
 
 ## Verdict
 ⏸ No entry today
@@ -408,7 +417,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-14 22:56:42**
+- 실행시간(UTC): **2026-08-15 03:02:44**
 - 데이터 기준일(주가): **2026-08-14**
 
 ## Verdict

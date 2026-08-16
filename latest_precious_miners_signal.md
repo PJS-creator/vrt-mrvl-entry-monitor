@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-16 03:01:19**
+- 실행시간(UTC): **2026-08-16 15:01:06**
 - 데이터 기준일(주가): **2026-08-14**
 
 ## Verdict
@@ -83,10 +83,10 @@
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
-- close: 1.53 | RSI14: 82.81 | ATR14%: 5.23%
-- MA20/50/200 gap: 24.59% / 24.67% / 3.63%
-- 5D return: 12.50% | 20D drawdown: 0.00% | vol_ratio: 2.29
-- RS vs GDXJ: gap 8.72% / slope_proxy 14.32%
+- close: 1.53 | RSI14: 85.48 | ATR14%: 5.16%
+- MA20/50/200 gap: 22.60% / 24.45% / 3.61%
+- 5D return: 5.52% | 20D drawdown: 0.00% | vol_ratio: 2.32
+- RS vs GDXJ: gap 8.70% / slope_proxy 12.69%
 - FundamentalScore: 70 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **69.2**
 - Checks:
   - sector_ok: **False**
@@ -131,10 +131,10 @@
 
 ### AYA (Aya Gold & Silver)
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
-- close: 25.92 | RSI14: 68.83 | ATR14%: 6.19%
-- MA20/50/200 gap: 13.95% / 26.58% / 52.26%
+- close: 25.92 | RSI14: 72.77 | ATR14%: 6.13%
+- MA20/50/200 gap: 14.30% / 26.31% / 53.09%
 - 5D return: -4.67% | 20D drawdown: -7.56% | vol_ratio: 1.97
-- RS vs SILJ: gap 15.25% / slope_proxy 11.71%
+- RS vs SILJ: gap 16.21% / slope_proxy 10.28%
 - FundamentalScore: 86 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **76.5**
 - Checks:
   - sector_ok: **False**
@@ -175,10 +175,10 @@
 
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 8.85 | RSI14: 81.84 | ATR14%: 6.05%
-- MA20/50/200 gap: 23.04% / 28.37% / 3.98%
-- 5D return: 11.04% | 20D drawdown: -1.45% | vol_ratio: 0.67
-- RS vs SILJ: gap 12.53% / slope_proxy 18.70%
+- close: 8.85 | RSI14: 80.53 | ATR14%: 6.13%
+- MA20/50/200 gap: 21.58% / 26.87% / 3.88%
+- 5D return: 5.36% | 20D drawdown: -2.32% | vol_ratio: 0.65
+- RS vs SILJ: gap 12.05% / slope_proxy 18.06%
 - FundamentalScore: 74 | TechnicalScore: 50 | RegimeScore: 75 | OverallScore: **65.8**
 - Checks:
   - sector_ok: **False**

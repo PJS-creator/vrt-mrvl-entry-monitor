@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-16T03:00:47Z",
+  "generated_at_utc": "2026-08-16T15:00:40Z",
   "as_of": {
     "price_date": "2026-08-14",
-    "run_time_utc": "2026-08-16 03:00:47"
+    "run_time_utc": "2026-08-16 15:00:40"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,8 +70,8 @@
   "signals": {
     "VRT": {
       "ratio": 9.021799,
-      "ma60": 9.311917,
-      "gap": -0.031156,
+      "ma60": 9.299851,
+      "gap": -0.029898,
       "entry": true
     },
     "MRVL": {

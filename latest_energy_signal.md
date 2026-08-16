@@ -1,6 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-15 22:54:39**
+- 실행시간(UTC): **2026-08-16 03:00:57**
 
 ## Commodity Regime
 
@@ -68,9 +68,9 @@
 ### Relative Strength
 
 - ratio: 0.526967
-- ratio_MA60: 0.511370
-- ratio_gap: 3.05%
-- ratio_slope_proxy(20d): -0.006622
+- ratio_MA60: 0.510549
+- ratio_gap: 3.22%
+- ratio_slope_proxy(20d): -0.007337
 
 ### Volume (if available)
 

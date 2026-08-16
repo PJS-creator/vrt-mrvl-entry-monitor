@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-15T22:54:33Z",
+  "generated_at_utc": "2026-08-16T03:00:49Z",
   "as_of": {
     "price_date": "2026-08-14",
-    "run_time_utc": "2026-08-15 22:54:33"
+    "run_time_utc": "2026-08-16 03:00:49"
   },
   "data_warning": false,
   "warnings": [],
@@ -98,9 +98,9 @@
     },
     "RS_FTSE": {
       "ratio": 0.065841,
-      "ma60": 0.061407,
-      "gap": 0.072211,
-      "ma60_slope_proxy": 0.002841
+      "ma60": 0.061848,
+      "gap": 0.064559,
+      "ma60_slope_proxy": 0.002982
     },
     "RS_PEERS": {
       "ratio": 0.981465,

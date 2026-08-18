@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-17T22:56:51.383183+00:00",
-  "validation_class": "B_WARN",
+  "generated_at": "2026-08-18T03:01:44.564046+00:00",
+  "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-08-17",
   "execution_date": "2026-08-18",
-  "new_completed_us_session": true,
+  "new_completed_us_session": false,
   "price_source_id": "yfinance_shadow_fallback",
   "qqq_adjusted_close": 729.8699951171875,
   "sma20": 705.8159973144532,
@@ -32,16 +32,13 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "SHADOW_TARGET_UPDATE",
+  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
   "reason_codes": [
-    "NEW_COMPLETED_US_SESSION",
+    "NO_NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
   "warnings": [
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",

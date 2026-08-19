@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-19T15:01:29.604187+00:00",
-  "validation_class": "B_WARN_NO_NEW_SESSION",
-  "signal_date": "2026-08-18",
-  "execution_date": "2026-08-19",
-  "new_completed_us_session": false,
+  "generated_at": "2026-08-19T22:57:41.836996+00:00",
+  "validation_class": "B_WARN",
+  "signal_date": "2026-08-19",
+  "execution_date": "2026-08-20",
+  "new_completed_us_session": true,
   "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": 717.510009765625,
-  "sma20": 706.2429992675782,
-  "sma50": 712.8418469238281,
-  "sma200": 650.4421600341797,
-  "wilder_rsi14": 52.19994069160412,
+  "qqq_adjusted_close": 716.0800170898438,
+  "sma20": 706.7795013427734,
+  "sma50": 712.8577685546875,
+  "sma200": 650.9037005615235,
+  "wilder_rsi14": 51.46975736654189,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-08-07",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 83.07692307692308,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 11,
+  "comparison1_raw_streak": 12,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -32,16 +32,19 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION",
+    "NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
   "warnings": [
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
+    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
     "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "9cdd4de59dfa6e7c01ebd382809c366fe0872650220dd0e1b1ee35d67211734a",
-  "state_sha256": "a0f65b07f6eb2c3610b8bd80afce193aa5b8fb355ade382e6281030203bd1422"
+  "input_sha256": "4a939b6f1925373e61541001dc6cf3fdf2f470b084139fadd716d83f3db2a1f4",
+  "state_sha256": "47262d16dc339f89c8d8ac25fb93f62ae3acb080074d7b249952c3f69f333842"
 }

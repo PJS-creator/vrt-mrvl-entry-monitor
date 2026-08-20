@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-19 22:57:33**
+- 실행시간(UTC): **2026-08-20 03:01:07**
 - 데이터 기준일(주가): **2026-08-19**
 
 ## Verdict
@@ -39,10 +39,10 @@
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
-- close: 10.40 | RSI14: 82.77 | ATR14%: 5.79%
-- MA20/50/200 gap: 21.89% / 30.96% / 46.99%
-- 5D return: 4.10% | 20D drawdown: 0.00% | vol_ratio: 1.83
-- RS vs GDXJ: gap 8.34% / slope_proxy 8.70%
+- close: 10.40 | RSI14: 80.08 | ATR14%: 5.77%
+- MA20/50/200 gap: 21.77% / 31.46% / 46.44%
+- 5D return: 4.10% | 20D drawdown: 0.00% | vol_ratio: 1.84
+- RS vs GDXJ: gap 8.39% / slope_proxy 12.34%
 - FundamentalScore: 88 | TechnicalScore: 65 | RegimeScore: 100 | OverallScore: **82.3**
 - Checks:
   - sector_ok: **True**
@@ -198,9 +198,9 @@
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
 - close: 9.54 | RSI14: 77.38 | ATR14%: 6.11%
-- MA20/50/200 gap: 23.65% / 35.26% / 11.23%
-- 5D return: 7.55% | 20D drawdown: 0.00% | vol_ratio: 1.86
-- RS vs SILJ: gap 14.89% / slope_proxy 19.62%
+- MA20/50/200 gap: 23.65% / 35.48% / 11.34%
+- 5D return: 7.55% | 20D drawdown: 0.00% | vol_ratio: 1.85
+- RS vs SILJ: gap 14.64% / slope_proxy 19.62%
 - FundamentalScore: 74 | TechnicalScore: 65 | RegimeScore: 75 | OverallScore: **71.1**
 - Checks:
   - sector_ok: **False**

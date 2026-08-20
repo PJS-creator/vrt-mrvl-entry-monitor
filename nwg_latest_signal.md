@@ -1,7 +1,7 @@
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-08-20**
-- 실행시간(UTC): **2026-08-20 15:00:54**
+- 데이터 기준일(주가): **2026-08-19**
+- 실행시간(UTC): **2026-08-20 22:59:58**
 
 ## Verdict
 ⏸ No entry today
@@ -20,13 +20,13 @@
 - CURVE_10s5s: 49.46 bp / 4주 변화 1.89 bp
 
 ## NWG Price
-- close: 679.8
-- MA50: 674.5088 / gap50: 0.78%
-- MA200: 623.2963 / gap200: 9.07%
+- close: 682.0
+- MA50: 672.6628 / gap50: 1.39%
+- MA200: 622.8266 / gap200: 9.50%
 
 ## Relative Strength
-- RS vs FTSE gap: 2.12% / slope_proxy: 0.003007
-- RS vs Peers gap: 1.38% / slope_proxy: 0.015879
+- RS vs FTSE gap: 1.97% / slope_proxy: 0.002992
+- RS vs Peers gap: 2.13% / slope_proxy: 0.015007
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)

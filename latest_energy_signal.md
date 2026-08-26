@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-08-25 22:59:45**
+- 실행시간(UTC): **2026-08-26 03:01:01**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 81.04 / 5D -4.59%
-- Brent ref (BZ=F): 86.15 / 5D -5.35%
+- WTI ref (CL=F): 80.21 / 5D -5.57%
+- Brent ref (BZ=F): 85.16 / 5D -6.44%
 - Brent Tier: **80-90**
-- Brent-WTI spread: 5.11
-- Gas ref (NG=F): 2.84 / 5D 2.45%
+- Brent-WTI spread: 4.95
+- Gas ref (NG=F): 2.86 / 5D 3.06%
 
 ## Gates
 
@@ -60,17 +60,17 @@
 ### Trend
 
 - close: 17.85
-- MA20 / MA60 / MA200: 18.45 / 17.83 / 16.67
-- gap20 / gap60: -3.28% / 0.14%
-- 5D return: -1.82%
-- 20D high/low: 19.40 / 17.76
+- MA20 / MA60 / MA200: 17.95 / 17.33 / 16.20
+- gap20 / gap60: -0.58% / 3.02%
+- 5D return: 1.06%
+- 20D high/low: 18.85 / 17.25
 
 ### Relative Strength
 
 - ratio: 0.497492
-- ratio_MA60: 0.510744
-- ratio_gap: -2.59%
-- ratio_slope_proxy(20d): -0.004585
+- ratio_MA60: 0.496427
+- ratio_gap: 0.21%
+- ratio_slope_proxy(20d): -0.004218
 
 ### Volume (if available)
 
@@ -84,7 +84,7 @@
 - BRENT_TREND_UP: **False**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
-- PBR_PULLBACK_OK: **True**
+- PBR_PULLBACK_OK: **False**
 - PBR_RELATIVE_OK: **False**
 
 ## RIG

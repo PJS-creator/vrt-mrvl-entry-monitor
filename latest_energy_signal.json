@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-08-25T22:59:45Z",
+  "generated_at_utc": "2026-08-26T03:01:01Z",
   "as_of": {
-    "run_time_utc": "2026-08-25 22:59:45"
+    "run_time_utc": "2026-08-26 03:01:01"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 81.04,
-      "ret5d": -0.045915
+      "close": 80.21,
+      "ret5d": -0.055686
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 86.15,
-      "ret5d": -0.053505,
+      "close": 85.16,
+      "ret5d": -0.064381,
       "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 2.844,
-      "ret5d": 0.024496
+      "close": 2.861,
+      "ret5d": 0.03062
     },
-    "Brent_WTI_spread": 5.11
+    "Brent_WTI_spread": 4.95
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -143,23 +143,23 @@
     },
     "BRL=X": {
       "close": 5.147,
-      "latest_date": "2026-08-25",
+      "latest_date": "2026-08-26",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 81.04,
+      "close": 80.21,
       "latest_date": "2026-08-25",
-      "volume": 2053.0
+      "volume": 16353.0
     },
     "BZ=F": {
-      "close": 86.15,
+      "close": 85.16,
       "latest_date": "2026-08-25",
-      "volume": 113.0
+      "volume": 1894.0
     },
     "NG=F": {
-      "close": 2.844,
+      "close": 2.861,
       "latest_date": "2026-08-25",
-      "volume": 275.0
+      "volume": 2305.0
     }
   },
   "signals": {
@@ -198,20 +198,20 @@
     "PBR": {
       "trend": {
         "close": 17.85,
-        "ma20": 18.455,
-        "ma60": 17.825549,
-        "ma200": 16.674296,
-        "gap20": -0.032782,
-        "gap60": 0.001372,
-        "ret5d": -0.018152,
-        "high20": 19.4,
-        "low20": 17.76
+        "ma20": 17.954564,
+        "ma60": 17.326094,
+        "ma200": 16.201712,
+        "gap20": -0.005824,
+        "gap60": 0.030238,
+        "ret5d": 0.010646,
+        "high20": 18.847204,
+        "low20": 17.253937
       },
       "ratio": {
         "ratio": 0.497492,
-        "ma60": 0.510744,
-        "gap": -0.025947,
-        "slope_proxy": -0.004585
+        "ma60": 0.496427,
+        "gap": 0.002145,
+        "slope_proxy": -0.004218
       },
       "volume": {
         "vol": 28748632.0,
@@ -223,7 +223,7 @@
         "BRENT_TREND_UP": false,
         "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": true,
-        "PBR_PULLBACK_OK": true,
+        "PBR_PULLBACK_OK": false,
         "PBR_RELATIVE_OK": false
       },
       "entry": false

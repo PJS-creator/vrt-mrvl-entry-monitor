@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-25 23:00:07**
+- 실행시간(UTC): **2026-08-26 03:01:24**
 - 데이터 기준일(주가): **2026-08-25**
 
 ## Verdict

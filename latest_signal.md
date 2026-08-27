@@ -1,29 +1,29 @@
 # Daily Signal Monitor
 
-- 데이터 기준일(주가): **2026-08-26**
-- 실행시간(UTC): **2026-08-27 03:32:30**
+- 데이터 기준일(주가): **2026-08-27**
+- 실행시간(UTC): **2026-08-27 15:00:49**
 
 ## MacroGreen
 - **MacroGreen**: **True**
 
 ### 핵심 수치
-- HY OAS (BAMLH0A0HYM2): 2.7 / 4주 변화 -14.0 bp
-- IG OAS (BAMLC0A0CM): 0.81 / 4주 변화 0.0 bp
+- HY OAS (BAMLH0A0HYM2): 2.67 / 4주 변화 -20.0 bp
+- IG OAS (BAMLC0A0CM): 0.8 / 4주 변화 -1.0 bp
 - 10Y Real Yield (DFII10): 2.32 / 4주 변화 -9.0 bp
-- VIX (VIXCLS): 15.45
+- VIX (VIXCLS): 15.21
 - NFCI: -0.566
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 8.264724
-- MA60: 9.173699
-- gap: -9.91%
+- ratio (VRT/SRVR): 8.30061
+- MA60: 9.150971
+- gap: -9.29%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.441028
-- MA60: 0.405072
-- gap: 8.88%
-- MA60_slope_proxy: 0.021746
+- ratio (MRVL/SMH): 0.428664
+- MA60: 0.404552
+- gap: 5.96%
+- MA60_slope_proxy: 0.020938
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

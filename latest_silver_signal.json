@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-08-29T03:01:00Z",
+  "generated_at_utc": "2026-08-29T03:50:57Z",
   "as_of": {
     "price_date": "2026-08-28",
-    "run_time_utc": "2026-08-29 03:01:00"
+    "run_time_utc": "2026-08-29 03:50:57"
   },
   "data_warning": false,
   "warnings": [],
@@ -198,8 +198,8 @@
         "ma50_slope20": 8.377998,
         "ma200_slope20": 34.035001,
         "rsi14": 59.148053,
-        "atr14": 77.718587,
-        "atr14_pct": 0.017255,
+        "atr14": 77.682873,
+        "atr14_pct": 0.017247,
         "vol_ratio": 18.739624,
         "ret1d": -0.022908,
         "gap_open": 0.010044

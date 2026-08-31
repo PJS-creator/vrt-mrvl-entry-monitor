@@ -1,7 +1,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-08-28**
-- 실행시간(UTC): **2026-08-30 15:00:46**
+- 실행시간(UTC): **2026-08-31 00:48:45**
 
 ## Verdict
 ⏸ No entry today

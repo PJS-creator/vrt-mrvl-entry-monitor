@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-08-31T03:00:50Z",
+  "generated_at_utc": "2026-08-31T15:00:49Z",
   "as_of": {
     "price_date": "2026-08-28",
-    "run_time_utc": "2026-08-31 03:00:50"
+    "run_time_utc": "2026-08-31 15:00:49"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 2.63,
-      "change_4w": -21.0,
-      "latest_date": "2026-08-27"
+      "latest": 2.6,
+      "change_4w": -25.0,
+      "latest_date": "2026-08-28"
     },
     "BAMLC0A0CM": {
       "latest": 0.79,
-      "change_4w": -1.0,
-      "latest_date": "2026-08-27"
+      "change_4w": 0.0,
+      "latest_date": "2026-08-28"
     },
     "VIXCLS": {
-      "latest": 14.51,
-      "change_4w": -2.58,
-      "latest_date": "2026-08-27"
+      "latest": 14.43,
+      "change_4w": -1.56,
+      "latest_date": "2026-08-28"
     },
     "NFCI": {
       "latest": -0.566,

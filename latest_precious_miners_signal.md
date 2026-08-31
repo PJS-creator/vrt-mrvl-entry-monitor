@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-08-31 00:49:05**
+- 실행시간(UTC): **2026-08-31 03:01:25**
 - 데이터 기준일(주가): **2026-08-28**
 
 ## Verdict
@@ -10,7 +10,7 @@
 
 - RiskGreen: **True**
 - RealYieldHeadwind: **False**
-- GoldUptrend(GC=F/GLD): **True**
+- GoldUptrend(GC=F/GLD): **False**
 - SilverUptrend(SI=F/SLV): **False**
 - GoldMinerLeadership(GDX/GLD or GDXJ/GLD): **True**
 - SilverMinerLeadership(SILJ/SLV): **True**
@@ -43,9 +43,9 @@
 - MA20/50/200 gap: 4.22% / 22.12% / 39.68%
 - 5D return: -3.32% | 20D drawdown: -7.95% | vol_ratio: 1.17
 - RS vs GDXJ: gap 3.23% / slope_proxy 8.12%
-- FundamentalScore: 88 | TechnicalScore: 80 | RegimeScore: 100 | OverallScore: **87.6**
+- FundamentalScore: 88 | TechnicalScore: 80 | RegimeScore: 75 | OverallScore: **82.6**
 - Checks:
-  - sector_ok: **True**
+  - sector_ok: **False**
   - breadth_ok: **True**
   - strategic_ok: **True**
   - trend_ok: **True**
@@ -57,7 +57,7 @@
   - entry_confirmed: **False**
 - Thesis: San Albino 현금흐름 + Moss 램프업 + Mt. Hamilton/Eagle Mountain 성장 옵션.
 - Watch: Moss AISC 하락, Mt. Hamilton 일정, 니카라과 리스크.
-- Why not today: Trigger(Pullback/Breakout)=FALSE
+- Why not today: GoldUptrend=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
@@ -65,9 +65,9 @@
 - MA20/50/200 gap: 9.31% / 29.04% / 10.97%
 - 5D return: -2.03% | 20D drawdown: -5.51% | vol_ratio: 2.62
 - RS vs GDXJ: gap 8.30% / slope_proxy 6.08%
-- FundamentalScore: 82 | TechnicalScore: 80 | RegimeScore: 100 | OverallScore: **84.9**
+- FundamentalScore: 82 | TechnicalScore: 80 | RegimeScore: 75 | OverallScore: **79.9**
 - Checks:
-  - sector_ok: **True**
+  - sector_ok: **False**
   - breadth_ok: **True**
   - strategic_ok: **True**
   - trend_ok: **True**
@@ -79,7 +79,7 @@
   - entry_confirmed: **False**
 - Thesis: Pilar 현금흐름 + MTL/Turmalina 재가동 + Santa Isabel 옵션.
 - Watch: Q2~Q3 생산량 13~15koz/분기 이상, Satinoco 비용 정상화.
-- Why not today: Trigger(Pullback/Breakout)=FALSE
+- Why not today: GoldUptrend=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
@@ -87,9 +87,9 @@
 - MA20/50/200 gap: 3.11% / 19.05% / 3.62%
 - 5D return: -5.52% | 20D drawdown: -6.67% | vol_ratio: 0.50
 - RS vs GDXJ: gap -0.49% / slope_proxy 0.93%
-- FundamentalScore: 70 | TechnicalScore: 40 | RegimeScore: 100 | OverallScore: **65.5**
+- FundamentalScore: 70 | TechnicalScore: 40 | RegimeScore: 75 | OverallScore: **60.5**
 - Checks:
-  - sector_ok: **True**
+  - sector_ok: **False**
   - breadth_ok: **True**
   - strategic_ok: **True**
   - trend_ok: **True**
@@ -101,7 +101,7 @@
   - entry_confirmed: **False**
 - Thesis: Bralorne 고품위/캐나다 관할권. 다만 PEA, AISC, 반복 생산 미검증.
 - Watch: PEA economics, AISC 공개, inferred→indicated 전환.
-- Why not today: RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
+- Why not today: GoldUptrend=FALSE, RelativeStrength(vs GDXJ)=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
@@ -109,9 +109,9 @@
 - MA20/50/200 gap: 16.11% / 34.97% / 40.24%
 - 5D return: 6.83% | 20D drawdown: -1.85% | vol_ratio: 0.73
 - RS vs GDXJ: gap 15.26% / slope_proxy 4.79%
-- FundamentalScore: 55 | TechnicalScore: 50 | RegimeScore: 100 | OverallScore: **62.2**
+- FundamentalScore: 55 | TechnicalScore: 50 | RegimeScore: 75 | OverallScore: **57.2**
 - Checks:
-  - sector_ok: **True**
+  - sector_ok: **False**
   - breadth_ok: **True**
   - strategic_ok: **False**
   - trend_ok: **True**
@@ -123,7 +123,7 @@
   - entry_confirmed: **False**
 - Thesis: 금/구리 고가격에서 FCF 가능. 하지만 고비용 + Bolivia 물류/정치 리스크.
 - Watch: Don Mario 물류 정상화, AISC 하향, Bolivia 리스크.
-- Why not today: Trigger(Pullback/Breakout)=FALSE, Overextended=TRUE, StaticRiskPolicy=WATCH_ONLY
+- Why not today: GoldUptrend=FALSE, Trigger(Pullback/Breakout)=FALSE, Overextended=TRUE, StaticRiskPolicy=WATCH_ONLY
 
 ---
 

@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-01T01:23:05Z",
+  "generated_at_utc": "2026-09-01T03:00:48Z",
   "as_of": {
     "price_date": "2026-08-31",
-    "run_time_utc": "2026-09-01 01:23:05"
+    "run_time_utc": "2026-09-01 03:00:48"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,15 +70,15 @@
   "signals": {
     "VRT": {
       "ratio": 8.300289,
-      "ma60": 9.11142,
-      "gap": -0.089024,
+      "ma60": 9.129102,
+      "gap": -0.090788,
       "entry": true
     },
     "MRVL": {
       "ratio": 0.380253,
-      "ma60": 0.401014,
-      "gap": -0.051772,
-      "ma60_slope_proxy": 0.016293,
+      "ma60": 0.402889,
+      "gap": -0.056184,
+      "ma60_slope_proxy": 0.018871,
       "entry": false
     }
   },

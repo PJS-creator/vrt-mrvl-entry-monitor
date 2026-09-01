@@ -1,7 +1,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-08-28**
-- 실행시간(UTC): **2026-09-01 01:23:09**
+- 실행시간(UTC): **2026-09-01 03:00:52**
 
 ## Verdict
 ⏸ No entry today
@@ -25,7 +25,7 @@
 - MA200: 625.6615 / gap200: 8.59%
 
 ## Relative Strength
-- RS vs FTSE gap: -0.28% / slope_proxy: 0.002805
+- RS vs FTSE gap: 0.02% / slope_proxy: 0.002868
 - RS vs Peers gap: -0.35% / slope_proxy: 0.01911
 
 ## Why not today?

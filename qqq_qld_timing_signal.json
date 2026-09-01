@@ -1,43 +1,43 @@
 {
-  "verdict": "🟡 QLD/TIGER 레버리지 소액만 허용",
-  "regime": "C: QLD 소액 테스트만 허용",
-  "run_utc": "2026-09-01T03:01:25.810339+00:00",
+  "verdict": "⏸ QLD/TIGER 레버리지 대기",
+  "regime": "G: 중립, QQQ 중심",
+  "run_utc": "2026-09-01T15:01:22.869577+00:00",
   "metrics": {
-    "data_date_daily": "2026-08-31",
+    "data_date_daily": "2026-09-01",
     "data_date_weekly": "2026-08-31",
-    "qqq_close_daily": 716.760009765625,
-    "qqq_close_weekly": 716.760009765625,
-    "daily_rsi14": 52.087290989360355,
-    "daily_ma20": 718.7765014648437,
-    "daily_ma50": 711.5868005371094,
-    "daily_ma200": 654.6800888061523,
-    "daily_gap20_pct": -0.28054502270304926,
-    "daily_gap50_pct": 0.7269962321688306,
-    "daily_gap200_pct": 9.482481905426376,
-    "daily_macd_hist": -0.4086418493467807,
-    "daily_macd_hist_chg": 0.08470847885238841,
-    "daily_atr14_pct": 1.397511069297307,
-    "daily_drawdown20_pct": -2.0913297096480155,
-    "weekly_rsi14": 58.210549295920444,
-    "weekly_ma52": 645.7718564547025,
-    "weekly_ma104": 578.3842421311599,
-    "weekly_gap52_pct": 10.992760461976236,
-    "weekly_gap104_pct": 23.924539701253767,
-    "weekly_ma52_slope_13w_pct": 6.485267152067298,
-    "vxn": 19.92,
-    "vxn_date": "2026-08-28",
-    "vxn_change_5d": -2.0599999999999987,
+    "qqq_close_daily": 710.1099853515625,
+    "qqq_close_weekly": 710.1099853515625,
+    "daily_rsi14": 47.948218889731834,
+    "daily_ma20": 718.089501953125,
+    "daily_ma50": 711.03,
+    "daily_ma200": 655.1365444946289,
+    "daily_gap20_pct": -1.1112147691700103,
+    "daily_gap50_pct": -0.12939181869083827,
+    "daily_gap200_pct": 8.391142475396496,
+    "daily_macd_hist": -0.7789394445782736,
+    "daily_macd_hist_chg": -0.3702975960187156,
+    "daily_atr14_pct": 1.4219433925449827,
+    "daily_drawdown20_pct": -2.9997161136162465,
+    "weekly_rsi14": 56.3805912661075,
+    "weekly_ma52": 645.6439713698167,
+    "weekly_ma104": 578.32030076247,
+    "weekly_gap52_pct": 9.984762011325365,
+    "weekly_gap104_pct": 22.78835524454843,
+    "weekly_ma52_slope_13w_pct": 6.464179399027703,
+    "vxn": 20.18,
+    "vxn_date": "2026-08-31",
+    "vxn_change_5d": -2.5100000000000016,
     "vxn_source": "FRED: VXNCLS"
   },
   "checks": {
-    "weekly_good": false,
+    "weekly_good": true,
     "weekly_small": true,
     "weekly_overheated": false,
     "weekly_panic": false,
-    "daily_a": true,
-    "daily_b": true,
+    "daily_a": false,
+    "daily_b": false,
     "daily_overheated": false,
-    "rebound_after_panic": true
+    "rebound_after_panic": false
   },
   "reasons": [
     "주봉과 일봉 조건이 과열/공포를 크게 보이지 않음"
@@ -45,11 +45,11 @@
   "allocation": {
     "monthly_budget_krw": 2000000,
     "qqq_pct": 0.75,
-    "qld_pct": 0.1,
-    "cash_pct": 0.15000000000000002,
+    "qld_pct": 0.0,
+    "cash_pct": 0.25,
     "qqq_amount_krw": 1500000,
-    "qld_amount_krw": 200000,
-    "cash_amount_krw": 300000,
+    "qld_amount_krw": 0,
+    "cash_amount_krw": 500000,
     "korea_qqq_etf": {
       "name": "TIGER 미국나스닥100",
       "code": "133690",
@@ -58,7 +58,7 @@
     "korea_qld_etf": {
       "name": "TIGER 미국나스닥100레버리지(합성)",
       "code": "418660",
-      "amount_krw": 200000
+      "amount_krw": 0
     }
   }
 }

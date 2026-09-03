@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-02T15:00:50Z",
+  "generated_at_utc": "2026-09-03T00:36:55Z",
   "as_of": {
-    "price_date": "2026-09-02",
-    "run_time_utc": "2026-09-02 15:00:50"
+    "price_date": "2026-09-01",
+    "run_time_utc": "2026-09-03 00:36:55"
   },
   "data_warning": false,
   "warnings": [],
@@ -19,8 +19,8 @@
     },
     "DFII10": {
       "latest": 2.44,
-      "change_4w_bp": 1.0,
-      "latest_date": "2026-08-31"
+      "change_4w_bp": 4.0,
+      "latest_date": "2026-09-01"
     },
     "VIXCLS": {
       "latest": 16.34,
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 256.755,
-      "latest_date": "2026-09-02"
+      "close": 255.97,
+      "latest_date": "2026-09-01"
     },
     "MRVL": {
-      "close": 204.69,
-      "latest_date": "2026-09-02"
+      "close": 210.39,
+      "latest_date": "2026-09-01"
     },
     "SRVR": {
-      "close": 30.48,
-      "latest_date": "2026-09-02"
+      "close": 30.63,
+      "latest_date": "2026-09-01"
     },
     "SMH": {
-      "close": 548.1,
-      "latest_date": "2026-09-02"
+      "close": 545.22,
+      "latest_date": "2026-09-01"
     },
     "NVDA": {
-      "close": 224.02,
-      "latest_date": "2026-09-02"
+      "close": 217.44,
+      "latest_date": "2026-09-01"
     },
     "AVGO": {
-      "close": 367.9,
-      "latest_date": "2026-09-02"
+      "close": 369.68,
+      "latest_date": "2026-09-01"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.423721,
-      "ma60": 9.093528,
-      "gap": -0.073658,
+      "ratio": 8.35684,
+      "ma60": 9.113459,
+      "gap": -0.083022,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.373454,
-      "ma60": 0.397917,
-      "gap": -0.061478,
-      "ma60_slope_proxy": 0.010635,
-      "entry": false
+      "ratio": 0.385881,
+      "ma60": 0.400918,
+      "gap": -0.037506,
+      "ma60_slope_proxy": 0.016197,
+      "entry": true
     }
   },
-  "verdict": "✅ Entry condition met: VRT"
+  "verdict": "✅ Entry condition met: BOTH"
 }

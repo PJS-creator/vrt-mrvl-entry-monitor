@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-03T15:00:47Z",
+  "generated_at_utc": "2026-09-04T00:21:41Z",
   "as_of": {
-    "price_date": "2026-09-03",
-    "run_time_utc": "2026-09-03 15:00:47"
+    "price_date": "2026-09-02",
+    "run_time_utc": "2026-09-04 00:21:41"
   },
   "data_warning": false,
   "warnings": [],
@@ -18,9 +18,9 @@
       "latest_date": "2026-09-02"
     },
     "DFII10": {
-      "latest": 2.44,
+      "latest": 2.45,
       "change_4w_bp": 4.0,
-      "latest_date": "2026-09-01"
+      "latest_date": "2026-09-02"
     },
     "VIXCLS": {
       "latest": 15.2,
@@ -43,44 +43,44 @@
   },
   "prices": {
     "VRT": {
-      "close": 265.915,
-      "latest_date": "2026-09-03"
+      "close": 256.7,
+      "latest_date": "2026-09-02"
     },
     "MRVL": {
-      "close": 209.585,
-      "latest_date": "2026-09-03"
+      "close": 206.48,
+      "latest_date": "2026-09-02"
     },
     "SRVR": {
-      "close": 30.27,
-      "latest_date": "2026-09-03"
+      "close": 30.54,
+      "latest_date": "2026-09-02"
     },
     "SMH": {
-      "close": 547.54,
-      "latest_date": "2026-09-03"
+      "close": 550.48,
+      "latest_date": "2026-09-02"
     },
     "NVDA": {
-      "close": 226.2099,
-      "latest_date": "2026-09-03"
+      "close": 224.41,
+      "latest_date": "2026-09-02"
     },
     "AVGO": {
-      "close": 346.6499,
-      "latest_date": "2026-09-03"
+      "close": 367.24,
+      "latest_date": "2026-09-02"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.784771,
-      "ma60": 9.095883,
-      "gap": -0.034204,
+      "ratio": 8.40537,
+      "ma60": 9.093222,
+      "gap": -0.075645,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.382776,
-      "ma60": 0.3968,
-      "gap": -0.035343,
-      "ma60_slope_proxy": 0.008317,
-      "entry": true
+      "ratio": 0.375091,
+      "ma60": 0.397944,
+      "gap": -0.057429,
+      "ma60_slope_proxy": 0.010662,
+      "entry": false
     }
   },
-  "verdict": "✅ Entry condition met: BOTH"
+  "verdict": "✅ Entry condition met: VRT"
 }

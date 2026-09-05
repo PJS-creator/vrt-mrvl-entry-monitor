@@ -1,6 +1,6 @@
 {
   "verdict": "🟡 Precious miners watch/add-on candidates: MAKO, JAG.TO, AYA, EXK, SCZM, HL, ASM",
-  "generated_utc": "2026-09-05 03:01:11",
+  "generated_utc": "2026-09-05 15:01:00",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": false,
@@ -173,9 +173,9 @@
         "high20": 8.170000076293945,
         "low20": 6.739999771118164,
         "drawdown20": -0.7343992540562727,
-        "volume": 86568.0,
-        "volume_ma20": 176283.4,
-        "volume_ratio": 0.4910728973913596,
+        "volume": 86600.0,
+        "volume_ma20": 176285.0,
+        "volume_ratio": 0.4912499645460476,
         "slope20": 0.17706818778415157,
         "slope60": 0.5046381924987231
       },
@@ -235,9 +235,9 @@
         "high20": 1.649999976158142,
         "low20": 1.4299999475479126,
         "drawdown20": -5.454547556307066,
-        "volume": 94963.0,
-        "volume_ma20": 424043.15,
-        "volume_ratio": 0.22394654883589085,
+        "volume": 95000.0,
+        "volume_ma20": 424045.0,
+        "volume_ratio": 0.22403282670471295,
         "slope20": 0.07586199412306449,
         "slope60": 0.28925611041183763
       },
@@ -298,9 +298,9 @@
         "high20": 2.7899999618530273,
         "low20": 2.109999895095825,
         "drawdown20": -3.9426486236496916,
-        "volume": 85125.0,
-        "volume_ma20": 205531.25,
-        "volume_ratio": 0.4141705944959708,
+        "volume": 85100.0,
+        "volume_ma20": 205530.0,
+        "volume_ratio": 0.41405147667007247,
         "slope20": 0.2293577911416127,
         "slope60": 0.7179488237557836
       },

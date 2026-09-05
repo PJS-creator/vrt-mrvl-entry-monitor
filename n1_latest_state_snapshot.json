@@ -1,5 +1,5 @@
 {
-  "signal_date": "2026-09-03",
+  "signal_date": "2026-09-04",
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_state": "BULL",
@@ -7,7 +7,7 @@
   "comparison1_candidate_state": null,
   "comparison1_candidate_count": 0,
   "comparison1_last_raw_state": "YELLOW",
-  "comparison1_raw_streak": 3,
+  "comparison1_raw_streak": 4,
   "comparison3_target": "QLD",
   "router_latch_active": false,
   "router_asset": null,

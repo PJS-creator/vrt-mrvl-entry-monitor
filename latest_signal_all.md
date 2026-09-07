@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-09-07 03:01:12**
+- 실행시간(UTC): **2026-09-07 15:01:12**
 - 데이터 기준일(일봉): **2026-09-04**
 - 데이터 기준일(주봉): **2026-08-31**
 - VXN 기준일: **2026-09-03** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-09-04**
-- 실행시간(UTC): **2026-09-07 03:00:41**
+- 실행시간(UTC): **2026-09-07 15:00:44**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -114,8 +114,8 @@
 
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-09-04**
-- 실행시간(UTC): **2026-09-07 03:00:44**
+- 데이터 기준일(주가): **2026-09-07**
+- 실행시간(UTC): **2026-09-07 15:00:46**
 
 ## Verdict
 ⏸ No entry today
@@ -130,17 +130,17 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 142.1 bp / 4주 변화 29.08 bp
-- CURVE_10s5s: 47.35 bp / 4주 변화 -1.96 bp
+- TERM_SPREAD_10Y_POLICY: 133.43 bp / 4주 변화 17.14 bp
+- CURVE_10s5s: 47.58 bp / 4주 변화 -0.67 bp
 
 ## NWG Price
-- close: 699.8
-- MA50: 684.0143 / gap50: 2.31%
-- MA200: 627.4683 / gap200: 11.53%
+- close: 700.2
+- MA50: 684.8925 / gap50: 2.23%
+- MA200: 628.064 / gap200: 11.49%
 
 ## Relative Strength
-- RS vs FTSE gap: 1.95% / slope_proxy: 0.002564
-- RS vs Peers gap: -0.01% / slope_proxy: 0.016599
+- RS vs FTSE gap: 1.83% / slope_proxy: 0.002491
+- RS vs Peers gap: -0.01% / slope_proxy: 0.015494
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)
@@ -152,7 +152,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-07 03:00:50**
+- 실행시간(UTC): **2026-09-07 15:00:53**
 
 ## Commodity Regime
 
@@ -317,8 +317,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-09-06**
-- 실행시간(UTC): **2026-09-07 03:00:56**
+- 데이터 기준일(주가): **2026-09-07**
+- 실행시간(UTC): **2026-09-07 15:01:01**
 
 ## Verdict
 ⏸ No entry today
@@ -405,7 +405,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-09-07 03:01:08**
+- 실행시간(UTC): **2026-09-07 15:01:09**
 - 데이터 기준일(주가): **2026-09-04**
 
 ## Verdict

@@ -1,9 +1,9 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-09-08 03:01:03**
-- 데이터 기준일(일봉): **2026-09-04**
-- 데이터 기준일(주봉): **2026-08-31**
-- VXN 기준일: **2026-09-03** / source: `FRED: VXNCLS`
+- 실행시간(UTC): **2026-09-08 15:01:40**
+- 데이터 기준일(일봉): **2026-09-08**
+- 데이터 기준일(주봉): **2026-09-07**
+- VXN 기준일: **2026-09-04** / source: `FRED: VXNCLS`
 
 ## Verdict
 
@@ -19,22 +19,22 @@
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 718.96
+- QQQ close: 718.95
 - Weekly RSI14: **58.66**
-- 52W MA: 645.81 / gap: **11.33%**
-- 104W MA gap: **24.30%**
-- 52W MA 13W slope: **6.49%**
-- VXN: **20.16** / 5D change: -0.08
+- 52W MA: 648.41 / gap: **10.88%**
+- 104W MA gap: **23.79%**
+- 52W MA 13W slope: **6.26%**
+- VXN: **20.04** / 5D change: 0.12
 
 ## Daily trigger: 실제 매수 타이밍
 
 - QQQ close: 718.96
 - Daily RSI14: **53.63**
-- 20D gap: **0.20%**
-- 50D gap: **1.11%**
-- 200D gap: **9.47%**
-- MACD hist: -0.2864 / change: 0.3905
-- ATR14%: **1.31%**
+- 20D gap: **0.21%**
+- 50D gap: **1.07%**
+- 200D gap: **9.36%**
+- MACD hist: -0.0404 / change: 0.2459
+- ATR14%: **1.28%**
 - 20D high drawdown: **-1.79%**
 
 ## Checks
@@ -46,7 +46,7 @@
 - daily_a: **True**
 - daily_b: **True**
 - daily_overheated: **False**
-- rebound_after_panic: **True**
+- rebound_after_panic: **False**
 
 ## Why
 

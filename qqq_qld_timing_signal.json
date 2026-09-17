@@ -1,32 +1,32 @@
 {
-  "verdict": "⏸ QLD/TIGER 레버리지 대기",
-  "regime": "G: 중립, QQQ 중심",
-  "run_utc": "2026-09-17T03:01:16.424999+00:00",
+  "verdict": "✅ QLD/TIGER 레버리지 매수 허용",
+  "regime": "A: QLD 본격 허용",
+  "run_utc": "2026-09-17T15:01:22.351509+00:00",
   "metrics": {
-    "data_date_daily": "2026-09-16",
+    "data_date_daily": "2026-09-17",
     "data_date_weekly": "2026-09-14",
-    "qqq_close_daily": 704.719970703125,
-    "qqq_close_weekly": 704.719970703125,
-    "daily_rsi14": 44.129185341997314,
-    "daily_ma20": 712.6674957275391,
-    "daily_ma50": 709.8781982421875,
-    "daily_ma200": 660.7407070922851,
-    "daily_gap20_pct": -1.1151799502656878,
-    "daily_gap50_pct": -0.7266355766151755,
-    "daily_gap200_pct": 6.656054809212364,
-    "daily_macd_hist": -1.42733764661916,
-    "daily_macd_hist_chg": -0.20885416596736417,
-    "daily_atr14_pct": 1.3046933443946653,
-    "daily_drawdown20_pct": -2.272886935610363,
-    "weekly_rsi14": 54.364900067762576,
-    "weekly_ma52": 650.4155954214243,
-    "weekly_ma104": 582.9415479806753,
-    "weekly_gap52_pct": 8.349180995039829,
-    "weekly_gap104_pct": 20.89033165405576,
-    "weekly_ma52_slope_13w_pct": 5.8652295770981855,
-    "vxn": 22.26,
-    "vxn_date": "2026-09-15",
-    "vxn_change_5d": 0.5500000000000007,
+    "qqq_close_daily": 715.030029296875,
+    "qqq_close_weekly": 715.030029296875,
+    "daily_rsi14": 51.860435159849274,
+    "daily_ma20": 712.6149963378906,
+    "daily_ma50": 709.9499987792968,
+    "daily_ma200": 661.2308746337891,
+    "daily_gap20_pct": 0.33889729677247793,
+    "daily_gap50_pct": 0.7155476479066003,
+    "daily_gap200_pct": 8.136213344980536,
+    "daily_macd_hist": -0.8283318403418997,
+    "daily_macd_hist_chg": 0.5990058062797087,
+    "daily_atr14_pct": 1.3147066846792326,
+    "daily_drawdown20_pct": -0.8431385195315722,
+    "weekly_rsi14": 57.46271371424271,
+    "weekly_ma52": 650.6138646052434,
+    "weekly_ma104": 583.0406831594614,
+    "weekly_gap52_pct": 9.900828770489811,
+    "weekly_gap104_pct": 22.638102271383787,
+    "weekly_ma52_slope_13w_pct": 5.897500558352542,
+    "vxn": 22.44,
+    "vxn_date": "2026-09-16",
+    "vxn_change_5d": 0.120000000000001,
     "vxn_source": "FRED: VXNCLS"
   },
   "checks": {
@@ -34,31 +34,31 @@
     "weekly_small": true,
     "weekly_overheated": false,
     "weekly_panic": false,
-    "daily_a": false,
-    "daily_b": false,
-    "daily_overheated": false,
+    "daily_a": true,
+    "daily_b": true,
+    "daily_overheated": true,
     "rebound_after_panic": false
   },
   "reasons": [
-    "주봉과 일봉 조건이 과열/공포를 크게 보이지 않음"
+    "일봉도 단기 과열 또는 고점 근처라 QLD 추격매수 부적합"
   ],
   "allocation": {
     "monthly_budget_krw": 2000000,
-    "qqq_pct": 0.75,
-    "qld_pct": 0.0,
-    "cash_pct": 0.25,
-    "qqq_amount_krw": 1500000,
-    "qld_amount_krw": 0,
-    "cash_amount_krw": 500000,
+    "qqq_pct": 0.6,
+    "qld_pct": 0.4,
+    "cash_pct": 0.0,
+    "qqq_amount_krw": 1200000,
+    "qld_amount_krw": 800000,
+    "cash_amount_krw": 0,
     "korea_qqq_etf": {
       "name": "TIGER 미국나스닥100",
       "code": "133690",
-      "amount_krw": 1500000
+      "amount_krw": 1200000
     },
     "korea_qld_etf": {
       "name": "TIGER 미국나스닥100레버리지(합성)",
       "code": "418660",
-      "amount_krw": 0
+      "amount_krw": 800000
     }
   }
 }

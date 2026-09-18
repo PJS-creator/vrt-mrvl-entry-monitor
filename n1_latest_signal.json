@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-09-18T00:46:02.694101+00:00",
+  "generated_at": "2026-09-18T02:45:21.226062+00:00",
   "validation_class": "B_WARN",
   "signal_date": "2026-09-17",
   "execution_date": "2026-09-18",
   "new_completed_us_session": true,
-  "price_source_id": "yfinance_shadow_fallback",
-  "qqq_adjusted_close": NaN,
-  "sma20": NaN,
-  "sma50": NaN,
-  "sma200": NaN,
-  "wilder_rsi14": 44.12918534150208,
+  "price_source_id": "tiingo",
+  "qqq_adjusted_close": 716.92,
+  "sma20": 712.7094999999999,
+  "sma50": 709.9878000000001,
+  "sma200": 661.2424982831815,
+  "wilder_rsi14": 53.051370403492896,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-09-04",
   "liquidity_p_applied_row_week": "2026-09-11",
   "liquidity_p_applied": 72.6923076923077,
   "liquidity_state": "BULL",
-  "comparison1_raw_state": "YELLOW",
-  "comparison1_raw_streak": 12,
+  "comparison1_raw_state": "GREEN",
+  "comparison1_raw_streak": 1,
   "comparison1_confirmed_state": "YELLOW",
   "comparison1_confirmed_target": "QLD",
   "comparison3_target": "QLD",
@@ -39,12 +39,16 @@
   ],
   "data_missing": false,
   "warnings": [
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError",
-    "TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:RuntimeError"
+    "TIINGO_FALLBACK:^VIX:HTTPError",
+    "RECOVERY_CURRENT_PRICE_VINTAGE"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "9ccdfeecae56b5a6bf538c02848f721be6af03144f41c550d33ae4a5b65ce607",
-  "state_sha256": "01229c13951d8abf7ff3f14689900e19fb1634f5a03b8b29cd4c178558981173"
+  "input_sha256": "e07c274a1593664540aa28425e177fdbc3720ea1d40cbc468fb1c17bb8f2bf20",
+  "state_sha256": "93632b3018c957e5474790041fe6f9559f6afd2b6a73b7c21414eaefdd78c047",
+  "recovery": {
+    "checkpoint_commit": "c0368528a2e82ad8007a4f3ad4006dfab03a049e",
+    "from_signal_date": "2026-09-01",
+    "sessions": 11,
+    "price_vintage": "CURRENT_ADJUSTED_HISTORY"
+  }
 }

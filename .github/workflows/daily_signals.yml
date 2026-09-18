@@ -2,6 +2,12 @@ name: Daily Signals
 
 on:
   workflow_dispatch:
+    inputs:
+      n1_repair_from:
+        description: 'Optional: full SHA of a valid N1 checkpoint for ordered recovery'
+        required: false
+        default: ''
+        type: string
   schedule:
     # 07:37 Asia/Seoul every day (22:37 UTC previous day)
     - cron: "37 22 * * *"
@@ -44,6 +50,9 @@ jobs:
             precious_miners_signal_monitor.py \
             qqq_qld_timing_signal.py \
             n1_meta_signal.py \
+            n1_meta_signal_core.py \
+            n1_data_quality.py \
+            n1_validate_outputs.py \
             build_latest_signal_all.py
 
       - name: Generate all signal files
@@ -57,48 +66,60 @@ jobs:
           python silver_signal_monitor.py
           python precious_miners_signal_monitor.py
           python qqq_qld_timing_signal.py
-          python n1_meta_signal.py
           python build_latest_signal_all.py
 
+      - name: Generate validated N1 signal
+        id: n1
+        timeout-minutes: 10
+        continue-on-error: true
+        env:
+          TIINGO_API_TOKEN: ${{ secrets.TIINGO_API_TOKEN }}
+          N1_REPAIR_FROM: ${{ inputs.n1_repair_from }}
+        run: |
+          set -euo pipefail
+          if [ -n "$N1_REPAIR_FROM" ]; then
+            python n1_meta_signal.py --repair-from "$N1_REPAIR_FROM"
+          else
+            python n1_meta_signal.py
+          fi
+
       - name: Validate N1 output contract
+        id: n1_contract
+        if: steps.n1.outcome == 'success'
+        continue-on-error: true
+        run: |
+          python n1_validate_outputs.py
+
+      - name: Mark rejected N1 output
+        if: steps.n1_contract.outcome == 'failure'
         run: |
           python - <<'PY'
-          import hashlib, json, pathlib, sys
-
-          yaml_path = pathlib.Path('strategies/qqq_meta_v1_red_router_s1_n1_v4_shadow_v2_3.kis.yaml')
-          signal_path = pathlib.Path('n1_latest_signal.json')
-          state_path = pathlib.Path('n1_latest_state_snapshot.json')
-          lineage_path = pathlib.Path('n1_liquidity_p_lineage.csv')
-
-          required_files = [yaml_path, signal_path, state_path, lineage_path]
-          missing = [str(p) for p in required_files if not p.exists()]
-          if missing:
-              raise SystemExit(f'Missing N1 outputs: {missing}')
-
-          signal = json.loads(signal_path.read_text(encoding='utf-8'))
-          required = {
-              'validation_class', 'signal_date', 'execution_date',
-              'qqq_adjusted_close', 'sma20', 'sma50', 'sma200', 'wilder_rsi14',
-              'trend200_state', 'recovery_state', 'liquidity_p_applied',
-              'liquidity_state', 'comparison1_raw_state',
-              'comparison1_confirmed_target', 'comparison3_target',
-              'final_regime', 'active_engine', 'base_execution_target',
-              'n1_overlay_active', 'execution_target', 'rules_sha256'
-          }
-          absent = sorted(required - signal.keys())
-          if absent:
-              raise SystemExit(f'N1 output missing fields: {absent}')
-
-          actual_hash = hashlib.sha256(yaml_path.read_bytes()).hexdigest()
-          if signal['rules_sha256'] != actual_hash:
-              raise SystemExit(
-                  f"N1 rules hash mismatch: signal={signal['rules_sha256']} actual={actual_hash}"
-              )
-          print(f'N1 output contract PASS: {signal["signal_date"]} -> {signal["execution_target"]}')
+          from datetime import datetime, timezone
+          import n1_meta_signal as runner
+          import n1_meta_signal_core as core
+          core.save_json(runner.STATUS_PATH, {
+              'attempted_at': datetime.now(timezone.utc).isoformat(),
+              'status': 'BLOCKED', 'data_missing': True, 'execution_target': None,
+              'reason': 'OUTPUT_CONTRACT_REJECTED',
+              'checkpoint_preserved': True,
+          })
           PY
+
+      - name: Upload N1 calculation audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: n1-audit-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            n1_run_status.json
+            n1_audit/
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Commit and push if changed
         shell: bash
+        env:
+          N1_VALID: ${{ steps.n1.outcome == 'success' && steps.n1_contract.outcome == 'success' }}
         run: |
           set -euo pipefail
 
@@ -115,12 +136,14 @@ jobs:
             latest_precious_miners_signal.md
             qqq_qld_timing_signal.json
             qqq_qld_timing_signal.md
-            n1_latest_signal.json
-            n1_latest_signal.md
-            n1_latest_state_snapshot.json
-            n1_liquidity_p_lineage.csv
             latest_signal_all.md
           )
+          if [ "$N1_VALID" = "true" ]; then
+            FILES+=(n1_latest_signal.json n1_latest_signal.md n1_latest_state_snapshot.json n1_liquidity_p_lineage.csv)
+          fi
+          if [ -f n1_run_status.json ]; then
+            FILES+=(n1_run_status.json)
+          fi
 
           if ! git status --porcelain -- "${FILES[@]}" | grep -q .; then
             echo "No signal changes to commit"
@@ -134,13 +157,9 @@ jobs:
             git add "${FILES[@]}"
             git commit -m "Update signals: ${DATE}"
 
-            for i in 1 2 3; do
-              git pull --rebase origin "${BRANCH}" || true
-              if git push origin "HEAD:${BRANCH}"; then
-                break
-              fi
-              sleep 2
-            done
+            # Never rebase an old state transition over newer signal output.
+            # A conflict must fail visibly and be regenerated from the new HEAD.
+            git push origin "HEAD:${BRANCH}"
           fi
 
       - name: Create Issue for today's report (always)
@@ -148,6 +167,7 @@ jobs:
         uses: actions/github-script@v8
         env:
           JOB_STATUS: ${{ job.status }}
+          N1_VALID: ${{ steps.n1.outcome == 'success' && steps.n1_contract.outcome == 'success' }}
         with:
           script: |
             const fs = require('fs');
@@ -178,8 +198,19 @@ jobs:
             const silverVerdict = readVerdict('latest_silver_signal.json');
             const preciousVerdict = readVerdict('latest_precious_miners_signal.json');
             const qqqQldVerdict = readVerdict('qqq_qld_timing_signal.json');
-            const n1Verdict = readVerdict('n1_latest_signal.json');
-            const n1Report = readText('n1_latest_signal.md');
+            let n1Status = {};
+            try { n1Status = JSON.parse(readText('n1_run_status.json')); } catch (e) {}
+            const n1Valid = process.env.N1_VALID === 'true';
+            const workflowStatus = n1Valid ? process.env.JOB_STATUS : 'failure';
+            const n1Verdict = n1Valid ? readVerdict('n1_latest_signal.json') : '갱신 실패 · 신규 판정 중단';
+            const n1Report = n1Valid ? readText('n1_latest_signal.md') : [
+              '## N1 갱신 실패',
+              '',
+              '필수 데이터 또는 체크포인트 검증에 실패했습니다. 이번 실행에서 새로운 목표자산을 제시하지 않습니다.',
+              `- 사유: ${n1Status.reason || 'N1 generation/contract step failed or did not run'}`,
+              `- 이전 검증 신호: ${n1Status.previous_signal_date || '확인 불가 · 복구 필요'}`,
+              '기존 정상 상태는 보존하며, 과거 상태가 손상된 경우 명시적 복구가 필요합니다.',
+            ].join('\n');
             const reportAll = readText('latest_signal_all.md');
 
             const actor = context.actor || '';
@@ -189,7 +220,7 @@ jobs:
               `@${assignee}`,
               ``,
               `- KST 실행 시각: **${kstTime}**`,
-              `- Workflow status: **${process.env.JOB_STATUS}**`,
+              `- Workflow status: **${workflowStatus}**`,
               `- Run: ${runUrl}`,
               ``,
               `## Quick Summary`,
@@ -214,3 +245,9 @@ jobs:
             } catch (e) {
               await github.rest.issues.create({ owner, repo, title, body });
             }
+
+      - name: Fail visibly when N1 was not validated
+        if: always() && (steps.n1.outcome != 'success' || steps.n1_contract.outcome != 'success')
+        run: |
+          echo 'N1 update blocked; see the Issue and n1-audit artifact. Previous checkpoint was not replaced with an unvalidated result.'
+          exit 1

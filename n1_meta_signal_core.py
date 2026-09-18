@@ -7,7 +7,6 @@ Markdown summary, persistent state snapshot, and liquidity-P lineage CSV.
 from __future__ import annotations
 
 import hashlib
-import json
 import math
 import os
 from datetime import datetime, timezone
@@ -18,6 +17,11 @@ import numpy as np
 import pandas as pd
 import requests
 import yfinance as yf
+
+from n1_data_quality import (
+    DataQualityError, completed_session, json_bytes, next_session, number,
+    publish_files, stable_hash, strict_loads, validate_checkpoint, validate_prices,
+)
 
 ROOT = Path(__file__).resolve().parent
 YAML_PATH = ROOT / "strategies" / "qqq_meta_v1_red_router_s1_n1_v4_shadow_v2_3.kis.yaml"
@@ -48,25 +52,25 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def stable_hash(obj: Any) -> str:
-    payload = json.dumps(obj, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
-    return sha256_bytes(payload)
+def rules_hash() -> str:
+    # Git may check out CRLF on Windows; hash the canonical repository LF text.
+    return sha256_bytes(YAML_PATH.read_bytes().replace(b"\r\n", b"\n"))
 
 
 def read_state() -> dict[str, Any]:
     if STATE_PATH.exists():
-        return json.loads(STATE_PATH.read_text(encoding="utf-8"))
+        return strict_loads(STATE_PATH.read_text(encoding="utf-8"))
     return dict(ANCHOR)
 
 
 def save_json(path: Path, obj: Any) -> None:
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    publish_files({path: json_bytes(obj)})
 
 
 def fetch_tiingo(symbol: str, start: str) -> pd.DataFrame:
     token = os.getenv("TIINGO_API_TOKEN", "").strip()
     if not token:
-        raise RuntimeError("TIINGO_API_TOKEN is not configured")
+        raise DataQualityError("TIINGO_TOKEN_NOT_CONFIGURED")
     url = f"https://api.tiingo.com/tiingo/daily/{symbol}/prices"
     response = requests.get(
         url,
@@ -76,7 +80,7 @@ def fetch_tiingo(symbol: str, start: str) -> pd.DataFrame:
     response.raise_for_status()
     rows = response.json()
     if not rows:
-        raise RuntimeError(f"Tiingo returned no rows for {symbol}")
+        raise DataQualityError(f"TIINGO_EMPTY_RESPONSE:{symbol}")
     df = pd.DataFrame(rows)
     df["Date"] = pd.to_datetime(df["date"], utc=True).dt.tz_convert(None).dt.normalize()
     return df.set_index("Date").rename(
@@ -84,19 +88,34 @@ def fetch_tiingo(symbol: str, start: str) -> pd.DataFrame:
     )[["Open", "High", "Low", "Close"]].astype(float)
 
 
-def fetch_prices(symbol: str, start: str = "2005-01-01") -> tuple[pd.DataFrame, str, list[str]]:
+def fetch_prices(
+    symbol: str, start: str = "2005-01-01", *, asof: pd.Timestamp | None = None,
+) -> tuple[pd.DataFrame, str, list[str]]:
+    asof = asof if asof is not None else completed_session()
     warnings: list[str] = []
     try:
-        return fetch_tiingo(symbol, start), "tiingo", warnings
+        df = validate_prices(fetch_tiingo(symbol, start), symbol, asof)
+        return df, "tiingo", warnings
     except Exception as exc:
-        warnings.append(f"TIINGO_UNAVAILABLE_YFINANCE_SHADOW_FALLBACK:{type(exc).__name__}")
-        df = yf.download(symbol, start=start, auto_adjust=True, progress=False, actions=False)
-        if df.empty:
-            raise RuntimeError(f"No price data for {symbol}")
-        if isinstance(df.columns, pd.MultiIndex):
-            df.columns = df.columns.get_level_values(0)
-        df.index = pd.to_datetime(df.index).tz_localize(None).normalize()
-        return df[["Open", "High", "Low", "Close"]].astype(float), "yfinance_shadow_fallback", warnings
+        code = str(exc) if isinstance(exc, DataQualityError) else type(exc).__name__
+        warnings.append(f"TIINGO_FALLBACK:{symbol}:{code}")
+    # Retry via single-symbol history if a bulk download is incomplete. Do not
+    # merge providers, synthesize a Close, or enable Yahoo's price repair mode.
+    for attempt in range(2):
+        try:
+            if attempt == 0:
+                df = yf.download(symbol, start=start, auto_adjust=True, progress=False,
+                                 actions=False, threads=False, timeout=30)
+                if isinstance(df.columns, pd.MultiIndex):
+                    df.columns = df.columns.get_level_values(0)
+            else:
+                df = yf.Ticker(symbol).history(start=start, auto_adjust=True, actions=False,
+                                               repair=False, timeout=30)
+            return validate_prices(df, symbol, asof), "yfinance_shadow_fallback", warnings
+        except Exception as exc:
+            code = str(exc) if isinstance(exc, DataQualityError) else type(exc).__name__
+            warnings.append(f"YFINANCE_ATTEMPT_{attempt + 1}:{symbol}:{code}")
+    raise DataQualityError("PRICE_PROVIDERS_EXHAUSTED:" + "|".join(warnings))
 
 
 def wilder_rsi(close: pd.Series, period: int = 14) -> pd.Series:
@@ -200,37 +219,41 @@ def fred_asof(series_id: str, signal_date: pd.Timestamp, lag_sessions: int = 1) 
     return s.reindex(business).ffill().shift(lag_sessions)
 
 
-def main() -> None:
-    state = read_state()
+def calculate_signal(
+    state: dict[str, Any],
+    price_data: dict[str, tuple[pd.DataFrame, str, list[str]]],
+    lineage: pd.DataFrame,
+    signal_date: pd.Timestamp,
+    *, allow_router_fetch: bool = True,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Calculate a single session without publishing any checkpoint files."""
     prior_signal_date = pd.Timestamp(state.get("signal_date", ANCHOR_DATE))
     warnings: list[str] = []
-
-    qqq, provider, w = fetch_prices("QQQ")
-    warnings.extend(w)
-    gld, _, w = fetch_prices("GLD", "2005-01-01")
-    warnings.extend(w)
-    _, _, w = fetch_prices("XLV", "2005-01-01")
-    warnings.extend(w)
-    vix, _, w = fetch_prices("^VIX", "2005-01-01")
-    warnings.extend(w)
-
-    signal_date = qqq.index.max()
-    qqq = qqq.loc[:signal_date].copy()
+    frames = {}
+    for symbol, (frame, _, notes) in price_data.items():
+        frames[symbol] = validate_prices(frame, symbol, signal_date)
+        warnings.extend(notes)
+    qqq, gld, vix = frames["QQQ"], frames["GLD"], frames["^VIX"]
+    provider = price_data["QQQ"][1]
     qqq["SMA20"] = qqq["Close"].rolling(20).mean()
     qqq["SMA50"] = qqq["Close"].rolling(50).mean()
     qqq["SMA200"] = qqq["Close"].rolling(200).mean()
     qqq["RSI14"] = wilder_rsi(qqq["Close"], 14)
 
-    lineage = liquidity_panel()
-    lineage.reset_index().to_csv(LINEAGE_PATH, index=False)
     applicable = lineage.loc[lineage.index <= signal_date]
-    if applicable.empty or pd.isna(applicable.iloc[-1]["p_applied"]):
-        raise RuntimeError("No valid P_applied for signal date")
+    if applicable.empty:
+        raise DataQualityError("P_APPLIED_MISSING")
     p_row = applicable.iloc[-1]
-    p_applied = float(p_row["p_applied"])
+    p_applied = number(p_row["p_applied"], "p_applied", bounded=True)
+    if pd.isna(p_row["p_raw_source_week"]) or signal_date - applicable.index[-1] > pd.Timedelta(days=7):
+        raise DataQualityError("P_LINEAGE_STALE_OR_MISSING")
     liquidity_state = hysteresis(str(state.get("liquidity_state", "MIXED")), p_applied)
 
     row = qqq.loc[signal_date]
+    close = number(row["Close"], "qqq_adjusted_close", positive=True)
+    sma20, sma50, sma200 = [number(row[key], key, positive=True) for key in ("SMA20", "SMA50", "SMA200")]
+    rsi = number(row["RSI14"], "RSI14", bounded=True)
+    prev_rsi = number(qqq["RSI14"].iloc[-2], "previous_RSI14", bounded=True)
     weekly = qqq.resample("W-FRI").last().dropna(subset=["Close", "SMA200"])
     last2 = weekly.tail(2)
     trend = str(state.get("trend200_state", "UP"))
@@ -252,15 +275,12 @@ def main() -> None:
 
     final_regime = "BEAR" if trend == "DOWN" and not recovery else ("BULL" if trend == "UP" and liquidity_state == "BULL" else "MIXED")
 
-    close = float(row["Close"])
-    sma20, sma50, sma200, rsi = map(float, (row["SMA20"], row["SMA50"], row["SMA200"], row["RSI14"]))
     raw1 = "GREEN" if close > sma50 and close > sma200 else ("RED" if close < sma50 and close < sma200 else "YELLOW")
     raw_streak = int(state.get("comparison1_raw_streak", 0)) + 1 if raw1 == state.get("comparison1_last_raw_state", raw1) else 1
     confirmed1, candidate1, candidate_count1 = confirmed_state_update(state, raw1)
     comp1_target = target_for_comp1(confirmed1)
 
     comp3 = str(state.get("comparison3_target", "QLD"))
-    prev_rsi = float(qqq["RSI14"].iloc[-2])
     if comp3 == "TQQQ" and prev_rsi <= 80 < rsi:
         comp3 = "QLD"
     elif comp3 == "QLD" and close < sma200 and prev_rsi <= 40 < rsi:
@@ -273,11 +293,18 @@ def main() -> None:
         latch_active, router_asset, router_entry_date = False, None, None
 
     if final_regime == "BEAR" and confirmed1 == "RED" and not latch_active:
+        if not allow_router_fetch:
+            raise DataQualityError("RECOVERY_ROUTER_MACRO_VINTAGE_UNAVAILABLE")
         try:
             vix_s = vix["Close"].reindex(qqq.index).ffill()
             hy = fred_asof("BAMLH0A0HYM2", signal_date)
             real = fred_asof("DFII10", signal_date)
             dollar = fred_asof("DTWEXBGS", signal_date)
+            # Missing Router inputs must not silently select the defensive asset.
+            for label, series, lag in (("VIX", vix_s, 11), ("HY", hy, 21),
+                                       ("REAL", real, 21), ("DOLLAR", dollar, 21)):
+                number(series.loc[signal_date], label)
+                number(series.iloc[-lag], f"{label}_LAG")
             qqq_gate = (
                 float(vix_s.loc[signal_date]) < float(vix_s.iloc[-11])
                 and float(hy.loc[signal_date]) <= float(hy.iloc[-21])
@@ -291,8 +318,7 @@ def main() -> None:
             )
             router_asset = "QQQ" if qqq_gate else ("GLD" if gld_gate else "XLV")
         except Exception as exc:
-            warnings.append(f"ROUTER_METRIC_MISSING_FALLBACK_XLV:{type(exc).__name__}")
-            router_asset = "XLV"
+            raise DataQualityError(f"ROUTER_INPUT_UNAVAILABLE:{type(exc).__name__}") from exc
         latch_active = True
         router_entry_date = signal_date.strftime("%Y-%m-%d")
 
@@ -302,8 +328,8 @@ def main() -> None:
     post_n1_target = "QQQ" if n1_active else base_target
 
     new_session = signal_date > prior_signal_date
-    next_execution_date = (signal_date + pd.tseries.offsets.BDay(1)).strftime("%Y-%m-%d")
-    rules_hash = sha256_bytes(YAML_PATH.read_bytes())
+    next_execution_date = next_session(signal_date)
+    rules_digest = rules_hash()
     validation_class = "A_NORMAL" if not warnings else "B_WARN"
     if not new_session:
         validation_class = "NO_NEW_COMPLETED_US_SESSION" if not warnings else "B_WARN_NO_NEW_SESSION"
@@ -325,7 +351,6 @@ def main() -> None:
         "execution_target": post_n1_target,
     }
     state_hash = stable_hash(state_out)
-    save_json(STATE_PATH, state_out)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -364,17 +389,14 @@ def main() -> None:
         "action": "SHADOW_TARGET_UPDATE" if new_session else "HOLD_PREVIOUS_VALIDATED_TARGET",
         "reason_codes": (["NEW_COMPLETED_US_SESSION"] if new_session else ["NO_NEW_COMPLETED_US_SESSION"]) + (["N1_BULL_COMPARISON3_QLD_TO_QQQ"] if n1_active else []),
         "data_missing": False,
-        "warnings": warnings,
-        "rules_sha256": rules_hash,
+        "warnings": list(dict.fromkeys(warnings)),
+        "rules_sha256": rules_digest,
         "input_sha256": stable_hash({"signal_date": str(signal_date.date()), "close": close, "p": p_applied, "provider": provider}),
         "state_sha256": state_hash,
     }
-    save_json(SIGNAL_PATH, output)
-
-    md = f"""# N1 QQQ Meta Daily Shadow Signal\n\n- Validation: **{validation_class}**\n- Signal date: **{output['signal_date']}**\n- Next execution session: **{next_execution_date}**\n- QQQ / SMA20 / SMA50 / SMA200 / RSI14: **{close:.4f} / {sma20:.4f} / {sma50:.4f} / {sma200:.4f} / {rsi:.4f}**\n- Trend200 / Recovery / Liquidity: **{trend} / {'ON' if recovery else 'OFF'} / {liquidity_state}**\n- Comparison1 / Comparison3: **{comp1_target} / {comp3}**\n- Regime / engine: **{final_regime} / {active_engine}**\n- B0 base target: **{base_target}**\n- N1 overlay: **{'ON' if n1_active else 'OFF'}**\n- N1 shadow target: **{post_n1_target}**\n- Router: **{router_asset if latch_active else 'OFF'}**\n- Rules SHA-256: `{rules_hash}`\n\nThis is a shadow signal only. No broker order was submitted.\n"""
-    MD_PATH.write_text(md, encoding="utf-8")
-    print(json.dumps(output, ensure_ascii=False, indent=2))
+    validate_checkpoint(output, state_out, rules_digest)
+    return output, state_out
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit("Use n1_meta_signal.py; core calculations never publish state directly.")

@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-19T00:36:10Z",
+  "generated_at_utc": "2026-09-19T03:00:43Z",
   "as_of": {
-    "price_date": "2026-09-17",
-    "run_time_utc": "2026-09-19 00:36:10"
+    "price_date": "2026-09-18",
+    "run_time_utc": "2026-09-19 03:00:43"
   },
   "data_warning": false,
   "warnings": [],
@@ -72,8 +72,8 @@
       "latest_date": "2026-09-17"
     },
     "^FTSE": {
-      "close": 10816.0996,
-      "latest_date": "2026-09-17"
+      "close": 10659.0996,
+      "latest_date": "2026-09-18"
     },
     "LLOY.L": {
       "close": 112.2,

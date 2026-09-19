@@ -1,14 +1,18 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-19 03:00:48**
+- 실행시간(UTC): **2026-09-19 15:00:46**
+
+## ⚠️ DATA WARNING
+
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 95.47 / 5D -4.58%
-- Brent ref (BZ=F): 98.77 / 5D -5.58%
+- WTI ref (CL=F): 100.30 / 5D 0.25%
+- Brent ref (BZ=F): 103.87 / 5D -0.71%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.30
-- Gas ref (NG=F): 2.90 / 5D 2.40%
+- Brent-WTI spread: 3.57
+- Gas ref (NG=F): 2.91 / 5D 2.86%
 
 ## Gates
 

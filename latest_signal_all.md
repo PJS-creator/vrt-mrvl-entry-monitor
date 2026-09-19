@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-09-19 03:01:00**
+- 실행시간(UTC): **2026-09-19 15:01:23**
 - 데이터 기준일(일봉): **2026-09-18**
 - 데이터 기준일(주봉): **2026-09-14**
 - VXN 기준일: **2026-09-17** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-09-18**
-- 실행시간(UTC): **2026-09-19 03:00:41**
+- 실행시간(UTC): **2026-09-19 15:00:37**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,7 +115,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-09-18**
-- 실행시간(UTC): **2026-09-19 03:00:43**
+- 실행시간(UTC): **2026-09-19 15:00:40**
 
 ## Verdict
 ⏸ No entry today
@@ -134,13 +134,13 @@
 - CURVE_10s5s: 43.54 bp / 4주 변화 -5.02 bp
 
 ## NWG Price
-- close: 712.8
-- MA50: 688.3425 / gap50: 3.55%
-- MA200: 631.5407 / gap200: 12.87%
+- close: 699.4
+- MA50: 689.0728 / gap50: 1.50%
+- MA200: 631.8385 / gap200: 10.69%
 
 ## Relative Strength
-- RS vs FTSE gap: 3.07% / slope_proxy: 0.001684
-- RS vs Peers gap: 4.27% / slope_proxy: 0.011269
+- RS vs FTSE gap: 2.54% / slope_proxy: 0.001624
+- RS vs Peers gap: 4.41% / slope_proxy: 0.011268
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)
@@ -152,15 +152,19 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-19 03:00:48**
+- 실행시간(UTC): **2026-09-19 15:00:46**
+
+## ⚠️ DATA WARNING
+
+- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 95.47 / 5D -4.58%
-- Brent ref (BZ=F): 98.77 / 5D -5.58%
+- WTI ref (CL=F): 100.30 / 5D 0.25%
+- Brent ref (BZ=F): 103.87 / 5D -0.71%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.30
-- Gas ref (NG=F): 2.90 / 5D 2.40%
+- Brent-WTI spread: 3.57
+- Gas ref (NG=F): 2.91 / 5D 2.86%
 
 ## Gates
 
@@ -318,7 +322,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-09-18**
-- 실행시간(UTC): **2026-09-19 03:00:52**
+- 실행시간(UTC): **2026-09-19 15:01:11**
 
 ## Verdict
 ⏸ No entry today
@@ -363,7 +367,7 @@
 - close: 9.53 | RSI14: 54.128305 | ATR14%: 6.75%
 - MA20 gap: -0.42% | MA50 gap: 15.54% | MA200 gap: 6.01%
 - vol_ratio(Volume/Vol20): 1.708997 | gap_open: 3.92%
-- SilverMarginGate: SI=66.785004 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=66.556 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 12.01% / slope_proxy: 0.016872
 - Checks:
   - trend_ok: **False**
@@ -405,7 +409,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-09-19 03:00:59**
+- 실행시간(UTC): **2026-09-19 15:01:21**
 - 데이터 기준일(주가): **2026-09-18**
 
 ## Verdict
@@ -468,7 +472,7 @@
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 7.68 | RSI14: 49.31 | ATR14%: 5.12%
 - MA20/50/200 gap: -1.92% / 15.15% / 8.69%
-- 5D return: -2.78% | 20D drawdown: -7.91% | vol_ratio: 4.90
+- 5D return: -2.78% | 20D drawdown: -7.91% | vol_ratio: 4.96
 - RS vs GDXJ: gap 8.12% / slope_proxy 3.85%
 - FundamentalScore: 82 | TechnicalScore: 55 | RegimeScore: 50 | OverallScore: **66.2**
 - Checks:

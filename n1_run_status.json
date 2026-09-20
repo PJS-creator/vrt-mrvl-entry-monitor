@@ -1,9 +1,9 @@
 {
-  "attempted_at": "2026-09-20T03:01:03.190465+00:00",
+  "attempted_at": "2026-09-20T15:01:08.953185+00:00",
   "status": "VALIDATED",
   "data_missing": false,
   "signal_date": "2026-09-18",
   "execution_target": "QQQ",
-  "signal_sha256": "b86aaa19aad03258e2ed5b38ae945b352175cf837c018d6c440c274b5d62267f",
+  "signal_sha256": "e56cfd0b011f3cddea12f5b913340c2c9d1a1b80308ee61131025601cd0cb814",
   "state_sha256": "30fcbaca1fa6c6a802e8bdf468b72720745d570ae04aeb9b34c9333128b8cd1c"
 }

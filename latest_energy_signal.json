@@ -1,12 +1,10 @@
 {
-  "generated_at_utc": "2026-09-19T15:00:46Z",
+  "generated_at_utc": "2026-09-20T00:22:12Z",
   "as_of": {
-    "run_time_utc": "2026-09-19 15:00:46"
+    "run_time_utc": "2026-09-20 00:22:12"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "macro": {
     "DCOILWTICO": {
       "latest": 107.02,

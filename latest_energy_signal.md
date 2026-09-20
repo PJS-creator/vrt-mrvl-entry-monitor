@@ -1,10 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-19 15:00:46**
-
-## ⚠️ DATA WARNING
-
-- FRED VXEWZCLS failed (HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-09-20 00:22:12**
 
 ## Commodity Regime
 

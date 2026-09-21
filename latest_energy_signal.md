@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-21 00:28:34**
+- 실행시간(UTC): **2026-09-21 03:00:57**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 95.64 / 5D -5.67%
-- Brent ref (BZ=F): 99.09 / 5D -6.24%
+- WTI ref (CL=F): 93.84 / 5D -7.45%
+- Brent ref (BZ=F): 97.36 / 5D -7.87%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 3.45
-- Gas ref (NG=F): 2.89 / 5D -0.31%
+- Brent-WTI spread: 3.52
+- Gas ref (NG=F): 2.87 / 5D -0.90%
 
 ## Gates
 
@@ -16,7 +16,7 @@
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
 - **WTI_TREND_UP**: **True**
-- **BRENT_TREND_UP**: **True**
+- **BRENT_TREND_UP**: **False**
 - **OIL_TREND_UP**: **True**
 - **BRAZIL_RISK_OK**: **False**
 
@@ -81,7 +81,7 @@
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **True**
+- BRENT_TREND_UP: **False**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**

@@ -1,10 +1,10 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-09-22 01:07:31**
+- 실행시간(UTC): **2026-09-22 03:01:08**
 - 데이터 기준일(주가): **2026-09-21**
 
 ## Verdict
-**🟡 Precious miners watch/add-on candidates: MAKO, JAG.TO, AYA, EXK, SCZM, USAS**
+**🟡 Precious miners watch/add-on candidates: MAKO, JAG.TO, AYA, EXK, SCZM**
 
 ## Regime / 공통 게이트
 
@@ -27,11 +27,11 @@
 
 ### Leadership ratios
 
-- GDX/GLD: gap 8.27% / slope_proxy -2.01%
-- GDXJ/GLD: gap 8.52% / slope_proxy -0.96%
-- SILJ/SLV: gap 1.47% / slope_proxy -1.05%
+- GDX/GLD: gap 7.57% / slope_proxy -2.32%
+- GDXJ/GLD: gap 7.47% / slope_proxy -1.63%
+- SILJ/SLV: gap 0.59% / slope_proxy -2.92%
 - Gold breadth proxy: above50 100.00%, above200 69.23%, count 13
-- Silver breadth proxy: above50 84.62%, above200 46.15%, count 13
+- Silver breadth proxy: above50 84.62%, above200 38.46%, count 13
 
 ---
 
@@ -39,11 +39,11 @@
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
-- close: 10.54 | RSI14: 55.38 | ATR14%: 4.50%
-- MA20/50/200 gap: 2.22% / 16.54% / 38.10%
-- 5D return: 4.56% | 20D drawdown: -4.79% | vol_ratio: 3.45
-- RS vs GDXJ: gap 8.18% / slope_proxy 6.55%
-- FundamentalScore: 88 | TechnicalScore: 100 | RegimeScore: 50 | OverallScore: **84.6**
+- close: 10.15 | RSI14: 51.28 | ATR14%: 4.76%
+- MA20/50/200 gap: -1.38% / 11.63% / 32.58%
+- 5D return: 0.89% | 20D drawdown: -8.31% | vol_ratio: 0.86
+- RS vs GDXJ: gap 5.49% / slope_proxy 1.02%
+- FundamentalScore: 88 | TechnicalScore: 85 | RegimeScore: 50 | OverallScore: **79.3**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **True**
@@ -64,7 +64,7 @@
 - close: 7.76 | RSI14: 51.89 | ATR14%: 5.07%
 - MA20/50/200 gap: -0.82% / 15.49% / 9.78%
 - 5D return: -1.27% | 20D drawdown: -6.95% | vol_ratio: 0.52
-- RS vs GDXJ: gap 8.12% / slope_proxy 3.85%
+- RS vs GDXJ: gap 10.46% / slope_proxy 7.50%
 - FundamentalScore: 82 | TechnicalScore: 40 | RegimeScore: 50 | OverallScore: **60.9**
 - Checks:
   - sector_ok: **False**
@@ -86,7 +86,7 @@
 - close: 2.73 | RSI14: 56.98 | ATR14%: 6.51%
 - MA20/50/200 gap: 3.62% / 20.16% / 38.87%
 - 5D return: 10.53% | 20D drawdown: -2.15% | vol_ratio: 0.61
-- RS vs GDXJ: gap 9.95% / slope_proxy 11.68%
+- RS vs GDXJ: gap 15.98% / slope_proxy 12.60%
 - FundamentalScore: 55 | TechnicalScore: 65 | RegimeScore: 50 | OverallScore: **57.5**
 - Checks:
   - sector_ok: **False**
@@ -108,7 +108,7 @@
 - close: 1.47 | RSI14: 47.06 | ATR14%: 5.42%
 - MA20/50/200 gap: -2.75% / 6.92% / -1.76%
 - 5D return: 3.52% | 20D drawdown: -10.37% | vol_ratio: 1.10
-- RS vs GDXJ: gap 2.35% / slope_proxy -0.64%
+- RS vs GDXJ: gap 0.44% / slope_proxy -2.40%
 - FundamentalScore: 70 | TechnicalScore: 30 | RegimeScore: 50 | OverallScore: **52.0**
 - Checks:
   - sector_ok: **False**
@@ -131,11 +131,11 @@
 
 ### AYA (Aya Gold & Silver)
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
-- close: 28.46 | RSI14: 51.94 | ATR14%: 6.21%
-- MA20/50/200 gap: 1.57% / 14.95% / 49.27%
-- 5D return: 1.75% | 20D drawdown: -4.78% | vol_ratio: 3.23
-- RS vs SILJ: gap 11.52% / slope_proxy 12.95%
-- FundamentalScore: 86 | TechnicalScore: 100 | RegimeScore: 50 | OverallScore: **83.7**
+- close: 28.68 | RSI14: 52.97 | ATR14%: 6.07%
+- MA20/50/200 gap: 1.98% / 15.06% / 49.85%
+- 5D return: 6.58% | 20D drawdown: -4.05% | vol_ratio: 0.49
+- RS vs SILJ: gap 13.34% / slope_proxy 15.94%
+- FundamentalScore: 86 | TechnicalScore: 85 | RegimeScore: 50 | OverallScore: **78.5**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **True**
@@ -151,34 +151,12 @@
 - Watch: Zgounder cash cost, Boumadine PEA/FS, 밸류에이션 과열.
 - Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE
 
-### SCZM (Santacruz Silver)
-- Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 9.53 | RSI14: 50.09 | ATR14%: 7.05%
-- MA20/50/200 gap: -0.42% / 15.54% / 6.01%
-- 5D return: -1.24% | 20D drawdown: -8.63% | vol_ratio: 1.71
-- RS vs SILJ: gap 12.01% / slope_proxy 4.18%
-- FundamentalScore: 74 | TechnicalScore: 55 | RegimeScore: 50 | OverallScore: **62.6**
-- Checks:
-  - sector_ok: **False**
-  - breadth_ok: **True**
-  - strategic_ok: **True**
-  - trend_ok: **False**
-  - rs_ok: **True**
-  - pullback: **False**
-  - breakout: **False**
-  - not_extended: **True**
-  - entry_candidate: **True**
-  - entry_confirmed: **False**
-- Thesis: 볼리비아/멕시코 생산 + 은/아연/납 복합 레버리지. 변동성 큼.
-- Watch: Bolivar 회복, Zimapan 문제, Bolivia 사회/정치 리스크.
-- Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE, PriceTrend=FALSE, Trigger(Pullback/Breakout)=FALSE
-
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 10.21 | RSI14: 43.79 | ATR14%: 5.48%
-- MA20/50/200 gap: -3.83% / 7.46% / 2.81%
-- 5D return: 0.29% | 20D drawdown: -10.99% | vol_ratio: 0.88
-- RS vs SILJ: gap 2.43% / slope_proxy 1.68%
+- close: 10.13 | RSI14: 43.50 | ATR14%: 5.58%
+- MA20/50/200 gap: -4.37% / 6.16% / 1.96%
+- 5D return: 4.22% | 20D drawdown: -11.68% | vol_ratio: 0.69
+- RS vs SILJ: gap 2.86% / slope_proxy 1.16%
 - FundamentalScore: 82 | TechnicalScore: 40 | RegimeScore: 50 | OverallScore: **60.9**
 - Checks:
   - sector_ok: **False**
@@ -195,13 +173,13 @@
 - Watch: Terronera 램프업, AISC, 멕시코/페루 운영 리스크.
 - Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE, PriceTrend=FALSE, Trigger(Pullback/Breakout)=FALSE
 
-### USAS (Americas Gold and Silver)
-- Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
-- close: 5.18 | RSI14: 45.19 | ATR14%: 5.87%
-- MA20/50/200 gap: -1.23% / 8.86% / -12.23%
-- 5D return: 2.57% | 20D drawdown: -9.76% | vol_ratio: 1.10
-- RS vs SILJ: gap 1.53% / slope_proxy 1.64%
-- FundamentalScore: 68 | TechnicalScore: 55 | RegimeScore: 50 | OverallScore: **59.9**
+### SCZM (Santacruz Silver)
+- Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
+- close: 9.03 | RSI14: 47.33 | ATR14%: 7.59%
+- MA20/50/200 gap: -5.32% / 8.81% / 0.40%
+- 5D return: 0.67% | 20D drawdown: -13.42% | vol_ratio: 0.68
+- RS vs SILJ: gap 7.24% / slope_proxy 1.39%
+- FundamentalScore: 74 | TechnicalScore: 40 | RegimeScore: 50 | OverallScore: **57.3**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **True**
@@ -213,16 +191,16 @@
   - not_extended: **True**
   - entry_candidate: **True**
   - entry_confirmed: **False**
-- Thesis: Galena/Crescent 고품위 + 미국 전략광물 프리미엄. 5Moz 규모는 아직 미달.
-- Watch: AISC $30~35, capex, Idaho 생산 확대.
+- Thesis: 볼리비아/멕시코 생산 + 은/아연/납 복합 레버리지. 변동성 큼.
+- Watch: Bolivar 회복, Zimapan 문제, Bolivia 사회/정치 리스크.
 - Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE, PriceTrend=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### VZLA (Vizsla Silver)
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
-- close: 4.08 | RSI14: 52.50 | ATR14%: 5.41%
-- MA20/50/200 gap: 2.24% / 11.83% / 1.04%
-- 5D return: 2.77% | 20D drawdown: -2.16% | vol_ratio: 0.83
-- RS vs SILJ: gap 5.91% / slope_proxy 8.97%
+- close: 4.07 | RSI14: 50.64 | ATR14%: 5.37%
+- MA20/50/200 gap: 1.85% / 10.98% / 0.92%
+- 5D return: 7.39% | 20D drawdown: -2.40% | vol_ratio: 0.93
+- RS vs SILJ: gap 6.87% / slope_proxy 11.28%
 - FundamentalScore: 72 | TechnicalScore: 85 | RegimeScore: 50 | OverallScore: **72.1**
 - Checks:
   - sector_ok: **False**
@@ -241,10 +219,10 @@
 
 ### HL (Hecla Mining)
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
-- close: 18.92 | RSI14: 41.29 | ATR14%: 5.43%
-- MA20/50/200 gap: -5.56% / 6.66% / -1.34%
-- 5D return: -4.35% | 20D drawdown: -11.71% | vol_ratio: 1.64
-- RS vs SILJ: gap 1.29% / slope_proxy -3.42%
+- close: 18.35 | RSI14: 41.00 | ATR14%: 5.71%
+- MA20/50/200 gap: -7.86% / 3.15% / -4.33%
+- 5D return: -2.50% | 20D drawdown: -14.37% | vol_ratio: 1.28
+- RS vs SILJ: gap -0.50% / slope_proxy -3.35%
 - FundamentalScore: 78 | TechnicalScore: 30 | RegimeScore: 50 | OverallScore: **55.6**
 - Checks:
   - sector_ok: **False**
@@ -261,12 +239,34 @@
 - Watch: 은 가격 대비 상대강도, 비용 인플레이션.
 - Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE, PriceTrend=FALSE, RelativeStrength(vs SILJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
 
+### USAS (Americas Gold and Silver)
+- Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
+- close: 5.02 | RSI14: 43.73 | ATR14%: 6.18%
+- MA20/50/200 gap: -3.94% / 5.18% / -14.98%
+- 5D return: 4.37% | 20D drawdown: -12.54% | vol_ratio: 0.74
+- RS vs SILJ: gap -0.10% / slope_proxy 0.08%
+- FundamentalScore: 68 | TechnicalScore: 15 | RegimeScore: 50 | OverallScore: **45.9**
+- Checks:
+  - sector_ok: **False**
+  - breadth_ok: **True**
+  - strategic_ok: **True**
+  - trend_ok: **False**
+  - rs_ok: **False**
+  - pullback: **False**
+  - breakout: **False**
+  - not_extended: **True**
+  - entry_candidate: **False**
+  - entry_confirmed: **False**
+- Thesis: Galena/Crescent 고품위 + 미국 전략광물 프리미엄. 5Moz 규모는 아직 미달.
+- Watch: AISC $30~35, capex, Idaho 생산 확대.
+- Why not today: SilverUptrend=FALSE, SilverMinerLeadership(SILJ/SLV)=FALSE, PriceTrend=FALSE, RelativeStrength(vs SILJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
+
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 6.38 | RSI14: 33.92 | ATR14%: 6.21%
-- MA20/50/200 gap: -9.60% / -2.90% / -8.93%
-- 5D return: -1.69% | 20D drawdown: -17.46% | vol_ratio: 0.68
-- RS vs SILJ: gap -9.03% / slope_proxy -8.81%
+- close: 6.18 | RSI14: 33.63 | ATR14%: 6.40%
+- MA20/50/200 gap: -11.67% / -5.98% / -11.83%
+- 5D return: -0.80% | 20D drawdown: -20.05% | vol_ratio: 0.82
+- RS vs SILJ: gap -10.56% / slope_proxy -9.78%
 - FundamentalScore: 60 | TechnicalScore: 15 | RegimeScore: 50 | OverallScore: **42.2**
 - Checks:
   - sector_ok: **False**
@@ -285,11 +285,11 @@
 
 ### HYMC (Hycroft Mining)
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
-- close: 21.40 | RSI14: 37.27 | ATR14%: 6.89%
-- MA20/50/200 gap: -7.15% / -6.34% / -29.58%
-- 5D return: 1.04% | 20D drawdown: -20.95% | vol_ratio: 2.90
-- RS vs SILJ: gap -13.22% / slope_proxy -16.39%
-- FundamentalScore: 42 | TechnicalScore: 30 | RegimeScore: 50 | OverallScore: **39.4**
+- close: 20.53 | RSI14: 35.50 | ATR14%: 7.26%
+- MA20/50/200 gap: -9.64% / -10.08% / -32.54%
+- 5D return: -0.10% | 20D drawdown: -21.28% | vol_ratio: 0.67
+- RS vs SILJ: gap -15.34% / slope_proxy -14.30%
+- FundamentalScore: 42 | TechnicalScore: 15 | RegimeScore: 50 | OverallScore: **34.2**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **True**

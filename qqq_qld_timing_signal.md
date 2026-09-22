@@ -1,40 +1,40 @@
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-09-21 15:01:14**
-- 데이터 기준일(일봉): **2026-09-21**
-- 데이터 기준일(주봉): **2026-09-21**
+- 실행시간(UTC): **2026-09-22 01:07:33**
+- 데이터 기준일(일봉): **2026-09-18**
+- 데이터 기준일(주봉): **2026-09-14**
 - VXN 기준일: **2026-09-18** / source: `FRED: VXNCLS`
 
 ## Verdict
 
-**⏸ QLD/TIGER 레버리지 대기**
-- Regime: **G: 중립, QQQ 중심**
+**🟡 QLD/TIGER 레버리지 소액만 허용**
+- Regime: **C: QLD 소액 테스트만 허용**
 
 ## Recommended monthly buy amount
 
 - 월 적립 예산: **2,000,000원**
-- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,000,000원** (50%)
-- TIGER 미국나스닥100레버리지(합성) (418660) / QLD 역할: **0원** (0%)
-- 대기자금: **1,000,000원** (50%)
+- TIGER 미국나스닥100 (133690) / QQQ 역할: **1,500,000원** (75%)
+- TIGER 미국나스닥100레버리지(합성) (418660) / QLD 역할: **200,000원** (10%)
+- 대기자금: **300,000원** (15%)
 
 ## Weekly gate: 큰 환경
 
-- QQQ close: 735.84
-- Weekly RSI14: **62.07**
-- 52W MA: 653.47 / gap: **12.61%**
-- 104W MA gap: **25.67%**
-- 52W MA 13W slope: **5.83%**
+- QQQ close: 721.45
+- Weekly RSI14: **58.92**
+- 52W MA: 650.74 / gap: **10.87%**
+- 104W MA gap: **23.73%**
+- 52W MA 13W slope: **5.92%**
 - VXN: **19.29** / 5D change: -1.73
 
 ## Daily trigger: 실제 매수 타이밍
 
-- QQQ close: 735.84
-- Daily RSI14: **63.39**
-- 20D gap: **3.01%**
-- 50D gap: **3.62%**
-- 200D gap: **11.09%**
-- MACD hist: 1.4680 / change: 1.3997
-- ATR14%: **1.31%**
+- QQQ close: 721.45
+- Daily RSI14: **55.87**
+- 20D gap: **1.15%**
+- 50D gap: **1.62%**
+- 200D gap: **9.02%**
+- MACD hist: 0.0683 / change: 0.7760
+- ATR14%: **1.29%**
 - 20D high drawdown: **0.00%**
 
 ## Checks
@@ -43,8 +43,8 @@
 - weekly_small: **True**
 - weekly_overheated: **False**
 - weekly_panic: **False**
-- daily_a: **False**
-- daily_b: **False**
+- daily_a: **True**
+- daily_b: **True**
 - daily_overheated: **True**
 - rebound_after_panic: **True**
 

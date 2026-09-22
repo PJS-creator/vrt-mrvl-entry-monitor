@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-21T15:01:15.537244+00:00",
-  "validation_class": "B_WARN_NO_NEW_SESSION",
-  "signal_date": "2026-09-18",
-  "execution_date": "2026-09-21",
-  "new_completed_us_session": false,
+  "generated_at": "2026-09-22T01:07:33.677134+00:00",
+  "validation_class": "B_WARN",
+  "signal_date": "2026-09-21",
+  "execution_date": "2026-09-22",
+  "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 721.45,
-  "sma20": 713.2355,
-  "sma50": 709.9512,
-  "sma200": 661.775076109279,
-  "wilder_rsi14": 55.86941335219493,
+  "qqq_adjusted_close": 741.47,
+  "sma20": 713.951030126015,
+  "sma50": 709.5663308240021,
+  "sma200": 661.7168430267625,
+  "wilder_rsi14": 65.95911649734921,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-09-11",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 70.38461538461539,
   "liquidity_state": "BULL",
   "comparison1_raw_state": "GREEN",
-  "comparison1_raw_streak": 2,
+  "comparison1_raw_streak": 3,
   "comparison1_confirmed_state": "GREEN",
   "comparison1_confirmed_target": "TQQQ",
   "comparison3_target": "QLD",
@@ -32,9 +32,9 @@
   "post_n1_execution_target": "QQQ",
   "execution_target": "QQQ",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION",
+    "NEW_COMPLETED_US_SESSION",
     "N1_BULL_COMPARISON3_QLD_TO_QQQ"
   ],
   "data_missing": false,
@@ -42,6 +42,6 @@
     "TIINGO_FALLBACK:^VIX:HTTPError"
   ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "562e0798283e450842b9a6455e282046e5354e4843cb660994627883c9ebf577",
-  "state_sha256": "30fcbaca1fa6c6a802e8bdf468b72720745d570ae04aeb9b34c9333128b8cd1c"
+  "input_sha256": "7ee20bf690e11ee24f27bfffde8fece9fb054117b230cd82911691f8c2d4635e",
+  "state_sha256": "9f55c57f4a39034b675ab9f611b6206e3494a6db5012da134646763c3f067e92"
 }

@@ -1,9 +1,10 @@
 {
-  "attempted_at": "2026-09-23T15:01:22.318195+00:00",
-  "status": "VALIDATED",
-  "data_missing": false,
-  "signal_date": "2026-09-22",
-  "execution_target": "QQQ",
-  "signal_sha256": "ee94f12647b6f4b618123f151d6dadeb0ea991068f2bd6fc9056a7bf1bfa983e",
-  "state_sha256": "a685f66de015db2b55280016dc7965b21f311407310b1ecb7bf7c89fca3b37be"
+  "attempted_at": "2026-09-24T00:52:04.698597+00:00",
+  "status": "BLOCKED",
+  "data_missing": true,
+  "reason": "PRICE_PROVIDERS_EXHAUSTED:TIINGO_FALLBACK:^VIX:HTTPError|YFINANCE_ATTEMPT_1:^VIX:MISSING_PRICE_SESSION:^VIX|YFINANCE_ATTEMPT_2:^VIX:MISSING_PRICE_SESSION:^VIX",
+  "execution_target": null,
+  "checkpoint_preserved": true,
+  "previous_signal_date": "2026-09-22",
+  "previous_execution_target": "QQQ"
 }

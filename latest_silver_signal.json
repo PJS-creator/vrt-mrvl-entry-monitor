@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-24T03:01:08Z",
+  "generated_at_utc": "2026-09-24T15:01:06Z",
   "as_of": {
-    "price_date": "2026-09-23",
-    "run_time_utc": "2026-09-24 03:01:08"
+    "price_date": "2026-09-24",
+    "run_time_utc": "2026-09-24 15:01:06"
   },
   "data_warning": false,
   "warnings": [],
@@ -79,14 +79,14 @@
   },
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 2.68,
-      "change_4w": -2.0,
-      "latest_date": "2026-09-22"
+      "latest": 2.73,
+      "change_4w": 6.0,
+      "latest_date": "2026-09-23"
     },
     "BAMLC0A0CM": {
       "latest": 0.77,
-      "change_4w": -4.0,
-      "latest_date": "2026-09-22"
+      "change_4w": -3.0,
+      "latest_date": "2026-09-23"
     },
     "DFII10": {
       "latest": 2.63,
@@ -113,40 +113,40 @@
   },
   "prices": {
     "VZLA": {
-      "close": 4.04,
-      "latest_date": "2026-09-23"
+      "close": 3.94,
+      "latest_date": "2026-09-24"
     },
     "SCZM": {
-      "close": 8.88,
-      "latest_date": "2026-09-23"
+      "close": 8.665,
+      "latest_date": "2026-09-24"
     },
     "HYMC": {
-      "close": 21.26,
-      "latest_date": "2026-09-23"
+      "close": 20.459999,
+      "latest_date": "2026-09-24"
     },
     "SI=F": {
-      "close": 64.57,
-      "latest_date": "2026-09-23"
+      "close": 63.790001,
+      "latest_date": "2026-09-24"
     },
     "GC=F": {
-      "close": 4325.600098,
-      "latest_date": "2026-09-23"
+      "close": 4293.899902,
+      "latest_date": "2026-09-24"
     },
     "SILJ": {
-      "close": 29.4,
-      "latest_date": "2026-09-23"
+      "close": 28.709999,
+      "latest_date": "2026-09-24"
     },
     "SLV": {
-      "close": 58.16,
-      "latest_date": "2026-09-23"
+      "close": 57.199902,
+      "latest_date": "2026-09-24"
     },
     "GDXJ": {
-      "close": 121.279999,
-      "latest_date": "2026-09-23"
+      "close": 118.660004,
+      "latest_date": "2026-09-24"
     },
     "GLD": {
-      "close": 392.880005,
-      "latest_date": "2026-09-23"
+      "close": 389.791412,
+      "latest_date": "2026-09-24"
     }
   },
   "regime": {
@@ -156,53 +156,53 @@
     "miners_leadership": true,
     "junior_gold_leadership": true,
     "SILJ_over_SLV": {
-      "ratio": 0.505502,
-      "ma60": 0.496892,
-      "gap": 0.017328,
-      "ma60_slope_proxy": 0.021722
+      "ratio": 0.501924,
+      "ma60": 0.497098,
+      "gap": 0.009708,
+      "ma60_slope_proxy": 0.020698
     },
     "GDXJ_over_GLD": {
-      "ratio": 0.308695,
-      "ma60": 0.287216,
-      "gap": 0.074784,
-      "ma60_slope_proxy": 0.014292
+      "ratio": 0.304419,
+      "ma60": 0.287816,
+      "gap": 0.057686,
+      "ma60_slope_proxy": 0.014368
     },
     "metals": {
       "SI": {
-        "close": 64.57,
-        "ma20": 65.773149,
-        "ma50": 63.3401,
-        "ma120": 68.179158,
-        "ma200": 72.60029,
-        "gap20": -0.018292,
-        "gap50": 0.019417,
-        "gap200": -0.11061,
-        "ma50_slope20": 1.5879,
-        "ma200_slope20": 1.34058,
-        "rsi14": 47.879621,
-        "atr14": 1.596119,
-        "atr14_pct": 0.024719,
-        "vol_ratio": 2.834946,
-        "ret1d": -0.020658,
-        "gap_open": 0.015425
+        "close": 63.790001,
+        "ma20": 65.55375,
+        "ma50": 63.46994,
+        "ma120": 68.10305,
+        "ma200": 72.62619,
+        "gap20": -0.026905,
+        "gap50": 0.005043,
+        "gap200": -0.121667,
+        "ma50_slope20": 1.75926,
+        "ma200_slope20": 1.2655,
+        "rsi14": 45.444551,
+        "atr14": 1.582151,
+        "atr14_pct": 0.024802,
+        "vol_ratio": 9.195497,
+        "ret1d": -0.009195,
+        "gap_open": 0.008279
       },
       "GC": {
-        "close": 4325.600098,
-        "ma20": 4442.739966,
-        "ma50": 4343.185996,
-        "ma120": 4419.202488,
-        "ma200": 4555.299003,
-        "gap20": -0.026367,
-        "gap50": -0.004049,
-        "gap200": -0.050425,
-        "ma50_slope20": 119.879995,
-        "ma200_slope20": 30.623499,
-        "rsi14": 42.288371,
-        "atr14": 101.617056,
-        "atr14_pct": 0.023492,
-        "vol_ratio": 0.147039,
-        "ret1d": -0.011608,
-        "gap_open": 0.011882
+        "close": 4293.899902,
+        "ma20": 4424.409961,
+        "ma50": 4347.883989,
+        "ma120": 4415.927484,
+        "ma200": 4555.517501,
+        "gap20": -0.029498,
+        "gap50": -0.012416,
+        "gap200": -0.057429,
+        "ma50_slope20": 118.543994,
+        "ma200_slope20": 27.530498,
+        "rsi14": 39.988063,
+        "atr14": 100.506661,
+        "atr14_pct": 0.023407,
+        "vol_ratio": 0.575091,
+        "ret1d": -0.005673,
+        "gap_open": 0.001389
       }
     }
   },
@@ -210,28 +210,28 @@
     "VZLA": {
       "name": "Vizsla Silver",
       "ta": {
-        "close": 4.04,
-        "ma20": 4.0015,
-        "ma50": 3.6876,
-        "ma120": 3.54225,
-        "ma200": 4.0282,
-        "gap20": 0.009621,
-        "gap50": 0.095563,
-        "gap200": 0.002929,
-        "ma50_slope20": 0.2756,
-        "ma200_slope20": -0.04645,
-        "rsi14": 55.484408,
-        "atr14": 0.205298,
-        "atr14_pct": 0.050816,
-        "vol_ratio": 1.275999,
-        "ret1d": -0.007371,
-        "gap_open": 0.014742
+        "close": 3.94,
+        "ma20": 3.9965,
+        "ma50": 3.7024,
+        "ma120": 3.547333,
+        "ma200": 4.02315,
+        "gap20": -0.014137,
+        "gap50": 0.064175,
+        "gap200": -0.020668,
+        "ma50_slope20": 0.2814,
+        "ma200_slope20": -0.0526,
+        "rsi14": 51.438311,
+        "atr14": 0.197777,
+        "atr14_pct": 0.050197,
+        "vol_ratio": 0.196745,
+        "ret1d": -0.024752,
+        "gap_open": 0.009901
       },
       "rs_vs_SILJ": {
-        "ratio": 0.137415,
-        "ma60": 0.128041,
-        "gap": 0.073209,
-        "ma60_slope_proxy": 0.000427
+        "ratio": 0.137234,
+        "ma60": 0.128215,
+        "gap": 0.070344,
+        "ma60_slope_proxy": 0.00064
       },
       "checks": {
         "trend_ok": false,
@@ -239,49 +239,50 @@
         "risk_ok": true,
         "shock_down": false,
         "shock_up": false,
-        "pullback": true,
+        "pullback": false,
         "breakout": false
       },
       "entry_candidate": false,
       "entry_confirmed": false,
       "fails": [
         "SilverUptrend=FALSE",
-        "Trend(MA200/MA50)=FALSE"
+        "Trend(MA200/MA50)=FALSE",
+        "Trigger(Pullback/Breakout)=FALSE"
       ]
     },
     "SCZM": {
       "name": "Santacruz Silver",
       "ta": {
-        "close": 8.88,
-        "ma20": 9.503,
-        "ma50": 8.3495,
-        "ma120": 8.034958,
-        "ma200": 8.994548,
-        "gap20": -0.065558,
-        "gap50": 0.063537,
-        "gap200": -0.012735,
-        "ma50_slope20": 1.0926,
-        "ma200_slope20": 0.352678,
-        "rsi14": 47.825728,
-        "atr14": 0.631082,
-        "atr14_pct": 0.071068,
-        "vol_ratio": 1.216939,
-        "ret1d": -0.016611,
-        "gap_open": 0.024363
+        "close": 8.665,
+        "ma20": 9.44775,
+        "ma50": 8.3928,
+        "ma120": 8.039417,
+        "ma200": 8.997753,
+        "gap20": -0.08285,
+        "gap50": 0.032433,
+        "gap200": -0.036982,
+        "ma50_slope20": 1.0801,
+        "ma200_slope20": 0.332233,
+        "rsi14": 45.814994,
+        "atr14": 0.606633,
+        "atr14_pct": 0.07001,
+        "vol_ratio": 0.251221,
+        "ret1d": -0.024212,
+        "gap_open": 0.022523
       },
       "ma_long": 200,
       "silver_margin": {
-        "SI_close": 64.57,
+        "SI_close": 63.790001,
         "watch_ge": 32.0,
         "entry_ge": 35.0,
         "watch": true,
         "entry": true
       },
       "rs_vs_SILJ": {
-        "ratio": 0.302041,
-        "ma60": 0.283486,
-        "gap": 0.065453,
-        "ma60_slope_proxy": 0.017412
+        "ratio": 0.301811,
+        "ma60": 0.284309,
+        "gap": 0.061561,
+        "ma60_slope_proxy": 0.017663
       },
       "checks": {
         "trend_ok": false,
@@ -302,34 +303,34 @@
     "HYMC": {
       "name": "Hycroft Mining",
       "ta": {
-        "close": 21.26,
-        "ma20": 22.49625,
-        "ma50": 22.8484,
-        "ma120": 28.415958,
-        "ma200": 30.48365,
-        "gap20": -0.054954,
-        "gap50": -0.069519,
-        "gap200": -0.302577,
-        "ma50_slope20": -0.4083,
-        "ma200_slope20": 1.282175,
-        "rsi14": 44.013217,
-        "atr14": 1.577569,
-        "atr14_pct": 0.074204,
-        "vol_ratio": 0.888761,
-        "ret1d": 0.035558,
-        "gap_open": 0.060399
+        "close": 20.459999,
+        "ma20": 22.21525,
+        "ma50": 22.8204,
+        "ma120": 28.294375,
+        "ma200": 30.5261,
+        "gap20": -0.079011,
+        "gap50": -0.103434,
+        "gap200": -0.329754,
+        "ma50_slope20": -0.4427,
+        "ma200_slope20": 1.231125,
+        "rsi14": 40.962052,
+        "atr14": 1.531314,
+        "atr14_pct": 0.074844,
+        "vol_ratio": 0.162862,
+        "ret1d": -0.037629,
+        "gap_open": 0.015522
       },
       "rs_vs_SILJ": {
-        "ratio": 0.723129,
-        "ma60": 0.810936,
-        "gap": -0.108278,
-        "ma60_slope_proxy": -0.078901
+        "ratio": 0.712644,
+        "ma60": 0.807704,
+        "gap": -0.117692,
+        "ma60_slope_proxy": -0.077568
       },
       "rs_vs_GDXJ": {
-        "ratio": 0.175297,
-        "ma60": 0.203612,
-        "gap": -0.139064,
-        "ma60_slope_proxy": -0.024706
+        "ratio": 0.172425,
+        "ma60": 0.202547,
+        "gap": -0.148712,
+        "ma60_slope_proxy": -0.024352
       },
       "checks": {
         "metals_ok": false,

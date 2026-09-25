@@ -1,8 +1,8 @@
 {
-  "attempted_at": "2026-09-24T15:01:22.837922+00:00",
+  "attempted_at": "2026-09-25T00:47:00.163622+00:00",
   "status": "BLOCKED",
   "data_missing": true,
-  "reason": "PRICE_PROVIDERS_EXHAUSTED:TIINGO_FALLBACK:^VIX:HTTPError|YFINANCE_ATTEMPT_1:^VIX:MISSING_PRICE_SESSION:^VIX|YFINANCE_ATTEMPT_2:^VIX:MISSING_PRICE_SESSION:^VIX",
+  "reason": "UNPROCESSED_SESSIONS_REQUIRE_EXPLICIT_RECOVERY",
   "execution_target": null,
   "checkpoint_preserved": true,
   "previous_signal_date": "2026-09-22",

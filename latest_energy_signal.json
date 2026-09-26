@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-09-26T03:00:51Z",
+  "generated_at_utc": "2026-09-26T15:00:48Z",
   "as_of": {
-    "run_time_utc": "2026-09-26 03:00:51"
+    "run_time_utc": "2026-09-26 15:00:48"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,29 +70,29 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 92.44,
-      "ret5d": -0.078365
+      "close": 92.41,
+      "ret5d": -0.078664
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 97.47,
-      "ret5d": -0.061615,
+      "close": 104.32,
+      "ret5d": 0.004332,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.251,
-      "ret5d": 0.116415
+      "close": 3.196,
+      "ret5d": 0.097528
     },
-    "Brent_WTI_spread": 5.03
+    "Brent_WTI_spread": 11.91
   },
   "gates": {
     "RISK_OK_STRICT": true,
     "RISK_OK_SOFT": true,
     "OVX_OK": true,
     "WTI_TREND_UP": false,
-    "BRENT_TREND_UP": false,
-    "OIL_TREND_UP": false,
+    "BRENT_TREND_UP": true,
+    "OIL_TREND_UP": true,
     "BRAZIL_RISK_OK": false
   },
   "prices": {
@@ -147,19 +147,19 @@
       "volume": 0.0
     },
     "CL=F": {
-      "close": 92.44,
+      "close": 92.41,
       "latest_date": "2026-09-25",
-      "volume": 323945.0
+      "volume": 410015.0
     },
     "BZ=F": {
-      "close": 97.47,
+      "close": 104.32,
       "latest_date": "2026-09-25",
-      "volume": 63901.0
+      "volume": 57116.0
     },
     "NG=F": {
-      "close": 3.251,
+      "close": 3.196,
       "latest_date": "2026-09-25",
-      "volume": 306728.0
+      "volume": 113668.0
     }
   },
   "signals": {
@@ -220,7 +220,7 @@
       },
       "checks": {
         "RISK_OK_SOFT": true,
-        "BRENT_TREND_UP": false,
+        "BRENT_TREND_UP": true,
         "BRAZIL_RISK_OK": false,
         "PBR_TREND_OK": true,
         "PBR_PULLBACK_OK": false,
@@ -253,7 +253,7 @@
       },
       "checks": {
         "RISK_OK_STRICT": true,
-        "OIL_TREND_UP": false,
+        "OIL_TREND_UP": true,
         "OIH_TREND_UP": false,
         "RIG_BREAKOUT": false,
         "RIG_VOLUME_CONFIRM": false,

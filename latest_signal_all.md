@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-09-27 03:01:39**
+- 실행시간(UTC): **2026-09-27 15:01:03**
 - 데이터 기준일(일봉): **2026-09-25**
 - 데이터 기준일(주봉): **2026-09-21**
 - VXN 기준일: **2026-09-22** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-09-25**
-- 실행시간(UTC): **2026-09-27 03:01:17**
+- 실행시간(UTC): **2026-09-27 15:00:41**
 
 ## MacroGreen
 - **MacroGreen**: **False**
@@ -115,7 +115,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-09-25**
-- 실행시간(UTC): **2026-09-27 03:01:19**
+- 실행시간(UTC): **2026-09-27 15:00:43**
 
 ## Verdict
 ⏸ No entry today
@@ -152,15 +152,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-09-27 03:01:26**
+- 실행시간(UTC): **2026-09-27 15:00:50**
 
 ## Commodity Regime
 
 - WTI ref (CL=F): 92.41 / 5D -7.87%
-- Brent ref (BZ=F): 104.32 / 5D 0.43%
+- Brent ref (BZ=F): 97.44 / 5D -6.19%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 11.91
-- Gas ref (NG=F): 3.20 / 5D 9.75%
+- Brent-WTI spread: 5.03
+- Gas ref (NG=F): 3.23 / 5D 10.75%
 
 ## Gates
 
@@ -168,8 +168,8 @@
 - **RISK_OK_SOFT**: **True**
 - **OVX_OK**: **True**
 - **WTI_TREND_UP**: **False**
-- **BRENT_TREND_UP**: **True**
-- **OIL_TREND_UP**: **True**
+- **BRENT_TREND_UP**: **False**
+- **OIL_TREND_UP**: **False**
 - **BRAZIL_RISK_OK**: **False**
 
 ## OXY
@@ -233,7 +233,7 @@
 ### Checks
 
 - RISK_OK_SOFT: **True**
-- BRENT_TREND_UP: **True**
+- BRENT_TREND_UP: **False**
 - BRAZIL_RISK_OK: **False**
 - PBR_TREND_OK: **True**
 - PBR_PULLBACK_OK: **False**
@@ -267,7 +267,7 @@
 ### Checks
 
 - RISK_OK_STRICT: **True**
-- OIL_TREND_UP: **True**
+- OIL_TREND_UP: **False**
 - OIH_TREND_UP: **False**
 - RIG_BREAKOUT: **False**
 - RIG_VOLUME_CONFIRM: **False**
@@ -318,7 +318,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-09-25**
-- 실행시간(UTC): **2026-09-27 03:01:29**
+- 실행시간(UTC): **2026-09-27 15:00:53**
 
 ## Verdict
 ⏸ No entry today
@@ -364,7 +364,7 @@
 - close: 9.48 | RSI14: 53.267699 | ATR14%: 6.69%
 - MA20 gap: 0.54% | MA50 gap: 11.11% | MA200 gap: 5.20%
 - vol_ratio(Volume/Vol20): 0.669999 | gap_open: 1.01%
-- SilverMarginGate: SI=64.245003 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=64.801003 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 13.23% / slope_proxy: 0.018797
 - Checks:
   - trend_ok: **False**
@@ -408,7 +408,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-09-27 03:01:38**
+- 실행시간(UTC): **2026-09-27 15:01:01**
 - 데이터 기준일(주가): **2026-09-25**
 
 ## Verdict

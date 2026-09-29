@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-09-28T15:00:47Z",
+  "generated_at_utc": "2026-09-29T02:16:40Z",
   "as_of": {
     "price_date": "2026-09-28",
-    "run_time_utc": "2026-09-28 15:00:47"
+    "run_time_utc": "2026-09-29 02:16:40"
   },
   "data_warning": false,
   "warnings": [],
@@ -18,9 +18,9 @@
       "latest_date": "2026-09-25"
     },
     "DFII10": {
-      "latest": 2.85,
-      "change_4w_bp": 51.0,
-      "latest_date": "2026-09-24"
+      "latest": 2.83,
+      "change_4w_bp": 41.0,
+      "latest_date": "2026-09-25"
     },
     "VIXCLS": {
       "latest": 14.21,
@@ -34,53 +34,53 @@
     }
   },
   "checks": {
-    "MacroGreen": false,
+    "MacroGreen": true,
     "HY_4w_change_bp_lt_100": true,
     "IG_4w_change_bp_lt_50": true,
-    "DFII10_4w_change_bp_lt_50": false,
+    "DFII10_4w_change_bp_lt_50": true,
     "VIX_lt_25": true,
     "NFCI_lte_0": true
   },
   "prices": {
     "VRT": {
-      "close": 246.765,
+      "close": 244.04,
       "latest_date": "2026-09-28"
     },
     "MRVL": {
-      "close": 250.1416,
+      "close": 251.9,
       "latest_date": "2026-09-28"
     },
     "SRVR": {
-      "close": 28.7149,
+      "close": 28.65,
       "latest_date": "2026-09-28"
     },
     "SMH": {
-      "close": 593.9275,
+      "close": 600.01,
       "latest_date": "2026-09-28"
     },
     "NVDA": {
-      "close": 229.245,
+      "close": 228.86,
       "latest_date": "2026-09-28"
     },
     "AVGO": {
-      "close": 348.955,
+      "close": 349.57,
       "latest_date": "2026-09-28"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 8.593622,
-      "ma60": 8.949822,
-      "gap": -0.0398,
-      "entry": false
+      "ratio": 8.517975,
+      "ma60": 8.948561,
+      "gap": -0.048118,
+      "entry": true
     },
     "MRVL": {
-      "ratio": 0.421165,
-      "ma60": 0.388244,
-      "gap": 0.084795,
-      "ma60_slope_proxy": -0.014834,
+      "ratio": 0.419826,
+      "ma60": 0.388222,
+      "gap": 0.081408,
+      "ma60_slope_proxy": -0.014857,
       "entry": false
     }
   },
-  "verdict": "⏸ No entry today"
+  "verdict": "✅ Entry condition met: VRT"
 }

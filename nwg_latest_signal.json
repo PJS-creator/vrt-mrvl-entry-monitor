@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-01T15:00:55Z",
+  "generated_at_utc": "2026-10-02T01:48:23Z",
   "as_of": {
     "price_date": "2026-10-01",
-    "run_time_utc": "2026-10-01 15:00:55"
+    "run_time_utc": "2026-10-02 01:48:23"
   },
   "data_warning": false,
   "warnings": [],
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 652.4,
-      "latest_date": "2026-10-01"
+      "close": 688.4,
+      "latest_date": "2026-09-30"
     },
     "^FTSE": {
-      "close": 10441.8896,
+      "close": 10428.2998,
       "latest_date": "2026-10-01"
     },
     "LLOY.L": {
-      "close": 102.3735,
-      "latest_date": "2026-10-01"
+      "close": 106.9,
+      "latest_date": "2026-09-30"
     },
     "BARC.L": {
-      "close": 441.0,
-      "latest_date": "2026-10-01"
+      "close": 457.55,
+      "latest_date": "2026-09-30"
     },
     "HSBA.L": {
-      "close": 1434.6,
-      "latest_date": "2026-10-01"
+      "close": 1497.6,
+      "latest_date": "2026-09-30"
     }
   },
   "signals": {
     "NWG": {
-      "close": 652.4,
-      "ma50": 692.9049,
-      "ma200": 634.8382,
-      "gap50": -0.058457,
-      "gap200": 0.027663
+      "close": 688.4,
+      "ma50": 693.5466,
+      "ma200": 634.7255,
+      "gap50": -0.007421,
+      "gap200": 0.084563
     },
     "RS_FTSE": {
-      "ratio": 0.062479,
-      "ma60": 0.064143,
-      "gap": -0.025933,
-      "ma60_slope_proxy": 0.000892
+      "ratio": 0.064907,
+      "ma60": 0.064136,
+      "gap": 0.012015,
+      "ma60_slope_proxy": 0.001006
     },
     "RS_PEERS": {
-      "ratio": 0.989498,
-      "ma60": 0.968062,
-      "gap": 0.022143,
-      "ma60_slope_proxy": 0.009356
+      "ratio": 1.001528,
+      "ma60": 0.96725,
+      "gap": 0.035439,
+      "ma60_slope_proxy": 0.008659
     }
   },
   "checks": {
@@ -114,12 +114,13 @@
     "CurveGreen": true,
     "DemandGreen": false,
     "MacroGreen": false,
-    "PriceConfirm": true,
+    "PriceConfirm": false,
     "ENTRY_STRICT": false,
-    "ENTRY_LOOSE": true
+    "ENTRY_LOOSE": false
   },
   "fails": [
-    "DemandGreen=FALSE (monthly)"
+    "DemandGreen=FALSE (monthly)",
+    "PullbackZone=FALSE"
   ],
-  "verdict": "🟡 ENTRY (LOOSE): Risk+Curve + PriceConfirm (Demand monthly not confirmed)"
+  "verdict": "⏸ No entry today"
 }

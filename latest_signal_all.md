@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-10-03 03:01:02**
+- 실행시간(UTC): **2026-10-03 15:01:02**
 - 데이터 기준일(일봉): **2026-10-02**
 - 데이터 기준일(주봉): **2026-09-28**
 - VXN 기준일: **2026-10-01** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-10-02**
-- 실행시간(UTC): **2026-10-03 03:00:42**
+- 실행시간(UTC): **2026-10-03 15:00:39**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,7 +115,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-10-02**
-- 실행시간(UTC): **2026-10-03 03:00:44**
+- 실행시간(UTC): **2026-10-03 15:00:41**
 
 ## Verdict
 🟡 ENTRY (LOOSE): Risk+Curve + PriceConfirm (Demand monthly not confirmed)
@@ -134,13 +134,13 @@
 - CURVE_10s5s: 44.9 bp / 4주 변화 -2.45 bp
 
 ## NWG Price
-- close: 651.4
-- MA50: 692.8849 / gap50: -5.99%
-- MA200: 634.8332 / gap200: 2.61%
+- close: 662.8
+- MA50: 692.7311 / gap50: -4.32%
+- MA200: 634.981 / gap200: 4.38%
 
 ## Relative Strength
-- RS vs FTSE gap: -2.62% / slope_proxy: 0.000892
-- RS vs Peers gap: 2.06% / slope_proxy: 0.009331
+- RS vs FTSE gap: -1.23% / slope_proxy: 0.000766
+- RS vs Peers gap: 3.15% / slope_proxy: 0.009749
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)
@@ -151,15 +151,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-10-03 03:00:50**
+- 실행시간(UTC): **2026-10-03 15:00:48**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 91.26 / 5D -1.24%
-- Brent ref (BZ=F): 102.70 / 5D -1.55%
+- WTI ref (CL=F): 91.11 / 5D -1.41%
+- Brent ref (BZ=F): 102.25 / 5D -1.98%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 11.44
-- Gas ref (NG=F): 3.04 / 5D -4.91%
+- Brent-WTI spread: 11.14
+- Gas ref (NG=F): 3.04 / 5D -5.04%
 
 ## Gates
 
@@ -317,7 +317,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-10-02**
-- 실행시간(UTC): **2026-10-03 03:00:54**
+- 실행시간(UTC): **2026-10-03 15:00:53**
 
 ## Verdict
 ⏸ No entry today
@@ -363,7 +363,7 @@
 - close: 8.8 | RSI14: 47.114755 | ATR14%: 6.80%
 - MA20 gap: -4.47% | MA50 gap: 0.15% | MA200 gap: -2.12%
 - vol_ratio(Volume/Vol20): 0.657111 | gap_open: 2.30%
-- SilverMarginGate: SI=60.709999 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=59.977001 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 10.56% / slope_proxy: 0.019247
 - Checks:
   - trend_ok: **False**
@@ -406,7 +406,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-10-03 03:01:01**
+- 실행시간(UTC): **2026-10-03 15:01:01**
 - 데이터 기준일(주가): **2026-10-02**
 
 ## Verdict

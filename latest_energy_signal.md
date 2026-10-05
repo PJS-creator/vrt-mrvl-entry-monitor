@@ -1,14 +1,14 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-10-04 15:00:48**
+- 실행시간(UTC): **2026-10-05 01:14:38**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 91.11 / 5D -1.41%
-- Brent ref (BZ=F): 102.25 / 5D -1.98%
+- WTI ref (CL=F): 90.54 / 5D -2.22%
+- Brent ref (BZ=F): 101.93 / 5D -3.18%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 11.14
-- Gas ref (NG=F): 3.04 / 5D -5.04%
+- Brent-WTI spread: 11.39
+- Gas ref (NG=F): 3.04 / 5D 1.27%
 
 ## Gates
 

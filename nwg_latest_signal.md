@@ -1,7 +1,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-10-06**
-- 실행시간(UTC): **2026-10-07 01:47:17**
+- 실행시간(UTC): **2026-10-07 03:00:45**
 
 ## Verdict
 🟡 ENTRY (LOOSE): Risk+Curve + PriceConfirm (Demand monthly not confirmed)

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-10-07T01:47:24Z",
+  "generated_at_utc": "2026-10-07T03:00:52Z",
   "as_of": {
-    "run_time_utc": "2026-10-07 01:47:24"
+    "run_time_utc": "2026-10-07 03:00:52"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 90.36,
-      "ret5d": 0.010964
+      "close": 90.18,
+      "ret5d": 0.008951
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 101.57,
-      "ret5d": -0.009942,
+      "close": 101.41,
+      "ret5d": -0.011502,
       "tier": ">=90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.133,
-      "ret5d": 0.040518
+      "close": 3.135,
+      "ret5d": 0.041182
     },
-    "Brent_WTI_spread": 11.21
+    "Brent_WTI_spread": 11.23
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -147,19 +147,19 @@
       "volume": 0.0
     },
     "CL=F": {
-      "close": 90.36,
+      "close": 90.18,
       "latest_date": "2026-10-06",
-      "volume": 7843.0
+      "volume": 9952.0
     },
     "BZ=F": {
-      "close": 101.57,
+      "close": 101.41,
       "latest_date": "2026-10-06",
-      "volume": 1088.0
+      "volume": 1359.0
     },
     "NG=F": {
-      "close": 3.133,
+      "close": 3.135,
       "latest_date": "2026-10-06",
-      "volume": 2763.0
+      "volume": 3308.0
     }
   },
   "signals": {

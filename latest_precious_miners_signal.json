@@ -1,6 +1,6 @@
 {
   "verdict": "🟡 Precious miners watch/add-on candidates: MAKO, AYA, SCZM",
-  "generated_utc": "2026-10-09 02:32:58",
+  "generated_utc": "2026-10-09 03:01:12",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": true,
@@ -176,9 +176,9 @@
         "high20": 8.1899995803833,
         "low20": 6.659999847412109,
         "drawdown20": -17.948716306562407,
-        "volume": 99284.0,
-        "volume_ma20": 205794.2,
-        "volume_ratio": 0.48244313979694275,
+        "volume": 98484.0,
+        "volume_ma20": 205754.2,
+        "volume_ratio": 0.47864879550453887,
         "slope20": -0.14936712543430664,
         "slope60": 0.3548386569573905
       },

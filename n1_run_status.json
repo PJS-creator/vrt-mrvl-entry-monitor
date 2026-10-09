@@ -1,10 +1,9 @@
 {
-  "attempted_at": "2026-10-09T15:01:24.983235+00:00",
-  "status": "BLOCKED",
-  "data_missing": true,
-  "reason": "UNPROCESSED_SESSIONS_REQUIRE_EXPLICIT_RECOVERY",
-  "execution_target": null,
-  "checkpoint_preserved": true,
-  "previous_signal_date": "2026-09-22",
-  "previous_execution_target": "QQQ"
+  "attempted_at": "2026-10-09T18:07:38.632488+00:00",
+  "status": "VALIDATED",
+  "data_missing": false,
+  "signal_date": "2026-10-08",
+  "execution_target": "QQQ",
+  "signal_sha256": "15d438e3c46ab455ac7598087d48128cc296d218cd406eb17be4a4e845c7d66a",
+  "state_sha256": "b1b0f02f9698bf1a807c33573be9156298e2dfbf82bc343d2ccfda4e02cf8824"
 }

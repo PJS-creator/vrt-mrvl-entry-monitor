@@ -52,6 +52,7 @@ jobs:
             n1_meta_signal.py \
             n1_meta_signal_core.py \
             n1_data_quality.py \
+            n1_vintages.py \
             n1_validate_outputs.py \
             build_latest_signal_all.py
 

@@ -18,6 +18,7 @@ from n1_data_quality import (
     DataQualityError, completed_session, json_bytes, number, publish_files,
     sessions_between, strict_loads, validate_checkpoint,
 )
+from n1_vintages import fetch_liquidity_vintage
 
 STATUS_PATH = core.ROOT / "n1_run_status.json"
 AUDIT_DIR = core.ROOT / "n1_audit"
@@ -109,7 +110,7 @@ def render_report(signal: dict) -> str:
         recovery = signal["recovery"]
         parts += [f"- Recovery checkpoint: {recovery['checkpoint_commit']}",
                   f"- Replayed sessions: **{recovery['sessions']}**",
-                  "- Recovery uses currently available adjusted prices and archived daily liquidity vintages; it is not an exact historical price-vintage reconstruction."]
+                  "- Recovery uses currently available adjusted prices and archived or official ALFRED daily liquidity vintages; it is not an exact historical price-vintage reconstruction."]
     if signal["warnings"]:
         parts += ["", "## Data warnings", *[f"- {note}" for note in signal["warnings"]]]
     parts += ["", "This is a shadow signal only. No broker order was submitted.", ""]
@@ -170,28 +171,37 @@ def execute(*, repair_from: str | None = None, now: datetime | None = None,
 
     price_data = {symbol: core.fetch_prices(symbol, asof=asof) for symbol in ("QQQ", "GLD", "XLV", "^VIX")}
     history = archived_lineages(days) if repair_from else {}
-    # Missing historical vintages must not be replaced with today's revised FRED data.
-    if repair_from and any(day.strftime("%Y-%m-%d") not in history for day in days[:-1]):
-        raise DataQualityError("RECOVERY_LIQUIDITY_VINTAGE_MISSING")
     current_lineage = None
     records = []
+    used_alfred = False
     for day in days:
         key = day.strftime("%Y-%m-%d")
         if key in history:
             lineage, lineage_commit = history[key]
+            liquidity_source = {"provider": "git_archive", "commit": lineage_commit}
+        elif repair_from:
+            # Missing archives are reconstructed from the date's official vintage,
+            # never from today's revised observations. Fetch failure stays blocked.
+            lineage, liquidity_source = fetch_liquidity_vintage(day, AUDIT_DIR / "vintages")
+            lineage_commit = None
+            used_alfred = True
         else:
             if current_lineage is None:
                 current_lineage = core.liquidity_panel()
             lineage, lineage_commit = current_lineage, None
+            liquidity_source = {"provider": "fred_current"}
         output, candidate = core.calculate_signal(state, price_data, lineage, day, allow_router_fetch=not bool(repair_from))
         validate_lineage(lineage, output)
-        records.append({"signal": copy.deepcopy(output), "state": candidate, "liquidity_commit": lineage_commit})
+        records.append({"signal": copy.deepcopy(output), "state": candidate,
+                        "liquidity_commit": lineage_commit, "liquidity_source": liquidity_source})
         state = candidate
 
     if repair_from:
         output["recovery"] = {"checkpoint_commit": repair_from, "from_signal_date": previous["signal_date"],
                               "sessions": len(days), "price_vintage": "CURRENT_ADJUSTED_HISTORY"}
         output["warnings"] = list(dict.fromkeys(output["warnings"] + ["RECOVERY_CURRENT_PRICE_VINTAGE"]))
+        if used_alfred:
+            output["warnings"].append("RECOVERY_ALFRED_DAILY_VINTAGES")
         output["validation_class"] = "B_WARN"
     output["generated_at"] = now.isoformat()
     validate_checkpoint(output, state, rules_hash())

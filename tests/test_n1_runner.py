@@ -116,10 +116,55 @@ def test_recovery_failure_midway_publishes_nothing(workspace, monkeypatch):
 def test_recovery_missing_vintage_does_not_use_today_fred(workspace, monkeypatch):
     prepare_recovery(workspace, monkeypatch)
     monkeypatch.setattr(runner, "archived_lineages", lambda days: {})
+    def unavailable(*args):
+        raise DataQualityError("RECOVERY_LIQUIDITY_VINTAGE_UNAVAILABLE")
+    monkeypatch.setattr(runner, "fetch_liquidity_vintage", unavailable)
     before = protected_bytes()
-    with pytest.raises(DataQualityError, match="VINTAGE_MISSING"):
+    with pytest.raises(DataQualityError, match="VINTAGE_UNAVAILABLE"):
         runner.execute(repair_from="a" * 40, now=NOW)
     assert protected_bytes() == before
+
+
+def test_recovery_fetches_missing_daily_vintages_without_using_current_data(workspace, monkeypatch):
+    original_load = runner.load_checkpoint
+    _, lineage = prepare_recovery(workspace, monkeypatch)
+    monkeypatch.setattr(runner, "archived_lineages", lambda days: {})
+    calls = []
+    def vintage(day, audit_dir):
+        calls.append(str(day.date()))
+        return lineage.copy(), {"provider": "alfred", "vintage_date": str(day.date())}
+    def forbidden():
+        raise AssertionError("Recovery cannot use current revised FRED data")
+    monkeypatch.setattr(runner, "fetch_liquidity_vintage", vintage)
+    monkeypatch.setattr(core, "liquidity_panel", forbidden)
+    output = runner.execute(repair_from="a" * 40, now=NOW)
+    assert len(calls) == len(set(calls)) == 11
+    assert calls == sorted(calls)
+    assert calls[0] == "2026-09-02" and calls[-1] == "2026-09-17"
+    assert "RECOVERY_ALFRED_DAILY_VINTAGES" in output["warnings"]
+    monkeypatch.setattr(runner, "load_checkpoint", original_load)
+    validate_outputs()
+
+
+def test_vix_uses_validated_official_history(inputs, monkeypatch):
+    prices, _ = inputs
+    monkeypatch.setattr(core, "fetch_cboe_vix", lambda: prices["^VIX"][0])
+    def forbidden(*args):
+        raise AssertionError("No fallback needed for complete Cboe data")
+    monkeypatch.setattr(core, "fetch_tiingo", forbidden)
+    _, provider, notes = core.fetch_prices("^VIX", asof=pd.Timestamp("2026-09-17"))
+    assert provider == "cboe_vix_history" and notes == []
+
+
+def test_missing_cboe_session_is_rejected_before_fallback(inputs, monkeypatch):
+    prices, _ = inputs
+    good = prices["^VIX"][0]
+    monkeypatch.setattr(core, "fetch_cboe_vix", lambda: good.drop(good.index[-2]))
+    monkeypatch.setattr(core, "fetch_tiingo", lambda *args: good)
+    frame, provider, notes = core.fetch_prices("^VIX", asof=pd.Timestamp("2026-09-17"))
+    assert provider == "tiingo"
+    assert "MISSING_PRICE_SESSION" in notes[0]
+    assert frame.equals(good)
 
 
 def test_dry_run_does_not_publish(workspace, monkeypatch):

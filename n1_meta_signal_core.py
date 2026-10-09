@@ -10,6 +10,7 @@ import hashlib
 import math
 import os
 from datetime import datetime, timezone
+from io import StringIO
 from pathlib import Path
 from typing import Any
 
@@ -88,11 +89,35 @@ def fetch_tiingo(symbol: str, start: str) -> pd.DataFrame:
     )[["Open", "High", "Low", "Close"]].astype(float)
 
 
+def fetch_cboe_vix() -> pd.DataFrame:
+    """Read the index publisher's daily OHLC history without synthesizing bars."""
+    response = requests.get(
+        "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+        timeout=45,
+    )
+    response.raise_for_status()
+    frame = pd.read_csv(StringIO(response.text))
+    required = {"DATE", "OPEN", "HIGH", "LOW", "CLOSE"}
+    if not required.issubset(frame.columns):
+        raise DataQualityError("CBOE_VIX_COLUMNS_MISSING")
+    frame["DATE"] = pd.to_datetime(frame["DATE"], format="%m/%d/%Y", errors="raise")
+    return frame.set_index("DATE").rename(columns={
+        "OPEN": "Open", "HIGH": "High", "LOW": "Low", "CLOSE": "Close",
+    })[["Open", "High", "Low", "Close"]]
+
+
 def fetch_prices(
     symbol: str, start: str = "2005-01-01", *, asof: pd.Timestamp | None = None,
 ) -> tuple[pd.DataFrame, str, list[str]]:
     asof = asof if asof is not None else completed_session()
     warnings: list[str] = []
+    if symbol == "^VIX":
+        try:
+            frame = validate_prices(fetch_cboe_vix(), symbol, asof)
+            return frame, "cboe_vix_history", warnings
+        except Exception as exc:
+            code = str(exc) if isinstance(exc, DataQualityError) else type(exc).__name__
+            warnings.append(f"CBOE_FALLBACK:{symbol}:{code}")
     try:
         df = validate_prices(fetch_tiingo(symbol, start), symbol, asof)
         return df, "tiingo", warnings
@@ -151,9 +176,16 @@ def percentile_prior(window: pd.Series, value: float) -> float:
 
 
 def liquidity_panel() -> pd.DataFrame:
-    walcl = fred_series("WALCL") / 1000.0
-    tga = fred_series("WDTGAL") / 1000.0
-    rrp = fred_series("RRPONTSYD")
+    return build_liquidity_panel({
+        series_id: fred_series(series_id) for series_id in ("WALCL", "WDTGAL", "RRPONTSYD")
+    })
+
+
+def build_liquidity_panel(series: dict[str, pd.Series]) -> pd.DataFrame:
+    """Apply the unchanged liquidity formula to current or verified vintage inputs."""
+    walcl = series["WALCL"] / 1000.0
+    tga = series["WDTGAL"] / 1000.0
+    rrp = series["RRPONTSYD"]
     start = min(walcl.index.min(), tga.index.min(), rrp.index.min())
     end = max(walcl.index.max(), tga.index.max(), rrp.index.max())
     daily = pd.DataFrame(index=pd.date_range(start, end, freq="D"))

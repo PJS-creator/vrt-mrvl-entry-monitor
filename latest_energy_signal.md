@@ -1,6 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-10-10 01:54:20**
+- 실행시간(UTC): **2026-10-10 03:01:04**
 
 ## Commodity Regime
 

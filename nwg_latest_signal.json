@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-10-13T03:09:54Z",
+  "generated_at_utc": "2026-10-13T15:00:57Z",
   "as_of": {
-    "price_date": "2026-10-12",
-    "run_time_utc": "2026-10-13 03:09:54"
+    "price_date": "2026-10-13",
+    "run_time_utc": "2026-10-13 15:00:57"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 3.15,
-      "change_4w": 45.0,
-      "latest_date": "2026-10-08"
+      "latest": 3.11,
+      "change_4w": 46.0,
+      "latest_date": "2026-10-09"
     },
     "BAMLC0A0CM": {
-      "latest": 0.82,
-      "change_4w": 2.0,
-      "latest_date": "2026-10-08"
+      "latest": 0.83,
+      "change_4w": 3.0,
+      "latest_date": "2026-10-09"
     },
     "VIXCLS": {
-      "latest": 14.84,
-      "change_4w": -1.0,
-      "latest_date": "2026-10-09"
+      "latest": 15.21,
+      "change_4w": -1.89,
+      "latest_date": "2026-10-12"
     },
     "NFCI": {
       "latest": -0.494,
@@ -32,22 +32,22 @@
     "IUDBEDR": {
       "latest": 3.75,
       "change_4w": 0.0,
-      "latest_date": "2026-10-09"
+      "latest_date": "2026-10-12"
     },
     "IUDSOIA": {
-      "latest": 3.7332,
-      "change_4w": 0.27,
-      "latest_date": "2026-10-08"
+      "latest": 3.7331,
+      "change_4w": 0.24,
+      "latest_date": "2026-10-09"
     },
     "IUDMNPY": {
-      "latest": 5.4292,
-      "change_4w": 11.02,
-      "latest_date": "2026-10-08"
+      "latest": 5.3993,
+      "change_4w": 9.53,
+      "latest_date": "2026-10-09"
     },
     "IUDSNPY": {
-      "latest": 4.9938,
-      "change_4w": 9.89,
-      "latest_date": "2026-10-08"
+      "latest": 4.9737,
+      "change_4w": 10.94,
+      "latest_date": "2026-10-09"
     },
     "LPMVTVX": {
       "latest": 54918.0,
@@ -61,52 +61,52 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 167.92,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 11.02,
-    "CURVE_10s5s_bp": 43.54,
-    "CURVE_10s5s_4w_change_bp": 1.13
+    "TERM_SPREAD_10Y_POLICY_bp": 164.93,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 9.53,
+    "CURVE_10s5s_bp": 42.56,
+    "CURVE_10s5s_4w_change_bp": -1.41
   },
   "prices": {
     "NWG.L": {
-      "close": 642.6,
-      "latest_date": "2026-10-09"
+      "close": 667.8,
+      "latest_date": "2026-10-13"
     },
     "^FTSE": {
-      "close": 10656.2998,
-      "latest_date": "2026-10-12"
+      "close": 10650.4404,
+      "latest_date": "2026-10-13"
     },
     "LLOY.L": {
-      "close": 101.6,
-      "latest_date": "2026-10-09"
+      "close": 104.35,
+      "latest_date": "2026-10-13"
     },
     "BARC.L": {
-      "close": 429.65,
-      "latest_date": "2026-10-09"
+      "close": 435.8,
+      "latest_date": "2026-10-13"
     },
     "HSBA.L": {
-      "close": 1395.8,
-      "latest_date": "2026-10-09"
+      "close": 1427.4,
+      "latest_date": "2026-10-13"
     }
   },
   "signals": {
     "NWG": {
-      "close": 642.6,
-      "ma50": 690.6145,
-      "ma200": 635.2201,
-      "gap50": -0.069524,
-      "gap200": 0.011618
+      "close": 667.8,
+      "ma50": 689.8568,
+      "ma200": 635.3269,
+      "gap50": -0.031973,
+      "gap200": 0.051112
     },
     "RS_FTSE": {
-      "ratio": 0.060898,
-      "ma60": 0.064107,
-      "gap": -0.050053,
-      "ma60_slope_proxy": 0.000336
+      "ratio": 0.062702,
+      "ma60": 0.064099,
+      "gap": -0.021804,
+      "ma60_slope_proxy": 0.00029
     },
     "RS_PEERS": {
-      "ratio": 1.000389,
-      "ma60": 0.973803,
-      "gap": 0.027302,
-      "ma60_slope_proxy": 0.012989
+      "ratio": 1.018221,
+      "ma60": 0.97499,
+      "gap": 0.04434,
+      "ma60_slope_proxy": 0.013791
     }
   },
   "checks": {
@@ -114,12 +114,13 @@
     "CurveGreen": true,
     "DemandGreen": false,
     "MacroGreen": false,
-    "PriceConfirm": true,
+    "PriceConfirm": false,
     "ENTRY_STRICT": false,
-    "ENTRY_LOOSE": true
+    "ENTRY_LOOSE": false
   },
   "fails": [
-    "DemandGreen=FALSE (monthly)"
+    "DemandGreen=FALSE (monthly)",
+    "PullbackZone=FALSE"
   ],
-  "verdict": "🟡 ENTRY (LOOSE): Risk+Curve + PriceConfirm (Demand monthly not confirmed)"
+  "verdict": "⏸ No entry today"
 }

@@ -1,7 +1,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-10-12**
-- 실행시간(UTC): **2026-10-12 15:00:50**
+- 실행시간(UTC): **2026-10-13 03:00:50**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -14,16 +14,16 @@
 - NFCI: -0.494
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 8.311673
-- MA60: 8.688684
-- gap: -4.34%
+- ratio (VRT/SRVR): 8.25664
+- MA60: 8.687767
+- gap: -4.96%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.446067
-- MA60: 0.39944
-- gap: 11.67%
-- MA60_slope_proxy: 0.008248
+- ratio (MRVL/SMH): 0.449855
+- MA60: 0.399504
+- gap: 12.60%
+- MA60_slope_proxy: 0.008311
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

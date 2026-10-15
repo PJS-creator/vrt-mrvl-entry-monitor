@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-10-14T15:01:26Z",
+  "generated_at_utc": "2026-10-15T00:49:34Z",
   "as_of": {
     "price_date": "2026-10-14",
-    "run_time_utc": "2026-10-14 15:01:26"
+    "run_time_utc": "2026-10-15 00:49:34"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 3.11,
+      "latest": 3.16,
       "change_4w": 40.0,
-      "latest_date": "2026-10-12"
+      "latest_date": "2026-10-13"
     },
     "BAMLC0A0CM": {
       "latest": 0.83,
       "change_4w": 3.0,
-      "latest_date": "2026-10-12"
+      "latest_date": "2026-10-13"
     },
     "VIXCLS": {
       "latest": 15.27,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 665.4,
-      "latest_date": "2026-10-14"
+      "close": 667.2,
+      "latest_date": "2026-10-13"
     },
     "^FTSE": {
-      "close": 10691.5195,
+      "close": 10724.9004,
       "latest_date": "2026-10-14"
     },
     "LLOY.L": {
-      "close": 103.904,
-      "latest_date": "2026-10-14"
+      "close": 104.4,
+      "latest_date": "2026-10-13"
     },
     "BARC.L": {
-      "close": 430.75,
-      "latest_date": "2026-10-14"
+      "close": 436.05,
+      "latest_date": "2026-10-13"
     },
     "HSBA.L": {
-      "close": 1413.0,
-      "latest_date": "2026-10-14"
+      "close": 1430.8,
+      "latest_date": "2026-10-13"
     }
   },
   "signals": {
     "NWG": {
-      "close": 665.4,
-      "ma50": 687.4537,
-      "ma200": 635.4266,
-      "gap50": -0.03208,
-      "gap200": 0.047171
+      "close": 667.2,
+      "ma50": 688.4633,
+      "ma200": 635.3638,
+      "gap50": -0.030885,
+      "gap200": 0.050107
     },
     "RS_FTSE": {
-      "ratio": 0.062236,
-      "ma60": 0.064035,
-      "gap": -0.028097,
-      "ma60_slope_proxy": 0.000162
+      "ratio": 0.062646,
+      "ma60": 0.064067,
+      "gap": -0.022179,
+      "ma60_slope_proxy": 0.000239
     },
     "RS_PEERS": {
-      "ratio": 1.024925,
-      "ma60": 0.976978,
-      "gap": 0.049077,
-      "ma60_slope_proxy": 0.014335
+      "ratio": 1.015396,
+      "ma60": 0.975721,
+      "gap": 0.040662,
+      "ma60_slope_proxy": 0.013941
     }
   },
   "checks": {
@@ -114,12 +114,13 @@
     "CurveGreen": true,
     "DemandGreen": false,
     "MacroGreen": false,
-    "PriceConfirm": true,
+    "PriceConfirm": false,
     "ENTRY_STRICT": false,
-    "ENTRY_LOOSE": true
+    "ENTRY_LOOSE": false
   },
   "fails": [
-    "DemandGreen=FALSE (monthly)"
+    "DemandGreen=FALSE (monthly)",
+    "PullbackZone=FALSE"
   ],
-  "verdict": "🟡 ENTRY (LOOSE): Risk+Curve + PriceConfirm (Demand monthly not confirmed)"
+  "verdict": "⏸ No entry today"
 }

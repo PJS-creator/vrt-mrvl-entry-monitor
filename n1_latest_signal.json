@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T00:49:58.550772+00:00",
-  "validation_class": "B_WARN",
+  "generated_at": "2026-10-15T03:01:18.073451+00:00",
+  "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-10-14",
   "execution_date": "2026-10-15",
-  "new_completed_us_session": true,
+  "new_completed_us_session": false,
   "price_source_id": "tiingo",
   "qqq_adjusted_close": 728.95,
   "sma20": 742.474689223765,
@@ -32,9 +32,9 @@
   "post_n1_execution_target": "QLD",
   "execution_target": "QLD",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "SHADOW_TARGET_UPDATE",
+  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
   "reason_codes": [
-    "NEW_COMPLETED_US_SESSION"
+    "NO_NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
   "warnings": [

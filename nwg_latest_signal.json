@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-10-16T15:00:57Z",
+  "generated_at_utc": "2026-10-17T00:45:37Z",
   "as_of": {
-    "price_date": "2026-10-16",
-    "run_time_utc": "2026-10-16 15:00:57"
+    "price_date": "2026-10-15",
+    "run_time_utc": "2026-10-17 00:45:37"
   },
   "data_warning": false,
   "warnings": [],
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 666.6,
-      "latest_date": "2026-10-16"
+      "close": 674.0,
+      "latest_date": "2026-10-15"
     },
     "^FTSE": {
-      "close": 10864.5098,
-      "latest_date": "2026-10-16"
+      "close": 10840.4004,
+      "latest_date": "2026-10-15"
     },
     "LLOY.L": {
-      "close": 104.65,
-      "latest_date": "2026-10-16"
+      "close": 105.85,
+      "latest_date": "2026-10-15"
     },
     "BARC.L": {
-      "close": 433.85,
-      "latest_date": "2026-10-16"
+      "close": 432.4,
+      "latest_date": "2026-10-15"
     },
     "HSBA.L": {
-      "close": 1429.4,
-      "latest_date": "2026-10-16"
+      "close": 1421.2,
+      "latest_date": "2026-10-15"
     }
   },
   "signals": {
     "NWG": {
-      "close": 666.6,
-      "ma50": 685.8304,
-      "ma200": 635.6043,
-      "gap50": -0.02804,
-      "gap200": 0.048766
+      "close": 674.0,
+      "ma50": 686.7321,
+      "ma200": 635.5574,
+      "gap50": -0.01854,
+      "gap200": 0.060486
     },
     "RS_FTSE": {
-      "ratio": 0.061356,
-      "ma60": 0.063982,
-      "gap": -0.041045,
-      "ma60_slope_proxy": -7e-06
+      "ratio": 0.062175,
+      "ma60": 0.06401,
+      "gap": -0.028664,
+      "ma60_slope_proxy": 6.9e-05
     },
     "RS_PEERS": {
-      "ratio": 1.01621,
-      "ma60": 0.979896,
-      "gap": 0.037059,
-      "ma60_slope_proxy": 0.015462
+      "ratio": 1.031922,
+      "ma60": 0.978488,
+      "gap": 0.054608,
+      "ma60_slope_proxy": 0.014924
     }
   },
   "checks": {
@@ -120,6 +120,7 @@
   },
   "fails": [
     "DemandGreen=FALSE (monthly)",
+    "PullbackZone=FALSE",
     "RelativeTurn=FALSE"
   ],
   "verdict": "⏸ No entry today"

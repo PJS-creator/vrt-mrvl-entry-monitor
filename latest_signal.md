@@ -1,7 +1,17 @@
 # Daily Signal Monitor
 
-- 데이터 기준일(주가): **2026-10-20**
-- 실행시간(UTC): **2026-10-21 03:00:52**
+- 데이터 기준일(주가): **2026-10-21**
+- 실행시간(UTC): **2026-10-21 15:00:55**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- FRED BAMLH0A0HYM2 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
+), using cached values if available.
+- FRED BAMLC0A0CM failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
+), using cached values if available.
+- FRED DFII10 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
+), using cached values if available.
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -10,20 +20,20 @@
 - HY OAS (BAMLH0A0HYM2): 3.29 / 4주 변화 63.0 bp
 - IG OAS (BAMLC0A0CM): 0.87 / 4주 변화 10.0 bp
 - 10Y Real Yield (DFII10): 2.8 / 4주 변화 18.0 bp
-- VIX (VIXCLS): 18.44
-- NFCI: -0.499
+- VIX (VIXCLS): 17.31
+- NFCI: -0.496
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.275197
-- MA60: 8.472003
-- gap: -14.13%
+- ratio (VRT/SRVR): 7.679279
+- MA60: 8.451728
+- gap: -9.14%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.44004
-- MA60: 0.407865
-- gap: 7.89%
-- MA60_slope_proxy: 0.019242
+- ratio (MRVL/SMH): 0.438519
+- MA60: 0.409684
+- gap: 7.04%
+- MA60_slope_proxy: 0.021154
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

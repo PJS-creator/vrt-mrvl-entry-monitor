@@ -1,6 +1,6 @@
 # N1 QQQ Meta Daily Shadow Signal
 
-- Validation: **B_WARN**
+- Validation: **B_WARN_NO_NEW_SESSION**
 - Signal date: **2026-10-20**
 - Next execution session: **2026-10-21**
 - QQQ / SMA20 / SMA50 / SMA200 / RSI14: **717.6300 / 739.8720 / 726.2093 / 674.7415 / 40.8985**
@@ -12,7 +12,7 @@
 - N1 overlay: **OFF**
 - N1 shadow target: **QLD**
 - Router: **OFF**
-- Action: **SHADOW_TARGET_UPDATE**
+- Action: **HOLD_PREVIOUS_VALIDATED_TARGET**
 - Rules SHA-256: 9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f
 
 ## Data warnings

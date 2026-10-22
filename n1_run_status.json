@@ -1,9 +1,10 @@
 {
-  "attempted_at": "2026-10-21T15:01:23.146665+00:00",
-  "status": "VALIDATED",
-  "data_missing": false,
-  "signal_date": "2026-10-20",
-  "execution_target": "QLD",
-  "signal_sha256": "519ab4ecc1371e8bb977179093c7405e14b16e0a725c94d0ae316c7da58592a9",
-  "state_sha256": "1f7cd1ef35508da985a66ef803f3a695bf541358f40fa49089ca039a62a377b5"
+  "attempted_at": "2026-10-22T00:52:40.464626+00:00",
+  "status": "BLOCKED",
+  "data_missing": true,
+  "reason": "ParserError",
+  "execution_target": null,
+  "checkpoint_preserved": true,
+  "previous_signal_date": "2026-10-20",
+  "previous_execution_target": "QLD"
 }

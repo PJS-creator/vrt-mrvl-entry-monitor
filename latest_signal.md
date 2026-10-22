@@ -1,7 +1,7 @@
 # Daily Signal Monitor
 
-- 데이터 기준일(주가): **2026-10-21**
-- 실행시간(UTC): **2026-10-21 15:00:55**
+- 데이터 기준일(주가): **2026-10-20**
+- 실행시간(UTC): **2026-10-22 00:52:11**
 
 ## ⚠️ DATA WARNING
 일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
@@ -11,6 +11,10 @@
 - FRED BAMLC0A0CM failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
 ), using cached values if available.
 - FRED DFII10 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
+), using cached values if available.
+- FRED VIXCLS failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
+), using cached values if available.
+- FRED NFCI failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
 ), using cached values if available.
 
 ## MacroGreen
@@ -24,16 +28,16 @@
 - NFCI: -0.496
 
 ## VRT 신규진입 룰
-- ratio (VRT/SRVR): 7.679279
-- MA60: 8.451728
-- gap: -9.14%
+- ratio (VRT/SRVR): 7.275197
+- MA60: 8.472003
+- gap: -14.13%
 - **VRT_ENTRY**: **True**
 
 ## MRVL 신규진입 룰 (확인형)
-- ratio (MRVL/SMH): 0.438519
-- MA60: 0.409684
-- gap: 7.04%
-- MA60_slope_proxy: 0.021154
+- ratio (MRVL/SMH): 0.44004
+- MA60: 0.407865
+- gap: 7.89%
+- MA60_slope_proxy: 0.019242
 - **MRVL_ENTRY**: **True**
 
 ## Verdict

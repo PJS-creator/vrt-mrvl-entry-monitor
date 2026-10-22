@@ -1,37 +1,31 @@
 {
-  "generated_at_utc": "2026-10-22T03:00:52Z",
+  "generated_at_utc": "2026-10-22T15:00:57Z",
   "as_of": {
-    "price_date": "2026-10-21",
-    "run_time_utc": "2026-10-22 03:00:52"
+    "price_date": "2026-10-22",
+    "run_time_utc": "2026-10-22 15:00:57"
   },
-  "data_warning": true,
-  "warnings": [
-    "FRED BAMLH0A0HYM2 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n), using cached values if available.",
-    "FRED BAMLC0A0CM failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n), using cached values if available.",
-    "FRED DFII10 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n), using cached values if available.",
-    "FRED VIXCLS failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n), using cached values if available.",
-    "FRED NFCI failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n), using cached values if available."
-  ],
+  "data_warning": false,
+  "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.29,
-      "change_4w_bp": 63.0,
-      "latest_date": "2026-10-19"
+      "latest": 3.27,
+      "change_4w_bp": 54.0,
+      "latest_date": "2026-10-21"
     },
     "BAMLC0A0CM": {
-      "latest": 0.87,
-      "change_4w_bp": 10.0,
-      "latest_date": "2026-10-19"
+      "latest": 0.88,
+      "change_4w_bp": 11.0,
+      "latest_date": "2026-10-21"
     },
     "DFII10": {
-      "latest": 2.8,
-      "change_4w_bp": 18.0,
-      "latest_date": "2026-10-19"
+      "latest": 2.77,
+      "change_4w_bp": 14.0,
+      "latest_date": "2026-10-20"
     },
     "VIXCLS": {
-      "latest": 17.31,
-      "change_4w_bp": 310.0,
-      "latest_date": "2026-10-20"
+      "latest": 16.68,
+      "change_4w_bp": 150.0,
+      "latest_date": "2026-10-21"
     },
     "NFCI": {
       "latest": -0.496,
@@ -49,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 212.15,
-      "latest_date": "2026-10-21"
+      "close": 195.42,
+      "latest_date": "2026-10-22"
     },
     "MRVL": {
-      "close": 244.76,
-      "latest_date": "2026-10-21"
+      "close": 226.63,
+      "latest_date": "2026-10-22"
     },
     "SRVR": {
-      "close": 27.58,
-      "latest_date": "2026-10-21"
+      "close": 27.08,
+      "latest_date": "2026-10-22"
     },
     "SMH": {
-      "close": 556.7,
-      "latest_date": "2026-10-21"
+      "close": 528.965,
+      "latest_date": "2026-10-22"
     },
     "NVDA": {
-      "close": 221.97,
-      "latest_date": "2026-10-21"
+      "close": 213.61,
+      "latest_date": "2026-10-22"
     },
     "AVGO": {
-      "close": 337.8,
-      "latest_date": "2026-10-21"
+      "close": 324.1,
+      "latest_date": "2026-10-22"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.692168,
-      "ma60": 8.451943,
-      "gap": -0.089894,
+      "ratio": 7.216396,
+      "ma60": 8.447974,
+      "gap": -0.145784,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.439662,
-      "ma60": 0.409703,
-      "gap": 0.073124,
-      "ma60_slope_proxy": 0.021173,
+      "ratio": 0.42844,
+      "ma60": 0.411444,
+      "gap": 0.04131,
+      "ma60_slope_proxy": 0.023295,
       "entry": true
     }
   },

@@ -1,19 +1,7 @@
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-10-21**
-- 실행시간(UTC): **2026-10-22 03:00:55**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- FRED BAMLH0A0HYM2 failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
-), using cached values if available.
-- FRED BAMLC0A0CM failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
-), using cached values if available.
-- FRED VIXCLS failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
-), using cached values if available.
-- FRED NFCI failed (Error tokenizing data. C error: Expected 1 fields in line 5, saw 3
-), using cached values if available.
+- 데이터 기준일(주가): **2026-10-22**
+- 실행시간(UTC): **2026-10-22 15:01:01**
 
 ## Verdict
 ⏸ No entry today
@@ -28,17 +16,17 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 162.4 bp / 4주 변화 21.1 bp
-- CURVE_10s5s: 40.62 bp / 4주 변화 1.7 bp
+- TERM_SPREAD_10Y_POLICY: 160.16 bp / 4주 변화 16.09 bp
+- CURVE_10s5s: 38.98 bp / 4주 변화 -2.11 bp
 
 ## NWG Price
-- close: 641.4
-- MA50: 683.1272 / gap50: -6.11%
-- MA200: 635.421 / gap200: 0.94%
+- close: 633.8
+- MA50: 680.34 / gap50: -6.84%
+- MA200: 635.4536 / gap200: -0.26%
 
 ## Relative Strength
-- RS vs FTSE gap: -6.45% / slope_proxy: -0.000209
-- RS vs Peers gap: 2.73% / slope_proxy: 0.016991
+- RS vs FTSE gap: -7.43% / slope_proxy: -0.000245
+- RS vs Peers gap: 2.56% / slope_proxy: 0.019667
 
 ## Why not today?
 - DemandGreen=FALSE (monthly)

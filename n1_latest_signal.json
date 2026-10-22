@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-21T15:01:23.146665+00:00",
-  "validation_class": "B_WARN_NO_NEW_SESSION",
-  "signal_date": "2026-10-20",
-  "execution_date": "2026-10-21",
-  "new_completed_us_session": false,
+  "generated_at": "2026-10-22T15:01:33.929349+00:00",
+  "validation_class": "A_NORMAL",
+  "signal_date": "2026-10-21",
+  "execution_date": "2026-10-22",
+  "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 717.63,
-  "sma20": 739.8720000000001,
-  "sma50": 726.2093384775761,
-  "sma200": 674.7415297847964,
-  "wilder_rsi14": 40.89850254057942,
+  "qqq_adjusted_close": 725.2,
+  "sma20": 739.0715,
+  "sma50": 726.3588857504441,
+  "sma200": 675.2879451904945,
+  "wilder_rsi14": 46.07225089520532,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-10-09",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 57.69230769230769,
   "liquidity_state": "MIXED",
   "comparison1_raw_state": "YELLOW",
-  "comparison1_raw_streak": 3,
+  "comparison1_raw_streak": 4,
   "comparison1_confirmed_state": "YELLOW",
   "comparison1_confirmed_target": "QLD",
   "comparison3_target": "QLD",
@@ -32,16 +32,13 @@
   "post_n1_execution_target": "QLD",
   "execution_target": "QLD",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION"
+    "NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
-  "warnings": [
-    "CBOE_FALLBACK:^VIX:STALE_OR_SHORT_PRICES:^VIX:2026-10-20",
-    "TIINGO_FALLBACK:^VIX:HTTPError"
-  ],
+  "warnings": [],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "b8e8733f76ee5f34218372f66b284eb60c3d953bb2702461a5d5ace108115642",
-  "state_sha256": "1f7cd1ef35508da985a66ef803f3a695bf541358f40fa49089ca039a62a377b5"
+  "input_sha256": "66185580601e90f557bb0512d7f1ca8dc76ff076e46909b8f0e9edf74f17d27b",
+  "state_sha256": "d9e884449a7c6780aecbb4bb723ca5bd459d6741e4a6116d71b4ffb03861bdf5"
 }

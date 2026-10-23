@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-22T15:01:33.929349+00:00",
-  "validation_class": "A_NORMAL",
-  "signal_date": "2026-10-21",
-  "execution_date": "2026-10-22",
+  "generated_at": "2026-10-23T00:54:55.122287+00:00",
+  "validation_class": "B_WARN",
+  "signal_date": "2026-10-22",
+  "execution_date": "2026-10-23",
   "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 725.2,
-  "sma20": 739.0715,
-  "sma50": 726.3588857504441,
-  "sma200": 675.2879451904945,
-  "wilder_rsi14": 46.07225089520532,
+  "qqq_adjusted_close": 704.47,
+  "sma20": 737.24,
+  "sma50": 725.9889393260221,
+  "sma200": 675.7036516723475,
+  "wilder_rsi14": 36.618650204196264,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-10-09",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 57.69230769230769,
   "liquidity_state": "MIXED",
   "comparison1_raw_state": "YELLOW",
-  "comparison1_raw_streak": 4,
+  "comparison1_raw_streak": 5,
   "comparison1_confirmed_state": "YELLOW",
   "comparison1_confirmed_target": "QLD",
   "comparison3_target": "QLD",
@@ -37,8 +37,11 @@
     "NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
-  "warnings": [],
+  "warnings": [
+    "CBOE_FALLBACK:^VIX:STALE_OR_SHORT_PRICES:^VIX:2026-10-22",
+    "TIINGO_FALLBACK:^VIX:HTTPError"
+  ],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "66185580601e90f557bb0512d7f1ca8dc76ff076e46909b8f0e9edf74f17d27b",
-  "state_sha256": "d9e884449a7c6780aecbb4bb723ca5bd459d6741e4a6116d71b4ffb03861bdf5"
+  "input_sha256": "3c4444398441c1584bad34b41336fcf2f881d6f8ec5e317f6c30d87a69cc2438",
+  "state_sha256": "e5b2592536dbc4fd2b93bd4ac78f6b3ac96552973f5d3e1ac48e71d930a211da"
 }

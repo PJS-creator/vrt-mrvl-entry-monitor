@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-10-24 03:01:26**
+- 실행시간(UTC): **2026-10-24 15:01:21**
 - 데이터 기준일(주가): **2026-10-23**
 
 ## Verdict
@@ -63,7 +63,7 @@
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 5.50 | RSI14: 25.78 | ATR14%: 6.64%
 - MA20/50/200 gap: -17.62% / -24.45% / -21.64%
-- 5D return: -17.04% | 20D drawdown: -27.25% | vol_ratio: 1.15
+- 5D return: -17.04% | 20D drawdown: -27.25% | vol_ratio: 1.16
 - RS vs GDXJ: gap -8.05% / slope_proxy -11.31%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **53.4**
 - Checks:
@@ -85,7 +85,7 @@
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
 - close: 0.84 | RSI14: 28.89 | ATR14%: 7.87%
 - MA20/50/200 gap: -15.07% / -35.35% / -42.01%
-- 5D return: -13.40% | 20D drawdown: -30.58% | vol_ratio: 0.37
+- 5D return: -13.40% | 20D drawdown: -30.58% | vol_ratio: 0.38
 - RS vs GDXJ: gap -23.11% / slope_proxy -15.37%
 - FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **42.8**
 - Checks:

@@ -1,9 +1,9 @@
 {
-  "attempted_at": "2026-10-23T15:01:24.449066+00:00",
+  "attempted_at": "2026-10-24T01:01:45.956199+00:00",
   "status": "VALIDATED",
   "data_missing": false,
-  "signal_date": "2026-10-22",
+  "signal_date": "2026-10-23",
   "execution_target": "QLD",
-  "signal_sha256": "f89ad8283c88617c0093d4410322d15f4fbf65472c4b81177ecae1de0c7e58ff",
-  "state_sha256": "e5b2592536dbc4fd2b93bd4ac78f6b3ac96552973f5d3e1ac48e71d930a211da"
+  "signal_sha256": "8f7377d779a9d605640bc741f8912ed33c4a813040ee3985d0e97d2a6a816a2d",
+  "state_sha256": "61133e4892fdb7c52477a956b51c21d309e3b65e1a2239ba4d0247883c5b0119"
 }

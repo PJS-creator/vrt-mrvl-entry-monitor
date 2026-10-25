@@ -1,11 +1,14 @@
 {
-  "generated_at_utc": "2026-10-24T15:00:48Z",
+  "generated_at_utc": "2026-10-25T00:30:16Z",
   "as_of": {
     "price_date": "2026-10-23",
-    "run_time_utc": "2026-10-24 15:00:48"
+    "run_time_utc": "2026-10-25 00:30:16"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.",
+    "BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 3.4,
@@ -61,10 +64,10 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 158.37,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": 4.27,
-    "CURVE_10s5s_bp": 38.32,
-    "CURVE_10s5s_4w_change_bp": -2.93
+    "TERM_SPREAD_10Y_POLICY_bp": null,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": null,
+    "CURVE_10s5s_bp": null,
+    "CURVE_10s5s_4w_change_bp": null
   },
   "prices": {
     "NWG.L": {
@@ -111,7 +114,7 @@
   },
   "checks": {
     "RiskGreen": true,
-    "CurveGreen": true,
+    "CurveGreen": false,
     "DemandGreen": false,
     "MacroGreen": false,
     "PriceConfirm": false,
@@ -119,6 +122,7 @@
     "ENTRY_LOOSE": false
   },
   "fails": [
+    "CurveGreen=FALSE",
     "DemandGreen=FALSE (monthly)",
     "RelativeTurn=FALSE"
   ],

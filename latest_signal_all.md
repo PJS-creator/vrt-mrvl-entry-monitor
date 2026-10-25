@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-10-24 15:01:22**
+- 실행시간(UTC): **2026-10-25 00:32:00**
 - 데이터 기준일(일봉): **2026-10-23**
 - 데이터 기준일(주봉): **2026-10-19**
 - VXN 기준일: **2026-10-22** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-10-23**
-- 실행시간(UTC): **2026-10-24 15:00:44**
+- 실행시간(UTC): **2026-10-25 00:30:13**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,14 +115,20 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-10-23**
-- 실행시간(UTC): **2026-10-24 15:00:48**
+- 실행시간(UTC): **2026-10-25 00:30:16**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- BoE IUDMNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- BoE IUDSNPY failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
 - RiskGreen: **True**
-- CurveGreen: **True**
+- CurveGreen: **False**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -130,8 +136,8 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 158.37 bp / 4주 변화 4.27 bp
-- CURVE_10s5s: 38.32 bp / 4주 변화 -2.93 bp
+- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- CURVE_10s5s: None bp / 4주 변화 None bp
 
 ## NWG Price
 - close: 627.4
@@ -143,6 +149,7 @@
 - RS vs Peers gap: 2.54% / slope_proxy: 0.020721
 
 ## Why not today?
+- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - RelativeTurn=FALSE
 
@@ -152,7 +159,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-10-24 15:01:00**
+- 실행시간(UTC): **2026-10-25 00:31:42**
 
 ## Commodity Regime
 
@@ -318,7 +325,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-10-23**
-- 실행시간(UTC): **2026-10-24 15:01:08**
+- 실행시간(UTC): **2026-10-25 00:31:47**
 
 ## Verdict
 ⏸ No entry today
@@ -409,7 +416,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-10-24 15:01:21**
+- 실행시간(UTC): **2026-10-25 00:31:58**
 - 데이터 기준일(주가): **2026-10-23**
 
 ## Verdict

@@ -1,7 +1,12 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-10-23**
-- 실행시간(UTC): **2026-10-26 00:42:17**
+- 실행시간(UTC): **2026-10-26 03:00:50**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- BoE LPMVQJW failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today

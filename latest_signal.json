@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-10-27T15:00:49Z",
+  "generated_at_utc": "2026-10-28T01:40:09Z",
   "as_of": {
     "price_date": "2026-10-27",
-    "run_time_utc": "2026-10-27 15:00:49"
+    "run_time_utc": "2026-10-28 01:40:09"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.38,
-      "change_4w_bp": 45.0,
-      "latest_date": "2026-10-23"
+      "latest": 3.3,
+      "change_4w_bp": 28.0,
+      "latest_date": "2026-10-26"
     },
     "BAMLC0A0CM": {
-      "latest": 0.91,
-      "change_4w_bp": 10.0,
-      "latest_date": "2026-10-23"
+      "latest": 0.9,
+      "change_4w_bp": 7.0,
+      "latest_date": "2026-10-26"
     },
     "DFII10": {
       "latest": 2.66,
-      "change_4w_bp": -17.0,
-      "latest_date": "2026-10-23"
+      "change_4w_bp": -24.0,
+      "latest_date": "2026-10-26"
     },
     "VIXCLS": {
       "latest": 18.39,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 208.69,
+      "close": 208.56,
       "latest_date": "2026-10-27"
     },
     "MRVL": {
-      "close": 241.1,
+      "close": 243.57,
       "latest_date": "2026-10-27"
     },
     "SRVR": {
-      "close": 28.005,
+      "close": 28.01,
       "latest_date": "2026-10-27"
     },
     "SMH": {
-      "close": 552.35,
+      "close": 557.98,
       "latest_date": "2026-10-27"
     },
     "NVDA": {
-      "close": 217.745,
+      "close": 217.94,
       "latest_date": "2026-10-27"
     },
     "AVGO": {
-      "close": 340.077,
+      "close": 342.33,
       "latest_date": "2026-10-27"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.451884,
-      "ma60": 8.409422,
-      "gap": -0.113865,
+      "ratio": 7.445912,
+      "ma60": 8.409322,
+      "gap": -0.114565,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.436499,
-      "ma60": 0.415743,
-      "gap": 0.049924,
-      "ma60_slope_proxy": 0.027249,
+      "ratio": 0.436521,
+      "ma60": 0.415744,
+      "gap": 0.049977,
+      "ma60_slope_proxy": 0.02725,
       "entry": true
     }
   },

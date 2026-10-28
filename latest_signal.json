@@ -1,21 +1,21 @@
 {
-  "generated_at_utc": "2026-10-28T03:00:53Z",
+  "generated_at_utc": "2026-10-28T15:00:56Z",
   "as_of": {
-    "price_date": "2026-10-27",
-    "run_time_utc": "2026-10-28 03:00:53"
+    "price_date": "2026-10-28",
+    "run_time_utc": "2026-10-28 15:00:56"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.3,
-      "change_4w_bp": 28.0,
-      "latest_date": "2026-10-26"
+      "latest": 3.18,
+      "change_4w_bp": 10.0,
+      "latest_date": "2026-10-27"
     },
     "BAMLC0A0CM": {
-      "latest": 0.9,
-      "change_4w_bp": 7.0,
-      "latest_date": "2026-10-26"
+      "latest": 0.88,
+      "change_4w_bp": 4.0,
+      "latest_date": "2026-10-27"
     },
     "DFII10": {
       "latest": 2.66,
@@ -23,14 +23,14 @@
       "latest_date": "2026-10-26"
     },
     "VIXCLS": {
-      "latest": 18.39,
-      "change_4w_bp": 232.0,
-      "latest_date": "2026-10-26"
+      "latest": 17.52,
+      "change_4w_bp": 148.0,
+      "latest_date": "2026-10-27"
     },
     "NFCI": {
-      "latest": -0.496,
-      "change_4w_bp": 3.2,
-      "latest_date": "2026-10-16"
+      "latest": -0.487,
+      "change_4w_bp": 3.1,
+      "latest_date": "2026-10-23"
     }
   },
   "checks": {
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 208.56,
-      "latest_date": "2026-10-27"
+      "close": 234.935,
+      "latest_date": "2026-10-28"
     },
     "MRVL": {
-      "close": 243.57,
-      "latest_date": "2026-10-27"
+      "close": 247.9805,
+      "latest_date": "2026-10-28"
     },
     "SRVR": {
-      "close": 28.01,
-      "latest_date": "2026-10-27"
+      "close": 27.765,
+      "latest_date": "2026-10-28"
     },
     "SMH": {
-      "close": 557.98,
-      "latest_date": "2026-10-27"
+      "close": 563.975,
+      "latest_date": "2026-10-28"
     },
     "NVDA": {
-      "close": 217.94,
-      "latest_date": "2026-10-27"
+      "close": 217.6884,
+      "latest_date": "2026-10-28"
     },
     "AVGO": {
-      "close": 342.33,
-      "latest_date": "2026-10-27"
+      "close": 344.695,
+      "latest_date": "2026-10-28"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.445912,
-      "ma60": 8.409322,
-      "gap": -0.114565,
+      "ratio": 8.461552,
+      "ma60": 8.406485,
+      "gap": 0.006551,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.436521,
-      "ma60": 0.415744,
-      "gap": 0.049977,
-      "ma60_slope_proxy": 0.02725,
+      "ratio": 0.439701,
+      "ma60": 0.416745,
+      "gap": 0.055084,
+      "ma60_slope_proxy": 0.027632,
       "entry": true
     }
   },

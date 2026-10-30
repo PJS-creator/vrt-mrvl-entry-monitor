@@ -1,6 +1,6 @@
 {
   "verdict": "🟡 Precious miners watch/add-on candidates: AYA",
-  "generated_utc": "2026-10-30 02:07:51",
+  "generated_utc": "2026-10-30 03:01:16",
   "regime": {
     "risk_green": true,
     "real_yield_headwind": false,
@@ -243,9 +243,9 @@
         "high20": 1.0299999713897705,
         "low20": 0.8299999833106995,
         "drawdown20": -17.475723548325938,
-        "volume": 217655.0,
-        "volume_ma20": 446082.75,
-        "volume_ratio": 0.487925166350862,
+        "volume": 217279.0,
+        "volume_ma20": 446063.95,
+        "volume_ratio": 0.48710280218789254,
         "slope20": -0.15841581003185135,
         "slope60": -0.3656716397993548
       },
@@ -310,9 +310,9 @@
         "high20": 2.2100000381469727,
         "low20": 1.649999976158142,
         "drawdown20": -25.339368883376856,
-        "volume": 99057.0,
-        "volume_ma20": 132357.85,
-        "volume_ratio": 0.748402909234322,
+        "volume": 98757.0,
+        "volume_ma20": 132342.85,
+        "volume_ratio": 0.7462208951975872,
         "slope20": -0.24311930016931005,
         "slope60": -0.14948457345811395
       },

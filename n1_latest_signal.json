@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-04T15:01:36.157136+00:00",
-  "validation_class": "NO_NEW_COMPLETED_US_SESSION",
-  "signal_date": "2026-11-03",
-  "execution_date": "2026-11-04",
-  "new_completed_us_session": false,
+  "generated_at": "2026-11-05T02:44:57.345086+00:00",
+  "validation_class": "A_NORMAL",
+  "signal_date": "2026-11-04",
+  "execution_date": "2026-11-05",
+  "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 685.28,
-  "sma20": 720.713,
-  "sma50": 723.67291371339,
-  "sma200": 679.0298998371604,
-  "wilder_rsi14": 34.644625946605416,
+  "qqq_adjusted_close": 691.95,
+  "sma20": 717.424,
+  "sma50": 723.3119044681702,
+  "sma200": 679.459548689227,
+  "wilder_rsi14": 38.55267031087841,
   "trend200_state": "UP",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-10-23",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 56.53846153846154,
   "liquidity_state": "MIXED",
   "comparison1_raw_state": "YELLOW",
-  "comparison1_raw_streak": 4,
+  "comparison1_raw_streak": 5,
   "comparison1_confirmed_state": "YELLOW",
   "comparison1_confirmed_target": "QLD",
   "comparison3_target": "QLD",
@@ -32,13 +32,13 @@
   "post_n1_execution_target": "QLD",
   "execution_target": "QLD",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION"
+    "NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
   "warnings": [],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "f261458c1bc84af6587960e9e3dbdd819252faee2d8c69562044c39a3d682239",
-  "state_sha256": "87caeb7151d6b0caf4d8c0737af30906b5042fc3ab1ec0961b0b61f9cd5e3145"
+  "input_sha256": "e71518e28e5cf27cac51c85a4286e1b87b877e90dbc5f822fc44ffc2920521df",
+  "state_sha256": "332de71c01c588fca37d0b907b712ec342e609f1ca54fb89a0338df664ae36cc"
 }

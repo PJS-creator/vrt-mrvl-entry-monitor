@@ -1,19 +1,14 @@
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-11-05**
-- 실행시간(UTC): **2026-11-06 03:00:51**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE LPMVTVX failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 데이터 기준일(주가): **2026-11-06**
+- 실행시간(UTC): **2026-11-06 15:00:57**
 
 ## Verdict
 ⏸ No entry today
 
 ## Checks
-- RiskGreen: **True**
-- CurveGreen: **True**
+- RiskGreen: **False**
+- CurveGreen: **False**
 - DemandGreen(monthly): **False**
 - MacroGreen: **False**
 - PriceConfirm: **False**
@@ -21,18 +16,20 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 145.98 bp / 4주 변화 -12.7 bp
-- CURVE_10s5s: 35.44 bp / 4주 변화 -8.25 bp
+- TERM_SPREAD_10Y_POLICY: 138.64 bp / 4주 변화 -24.88 bp
+- CURVE_10s5s: 35.69 bp / 4주 변화 -8.55 bp
 
 ## NWG Price
-- close: 611.0
-- MA50: 666.552 / gap50: -8.33%
-- MA200: 634.309 / gap200: -3.67%
+- close: 589.0
+- MA50: 662.788 / gap50: -11.13%
+- MA200: 633.7236 / gap200: -7.06%
 
 ## Relative Strength
-- RS vs FTSE gap: -9.97% / slope_proxy: -0.001499
-- RS vs Peers gap: -0.08% / slope_proxy: 0.019808
+- RS vs FTSE gap: -10.95% / slope_proxy: -0.001786
+- RS vs Peers gap: -2.06% / slope_proxy: 0.017245
 
 ## Why not today?
+- RiskGreen=FALSE
+- CurveGreen=FALSE
 - DemandGreen=FALSE (monthly)
 - RelativeTurn=FALSE

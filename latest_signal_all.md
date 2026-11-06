@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-06 02:48:44**
+- 실행시간(UTC): **2026-11-06 03:01:44**
 - 데이터 기준일(일봉): **2026-11-05**
 - 데이터 기준일(주봉): **2026-11-02**
 - VXN 기준일: **2026-11-04** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-05**
-- 실행시간(UTC): **2026-11-06 02:48:06**
+- 실행시간(UTC): **2026-11-06 03:00:48**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,7 +115,12 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-11-05**
-- 실행시간(UTC): **2026-11-06 02:48:10**
+- 실행시간(UTC): **2026-11-06 03:00:51**
+
+## ⚠️ DATA WARNING
+일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
+
+- BoE LPMVTVX failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
 
 ## Verdict
 ⏸ No entry today
@@ -152,15 +157,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-06 02:48:18**
+- 실행시간(UTC): **2026-11-06 03:01:21**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 91.68 / 5D -10.12%
-- Brent ref (BZ=F): 99.91 / 5D -13.03%
+- WTI ref (CL=F): 91.53 / 5D -10.26%
+- Brent ref (BZ=F): 99.69 / 5D -13.22%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 8.23
-- Gas ref (NG=F): 3.00 / 5D 1.66%
+- Brent-WTI spread: 8.16
+- Gas ref (NG=F): 3.00 / 5D 1.63%
 
 ## Gates
 
@@ -318,7 +323,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-05**
-- 실행시간(UTC): **2026-11-06 02:48:29**
+- 실행시간(UTC): **2026-11-06 03:01:28**
 
 ## Verdict
 ⏸ No entry today
@@ -363,7 +368,7 @@
 - close: 7.315 | RSI14: 43.856818 | ATR14%: 7.49%
 - MA20 gap: -5.47% | MA50 gap: -15.44% | MA200 gap: -16.01%
 - vol_ratio(Volume/Vol20): 1.276416 | gap_open: 3.06%
-- SilverMarginGate: SI=52.055 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=52.029999 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -2.11% / slope_proxy: 0.014355
 - Checks:
   - trend_ok: **False**
@@ -406,7 +411,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-06 02:48:43**
+- 실행시간(UTC): **2026-11-06 03:01:42**
 - 데이터 기준일(주가): **2026-11-05**
 
 ## Verdict

@@ -1,5 +1,5 @@
 {
-  "signal_date": "2026-11-09",
+  "signal_date": "2026-11-10",
   "trend200_state": "DOWN",
   "recovery_state": false,
   "liquidity_state": "MIXED",
@@ -7,7 +7,7 @@
   "comparison1_candidate_state": null,
   "comparison1_candidate_count": 0,
   "comparison1_last_raw_state": "RED",
-  "comparison1_raw_streak": 3,
+  "comparison1_raw_streak": 4,
   "comparison3_target": "TQQQ",
   "router_latch_active": true,
   "router_asset": "GLD",

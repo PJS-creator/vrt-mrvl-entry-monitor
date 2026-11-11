@@ -1,9 +1,9 @@
 {
-  "attempted_at": "2026-11-10T15:01:22.470819+00:00",
+  "attempted_at": "2026-11-11T02:14:07.647326+00:00",
   "status": "VALIDATED",
   "data_missing": false,
-  "signal_date": "2026-11-09",
+  "signal_date": "2026-11-10",
   "execution_target": "GLD",
-  "signal_sha256": "f214f2fb4fe5993f47df4944608e7285647df88585674a79fb9534d7e73a8726",
-  "state_sha256": "eafc959526ce1af40453602969068867708078d6d8d5036e8c4b8fd454eecf95"
+  "signal_sha256": "2c77c0632c25d0c36af92b01c127eb3fc83f94a1dc565b0ccd80257a2798bb98",
+  "state_sha256": "6b6e2eba8b765a16414882882f5048918ce8a38acd2bba16f6d3e2e5fb0e60c6"
 }

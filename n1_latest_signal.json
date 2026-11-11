@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-10T15:01:22.470819+00:00",
-  "validation_class": "NO_NEW_COMPLETED_US_SESSION",
-  "signal_date": "2026-11-09",
-  "execution_date": "2026-11-10",
-  "new_completed_us_session": false,
+  "generated_at": "2026-11-11T02:14:07.647326+00:00",
+  "validation_class": "A_NORMAL",
+  "signal_date": "2026-11-10",
+  "execution_date": "2026-11-11",
+  "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 679.35,
-  "sma20": 704.3045,
-  "sma50": 720.02721588878,
-  "sma200": 680.1044420206739,
-  "wilder_rsi14": 41.38631937257774,
+  "qqq_adjusted_close": 674.76,
+  "sma20": 700.864,
+  "sma50": 719.2017289422979,
+  "sma200": 680.3614327189825,
+  "wilder_rsi14": 40.14360510353724,
   "trend200_state": "DOWN",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-10-30",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 56.15384615384615,
   "liquidity_state": "MIXED",
   "comparison1_raw_state": "RED",
-  "comparison1_raw_streak": 3,
+  "comparison1_raw_streak": 4,
   "comparison1_confirmed_state": "RED",
   "comparison1_confirmed_target": "QQQ",
   "comparison3_target": "TQQQ",
@@ -32,13 +32,13 @@
   "post_n1_execution_target": "GLD",
   "execution_target": "GLD",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION"
+    "NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
   "warnings": [],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "ed50b7185cdb653305dac6834de66079afcc213e7d9a37e63304f944566a4f80",
-  "state_sha256": "eafc959526ce1af40453602969068867708078d6d8d5036e8c4b8fd454eecf95"
+  "input_sha256": "1bbd209a4f729c19a8d2299cb677aaa383f1dda6543f08e2da98f087d4b1e592",
+  "state_sha256": "6b6e2eba8b765a16414882882f5048918ce8a38acd2bba16f6d3e2e5fb0e60c6"
 }

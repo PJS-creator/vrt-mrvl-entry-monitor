@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-12T15:00:54Z",
+  "generated_at_utc": "2026-11-12T22:35:29Z",
   "as_of": {
     "price_date": "2026-11-12",
-    "run_time_utc": "2026-11-12 15:00:54"
+    "run_time_utc": "2026-11-12 22:35:29"
   },
   "data_warning": false,
   "warnings": [],
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 597.6,
+      "close": 597.2,
       "latest_date": "2026-11-12"
     },
     "^FTSE": {
-      "close": 10852.9004,
+      "close": 10863.0898,
       "latest_date": "2026-11-12"
     },
     "LLOY.L": {
-      "close": 98.52,
+      "close": 98.28,
       "latest_date": "2026-11-12"
     },
     "BARC.L": {
-      "close": 434.28,
+      "close": 432.1,
       "latest_date": "2026-11-12"
     },
     "HSBA.L": {
-      "close": 1354.6,
+      "close": 1354.0,
       "latest_date": "2026-11-12"
     }
   },
   "signals": {
     "NWG": {
-      "close": 597.6,
-      "ma50": 655.572,
-      "ma200": 632.515,
-      "gap50": -0.08843,
-      "gap200": -0.0552
+      "close": 597.2,
+      "ma50": 655.564,
+      "ma200": 632.513,
+      "gap50": -0.089029,
+      "gap200": -0.05583
     },
     "RS_FTSE": {
-      "ratio": 0.055064,
-      "ma60": 0.06166,
-      "gap": -0.106984,
-      "ma60_slope_proxy": -0.002349
+      "ratio": 0.054975,
+      "ma60": 0.061659,
+      "gap": -0.108397,
+      "ma60_slope_proxy": -0.002351
     },
     "RS_PEERS": {
-      "ratio": 0.949878,
-      "ma60": 0.989392,
-      "gap": -0.039938,
-      "ma60_slope_proxy": 0.01085
+      "ratio": 0.950764,
+      "ma60": 0.989407,
+      "gap": -0.039057,
+      "ma60_slope_proxy": 0.010865
     }
   },
   "checks": {

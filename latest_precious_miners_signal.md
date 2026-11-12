@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-11 22:36:02**
+- 실행시간(UTC): **2026-11-12 03:01:17**
 - 데이터 기준일(주가): **2026-11-11**
 
 ## Verdict
@@ -131,9 +131,9 @@
 
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 8.12 | RSI14: 56.23 | ATR14%: 6.05%
+- close: 8.12 | RSI14: 56.23 | ATR14%: 6.04%
 - MA20/50/200 gap: 3.62% / -8.14% / -14.98%
-- 5D return: 3.70% | 20D drawdown: -2.64% | vol_ratio: 1.24
+- 5D return: 3.70% | 20D drawdown: -2.64% | vol_ratio: 1.27
 - RS vs SILJ: gap 1.67% / slope_proxy 3.27%
 - FundamentalScore: 82 | TechnicalScore: 55 | RegimeScore: 55 | OverallScore: **67.2**
 - Checks:
@@ -155,7 +155,7 @@
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
 - close: 3.24 | RSI14: 51.63 | ATR14%: 6.53%
 - MA20/50/200 gap: 0.42% / -9.47% / -10.53%
-- 5D return: -1.52% | 20D drawdown: -7.43% | vol_ratio: 0.61
+- 5D return: -1.52% | 20D drawdown: -7.43% | vol_ratio: 0.63
 - RS vs SILJ: gap 1.58% / slope_proxy 2.89%
 - FundamentalScore: 72 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **57.4**
 - Checks:
@@ -197,7 +197,7 @@
 
 ### HL (Hecla Mining)
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
-- close: 14.12 | RSI14: 50.07 | ATR14%: 6.11%
+- close: 14.12 | RSI14: 50.07 | ATR14%: 6.12%
 - MA20/50/200 gap: -2.70% / -15.63% / -21.88%
 - 5D return: -5.55% | 20D drawdown: -9.25% | vol_ratio: 0.63
 - RS vs SILJ: gap -6.56% / slope_proxy -4.33%
@@ -221,7 +221,7 @@
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
 - close: 7.36 | RSI14: 52.48 | ATR14%: 6.86%
 - MA20/50/200 gap: -2.44% / -13.41% / -13.94%
-- 5D return: -4.29% | 20D drawdown: -12.28% | vol_ratio: 0.86
+- 5D return: -4.29% | 20D drawdown: -12.28% | vol_ratio: 0.87
 - RS vs SILJ: gap -2.99% / slope_proxy -6.74%
 - FundamentalScore: 74 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **49.6**
 - Checks:
@@ -287,7 +287,7 @@
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
 - close: 4.59 | RSI14: 46.09 | ATR14%: 6.27%
 - MA20/50/200 gap: -3.83% / -17.63% / -31.87%
-- 5D return: -3.16% | 20D drawdown: -13.88% | vol_ratio: 0.80
+- 5D return: -3.16% | 20D drawdown: -13.88% | vol_ratio: 0.83
 - RS vs SILJ: gap -10.05% / slope_proxy -6.76%
 - FundamentalScore: 60 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **43.2**
 - Checks:

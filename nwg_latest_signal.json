@@ -1,11 +1,13 @@
 {
-  "generated_at_utc": "2026-11-14T02:40:29Z",
+  "generated_at_utc": "2026-11-14T03:00:48Z",
   "as_of": {
     "price_date": "2026-11-13",
-    "run_time_utc": "2026-11-14 02:40:29"
+    "run_time_utc": "2026-11-14 03:00:48"
   },
-  "data_warning": false,
-  "warnings": [],
+  "data_warning": true,
+  "warnings": [
+    "BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available."
+  ],
   "fred": {
     "BAMLH0A0HYM2": {
       "latest": 3.2,
@@ -61,8 +63,8 @@
     }
   },
   "derived": {
-    "TERM_SPREAD_10Y_POLICY_bp": 120.44,
-    "TERM_SPREAD_10Y_POLICY_4w_change_bp": -42.86,
+    "TERM_SPREAD_10Y_POLICY_bp": null,
+    "TERM_SPREAD_10Y_POLICY_4w_change_bp": null,
     "CURVE_10s5s_bp": 31.92,
     "CURVE_10s5s_4w_change_bp": -9.46
   },

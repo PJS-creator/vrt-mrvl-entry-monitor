@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-14 03:01:28**
+- 실행시간(UTC): **2026-11-14 15:01:10**
 - 데이터 기준일(주가): **2026-11-13**
 
 ## Verdict
@@ -61,7 +61,7 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 4.57 | RSI14: 35.38 | ATR14%: 8.23%
+- close: 4.57 | RSI14: 35.38 | ATR14%: 8.22%
 - MA20/50/200 gap: -18.04% / -31.27% / -32.62%
 - 5D return: -17.95% | 20D drawdown: -30.55% | vol_ratio: 4.06
 - RS vs GDXJ: gap -21.76% / slope_proxy -24.00%

@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-14 03:01:29**
+- 실행시간(UTC): **2026-11-14 15:01:11**
 - 데이터 기준일(일봉): **2026-11-13**
 - 데이터 기준일(주봉): **2026-11-09**
 - VXN 기준일: **2026-11-12** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-14 03:00:45**
+- 실행시간(UTC): **2026-11-14 15:00:51**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,12 +115,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-14 03:00:48**
-
-## ⚠️ DATA WARNING
-일부 데이터 수집에 실패하여 최근 사용 가능한 값(캐시 포함)을 사용했습니다.
-
-- BoE IUDBEDR failed (HTTPSConnectionPool(host='www.bankofengland.co.uk', port=443): Read timed out. (read timeout=20)), using cached values if available.
+- 실행시간(UTC): **2026-11-14 15:00:53**
 
 ## Verdict
 ⏸ No entry today
@@ -135,17 +130,17 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: None bp / 4주 변화 None bp
+- TERM_SPREAD_10Y_POLICY: 120.44 bp / 4주 변화 -42.86 bp
 - CURVE_10s5s: 31.92 bp / 4주 변화 -9.46 bp
 
 ## NWG Price
-- close: 597.2
-- MA50: 655.564 / gap50: -8.90%
-- MA200: 632.513 / gap200: -5.58%
+- close: 600.0
+- MA50: 653.568 / gap50: -8.20%
+- MA200: 632.1889 / gap200: -5.09%
 
 ## Relative Strength
-- RS vs FTSE gap: -10.84% / slope_proxy: -0.002351
-- RS vs Peers gap: -3.91% / slope_proxy: 0.010865
+- RS vs FTSE gap: -10.55% / slope_proxy: -0.002454
+- RS vs Peers gap: -3.43% / slope_proxy: 0.009249
 
 ## Why not today?
 - CurveGreen=FALSE
@@ -158,15 +153,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-14 03:01:15**
+- 실행시간(UTC): **2026-11-14 15:00:59**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 88.92 / 5D -2.10%
-- Brent ref (BZ=F): 96.08 / 5D -2.28%
+- WTI ref (CL=F): 88.56 / 5D -2.50%
+- Brent ref (BZ=F): 95.84 / 5D -2.52%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 7.16
-- Gas ref (NG=F): 3.24 / 5D 8.14%
+- Brent-WTI spread: 7.28
+- Gas ref (NG=F): 3.23 / 5D 7.74%
 
 ## Gates
 
@@ -324,7 +319,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-14 03:01:19**
+- 실행시간(UTC): **2026-11-14 15:01:02**
 
 ## Verdict
 ⏸ No entry today
@@ -369,7 +364,7 @@
 - close: 6.83 | RSI14: 40.250346 | ATR14%: 7.63%
 - MA20 gap: -7.76% | MA50 gap: -18.35% | MA200 gap: -19.43%
 - vol_ratio(Volume/Vol20): 0.926797 | gap_open: 0.57%
-- SilverMarginGate: SI=48.650002 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=49.030998 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -4.34% / slope_proxy: 0.007862
 - Checks:
   - trend_ok: **False**
@@ -412,7 +407,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-14 03:01:28**
+- 실행시간(UTC): **2026-11-14 15:01:10**
 - 데이터 기준일(주가): **2026-11-13**
 
 ## Verdict
@@ -473,7 +468,7 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 4.57 | RSI14: 35.38 | ATR14%: 8.23%
+- close: 4.57 | RSI14: 35.38 | ATR14%: 8.22%
 - MA20/50/200 gap: -18.04% / -31.27% / -32.62%
 - 5D return: -17.95% | 20D drawdown: -30.55% | vol_ratio: 4.06
 - RS vs GDXJ: gap -21.76% / slope_proxy -24.00%

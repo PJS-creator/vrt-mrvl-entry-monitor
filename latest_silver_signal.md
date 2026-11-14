@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-13 22:35:45**
+- 실행시간(UTC): **2026-11-14 02:40:46**
 
 ## Verdict
 ⏸ No entry today
@@ -25,9 +25,9 @@
 - GDXJ/GLD gap: -6.20% / slope_proxy: -0.0008
 
 ## VZLA (Vizsla Silver)
-- close: 3.07 | RSI14: 41.672801 | ATR14%: 6.38%
+- close: 3.07 | RSI14: 41.672801 | ATR14%: 6.39%
 - MA20 gap: -4.29% | MA50 gap: -13.18% | MA200 gap: -14.46%
-- vol_ratio(Volume/Vol20): 0.930909 | gap_open: 0.32%
+- vol_ratio(Volume/Vol20): 0.94131 | gap_open: 0.32%
 - RS vs SILJ gap: 1.94% / slope_proxy: 0.00167
 - Checks:
   - trend_ok: **False**
@@ -45,7 +45,7 @@
 ## SCZM (Santacruz Silver)
 - close: 6.83 | RSI14: 40.250346 | ATR14%: 7.63%
 - MA20 gap: -7.76% | MA50 gap: -18.35% | MA200 gap: -19.43%
-- vol_ratio(Volume/Vol20): 0.920309 | gap_open: 0.57%
+- vol_ratio(Volume/Vol20): 0.926797 | gap_open: 0.57%
 - SilverMarginGate: SI=48.650002 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -4.34% / slope_proxy: 0.007862
 - Checks:
@@ -65,7 +65,7 @@
 ## HYMC (Hycroft Mining)
 - close: 15.9 | RSI14: 42.089773 | ATR14%: 9.87%
 - MA20 gap: -7.28% | MA50 gap: -15.49% | MA200 gap: -44.56%
-- vol_ratio(Volume/Vol20): 0.909142 | gap_open: 0.06%
+- vol_ratio(Volume/Vol20): 0.911347 | gap_open: 0.06%
 - RS vs SILJ gap: -2.95% / slope_proxy: -0.049633
 - RS vs GDXJ gap: -6.17% / slope_proxy: -0.01665
 - Checks:

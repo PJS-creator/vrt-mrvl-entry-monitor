@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-13 22:35:55**
+- 실행시간(UTC): **2026-11-14 02:40:56**
 - 데이터 기준일(일봉): **2026-11-13**
 - 데이터 기준일(주봉): **2026-11-09**
 - VXN 기준일: **2026-11-12** / source: `FRED: VXNCLS`
@@ -80,7 +80,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-13 22:35:30**
+- 실행시간(UTC): **2026-11-14 02:40:26**
 
 ## MacroGreen
 - **MacroGreen**: **True**
@@ -115,7 +115,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-13 22:35:32**
+- 실행시간(UTC): **2026-11-14 02:40:29**
 
 ## Verdict
 ⏸ No entry today
@@ -134,13 +134,13 @@
 - CURVE_10s5s: 31.92 bp / 4주 변화 -9.46 bp
 
 ## NWG Price
-- close: 600.0
-- MA50: 653.568 / gap50: -8.20%
-- MA200: 632.1889 / gap200: -5.09%
+- close: 597.2
+- MA50: 655.564 / gap50: -8.90%
+- MA200: 632.513 / gap200: -5.58%
 
 ## Relative Strength
-- RS vs FTSE gap: -10.55% / slope_proxy: -0.002454
-- RS vs Peers gap: -3.43% / slope_proxy: 0.009249
+- RS vs FTSE gap: -10.84% / slope_proxy: -0.002351
+- RS vs Peers gap: -3.91% / slope_proxy: 0.010865
 
 ## Why not today?
 - CurveGreen=FALSE
@@ -153,7 +153,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-13 22:35:40**
+- 실행시간(UTC): **2026-11-14 02:40:40**
 
 ## Commodity Regime
 
@@ -194,9 +194,9 @@
 
 ### Volume (if available)
 
-- volume: 10534254.00
-- volume_MA20: 10639947.70
-- volume_ratio: 0.99
+- volume: 10712100.00
+- volume_MA20: 10648840.00
+- volume_ratio: 1.01
 
 ### Checks
 
@@ -227,8 +227,8 @@
 
 ### Volume (if available)
 
-- volume: 17623793.00
-- volume_MA20: 27619459.65
+- volume: 17736100.00
+- volume_MA20: 27625075.00
 - volume_ratio: 0.64
 
 ### Checks
@@ -261,8 +261,8 @@
 
 ### Volume (if available)
 
-- volume: 30125385.00
-- volume_MA20: 43836129.25
+- volume: 30160500.00
+- volume_MA20: 43837885.00
 - volume_ratio: 0.69
 
 ### Checks
@@ -295,8 +295,8 @@
 
 ### Volume (if available)
 
-- volume: 7848104.00
-- volume_MA20: 16576380.20
+- volume: 7852100.00
+- volume_MA20: 16576580.00
 - volume_ratio: 0.47
 
 ### Checks
@@ -319,7 +319,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-13**
-- 실행시간(UTC): **2026-11-13 22:35:45**
+- 실행시간(UTC): **2026-11-14 02:40:46**
 
 ## Verdict
 ⏸ No entry today
@@ -343,9 +343,9 @@
 - GDXJ/GLD gap: -6.20% / slope_proxy: -0.0008
 
 ## VZLA (Vizsla Silver)
-- close: 3.07 | RSI14: 41.672801 | ATR14%: 6.38%
+- close: 3.07 | RSI14: 41.672801 | ATR14%: 6.39%
 - MA20 gap: -4.29% | MA50 gap: -13.18% | MA200 gap: -14.46%
-- vol_ratio(Volume/Vol20): 0.930909 | gap_open: 0.32%
+- vol_ratio(Volume/Vol20): 0.94131 | gap_open: 0.32%
 - RS vs SILJ gap: 1.94% / slope_proxy: 0.00167
 - Checks:
   - trend_ok: **False**
@@ -363,7 +363,7 @@
 ## SCZM (Santacruz Silver)
 - close: 6.83 | RSI14: 40.250346 | ATR14%: 7.63%
 - MA20 gap: -7.76% | MA50 gap: -18.35% | MA200 gap: -19.43%
-- vol_ratio(Volume/Vol20): 0.920309 | gap_open: 0.57%
+- vol_ratio(Volume/Vol20): 0.926797 | gap_open: 0.57%
 - SilverMarginGate: SI=48.650002 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: -4.34% / slope_proxy: 0.007862
 - Checks:
@@ -383,7 +383,7 @@
 ## HYMC (Hycroft Mining)
 - close: 15.9 | RSI14: 42.089773 | ATR14%: 9.87%
 - MA20 gap: -7.28% | MA50 gap: -15.49% | MA200 gap: -44.56%
-- vol_ratio(Volume/Vol20): 0.909142 | gap_open: 0.06%
+- vol_ratio(Volume/Vol20): 0.911347 | gap_open: 0.06%
 - RS vs SILJ gap: -2.95% / slope_proxy: -0.049633
 - RS vs GDXJ gap: -6.17% / slope_proxy: -0.01665
 - Checks:
@@ -407,7 +407,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-13 22:35:54**
+- 실행시간(UTC): **2026-11-14 02:40:55**
 - 데이터 기준일(주가): **2026-11-13**
 
 ## Verdict
@@ -446,9 +446,9 @@
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
-- close: 7.40 | RSI14: 42.53 | ATR14%: 5.76%
+- close: 7.40 | RSI14: 42.53 | ATR14%: 5.83%
 - MA20/50/200 gap: -7.29% / -17.59% / -8.86%
-- 5D return: -7.96% | 20D drawdown: -17.32% | vol_ratio: 1.19
+- 5D return: -7.96% | 20D drawdown: -17.32% | vol_ratio: 1.22
 - RS vs GDXJ: gap -6.65% / slope_proxy -9.52%
 - FundamentalScore: 88 | TechnicalScore: 30 | RegimeScore: 30 | OverallScore: **56.1**
 - Checks:
@@ -540,7 +540,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 7.66 | RSI14: 52.11 | ATR14%: 6.50%
 - MA20/50/200 gap: -1.59% / -11.93% / -19.31%
-- 5D return: -2.30% | 20D drawdown: -8.15% | vol_ratio: 0.96
+- 5D return: -2.30% | 20D drawdown: -8.15% | vol_ratio: 0.98
 - RS vs SILJ: gap 1.99% / slope_proxy 3.02%
 - FundamentalScore: 82 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **61.9**
 - Checks:
@@ -562,7 +562,7 @@
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
 - close: 22.88 | RSI14: 46.78 | ATR14%: 7.12%
 - MA20/50/200 gap: -7.16% / -13.22% / 8.30%
-- 5D return: -9.81% | 20D drawdown: -14.53% | vol_ratio: 1.06
+- 5D return: -9.81% | 20D drawdown: -14.53% | vol_ratio: 1.09
 - RS vs SILJ: gap 2.86% / slope_proxy -4.23%
 - FundamentalScore: 86 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **60.2**
 - Checks:
@@ -582,9 +582,9 @@
 
 ### VZLA (Vizsla Silver)
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
-- close: 3.07 | RSI14: 50.00 | ATR14%: 6.73%
+- close: 3.07 | RSI14: 50.00 | ATR14%: 6.74%
 - MA20/50/200 gap: -4.29% / -13.18% / -14.46%
-- 5D return: -6.97% | 20D drawdown: -12.29% | vol_ratio: 0.93
+- 5D return: -6.97% | 20D drawdown: -12.29% | vol_ratio: 0.94
 - RS vs SILJ: gap 1.94% / slope_proxy 6.58%
 - FundamentalScore: 72 | TechnicalScore: 40 | RegimeScore: 55 | OverallScore: **57.4**
 - Checks:
@@ -650,7 +650,7 @@
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
 - close: 6.83 | RSI14: 47.86 | ATR14%: 7.68%
 - MA20/50/200 gap: -7.76% / -18.35% / -19.43%
-- 5D return: -9.18% | 20D drawdown: -18.59% | vol_ratio: 0.92
+- 5D return: -9.18% | 20D drawdown: -18.59% | vol_ratio: 0.93
 - RS vs SILJ: gap -4.34% / slope_proxy -9.56%
 - FundamentalScore: 74 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **49.6**
 - Checks:
@@ -672,7 +672,7 @@
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
 - close: 4.29 | RSI14: 43.62 | ATR14%: 6.78%
 - MA20/50/200 gap: -8.36% / -21.18% / -35.68%
-- 5D return: -7.74% | 20D drawdown: -17.66% | vol_ratio: 0.74
+- 5D return: -7.74% | 20D drawdown: -17.66% | vol_ratio: 0.77
 - RS vs SILJ: gap -9.97% / slope_proxy -8.53%
 - FundamentalScore: 60 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **43.2**
 - Checks:

@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-15T03:00:53Z",
+  "generated_at_utc": "2026-11-15T15:00:58Z",
   "as_of": {
-    "run_time_utc": "2026-11-15 03:00:53"
+    "run_time_utc": "2026-11-15 15:00:58"
   },
   "data_warning": false,
   "warnings": [],
@@ -149,17 +149,17 @@
     "CL=F": {
       "close": 88.56,
       "latest_date": "2026-11-13",
-      "volume": 270072.0
+      "volume": 181210.0
     },
     "BZ=F": {
       "close": 95.84,
       "latest_date": "2026-11-13",
-      "volume": 35151.0
+      "volume": 22079.0
     },
     "NG=F": {
       "close": 3.23,
       "latest_date": "2026-11-13",
-      "volume": 227559.0
+      "volume": 196957.0
     }
   },
   "signals": {

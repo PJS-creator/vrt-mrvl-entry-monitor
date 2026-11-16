@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-11-16T15:00:50Z",
+  "generated_at_utc": "2026-11-16T22:35:31Z",
   "as_of": {
     "price_date": "2026-11-16",
-    "run_time_utc": "2026-11-16 15:00:50"
+    "run_time_utc": "2026-11-16 22:35:31"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.2,
-      "change_4w_bp": -3.0,
-      "latest_date": "2026-11-12"
+      "latest": 3.23,
+      "change_4w_bp": -8.0,
+      "latest_date": "2026-11-13"
     },
     "BAMLC0A0CM": {
       "latest": 0.89,
-      "change_4w_bp": 5.0,
-      "latest_date": "2026-11-12"
+      "change_4w_bp": 4.0,
+      "latest_date": "2026-11-13"
     },
     "DFII10": {
-      "latest": 2.86,
-      "change_4w_bp": 8.0,
-      "latest_date": "2026-11-12"
+      "latest": 2.91,
+      "change_4w_bp": 17.0,
+      "latest_date": "2026-11-13"
     },
     "VIXCLS": {
       "latest": 19.3,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 190.59,
+      "close": 188.67,
       "latest_date": "2026-11-16"
     },
     "MRVL": {
-      "close": 144.975,
+      "close": 145.36,
       "latest_date": "2026-11-16"
     },
     "SRVR": {
-      "close": 28.28,
+      "close": 27.8577,
       "latest_date": "2026-11-16"
     },
     "SMH": {
-      "close": 465.64,
+      "close": 461.9,
       "latest_date": "2026-11-16"
     },
     "NVDA": {
-      "close": 159.3689,
+      "close": 156.14,
       "latest_date": "2026-11-16"
     },
     "AVGO": {
-      "close": 329.22,
+      "close": 333.4,
       "latest_date": "2026-11-16"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 6.739392,
-      "ma60": 8.080114,
-      "gap": -0.165929,
+      "ratio": 6.772634,
+      "ma60": 8.080668,
+      "gap": -0.161872,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.311346,
-      "ma60": 0.404172,
-      "gap": -0.22967,
-      "ma60_slope_proxy": -0.002105,
+      "ratio": 0.3147,
+      "ma60": 0.404227,
+      "gap": -0.221478,
+      "ma60_slope_proxy": -0.00205,
       "entry": false
     }
   },

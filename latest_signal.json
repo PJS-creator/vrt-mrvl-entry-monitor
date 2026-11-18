@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-18T03:50:46Z",
+  "generated_at_utc": "2026-11-18T15:00:54Z",
   "as_of": {
-    "price_date": "2026-11-17",
-    "run_time_utc": "2026-11-18 03:50:46"
+    "price_date": "2026-11-18",
+    "run_time_utc": "2026-11-18 15:00:54"
   },
   "data_warning": false,
   "warnings": [],
@@ -23,64 +23,64 @@
       "latest_date": "2026-11-16"
     },
     "VIXCLS": {
-      "latest": 22.91,
-      "change_4w_bp": 447.0,
-      "latest_date": "2026-11-16"
+      "latest": 25.46,
+      "change_4w_bp": 815.0,
+      "latest_date": "2026-11-17"
     },
     "NFCI": {
-      "latest": -0.462,
-      "change_4w_bp": 2.6,
-      "latest_date": "2026-11-06"
+      "latest": -0.478,
+      "change_4w_bp": -0.2,
+      "latest_date": "2026-11-13"
     }
   },
   "checks": {
-    "MacroGreen": true,
+    "MacroGreen": false,
     "HY_4w_change_bp_lt_100": true,
     "IG_4w_change_bp_lt_50": true,
     "DFII10_4w_change_bp_lt_50": true,
-    "VIX_lt_25": true,
+    "VIX_lt_25": false,
     "NFCI_lte_0": true
   },
   "prices": {
     "VRT": {
-      "close": 190.37,
-      "latest_date": "2026-11-17"
+      "close": 195.0777,
+      "latest_date": "2026-11-18"
     },
     "MRVL": {
-      "close": 148.74,
-      "latest_date": "2026-11-17"
+      "close": 147.775,
+      "latest_date": "2026-11-18"
     },
     "SRVR": {
-      "close": 27.25,
-      "latest_date": "2026-11-17"
+      "close": 27.185,
+      "latest_date": "2026-11-18"
     },
     "SMH": {
-      "close": 460.1,
-      "latest_date": "2026-11-17"
+      "close": 463.3232,
+      "latest_date": "2026-11-18"
     },
     "NVDA": {
-      "close": 155.46,
-      "latest_date": "2026-11-17"
+      "close": 154.69,
+      "latest_date": "2026-11-18"
     },
     "AVGO": {
-      "close": 341.6,
-      "latest_date": "2026-11-17"
+      "close": 349.03,
+      "latest_date": "2026-11-18"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 6.986055,
-      "ma60": 8.059138,
-      "gap": -0.133151,
-      "entry": true
+      "ratio": 7.175932,
+      "ma60": 8.042899,
+      "gap": -0.107793,
+      "entry": false
     },
     "MRVL": {
-      "ratio": 0.323278,
-      "ma60": 0.402628,
-      "gap": -0.197082,
-      "ma60_slope_proxy": -0.005237,
+      "ratio": 0.318946,
+      "ma60": 0.400737,
+      "gap": -0.204103,
+      "ma60_slope_proxy": -0.008965,
       "entry": false
     }
   },
-  "verdict": "✅ Entry condition met: VRT"
+  "verdict": "⏸ No entry today"
 }

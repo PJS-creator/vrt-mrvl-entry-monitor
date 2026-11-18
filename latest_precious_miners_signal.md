@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-17 22:35:58**
+- 실행시간(UTC): **2026-11-18 03:01:06**
 - 데이터 기준일(주가): **2026-11-17**
 
 ## Verdict
@@ -63,7 +63,7 @@
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
 - close: 6.98 | RSI14: 34.86 | ATR14%: 6.52%
 - MA20/50/200 gap: -10.44% / -21.14% / -14.01%
-- 5D return: -12.75% | 20D drawdown: -20.32% | vol_ratio: 0.88
+- 5D return: -12.75% | 20D drawdown: -20.32% | vol_ratio: 0.89
 - RS vs GDXJ: gap -8.73% / slope_proxy -9.78%
 - FundamentalScore: 88 | TechnicalScore: 15 | RegimeScore: 30 | OverallScore: **50.9**
 - Checks:
@@ -131,9 +131,9 @@
 
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 7.41 | RSI14: 49.23 | ATR14%: 8.06%
+- close: 7.41 | RSI14: 49.23 | ATR14%: 8.07%
 - MA20/50/200 gap: 2.01% / -10.11% / -12.08%
-- 5D return: -2.11% | 20D drawdown: -9.30% | vol_ratio: 2.41
+- 5D return: -2.11% | 20D drawdown: -9.30% | vol_ratio: 2.52
 - RS vs SILJ: gap 7.96% / slope_proxy 4.97%
 - FundamentalScore: 74 | TechnicalScore: 55 | RegimeScore: 55 | OverallScore: **63.6**
 - Checks:
@@ -153,9 +153,9 @@
 
 ### VZLA (Vizsla Silver)
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
-- close: 2.97 | RSI14: 40.76 | ATR14%: 7.08%
+- close: 2.97 | RSI14: 40.76 | ATR14%: 7.10%
 - MA20/50/200 gap: -6.59% / -14.96% / -16.76%
-- 5D return: -10.54% | 20D drawdown: -15.14% | vol_ratio: 2.05
+- 5D return: -10.54% | 20D drawdown: -15.14% | vol_ratio: 2.07
 - RS vs SILJ: gap 2.45% / slope_proxy 2.31%
 - FundamentalScore: 72 | TechnicalScore: 55 | RegimeScore: 55 | OverallScore: **62.6**
 - Checks:
@@ -173,11 +173,33 @@
 - Watch: MIA 허가, 보안계획, 현장 정상화, financing.
 - Why not today: SilverUptrend=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, Trigger(Pullback/Breakout)=FALSE, StaticRiskPolicy=WATCH_ONLY
 
+### AYA (Aya Gold & Silver)
+- Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
+- close: 21.56 | RSI14: 37.72 | ATR14%: 7.78%
+- MA20/50/200 gap: -10.71% / -17.27% / 1.79%
+- 5D return: -14.34% | 20D drawdown: -19.46% | vol_ratio: 1.17
+- RS vs SILJ: gap 0.48% / slope_proxy -6.15%
+- FundamentalScore: 86 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **60.2**
+- Checks:
+  - sector_ok: **False**
+  - breadth_ok: **False**
+  - strategic_ok: **True**
+  - trend_ok: **False**
+  - rs_ok: **False**
+  - pullback: **False**
+  - breakout: **False**
+  - not_extended: **True**
+  - entry_candidate: **False**
+  - entry_confirmed: **False**
+- Thesis: Zgounder 생산/현금흐름, 5Moz+ 규모, 모로코 관할권. 프리미엄 밸류 주의.
+- Watch: Zgounder cash cost, Boumadine PEA/FS, 밸류에이션 과열.
+- Why not today: SilverUptrend=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs SILJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
+
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 7.13 | RSI14: 39.71 | ATR14%: 7.21%
 - MA20/50/200 gap: -7.10% / -16.49% / -24.60%
-- 5D return: -11.65% | 20D drawdown: -14.51% | vol_ratio: 1.31
+- 5D return: -11.65% | 20D drawdown: -14.51% | vol_ratio: 1.33
 - RS vs SILJ: gap -1.01% / slope_proxy -0.69%
 - FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **58.4**
 - Checks:
@@ -193,28 +215,6 @@
   - entry_confirmed: **False**
 - Thesis: 8Moz+ 생산 가이던스, Terronera/Kolpa 성장, Pitarrilla 장기 옵션.
 - Watch: Terronera 램프업, AISC, 멕시코/페루 운영 리스크.
-- Why not today: SilverUptrend=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs SILJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
-
-### AYA (Aya Gold & Silver)
-- Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
-- close: 21.56 | RSI14: 37.72 | ATR14%: 7.78%
-- MA20/50/200 gap: -10.71% / -17.27% / 1.79%
-- 5D return: -14.34% | 20D drawdown: -19.46% | vol_ratio: 1.00
-- RS vs SILJ: gap 0.48% / slope_proxy -6.15%
-- FundamentalScore: 86 | TechnicalScore: 15 | RegimeScore: 55 | OverallScore: **55.0**
-- Checks:
-  - sector_ok: **False**
-  - breadth_ok: **False**
-  - strategic_ok: **True**
-  - trend_ok: **False**
-  - rs_ok: **False**
-  - pullback: **False**
-  - breakout: **False**
-  - not_extended: **True**
-  - entry_candidate: **False**
-  - entry_confirmed: **False**
-- Thesis: Zgounder 생산/현금흐름, 5Moz+ 규모, 모로코 관할권. 프리미엄 밸류 주의.
-- Watch: Zgounder cash cost, Boumadine PEA/FS, 밸류에이션 과열.
 - Why not today: SilverUptrend=FALSE, SectorBreadthProxy=FALSE, PriceTrend=FALSE, RelativeStrength(vs SILJ)=FALSE, Trigger(Pullback/Breakout)=FALSE
 
 ### USAS (Americas Gold and Silver)
@@ -265,7 +265,7 @@
 - Style: **네바다 대형 자원 옵션** | Static rank: 8 | Risk: Very High | Max signal: WATCH
 - close: 15.69 | RSI14: 43.65 | ATR14%: 10.81%
 - MA20/50/200 gap: -7.75% / -15.29% / -44.90%
-- 5D return: -16.85% | 20D drawdown: -26.23% | vol_ratio: 1.20
+- 5D return: -16.85% | 20D drawdown: -26.23% | vol_ratio: 1.21
 - RS vs SILJ: gap 0.33% / slope_proxy 6.01%
 - FundamentalScore: 42 | TechnicalScore: 55 | RegimeScore: 55 | OverallScore: **49.2**
 - Checks:
@@ -285,9 +285,9 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 4.09 | RSI14: 36.00 | ATR14%: 7.26%
+- close: 4.09 | RSI14: 36.00 | ATR14%: 7.27%
 - MA20/50/200 gap: -10.45% / -23.01% / -38.20%
-- 5D return: -11.85% | 20D drawdown: -21.50% | vol_ratio: 1.18
+- 5D return: -11.85% | 20D drawdown: -21.50% | vol_ratio: 1.23
 - RS vs SILJ: gap -9.92% / slope_proxy -9.14%
 - FundamentalScore: 60 | TechnicalScore: 30 | RegimeScore: 55 | OverallScore: **48.5**
 - Checks:

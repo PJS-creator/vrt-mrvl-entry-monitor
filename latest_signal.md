@@ -1,7 +1,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-18**
-- 실행시간(UTC): **2026-11-19 03:00:45**
+- 실행시간(UTC): **2026-11-19 03:49:25**
 
 ## MacroGreen
 - **MacroGreen**: **False**

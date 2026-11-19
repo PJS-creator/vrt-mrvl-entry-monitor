@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-11-19T15:00:57Z",
+  "generated_at_utc": "2026-11-19T22:35:30Z",
   "as_of": {
     "price_date": "2026-11-19",
-    "run_time_utc": "2026-11-19 15:00:57"
+    "run_time_utc": "2026-11-19 22:35:30"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.43,
-      "change_4w_bp": 10.0,
-      "latest_date": "2026-11-17"
+      "latest": 3.47,
+      "change_4w_bp": 20.0,
+      "latest_date": "2026-11-18"
     },
     "BAMLC0A0CM": {
-      "latest": 0.92,
+      "latest": 0.93,
       "change_4w_bp": 5.0,
-      "latest_date": "2026-11-17"
+      "latest_date": "2026-11-18"
     },
     "DFII10": {
-      "latest": 2.89,
+      "latest": 2.88,
       "change_4w_bp": 12.0,
-      "latest_date": "2026-11-17"
+      "latest_date": "2026-11-18"
     },
     "VIXCLS": {
       "latest": 24.56,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 198.41,
+      "close": 184.99,
       "latest_date": "2026-11-19"
     },
     "MRVL": {
-      "close": 151.855,
+      "close": 138.47,
       "latest_date": "2026-11-19"
     },
     "SRVR": {
-      "close": 27.29,
+      "close": 26.7,
       "latest_date": "2026-11-19"
     },
     "SMH": {
-      "close": 475.51,
+      "close": 447.48,
       "latest_date": "2026-11-19"
     },
     "NVDA": {
-      "close": 155.16,
+      "close": 145.98,
       "latest_date": "2026-11-19"
     },
     "AVGO": {
-      "close": 364.14,
+      "close": 346.65,
       "latest_date": "2026-11-19"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.270429,
-      "ma60": 8.022816,
-      "gap": -0.093781,
+      "ratio": 6.928464,
+      "ma60": 8.017117,
+      "gap": -0.135791,
       "entry": true
     },
     "MRVL": {
-      "ratio": 0.319352,
-      "ma60": 0.398674,
-      "gap": -0.198965,
-      "ma60_slope_proxy": -0.012746,
+      "ratio": 0.309444,
+      "ma60": 0.398509,
+      "gap": -0.223495,
+      "ma60_slope_proxy": -0.012911,
       "entry": false
     }
   },

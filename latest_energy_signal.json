@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-19T22:35:38Z",
+  "generated_at_utc": "2026-11-20T03:01:00Z",
   "as_of": {
-    "run_time_utc": "2026-11-19 22:35:38"
+    "run_time_utc": "2026-11-20 03:01:00"
   },
   "data_warning": false,
   "warnings": [],
@@ -70,21 +70,21 @@
   "commodity_refs": {
     "WTI": {
       "source": "CL=F",
-      "close": 83.16,
-      "ret5d": -0.06288
+      "close": 82.99,
+      "ret5d": -0.064796
     },
     "Brent": {
       "source": "BZ=F",
-      "close": 90.05,
-      "ret5d": -0.060217,
-      "tier": ">=90"
+      "close": 89.96,
+      "ret5d": -0.061156,
+      "tier": "80-90"
     },
     "HenryHub_or_NG": {
       "source": "NG=F",
-      "close": 3.244,
-      "ret5d": -0.028743
+      "close": 3.242,
+      "ret5d": -0.029341
     },
-    "Brent_WTI_spread": 6.89
+    "Brent_WTI_spread": 6.97
   },
   "gates": {
     "RISK_OK_STRICT": true,
@@ -99,67 +99,67 @@
     "PBR": {
       "close": 16.29,
       "latest_date": "2026-11-19",
-      "volume": 21488786.0
+      "volume": 21678700.0
     },
     "OXY": {
       "close": 53.81,
       "latest_date": "2026-11-19",
-      "volume": 9310258.0
+      "volume": 9311500.0
     },
     "VG": {
       "close": 12.13,
       "latest_date": "2026-11-19",
-      "volume": 10786294.0
+      "volume": 11746500.0
     },
     "RIG": {
       "close": 4.77,
       "latest_date": "2026-11-19",
-      "volume": 42383824.0
+      "volume": 42391000.0
     },
     "XLE": {
       "close": 60.89,
       "latest_date": "2026-11-19",
-      "volume": 30737277.0
+      "volume": 30900500.0
     },
     "OIH": {
       "close": 345.69,
       "latest_date": "2026-11-19",
-      "volume": 216831.0
+      "volume": 219300.0
     },
     "EWZ": {
       "close": 29.51,
       "latest_date": "2026-11-19",
-      "volume": 52032390.0
+      "volume": 52034600.0
     },
     "LNG": {
       "close": 295.37,
       "latest_date": "2026-11-19",
-      "volume": 1362977.0
+      "volume": 1363100.0
     },
     "SPY": {
       "close": 715.87,
       "latest_date": "2026-11-19",
-      "volume": 76112413.0
+      "volume": 76476400.0
     },
     "BRL=X": {
-      "close": 5.9052,
-      "latest_date": "2026-11-19",
+      "close": 5.9346,
+      "latest_date": "2026-11-20",
       "volume": 0.0
     },
     "CL=F": {
-      "close": 83.16,
+      "close": 82.99,
       "latest_date": "2026-11-19",
-      "volume": 249599.0
+      "volume": 9903.0
     },
     "BZ=F": {
-      "close": 90.05,
+      "close": 89.96,
       "latest_date": "2026-11-19",
-      "volume": 22659.0
+      "volume": 924.0
     },
     "NG=F": {
-      "close": 3.244,
+      "close": 3.242,
       "latest_date": "2026-11-19",
-      "volume": 175736.0
+      "volume": 1051.0
     }
   },
   "signals": {
@@ -182,9 +182,9 @@
         "slope_proxy": -0.01554
       },
       "volume": {
-        "vol": 9310258.0,
-        "ma20": 11032937.9,
-        "ratio": 0.84386
+        "vol": 9311500.0,
+        "ma20": 11033000.0,
+        "ratio": 0.843968
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -214,9 +214,9 @@
         "slope_proxy": 0.030616
       },
       "volume": {
-        "vol": 21488786.0,
-        "ma20": 28450354.3,
-        "ratio": 0.755308
+        "vol": 21678700.0,
+        "ma20": 28459850.0,
+        "ratio": 0.761729
       },
       "checks": {
         "RISK_OK_SOFT": true,
@@ -247,9 +247,9 @@
         "slope_proxy": 0.000445
       },
       "volume": {
-        "vol": 42383824.0,
-        "ma20": 41418546.2,
-        "ratio": 1.023305
+        "vol": 42391000.0,
+        "ma20": 41418905.0,
+        "ratio": 1.02347
       },
       "checks": {
         "RISK_OK_STRICT": true,
@@ -280,9 +280,9 @@
         "slope_proxy": -0.002677
       },
       "volume": {
-        "vol": 10786294.0,
-        "ma20": 15193824.7,
-        "ratio": 0.709913
+        "vol": 11746500.0,
+        "ma20": 15241835.0,
+        "ratio": 0.770675
       },
       "checks": {
         "RISK_OK_STRICT": true,

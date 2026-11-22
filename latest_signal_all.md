@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-21 22:35:53**
+- 실행시간(UTC): **2026-11-22 02:37:44**
 - 데이터 기준일(일봉): **2026-11-20**
 - 데이터 기준일(주봉): **2026-11-16**
 - VXN 기준일: **2026-11-19** / source: `FRED: VXNCLS`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-20**
-- 실행시간(UTC): **2026-11-21 22:35:32**
+- 실행시간(UTC): **2026-11-22 02:37:24**
 
 ## MacroGreen
 - **MacroGreen**: **False**
@@ -116,7 +116,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-11-20**
-- 실행시간(UTC): **2026-11-21 22:35:34**
+- 실행시간(UTC): **2026-11-22 02:37:26**
 
 ## Verdict
 ⏸ No entry today
@@ -155,7 +155,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-21 22:35:40**
+- 실행시간(UTC): **2026-11-22 02:37:32**
 
 ## Commodity Regime
 
@@ -321,7 +321,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-20**
-- 실행시간(UTC): **2026-11-21 22:35:44**
+- 실행시간(UTC): **2026-11-22 02:37:35**
 
 ## Verdict
 ⏸ No entry today
@@ -413,7 +413,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-21 22:35:51**
+- 실행시간(UTC): **2026-11-22 02:37:43**
 - 데이터 기준일(주가): **2026-11-20**
 
 ## Verdict

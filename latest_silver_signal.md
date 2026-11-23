@@ -1,7 +1,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-22**
-- 실행시간(UTC): **2026-11-23 03:01:04**
+- 실행시간(UTC): **2026-11-23 03:04:21**
 
 ## Verdict
 ⏸ No entry today

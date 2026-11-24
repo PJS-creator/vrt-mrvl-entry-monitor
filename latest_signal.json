@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-24T06:22:03Z",
+  "generated_at_utc": "2026-11-24T15:00:53Z",
   "as_of": {
-    "price_date": "2026-11-23",
-    "run_time_utc": "2026-11-24 06:22:03"
+    "price_date": "2026-11-24",
+    "run_time_utc": "2026-11-24 15:00:53"
   },
   "data_warning": false,
   "warnings": [],
@@ -23,9 +23,9 @@
       "latest_date": "2026-11-20"
     },
     "VIXCLS": {
-      "latest": 35.89,
-      "change_4w_bp": 1644.0,
-      "latest_date": "2026-11-20"
+      "latest": 26.62,
+      "change_4w_bp": 823.0,
+      "latest_date": "2026-11-23"
     },
     "NFCI": {
       "latest": -0.478,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 186.35,
-      "latest_date": "2026-11-23"
+      "close": 175.5813,
+      "latest_date": "2026-11-24"
     },
     "MRVL": {
-      "close": 144.74,
-      "latest_date": "2026-11-23"
+      "close": 136.475,
+      "latest_date": "2026-11-24"
     },
     "SRVR": {
-      "close": 26.26,
-      "latest_date": "2026-11-23"
+      "close": 25.96,
+      "latest_date": "2026-11-24"
     },
     "SMH": {
-      "close": 460.18,
-      "latest_date": "2026-11-23"
+      "close": 433.59,
+      "latest_date": "2026-11-24"
     },
     "NVDA": {
-      "close": 165.05,
-      "latest_date": "2026-11-23"
+      "close": 155.55,
+      "latest_date": "2026-11-24"
     },
     "AVGO": {
-      "close": 313.55,
-      "latest_date": "2026-11-23"
+      "close": 307.42,
+      "latest_date": "2026-11-24"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 7.096344,
-      "ma60": 7.959168,
-      "gap": -0.108406,
+      "ratio": 6.763533,
+      "ma60": 7.930643,
+      "gap": -0.147165,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.314529,
-      "ma60": 0.395298,
-      "gap": -0.204324,
-      "ma60_slope_proxy": -0.01909,
+      "ratio": 0.314756,
+      "ma60": 0.394208,
+      "gap": -0.201548,
+      "ma60_slope_proxy": -0.021536,
       "entry": false
     }
   },

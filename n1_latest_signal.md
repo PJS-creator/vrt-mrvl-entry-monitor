@@ -1,9 +1,9 @@
 # N1 QQQ Meta Daily Shadow Signal
 
-- Validation: **NO_NEW_COMPLETED_US_SESSION**
-- Signal date: **2026-11-23**
-- Next execution session: **2026-11-24**
-- QQQ / SMA20 / SMA50 / SMA200 / RSI14: **651.0300 / 675.4720 / 709.7365 / 682.3070 / 42.1920**
+- Validation: **B_WARN**
+- Signal date: **2026-11-24**
+- Next execution session: **2026-11-25**
+- QQQ / SMA20 / SMA50 / SMA200 / RSI14: **638.1000 / 671.3145 / 708.4220 / 682.4362 / 39.4570**
 - Applied liquidity P: **53.8462**
 - Trend200 / Recovery / Liquidity: **DOWN / OFF / MIXED**
 - Comparison1 / Comparison3: **QQQ / TQQQ**
@@ -12,7 +12,11 @@
 - N1 overlay: **OFF**
 - N1 shadow target: **XLV**
 - Router: **XLV**
-- Action: **HOLD_PREVIOUS_VALIDATED_TARGET**
+- Action: **SHADOW_TARGET_UPDATE**
 - Rules SHA-256: 9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f
+
+## Data warnings
+- CBOE_FALLBACK:^VIX:STALE_OR_SHORT_PRICES:^VIX:2026-11-24
+- TIINGO_FALLBACK:^VIX:HTTPError
 
 This is a shadow signal only. No broker order was submitted.

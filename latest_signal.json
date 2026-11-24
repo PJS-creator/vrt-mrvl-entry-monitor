@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-11-24T15:00:53Z",
+  "generated_at_utc": "2026-11-24T22:35:28Z",
   "as_of": {
     "price_date": "2026-11-24",
-    "run_time_utc": "2026-11-24 15:00:53"
+    "run_time_utc": "2026-11-24 22:35:28"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.76,
-      "change_4w_bp": 38.0,
-      "latest_date": "2026-11-20"
+      "latest": 3.63,
+      "change_4w_bp": 33.0,
+      "latest_date": "2026-11-23"
     },
     "BAMLC0A0CM": {
-      "latest": 0.98,
+      "latest": 0.97,
       "change_4w_bp": 7.0,
-      "latest_date": "2026-11-20"
+      "latest_date": "2026-11-23"
     },
     "DFII10": {
-      "latest": 2.77,
-      "change_4w_bp": 11.0,
-      "latest_date": "2026-11-20"
+      "latest": 2.79,
+      "change_4w_bp": 13.0,
+      "latest_date": "2026-11-23"
     },
     "VIXCLS": {
       "latest": 26.62,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 175.5813,
+      "close": 173.82,
       "latest_date": "2026-11-24"
     },
     "MRVL": {
-      "close": 136.475,
+      "close": 131.57,
       "latest_date": "2026-11-24"
     },
     "SRVR": {
-      "close": 25.96,
+      "close": 26.1065,
       "latest_date": "2026-11-24"
     },
     "SMH": {
-      "close": 433.59,
+      "close": 426.75,
       "latest_date": "2026-11-24"
     },
     "NVDA": {
-      "close": 155.55,
+      "close": 155.38,
       "latest_date": "2026-11-24"
     },
     "AVGO": {
-      "close": 307.42,
+      "close": 301.08,
       "latest_date": "2026-11-24"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 6.763533,
-      "ma60": 7.930643,
-      "gap": -0.147165,
+      "ratio": 6.658112,
+      "ma60": 7.928886,
+      "gap": -0.160271,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.314756,
-      "ma60": 0.394208,
-      "gap": -0.201548,
-      "ma60_slope_proxy": -0.021536,
+      "ratio": 0.308307,
+      "ma60": 0.3941,
+      "gap": -0.217694,
+      "ma60_slope_proxy": -0.021644,
       "entry": false
     }
   },

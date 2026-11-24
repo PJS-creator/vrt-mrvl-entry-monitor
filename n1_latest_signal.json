@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T15:01:20.754328+00:00",
-  "validation_class": "B_WARN_NO_NEW_SESSION",
-  "signal_date": "2026-11-20",
-  "execution_date": "2026-11-23",
-  "new_completed_us_session": false,
+  "generated_at": "2026-11-24T03:01:25.010874+00:00",
+  "validation_class": "A_NORMAL",
+  "signal_date": "2026-11-23",
+  "execution_date": "2026-11-24",
+  "new_completed_us_session": true,
   "price_source_id": "tiingo",
-  "qqq_adjusted_close": 608.45,
-  "sma20": 678.5305000000001,
-  "sma50": 710.8851812295819,
-  "sma200": 682.08989395307,
-  "wilder_rsi14": 26.64354397240605,
+  "qqq_adjusted_close": 651.03,
+  "sma20": 675.472,
+  "sma50": 709.7365408022341,
+  "sma200": 682.307019473845,
+  "wilder_rsi14": 42.191971998431214,
   "trend200_state": "DOWN",
   "recovery_state": false,
   "liquidity_p_raw_source_week": "2026-11-13",
@@ -17,7 +17,7 @@
   "liquidity_p_applied": 53.84615384615385,
   "liquidity_state": "MIXED",
   "comparison1_raw_state": "RED",
-  "comparison1_raw_streak": 6,
+  "comparison1_raw_streak": 7,
   "comparison1_confirmed_state": "RED",
   "comparison1_confirmed_target": "QQQ",
   "comparison3_target": "TQQQ",
@@ -32,16 +32,13 @@
   "post_n1_execution_target": "XLV",
   "execution_target": "XLV",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
+  "action": "SHADOW_TARGET_UPDATE",
   "reason_codes": [
-    "NO_NEW_COMPLETED_US_SESSION"
+    "NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
-  "warnings": [
-    "CBOE_FALLBACK:^VIX:STALE_OR_SHORT_PRICES:^VIX:2026-11-20",
-    "TIINGO_FALLBACK:^VIX:HTTPError"
-  ],
+  "warnings": [],
   "rules_sha256": "9d014221412879e2c0c54ef2b8adb6c69d1da61e440fbc867e95055c70c35a0f",
-  "input_sha256": "3b5a88092507c041a75a9aadcf194ec4183bdff9b86d9095c578d05770bc3e60",
-  "state_sha256": "2225fa44a0371995a4974d3e4a705aded06d1a11a0aa24f1b35fc8a32b852095"
+  "input_sha256": "125bbd70d9283f1dff187dd95d443d36d783ff4cf6aa5d033b4ec3ffbae924dd",
+  "state_sha256": "c4daa8cbc6077f9a06d1f49d94dd5c243f242dc20edf0fd293c736efa9d74a7d"
 }

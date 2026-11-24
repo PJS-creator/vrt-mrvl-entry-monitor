@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-11-23T15:00:55Z",
+  "generated_at_utc": "2026-11-24T03:00:53Z",
   "as_of": {
     "price_date": "2026-11-23",
-    "run_time_utc": "2026-11-23 15:00:55"
+    "run_time_utc": "2026-11-24 03:00:53"
   },
   "data_warning": false,
   "warnings": [],
   "fred": {
     "BAMLH0A0HYM2": {
-      "latest": 3.52,
-      "change_4w": 12.0,
-      "latest_date": "2026-11-19"
+      "latest": 3.76,
+      "change_4w": 38.0,
+      "latest_date": "2026-11-20"
     },
     "BAMLC0A0CM": {
       "latest": 0.98,
@@ -68,45 +68,45 @@
   },
   "prices": {
     "NWG.L": {
-      "close": 588.8,
-      "latest_date": "2026-11-23"
+      "close": 575.2,
+      "latest_date": "2026-11-20"
     },
     "^FTSE": {
-      "close": 10449.0703,
+      "close": 10480.7998,
       "latest_date": "2026-11-23"
     },
     "LLOY.L": {
-      "close": 96.32,
-      "latest_date": "2026-11-23"
+      "close": 94.74,
+      "latest_date": "2026-11-20"
     },
     "BARC.L": {
-      "close": 407.15,
-      "latest_date": "2026-11-23"
+      "close": 397.25,
+      "latest_date": "2026-11-20"
     },
     "HSBA.L": {
-      "close": 1267.4,
-      "latest_date": "2026-11-23"
+      "close": 1234.0,
+      "latest_date": "2026-11-20"
     }
   },
   "signals": {
     "NWG": {
-      "close": 588.8,
-      "ma50": 641.16,
-      "ma200": 629.8392,
-      "gap50": -0.081665,
-      "gap200": -0.065158
+      "close": 575.2,
+      "ma50": 643.04,
+      "ma200": 629.9935,
+      "gap50": -0.105499,
+      "gap200": -0.086975
     },
     "RS_FTSE": {
-      "ratio": 0.05635,
-      "ma60": 0.06077,
-      "gap": -0.072739,
-      "ma60_slope_proxy": -0.002907
+      "ratio": 0.055595,
+      "ma60": 0.060877,
+      "gap": -0.086766,
+      "ma60_slope_proxy": -0.002885
     },
     "RS_PEERS": {
-      "ratio": 0.997476,
-      "ma60": 0.990582,
-      "gap": 0.006959,
-      "ma60_slope_proxy": 0.002452
+      "ratio": 0.999774,
+      "ma60": 0.98987,
+      "gap": 0.010006,
+      "ma60_slope_proxy": 0.002763
     }
   },
   "checks": {

@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-11-25T15:01:03Z",
+  "generated_at_utc": "2026-11-25T22:35:40Z",
   "as_of": {
     "price_date": "2026-11-25",
-    "run_time_utc": "2026-11-25 15:01:03"
+    "run_time_utc": "2026-11-25 22:35:40"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.63,
-      "change_4w_bp": 33.0,
-      "latest_date": "2026-11-23"
+      "latest": 3.72,
+      "change_4w_bp": 54.0,
+      "latest_date": "2026-11-24"
     },
     "BAMLC0A0CM": {
-      "latest": 0.97,
-      "change_4w_bp": 7.0,
-      "latest_date": "2026-11-23"
+      "latest": 0.98,
+      "change_4w_bp": 10.0,
+      "latest_date": "2026-11-24"
     },
     "DFII10": {
       "latest": 2.79,
-      "change_4w_bp": 13.0,
-      "latest_date": "2026-11-23"
+      "change_4w_bp": 15.0,
+      "latest_date": "2026-11-24"
     },
     "VIXCLS": {
       "latest": 26.36,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 165.41,
+      "close": 173.37,
       "latest_date": "2026-11-25"
     },
     "MRVL": {
-      "close": 123.34,
+      "close": 130.93,
       "latest_date": "2026-11-25"
     },
     "SRVR": {
-      "close": 25.61,
+      "close": 26.18,
       "latest_date": "2026-11-25"
     },
     "SMH": {
-      "close": 404.48,
+      "close": 422.46,
       "latest_date": "2026-11-25"
     },
     "NVDA": {
-      "close": 145.22,
+      "close": 149.3,
       "latest_date": "2026-11-25"
     },
     "AVGO": {
-      "close": 286.655,
+      "close": 300.86,
       "latest_date": "2026-11-25"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 6.458805,
-      "ma60": 7.890199,
-      "gap": -0.181414,
+      "ratio": 6.62223,
+      "ma60": 7.892922,
+      "gap": -0.160991,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.304935,
-      "ma60": 0.392752,
-      "gap": -0.223595,
-      "ma60_slope_proxy": -0.024053,
+      "ratio": 0.309923,
+      "ma60": 0.392835,
+      "gap": -0.211062,
+      "ma60_slope_proxy": -0.02397,
       "entry": false
     }
   },

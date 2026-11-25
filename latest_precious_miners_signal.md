@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-24 22:35:54**
+- 실행시간(UTC): **2026-11-25 03:01:07**
 - 데이터 기준일(주가): **2026-11-24**
 
 ## Verdict
@@ -133,7 +133,7 @@
 - Style: **최고 명목 업사이드 / 보안 리스크** | Static rank: 7 | Risk: Very High | Max signal: WATCH
 - close: 2.69 | RSI14: 34.54 | ATR14%: 8.62%
 - MA20/50/200 gap: -12.21% / -20.26% / -23.59%
-- 5D return: -9.43% | 20D drawdown: -23.14% | vol_ratio: 1.03
+- 5D return: -9.43% | 20D drawdown: -23.14% | vol_ratio: 1.05
 - RS vs SILJ: gap 5.96% / slope_proxy 6.08%
 - FundamentalScore: 72 | TechnicalScore: 55 | RegimeScore: 25 | OverallScore: **56.6**
 - Checks:
@@ -155,7 +155,7 @@
 - Style: **품질형 은광 코어** | Static rank: 1 | Risk: Medium | Max signal: ENTRY
 - close: 18.79 | RSI14: 26.75 | ATR14%: 8.68%
 - MA20/50/200 gap: -17.24% / -25.28% / -11.51%
-- 5D return: -12.85% | 20D drawdown: -29.81% | vol_ratio: 1.02
+- 5D return: -12.85% | 20D drawdown: -29.81% | vol_ratio: 1.31
 - RS vs SILJ: gap 0.11% / slope_proxy -4.48%
 - FundamentalScore: 86 | TechnicalScore: 30 | RegimeScore: 25 | OverallScore: **54.2**
 - Checks:
@@ -175,9 +175,9 @@
 
 ### SCZM (Santacruz Silver)
 - Style: **공격형 은 가격 레버리지** | Static rank: 3 | Risk: High | Max signal: ENTRY
-- close: 6.85 | RSI14: 42.72 | ATR14%: 9.24%
+- close: 6.85 | RSI14: 42.72 | ATR14%: 9.27%
 - MA20/50/200 gap: -3.36% / -13.96% / -17.49%
-- 5D return: -7.56% | 20D drawdown: -15.33% | vol_ratio: 0.98
+- 5D return: -7.56% | 20D drawdown: -15.33% | vol_ratio: 0.99
 - RS vs SILJ: gap 13.72% / slope_proxy 17.42%
 - FundamentalScore: 74 | TechnicalScore: 40 | RegimeScore: 25 | OverallScore: **52.3**
 - Checks:
@@ -199,7 +199,7 @@
 - Style: **방어형 은광 코어** | Static rank: 4 | Risk: Low-Medium | Max signal: ENTRY
 - close: 10.90 | RSI14: 24.33 | ATR14%: 7.84%
 - MA20/50/200 gap: -17.49% / -28.49% / -37.88%
-- 5D return: -12.80% | 20D drawdown: -29.27% | vol_ratio: 1.63
+- 5D return: -12.80% | 20D drawdown: -29.27% | vol_ratio: 1.66
 - RS vs SILJ: gap -6.34% / slope_proxy -6.08%
 - FundamentalScore: 78 | TechnicalScore: 30 | RegimeScore: 25 | OverallScore: **50.6**
 - Checks:
@@ -221,7 +221,7 @@
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
 - close: 5.78 | RSI14: 27.37 | ATR14%: 8.85%
 - MA20/50/200 gap: -20.28% / -28.81% / -37.98%
-- 5D return: -18.93% | 20D drawdown: -30.70% | vol_ratio: 0.89
+- 5D return: -18.93% | 20D drawdown: -30.70% | vol_ratio: 0.90
 - RS vs SILJ: gap -6.84% / slope_proxy -6.76%
 - FundamentalScore: 82 | TechnicalScore: 15 | RegimeScore: 25 | OverallScore: **47.1**
 - Checks:
@@ -243,7 +243,7 @@
 - Style: **고품위 북미/antimony 옵션** | Static rank: 5 | Risk: Medium-High | Max signal: ENTRY
 - close: 1.90 | RSI14: 21.63 | ATR14%: 12.33%
 - MA20/50/200 gap: -28.33% / -47.03% / -63.84%
-- 5D return: -15.93% | 20D drawdown: -42.25% | vol_ratio: 1.01
+- 5D return: -15.93% | 20D drawdown: -42.25% | vol_ratio: 1.05
 - RS vs SILJ: gap -30.97% / slope_proxy -23.67%
 - FundamentalScore: 68 | TechnicalScore: 30 | RegimeScore: 25 | OverallScore: **46.1**
 - Checks:
@@ -263,9 +263,9 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 3.47 | RSI14: 24.70 | ATR14%: 8.55%
+- close: 3.47 | RSI14: 24.70 | ATR14%: 8.54%
 - MA20/50/200 gap: -18.74% / -30.70% / -46.23%
-- 5D return: -15.16% | 20D drawdown: -29.33% | vol_ratio: 0.93
+- 5D return: -15.16% | 20D drawdown: -29.33% | vol_ratio: 0.94
 - RS vs SILJ: gap -10.22% / slope_proxy -6.86%
 - FundamentalScore: 60 | TechnicalScore: 15 | RegimeScore: 25 | OverallScore: **37.2**
 - Checks:

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T22:36:02.969141+00:00",
-  "validation_class": "B_WARN",
+  "generated_at": "2026-11-26T03:01:18.616094+00:00",
+  "validation_class": "B_WARN_NO_NEW_SESSION",
   "signal_date": "2026-11-25",
   "execution_date": "2026-11-27",
-  "new_completed_us_session": true,
+  "new_completed_us_session": false,
   "price_source_id": "tiingo",
   "qqq_adjusted_close": 633.93,
   "sma20": 666.7305,
@@ -32,9 +32,9 @@
   "post_n1_execution_target": "XLV",
   "execution_target": "XLV",
   "entry_filter": "NA_NO_NEW_CASH_EVENT",
-  "action": "SHADOW_TARGET_UPDATE",
+  "action": "HOLD_PREVIOUS_VALIDATED_TARGET",
   "reason_codes": [
-    "NEW_COMPLETED_US_SESSION"
+    "NO_NEW_COMPLETED_US_SESSION"
   ],
   "data_missing": false,
   "warnings": [

@@ -1,7 +1,7 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-26 04:21:13**
-- 데이터 기준일(주가): **2026-11-25**
+- 실행시간(UTC): **2026-11-26 15:01:19**
+- 데이터 기준일(주가): **2026-11-26**
 
 ## Verdict
 **⏸ No confirmed entry; watchlist only**
@@ -61,11 +61,11 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 3.48 | RSI14: 26.37 | ATR14%: 11.56%
-- MA20/50/200 gap: -24.84% / -41.49% / -47.36%
-- 5D return: -6.20% | 20D drawdown: -40.92% | vol_ratio: 1.04
+- close: 3.56 | RSI14: 24.30 | ATR14%: 10.91%
+- MA20/50/200 gap: -21.37% / -39.35% / -45.97%
+- 5D return: 2.30% | 20D drawdown: -39.56% | vol_ratio: 0.10
 - RS vs GDXJ: gap -29.72% / slope_proxy -28.57%
-- FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **47.4**
+- FundamentalScore: 82 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **42.1**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**
@@ -83,11 +83,11 @@
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
-- close: 0.59 | RSI14: 29.63 | ATR14%: 11.26%
-- MA20/50/200 gap: -18.51% / -36.70% / -55.02%
-- 5D return: 1.72% | 20D drawdown: -34.44% | vol_ratio: 1.24
+- close: 0.62 | RSI14: 33.33 | ATR14%: 10.71%
+- MA20/50/200 gap: -12.98% / -32.43% / -52.49%
+- 5D return: 8.77% | 20D drawdown: -31.11% | vol_ratio: 0.04
 - RS vs GDXJ: gap -26.74% / slope_proxy -20.07%
-- FundamentalScore: 70 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **42.0**
+- FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **36.8**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**
@@ -105,11 +105,11 @@
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
-- close: 1.33 | RSI14: 37.07 | ATR14%: 10.90%
-- MA20/50/200 gap: -11.66% / -30.87% / -31.16%
-- 5D return: -0.75% | 20D drawdown: -26.11% | vol_ratio: 1.28
+- close: 1.31 | RSI14: 34.78 | ATR14%: 10.96%
+- MA20/50/200 gap: -11.99% / -31.07% / -32.11%
+- 5D return: 9.17% | 20D drawdown: -27.22% | vol_ratio: 0.20
 - RS vs GDXJ: gap -17.53% / slope_proxy -7.18%
-- FundamentalScore: 55 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **35.2**
+- FundamentalScore: 55 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **30.0**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**

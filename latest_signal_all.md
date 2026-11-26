@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-26 04:21:14**
+- 실행시간(UTC): **2026-11-26 15:01:20**
 - 데이터 기준일(일봉): **2026-11-25**
 - 데이터 기준일(주봉): **2026-11-23**
 - VXN 기준일: **2026-11-24** / source: `FRED: VXNCLS`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-25**
-- 실행시간(UTC): **2026-11-26 04:20:47**
+- 실행시간(UTC): **2026-11-26 15:00:52**
 
 ## MacroGreen
 - **MacroGreen**: **False**
@@ -115,8 +115,8 @@
 
 # NatWest Daily Entry Monitor
 
-- 데이터 기준일(주가): **2026-11-25**
-- 실행시간(UTC): **2026-11-26 04:20:50**
+- 데이터 기준일(주가): **2026-11-26**
+- 실행시간(UTC): **2026-11-26 15:00:57**
 
 ## Verdict
 ⏸ No entry today
@@ -131,17 +131,17 @@
 - ENTRY_LOOSE: **False**
 
 ## Derived (UK rates/curve)
-- TERM_SPREAD_10Y_POLICY: 117.93 bp / 4주 변화 -37.55 bp
-- CURVE_10s5s: 31.63 bp / 4주 변화 -4.78 bp
+- TERM_SPREAD_10Y_POLICY: 115.31 bp / 4주 변화 -40.15 bp
+- CURVE_10s5s: 30.37 bp / 4주 변화 -5.65 bp
 
 ## NWG Price
-- close: 582.6
-- MA50: 639.072 / gap50: -8.84%
-- MA200: 629.7399 / gap200: -7.49%
+- close: 594.4
+- MA50: 634.144 / gap50: -6.27%
+- MA200: 629.5583 / gap200: -5.58%
 
 ## Relative Strength
-- RS vs FTSE gap: -8.22% / slope_proxy: -0.002913
-- RS vs Peers gap: 1.60% / slope_proxy: 0.001907
+- RS vs FTSE gap: -7.16% / slope_proxy: -0.003005
+- RS vs Peers gap: 2.85% / slope_proxy: 0.001232
 
 ## Why not today?
 - RiskGreen=FALSE
@@ -155,15 +155,15 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-26 04:20:56**
+- 실행시간(UTC): **2026-11-26 15:01:05**
 
 ## Commodity Regime
 
-- WTI ref (CL=F): 84.39 / 5D 1.36%
-- Brent ref (BZ=F): 91.11 / 5D -0.91%
+- WTI ref (CL=F): 84.60 / 5D 1.67%
+- Brent ref (BZ=F): 91.33 / 5D -0.71%
 - Brent Tier: **>=90**
-- Brent-WTI spread: 6.72
-- Gas ref (NG=F): 3.69 / 5D 9.28%
+- Brent-WTI spread: 6.73
+- Gas ref (NG=F): 3.62 / 5D 10.74%
 
 ## Gates
 
@@ -320,8 +320,8 @@
 
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
-- 데이터 기준일(주가): **2026-11-25**
-- 실행시간(UTC): **2026-11-26 04:21:03**
+- 데이터 기준일(주가): **2026-11-26**
+- 실행시간(UTC): **2026-11-26 15:01:10**
 
 ## Verdict
 ⏸ No entry today
@@ -366,7 +366,7 @@
 - close: 7.51 | RSI14: 51.968668 | ATR14%: 8.57%
 - MA20 gap: 5.94% | MA50 gap: -5.48% | MA200 gap: -9.32%
 - vol_ratio(Volume/Vol20): 1.220345 | gap_open: 6.42%
-- SilverMarginGate: SI=41.965 / watch>=32.0:True / entry>=35.0:True
+- SilverMarginGate: SI=41.865002 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 19.03% / slope_proxy: 0.00684
 - Checks:
   - trend_ok: **False**
@@ -407,8 +407,8 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-26 04:21:13**
-- 데이터 기준일(주가): **2026-11-25**
+- 실행시간(UTC): **2026-11-26 15:01:19**
+- 데이터 기준일(주가): **2026-11-26**
 
 ## Verdict
 **⏸ No confirmed entry; watchlist only**
@@ -468,11 +468,11 @@
 
 ### JAG.TO (Jaguar Mining)
 - Style: **저평가 FCF/램프업 후보** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 3.48 | RSI14: 26.37 | ATR14%: 11.56%
-- MA20/50/200 gap: -24.84% / -41.49% / -47.36%
-- 5D return: -6.20% | 20D drawdown: -40.92% | vol_ratio: 1.04
+- close: 3.56 | RSI14: 24.30 | ATR14%: 10.91%
+- MA20/50/200 gap: -21.37% / -39.35% / -45.97%
+- 5D return: 2.30% | 20D drawdown: -39.56% | vol_ratio: 0.10
 - RS vs GDXJ: gap -29.72% / slope_proxy -28.57%
-- FundamentalScore: 82 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **47.4**
+- FundamentalScore: 82 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **42.1**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**
@@ -490,11 +490,11 @@
 
 ### TSK.TO (Talisker Resources)
 - Style: **BC 고품위 M&A 콜옵션** | Static rank: 3 | Risk: Medium | Max signal: WATCH
-- close: 0.59 | RSI14: 29.63 | ATR14%: 11.26%
-- MA20/50/200 gap: -18.51% / -36.70% / -55.02%
-- 5D return: 1.72% | 20D drawdown: -34.44% | vol_ratio: 1.24
+- close: 0.62 | RSI14: 33.33 | ATR14%: 10.71%
+- MA20/50/200 gap: -12.98% / -32.43% / -52.49%
+- 5D return: 8.77% | 20D drawdown: -31.11% | vol_ratio: 0.04
 - RS vs GDXJ: gap -26.74% / slope_proxy -20.07%
-- FundamentalScore: 70 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **42.0**
+- FundamentalScore: 70 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **36.8**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**
@@ -512,11 +512,11 @@
 
 ### ORV.TO (Orvana Minerals)
 - Style: **고위험 턴어라운드** | Static rank: 4 | Risk: High | Max signal: WATCH
-- close: 1.33 | RSI14: 37.07 | ATR14%: 10.90%
-- MA20/50/200 gap: -11.66% / -30.87% / -31.16%
-- 5D return: -0.75% | 20D drawdown: -26.11% | vol_ratio: 1.28
+- close: 1.31 | RSI14: 34.78 | ATR14%: 10.96%
+- MA20/50/200 gap: -11.99% / -31.07% / -32.11%
+- 5D return: 9.17% | 20D drawdown: -27.22% | vol_ratio: 0.20
 - RS vs GDXJ: gap -17.53% / slope_proxy -7.18%
-- FundamentalScore: 55 | TechnicalScore: 30 | RegimeScore: 0 | OverallScore: **35.2**
+- FundamentalScore: 55 | TechnicalScore: 15 | RegimeScore: 0 | OverallScore: **30.0**
 - Checks:
   - sector_ok: **False**
   - breadth_ok: **False**

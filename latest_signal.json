@@ -1,26 +1,26 @@
 {
-  "generated_at_utc": "2026-11-27T15:00:50Z",
+  "generated_at_utc": "2026-11-27T22:35:27Z",
   "as_of": {
     "price_date": "2026-11-27",
-    "run_time_utc": "2026-11-27 15:00:50"
+    "run_time_utc": "2026-11-27 22:35:27"
   },
   "data_warning": false,
   "warnings": [],
   "macro": {
     "BAMLH0A0HYM2": {
-      "latest": 3.72,
-      "change_4w_bp": 54.0,
-      "latest_date": "2026-11-24"
+      "latest": 3.77,
+      "change_4w_bp": 51.0,
+      "latest_date": "2026-11-26"
     },
     "BAMLC0A0CM": {
-      "latest": 0.98,
+      "latest": 0.99,
       "change_4w_bp": 10.0,
-      "latest_date": "2026-11-24"
+      "latest_date": "2026-11-26"
     },
     "DFII10": {
-      "latest": 2.79,
-      "change_4w_bp": 15.0,
-      "latest_date": "2026-11-24"
+      "latest": 2.73,
+      "change_4w_bp": 6.0,
+      "latest_date": "2026-11-25"
     },
     "VIXCLS": {
       "latest": 26.8,
@@ -43,42 +43,42 @@
   },
   "prices": {
     "VRT": {
-      "close": 174.56,
+      "close": 178.71,
       "latest_date": "2026-11-27"
     },
     "MRVL": {
-      "close": 134.1181,
+      "close": 140.54,
       "latest_date": "2026-11-27"
     },
     "SRVR": {
-      "close": 26.295,
+      "close": 26.48,
       "latest_date": "2026-11-27"
     },
     "SMH": {
-      "close": 423.93,
+      "close": 440.06,
       "latest_date": "2026-11-27"
     },
     "NVDA": {
-      "close": 146.0,
+      "close": 150.49,
       "latest_date": "2026-11-27"
     },
     "AVGO": {
-      "close": 307.035,
+      "close": 312.34,
       "latest_date": "2026-11-27"
     }
   },
   "signals": {
     "VRT": {
-      "ratio": 6.638524,
-      "ma60": 7.860603,
-      "gap": -0.155469,
+      "ratio": 6.748867,
+      "ma60": 7.862442,
+      "gap": -0.141632,
       "entry": false
     },
     "MRVL": {
-      "ratio": 0.316369,
-      "ma60": 0.391858,
-      "gap": -0.192645,
-      "ma60_slope_proxy": -0.025254,
+      "ratio": 0.319366,
+      "ma60": 0.391908,
+      "gap": -0.185101,
+      "ma60_slope_proxy": -0.025204,
       "entry": false
     }
   },

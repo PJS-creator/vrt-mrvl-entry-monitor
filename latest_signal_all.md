@@ -15,7 +15,7 @@
 
 # QQQ / QLD Timing Monitor
 
-- 실행시간(UTC): **2026-11-27 22:35:55**
+- 실행시간(UTC): **2026-11-28 03:01:12**
 - 데이터 기준일(일봉): **2026-11-27**
 - 데이터 기준일(주봉): **2026-11-23**
 - VXN 기준일: **2026-11-25** / source: `FRED: VXNCLS`
@@ -81,7 +81,7 @@
 # Daily Signal Monitor
 
 - 데이터 기준일(주가): **2026-11-27**
-- 실행시간(UTC): **2026-11-27 22:35:27**
+- 실행시간(UTC): **2026-11-28 03:00:49**
 
 ## MacroGreen
 - **MacroGreen**: **False**
@@ -116,7 +116,7 @@
 # NatWest Daily Entry Monitor
 
 - 데이터 기준일(주가): **2026-11-27**
-- 실행시간(UTC): **2026-11-27 22:35:30**
+- 실행시간(UTC): **2026-11-28 03:00:51**
 
 ## Verdict
 ⏸ No entry today
@@ -135,13 +135,13 @@
 - CURVE_10s5s: 34.37 bp / 4주 변화 -0.36 bp
 
 ## NWG Price
-- close: 600.0
-- MA50: 632.092 / gap50: -5.08%
-- MA200: 629.643 / gap200: -4.71%
+- close: 591.2
+- MA50: 634.08 / gap50: -6.76%
+- MA200: 629.5423 / gap200: -6.09%
 
 ## Relative Strength
-- RS vs FTSE gap: -6.86% / slope_proxy: -0.002961
-- RS vs Peers gap: 1.92% / slope_proxy: 0.002344
+- RS vs FTSE gap: -7.67% / slope_proxy: -0.00301
+- RS vs Peers gap: 2.47% / slope_proxy: 0.001168
 
 ## Why not today?
 - RiskGreen=FALSE
@@ -155,7 +155,7 @@
 
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-27 22:35:38**
+- 실행시간(UTC): **2026-11-28 03:00:58**
 
 ## Commodity Regime
 
@@ -196,8 +196,8 @@
 
 ### Volume (if available)
 
-- volume: 4154768.00
-- volume_MA20: 11239098.40
+- volume: 4154800.00
+- volume_MA20: 11239100.00
 - volume_ratio: 0.37
 
 ### Checks
@@ -229,8 +229,8 @@
 
 ### Volume (if available)
 
-- volume: 23728725.00
-- volume_MA20: 23455536.25
+- volume: 23728700.00
+- volume_MA20: 23455535.00
 - volume_ratio: 1.01
 
 ### Checks
@@ -263,8 +263,8 @@
 
 ### Volume (if available)
 
-- volume: 68496881.00
-- volume_MA20: 44830834.05
+- volume: 68496900.00
+- volume_MA20: 44830835.00
 - volume_ratio: 1.53
 
 ### Checks
@@ -297,8 +297,8 @@
 
 ### Volume (if available)
 
-- volume: 4596241.00
-- volume_MA20: 13686982.05
+- volume: 4596200.00
+- volume_MA20: 13686980.00
 - volume_ratio: 0.34
 
 ### Checks
@@ -321,7 +321,7 @@
 # Silver Miners Daily Entry Monitor (VZLA / SCZM / HYMC)
 
 - 데이터 기준일(주가): **2026-11-27**
-- 실행시간(UTC): **2026-11-27 22:35:44**
+- 실행시간(UTC): **2026-11-28 03:01:03**
 
 ## Verdict
 ⏸ No entry today
@@ -347,7 +347,7 @@
 ## VZLA (Vizsla Silver)
 - close: 3.1 | RSI14: 50.690581 | ATR14%: 7.51%
 - MA20 gap: 2.16% | MA50 gap: -7.15% | MA200 gap: -11.69%
-- vol_ratio(Volume/Vol20): 0.452867 | gap_open: 4.55%
+- vol_ratio(Volume/Vol20): 0.452868 | gap_open: 4.55%
 - RS vs SILJ gap: 7.20% / slope_proxy: 0.003486
 - Checks:
   - trend_ok: **False**
@@ -364,7 +364,7 @@
 ## SCZM (Santacruz Silver)
 - close: 8.38 | RSI14: 58.811821 | ATR14%: 7.88%
 - MA20 gap: 17.27% | MA50 gap: 5.61% | MA200 gap: 1.38%
-- vol_ratio(Volume/Vol20): 0.710549 | gap_open: 6.79%
+- vol_ratio(Volume/Vol20): 0.710565 | gap_open: 7.99%
 - SilverMarginGate: SI=43.702 / watch>=32.0:True / entry>=35.0:True
 - RS vs SILJ gap: 21.67% / slope_proxy: 0.007652
 - Checks:
@@ -383,7 +383,7 @@
 ## HYMC (Hycroft Mining)
 - close: 15.77 | RSI14: 48.756172 | ATR14%: 10.23%
 - MA20 gap: -2.03% | MA50 gap: -9.89% | MA200 gap: -42.98%
-- vol_ratio(Volume/Vol20): 0.633369 | gap_open: 8.09%
+- vol_ratio(Volume/Vol20): 0.633371 | gap_open: 8.09%
 - RS vs SILJ gap: 3.41% / slope_proxy: -0.038812
 - RS vs GDXJ gap: -0.26% / slope_proxy: -0.013628
 - Checks:
@@ -407,7 +407,7 @@
 
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-27 22:35:54**
+- 실행시간(UTC): **2026-11-28 03:01:11**
 - 데이터 기준일(주가): **2026-11-27**
 
 ## Verdict
@@ -446,7 +446,7 @@
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
-- close: 7.08 | RSI14: 38.00 | ATR14%: 6.34%
+- close: 7.08 | RSI14: 38.00 | ATR14%: 6.35%
 - MA20/50/200 gap: -2.33% / -15.21% / -12.48%
 - 5D return: 13.10% | 20D drawdown: -15.71% | vol_ratio: 0.64
 - RS vs GDXJ: gap -5.79% / slope_proxy -5.32%
@@ -604,7 +604,7 @@
 
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 6.87 | RSI14: 40.55 | ATR14%: 7.74%
+- close: 6.87 | RSI14: 40.55 | ATR14%: 7.75%
 - MA20/50/200 gap: -3.43% / -13.97% / -25.83%
 - 5D return: 12.99% | 20D drawdown: -17.63% | vol_ratio: 0.91
 - RS vs SILJ: gap -2.13% / slope_proxy -1.06%
@@ -670,7 +670,7 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 4.11 | RSI14: 40.75 | ATR14%: 7.41%
+- close: 4.11 | RSI14: 40.75 | ATR14%: 7.42%
 - MA20/50/200 gap: -1.91% / -16.43% / -35.67%
 - 5D return: 12.60% | 20D drawdown: -16.29% | vol_ratio: 0.74
 - RS vs SILJ: gap -5.59% / slope_proxy -1.67%

@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-11-27T22:35:44Z",
+  "generated_at_utc": "2026-11-28T03:01:03Z",
   "as_of": {
     "price_date": "2026-11-27",
-    "run_time_utc": "2026-11-27 22:35:44"
+    "run_time_utc": "2026-11-28 03:01:03"
   },
   "data_warning": false,
   "warnings": [],
@@ -223,7 +223,7 @@
         "rsi14": 50.690581,
         "atr14": 0.232874,
         "atr14_pct": 0.075121,
-        "vol_ratio": 0.452867,
+        "vol_ratio": 0.452868,
         "ret1d": 0.083916,
         "gap_open": 0.045455
       },
@@ -265,9 +265,9 @@
         "rsi14": 58.811821,
         "atr14": 0.660182,
         "atr14_pct": 0.078781,
-        "vol_ratio": 0.710549,
+        "vol_ratio": 0.710565,
         "ret1d": 0.115846,
-        "gap_open": 0.067909
+        "gap_open": 0.079893
       },
       "ma_long": 200,
       "silver_margin": {
@@ -315,7 +315,7 @@
         "rsi14": 48.756172,
         "atr14": 1.612883,
         "atr14_pct": 0.102275,
-        "vol_ratio": 0.633369,
+        "vol_ratio": 0.633371,
         "ret1d": 0.149417,
         "gap_open": 0.080904
       },

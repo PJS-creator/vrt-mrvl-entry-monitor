@@ -1,6 +1,6 @@
 # Energy Daily Signal Monitor
 
-- 실행시간(UTC): **2026-11-27 22:35:38**
+- 실행시간(UTC): **2026-11-28 03:00:58**
 
 ## Commodity Regime
 
@@ -41,8 +41,8 @@
 
 ### Volume (if available)
 
-- volume: 4154768.00
-- volume_MA20: 11239098.40
+- volume: 4154800.00
+- volume_MA20: 11239100.00
 - volume_ratio: 0.37
 
 ### Checks
@@ -74,8 +74,8 @@
 
 ### Volume (if available)
 
-- volume: 23728725.00
-- volume_MA20: 23455536.25
+- volume: 23728700.00
+- volume_MA20: 23455535.00
 - volume_ratio: 1.01
 
 ### Checks
@@ -108,8 +108,8 @@
 
 ### Volume (if available)
 
-- volume: 68496881.00
-- volume_MA20: 44830834.05
+- volume: 68496900.00
+- volume_MA20: 44830835.00
 - volume_ratio: 1.53
 
 ### Checks
@@ -142,8 +142,8 @@
 
 ### Volume (if available)
 
-- volume: 4596241.00
-- volume_MA20: 13686982.05
+- volume: 4596200.00
+- volume_MA20: 13686980.00
 - volume_ratio: 0.34
 
 ### Checks

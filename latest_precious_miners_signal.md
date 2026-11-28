@@ -1,6 +1,6 @@
 # Precious Miners Daily Entry Monitor (Gold / Silver)
 
-- 실행시간(UTC): **2026-11-27 22:35:54**
+- 실행시간(UTC): **2026-11-28 03:01:11**
 - 데이터 기준일(주가): **2026-11-27**
 
 ## Verdict
@@ -39,7 +39,7 @@
 
 ### MAKO (Mako Mining)
 - Style: **생산+성장 핵심 알파** | Static rank: 1 | Risk: Medium-High | Max signal: ENTRY
-- close: 7.08 | RSI14: 38.00 | ATR14%: 6.34%
+- close: 7.08 | RSI14: 38.00 | ATR14%: 6.35%
 - MA20/50/200 gap: -2.33% / -15.21% / -12.48%
 - 5D return: 13.10% | 20D drawdown: -15.71% | vol_ratio: 0.64
 - RS vs GDXJ: gap -5.79% / slope_proxy -5.32%
@@ -197,7 +197,7 @@
 
 ### EXK (Endeavour Silver)
 - Style: **밸류/베타 균형형 은광** | Static rank: 2 | Risk: Medium | Max signal: ENTRY
-- close: 6.87 | RSI14: 40.55 | ATR14%: 7.74%
+- close: 6.87 | RSI14: 40.55 | ATR14%: 7.75%
 - MA20/50/200 gap: -3.43% / -13.97% / -25.83%
 - 5D return: 12.99% | 20D drawdown: -17.63% | vol_ratio: 0.91
 - RS vs SILJ: gap -2.13% / slope_proxy -1.06%
@@ -263,7 +263,7 @@
 
 ### ASM (Avino Silver & Gold)
 - Style: **재무 안정형 소형 은광** | Static rank: 6 | Risk: Medium | Max signal: ENTRY
-- close: 4.11 | RSI14: 40.75 | ATR14%: 7.41%
+- close: 4.11 | RSI14: 40.75 | ATR14%: 7.42%
 - MA20/50/200 gap: -1.91% / -16.43% / -35.67%
 - 5D return: 12.60% | 20D drawdown: -16.29% | vol_ratio: 0.74
 - RS vs SILJ: gap -5.59% / slope_proxy -1.67%
